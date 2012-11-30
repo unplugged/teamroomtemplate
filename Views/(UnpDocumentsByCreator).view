@@ -1,0 +1,97 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<view name='(UnpDocumentsByCreator)' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='true' defaultdesign='true'
+ allowdocselection='true' publicaccess='false' designerversion='8.5.3' language='en'
+ unreadmarks='standard' onopengoto='lastopened' onrefresh='displayindicator'
+ headers='simple' opencollapsed='false' showresponsehierarchy='false' showmargin='true'
+ shrinkrows='true' extendlastcolumn='true' showhierarchies='false' unreadcolor='maroon'
+ rowlinecount='4' headerlinecount='1' rowspacing='1.25' haslinkcolumn='true'
+ bgcolor='white' altrowcolor='#efefef' totalscolor='blue' headerbgcolor='#a8cfd4'
+ boldunreadrows='false' evaluateactions='true' allownewdocuments='false' allowcustomizations='true'
+ hidemarginborder='false' marginwidth='0px 0px 1px' marginbgcolor='white'
+ uniquekeys='false'>
+<noteinfo noteid='4ca' unid='768673F2EC56CCDF80257AC50036EFAA' sequence='17'>
+<created><datetime>20121129T100002,98+00</datetime></created>
+<modified><datetime>20121130T084026,33+00</datetime></modified>
+<revised><datetime>20121130T084026,32+00</datetime></revised>
+<lastaccessed><datetime>20121130T084026,33+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T100003,03+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>LCDocType := @LowerCase(doctype);
+LCDisc := @LowerCase(DefaultDocType1);
+LCRef := @LowerCase(DefaultDocType4);
+
+NotDone := ReviewedByNotDone;
+
+reviewer:=@If(LCDocType = LCDisc | LCDocType = LCRef; ReviewedByNotDone ; People);
+SELECT (form = "MainTopic" &amp; Status != "0")&amp; reviewer!=""</formula></code><code
+ event='helprequest'><formula>REM {DNT};
+@Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></code>
+<actionbar useappletinbrowser='true' bgcolor='#78b4bc' bordercolor='black'><actionbarstyle
+ height='4.7500ex'><font size='9pt' name='multilingual'/></actionbarstyle>
+<actionbuttonstyle margintype='fixed' margin='5' bgcolor='#c4dee1' displayborder='notesstyle'
+ widthtype='background'/><font size='9pt' name='multilingual'/><border width='0px 0px 1px'/></actionbar>
+<column sort='ascending' hidedetailrows='false' itemname='From' width='10'
+ resizable='true' separatemultiplevalues='true' sortnoaccent='false' sortnocase='true'
+ showaslinks='false' categorized='true'><columnheader title='Cat'><font size='9pt'
+ style='bold'/></columnheader></column><sharedcolumnref name='UnpDate'>
+<column sort='descending' hidedetailrows='false' listseparator='comma' itemname='$150'
+ width='12.6250' resizable='true' separatemultiplevalues='false' sortnoaccent='true'
+ sortnocase='true' showaslinks='false' twisties='true' formatdatatype='datetime'><font
+ size='9pt'/><columnheader title='DateCreated'><font size='9pt' name='multilingual'/></columnheader><datetimeformat
+ show='datetime' date='yearmonthday' fourdigityearfor21stcentury='true' time='hourminutesecond'
+ zone='never' dateformat='weekdaydaymonthyear' dayformat='twodigitday' monthformat='twodigitmonth'
+ yearformat='fourdigityear' weekdayformat='shortname' dateseparator1=' ' dateseparator2='/'
+ dateseparator3='/' timeseparator=':' timeformat24='true' preference='usersetting'/><numberformat
+ format='general' varying='true' digits='1' punctuated='false' parens='false'
+ percent='false' bytes='false' decimalsym='.' thousandssep=',' currencysymtype='custom'
+ currencysym='$' usecustomsym='false'/><code event='value'><formula>@If(@IsResponseDoc; ""; @Created)</formula></code></column></sharedcolumnref><sharedcolumnref
+ name='UnpDueDate'>
+<column sort='ascending' hidedetailrows='false' itemname='$152' width='10'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><font size='9pt'/><columnheader title='DueDate'><font
+ size='9pt'/></columnheader><code event='value'><formula>date:=@If(MtgDate != ""; mtgDate; DueDate = ""; ""; @Date(DueDate));
+@If(@IsError(date); @Created; date);
+months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : "Oct" : "Nov" : "Dec";
+@If(@Text(date)=""; ""; "Due: " + @Text(@Day(date)) + " " + @Subset(@Subset(months; @Month(@Created)); -1) + " " + @Text(@Year(date)))  + @If(Categories != ""; " in: " + @Implode(Categories; ", "); "")</formula></code></column></sharedcolumnref><sharedcolumnref
+ name='UnpType'>
+<column sort='ascending' hidedetailrows='false' itemname='DocType' width='10'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><font size='9pt'/><columnheader title='Type'><font size='9pt'
+ name='multilingual'/></columnheader></column></sharedcolumnref><sharedcolumnref
+ name='UnpTopic'>
+<column sort='ascending' hidedetailrows='false' listseparator='comma' itemname='$151'
+ width='17.3750' resizable='true' separatemultiplevalues='false' sortnoaccent='true'
+ sortnocase='true' showaslinks='true'><font size='9pt' color='teal'/><columnheader
+ title='Topic'><font size='9pt' name='multilingual'/></columnheader><code
+ event='value'><formula>PrivateTxt := "PRIVATE: ";
+ExpiredTxt := "EXPIRED: ";
+subj := @If(!@IsAvailable(subject) | subject = ""; "Untitled"; subject);
+@If(readers != ""; PrivateTxt; ExpireDate != ""; ExpiredTxt; "") + subj</formula></code></column></sharedcolumnref><sharedcolumnref
+ name='UnpCategories'>
+<column hidedetailrows='false' itemname='$155' width='34.3750' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><font
+ size='9pt'/><columnheader title='Categories'><font size='9pt'/></columnheader><code
+ event='value'><formula>months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : "Oct" : "Nov" : "Dec";
+"Created: " + (@Text(@Day(@Created)) + " " + @Subset(@Subset(months; @Month(@Created)); -1) + " " + @Text(@Year(@Created))) + @If(Categories != ""; " in: " + @Implode(Categories; ", "); "")</formula></code></column></sharedcolumnref><sharedcolumnref
+ name='UnpAuthor'>
+<column sort='ascending' hidedetailrows='false' itemname='$149' width='18'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><font size='9pt'/><columnheader title='Author'><font
+ size='9pt' name='multilingual'/></columnheader><datetimeformat show='datetime'
+ date='yearmonthday' fourdigityearfor21stcentury='true' time='hourminutesecond'
+ zone='never' dateformat='weekdaymonthdayyear' dayformat='twodigitday' monthformat='twodigitmonth'
+ yearformat='fourdigityear' weekdayformat='shortname' dateseparator1=' ' dateseparator2='/'
+ dateseparator3='/' timeseparator=':' preference='usersetting'/><numberformat
+ format='general' varying='true' punctuated='false' parens='false' percent='false'
+ bytes='false' decimalsym='.' thousandssep=',' currencysymtype='custom' currencysym='$'
+ usecustomsym='false'/><code event='value'><formula>@Name([Abbreviate]; From)</formula></code></column></sharedcolumnref><sharedcolumnref
+ name='UnpDateCreated'>
+<column hidedetailrows='false' itemname='$154' width='10' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><columnheader
+ title='DateCreatedDisp'><font size='9pt' style='bold'/></columnheader><code
+ event='value'><formula>months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : "Oct" : "Nov" : "Dec";
+@Text(@Day(@Created)) + " " + @Subset(@Subset(months; @Month(@Created)); -1) + " " + @Text(@Year(@Created))</formula></code></column></sharedcolumnref></view>
+

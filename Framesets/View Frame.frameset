@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE frameset SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<frameset name='View Frame' alias='View Frame' xmlns='http://www.lotus.com/dxl'
+ version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' publicaccess='false'
+ designerversion='6' language='en' rows='97% 0px' spacing='0px' borderwidth='0px'
+ bordercolor='#78b4bc'>
+<noteinfo noteid='3a2' unid='99F65233CA5D4206052569AB004183A3' sequence='23'>
+<created><datetime>20001204T065535,39-05</datetime></created>
+<modified><datetime>20121129T094705,26+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103849,48-04</datetime></revised>
+<lastaccessed><datetime>20121129T094705,26+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094705,26+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<frame name='NotesView' targetframe='NotesPreview' border3d='false'><namedelementlink
+ type='view' name='Announcements'/></frame>
+<frame name='NotesPreview' border3d='false'><bordercaption show='caption arrows'
+ justify='center' open='40%' bgcolor='#78b4bc'><code event='value'><formula
+>"Preview"</formula></code></bordercaption></frame></frameset>
+

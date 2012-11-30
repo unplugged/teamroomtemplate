@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE outline SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<outline name='OtherVOutline' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3 v4strict'
+ publicaccess='false' designerversion='6' language='en'>
+<noteinfo noteid='28e' unid='DE2F3B4FCA50A7B985256954004A5CD3' sequence='8'>
+<created><datetime dst='true'>20000908T093214,27-04</datetime></created>
+<modified><datetime>20121129T094703,94+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103847,24-04</datetime></revised>
+<lastaccessed><datetime>20121129T094703,94+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094703,94+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<outlineentry label='Action Items by Priority' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='AIPriority'/></outlineentry>
+<outlineentry label='All Chronological' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='All Chronological'/></outlineentry>
+<outlineentry label='By Alternate Name' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='By Alternate Name'/></outlineentry>
+<outlineentry label='By Author' type='namedelementlink' hide='notes web' displayimage='false'><namedelementlink
+ type='view' name='AuthorView'/></outlineentry>
+<outlineentry label='By Category' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='ActiveCategory'/></outlineentry>
+<outlineentry label='By Date' type='namedelementlink' hide='notes web' displayimage='false'><namedelementlink
+ type='view' name='ActiveDate'/></outlineentry>
+<outlineentry label='By Event' type='namedelementlink' hide='notes web' displayimage='false'><namedelementlink
+ type='view' name='ActiveEvent'/></outlineentry>
+<outlineentry label='By Subteam' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='ActiveBySubteam'/></outlineentry>
+<outlineentry label='Calendar' type='namedelementlink' hide='notes web' displayimage='false'><namedelementlink
+ type='view' name='Calendar'/></outlineentry>
+<outlineentry label='Documents Assigned to me' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='PersAssignedToMe'/></outlineentry>
+<outlineentry label='Documents I Created' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='PersDocsICreated'/></outlineentry>
+<outlineentry label='Inactive Documents' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='Filed'/></outlineentry>
+<outlineentry label='Index of All Documents' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='($All)'/></outlineentry>
+<outlineentry label='Individual Status Reports' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='IndStat'/></outlineentry>
+<outlineentry label='Open by Assignment' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='OpenAssignnment'/></outlineentry>
+<outlineentry label='Open by Due Date' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='ActiveDueDate'/></outlineentry>
+<outlineentry label='Team Announcements' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='Announcements'/></outlineentry>
+<outlineentry label='TeamRoom Setup &amp; Participants' type='namedelementlink'
+ hide='notes web' displayimage='false'><namedelementlink type='view' name='TeamOverview'/></outlineentry>
+<outlineentry label='TeamStatus' type='namedelementlink' hide='notes web'
+ displayimage='false'><namedelementlink type='view' name='StatusLookup'/></outlineentry>
+<outlineentry type='namedelementlink' hide='notes web' displayimage='false'><namedelementlink
+ type='view' name='SubteamInactiveLookup'/></outlineentry>
+<outlineentry type='otherviews' displayimage='false'/>
+<outlineentry type='otherprivateviews' hide='web' displayimage='false'/>
+<outlineentry type='otherfolders' displayimage='false'/>
+<outlineentry type='otherprivatefolders' hide='web' displayimage='false'/></outline>
+

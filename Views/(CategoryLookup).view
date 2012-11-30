@@ -1,0 +1,57 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<view name='(CategoryLookup) ' alias='CategoryLookup' xmlns='http://www.lotus.com/dxl'
+ version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='false'
+ publicaccess='false' designerversion='6' language='en' unreadmarks='standard'
+ onopengoto='lastopened' onrefresh='displayindicator' headers='beveled' opencollapsed='false'
+ showresponsehierarchy='true' showmargin='true' shrinkrows='true' extendlastcolumn='false'
+ showhierarchies='false' unreadcolor='maroon' rowlinecount='4' headerlinecount='1'
+ rowspacing='1.25' bgcolor='white' altrowcolor='#efefef' totalscolor='blue'
+ headerbgcolor='white' boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
+ allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
+ uniquekeys='false'>
+<noteinfo noteid='2f6' unid='90BC81D30F22B1648525659400632ACE' sequence='14'>
+<created><datetime>19980122T130310,22-05</datetime></created>
+<modified><datetime>20121129T094704,40+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103848,64-04</datetime></revised>
+<lastaccessed><datetime>20121129T094704,40+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094704,40+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
+ event='selection'><formula>SELECT form = "MainTopic" &amp; Categories != ""</formula></code>
+<actionbar borderstyle='none' bordercolor='black'>
+<actionbuttonstyle bgcolor='silver'/>
+<action title='Categori_ze' showinmenu='false' showinbar='false' hide='web'
+ systemcommand='categorize'/>
+<action title='_Edit Document' showinbar='false' hide='web' systemcommand='edit'/>
+<action title='Send Docu_ment' showinmenu='false' showinbar='false' hide='web'
+ systemcommand='send'/>
+<action title='_Forward' showinbar='false' hide='web' systemcommand='forward'/>
+<action title='Forward as Bookmark' showinbar='false' hide='web'><code event='click'><formula
+>@Command([Compose]; @MailDbName; "Bookmark")</formula></code></action>
+<action title='_Move to Folder...' showinbar='false' hide='web' systemcommand='movetofolder'/>
+<action title='_Remove from Folder...' showinmenu='false' showinbar='false'
+ hide='web' systemcommand='removefromfolder'/>
+<action title='New Document' icon='124' showinmenu='false' hide='web'><code
+ event='click'><formula>@PostedCommand([Compose];"MainTopic")</formula></code></action>
+<action title='Response' icon='131' showinmenu='false' hide='web'><code event='click'><formula
+>@PostedCommand([Compose];"Response")</formula></code></action>
+<action title='New Event' icon='8'><code event='click'><formula>@Command([Compose]; "Event")</formula></code><code
+ event='hidewhen'><formula>!@Contains(@UserRoles;"[TeamFacilitator]")</formula></code></action>
+<action title='New Team Member' icon='43'><code event='click'><formula>@Command([Compose]; "ParticipantProfile")</formula></code><code
+ event='hidewhen'><formula>!@Contains(@UserRoles;"[TeamFacilitator]")</formula></code></action>
+<action title='New Subteam' icon='31'><code event='click'><formula>@Command([Compose]; "Subteam")</formula></code><code
+ event='hidewhen'><formula>!@Contains(@UserRoles;"[TeamFacilitator]")</formula></code></action></actionbar>
+<column sort='ascending' resort='ascending' resort2='ascending' resort2column='1'
+ hidedetailrows='false' itemname='Categories' width='15.3750' resizable='true'
+ separatemultiplevalues='true' sortnoaccent='true' sortnocase='true' showaslinks='false'><font
+ size='9pt' color='teal'/><columnheader title=' '><font size='9pt'/></columnheader></column>
+<column sort='descending' resort='ascending' hidedetailrows='false' listseparator='comma'
+ itemname='$106' width='5.5000' resizable='true' separatemultiplevalues='false'
+ sortnoaccent='true' sortnocase='true' showaslinks='false' formatdatatype='datetime'><font
+ size='9pt' color='gray'/><columnheader title='Date'><font size='9pt'/></columnheader><datetimeformat
+ legacy='true' show='date' date='yearmonthday' time='hourminute' zone='never'/><numberformat
+ legacy='true' format='general' varying='true' digits='1' punctuated='false'
+ parens='false' percent='false' bytes='false'/><code event='value'><formula
+>@If(!@IsResponseDoc;@Created;"")</formula></code></column></view>
+

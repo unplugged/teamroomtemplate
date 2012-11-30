@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE outline SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<outline name='SubscriptionFormOutline' alias='SubscriptionFormOutline' xmlns='http://www.lotus.com/dxl'
+ version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3 v4strict'
+ publicaccess='false' designerversion='6' language='en'>
+<noteinfo noteid='252' unid='CD25297AEAA7F48A8525669100628AF4' sequence='11'>
+<created><datetime dst='true'>19981002T135621,00-04</datetime></created>
+<modified><datetime>20121129T094703,80+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103847,10-04</datetime></revised>
+<lastaccessed><datetime>20121129T094703,80+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094703,80+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<outlineentry label='Form' alias='Form' type='action'><code event='value'><formula
+>FIELD $Table1:= "form";
+@Command([RefreshHideFormulas])</formula></code></outlineentry>
+<outlineentry label='Info' alias='Info' type='action'><code event='value'><formula
+>FIELD $Table1:= "info";
+@Command([RefreshHideFormulas])</formula></code></outlineentry></outline>
+

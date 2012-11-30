@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="filter" maintenanceversion="3.0" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="2a6" sequence="42" unid="FBCB1E9373E39DDB8525664A004B6079">
+<created><datetime dst="true">19980723T094318,97-04</datetime></created>
+<modified><datetime>20121129T094704,02+00</datetime></modified>
+<revised><datetime dst="true">20090617T103848,24-04</datetime></revised>
+<lastaccessed><datetime>20121129T094704,02+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094704,02+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<item name="$LANGUAGE" sign="true"><text>en</text></item>
+<item name="$TITLE" sign="true"><text>wStringResource</text></item>
+<item name="$Flags"><text>s34Q</text></item>
+<item name="$PublicAccess" sign="true"><text>1</text></item>
+
+</note>

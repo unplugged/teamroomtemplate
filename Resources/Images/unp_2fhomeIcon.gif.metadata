@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><imageresource designerversion="8.5.3" imagename="homeIcon.gif" maintenanceversion="3.0" name="unp/homeIcon.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1216" sequence="1" unid="2621C16C1D4483DD80257AC500373F9C">
+<created><datetime>20121129T100327,64+00</datetime></created>
+<modified><datetime>20121129T100330,72+00</datetime></modified>
+<revised><datetime>20121129T100330,71+00</datetime></revised>
+<lastaccessed><datetime>20121129T100330,72+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T100330,72+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name="$FileModDT" sign="true"><datetime dst="true">20121006T153344,00-04</datetime></item>
+</imageresource>

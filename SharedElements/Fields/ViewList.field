@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE sharedfield SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<sharedfield name='ViewList' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
+ language='en'>
+<noteinfo noteid='12a' unid='310ADF9B233B04FE8525663A0061F158' sequence='20'>
+<created><datetime dst='true'>19980707T134947,76-04</datetime></created>
+<modified><datetime>20121129T094702,90+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103847,30-04</datetime></revised>
+<lastaccessed><datetime>20121129T094702,90+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094702,90+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><field
+ type='text' kind='computedfordisplay' name='ViewList'><code event='defaultvalue'><formula
+>REM {variables to translate};
+GoBack := "Go Back";
+AllView := "Index of All Documents";
+MissionView :=  "TeamRoom Overview";
+ActiveView := "By Date";
+Help := "Help";
+REM {end variables to translate};
+
+DB := @ReplaceSubstring(@ReplaceSubstring(@Subset(@DbName; -1);" ";"+");"\\";"/");
+"[&lt;hr&gt;&lt;b&gt;&lt;a href=/" + DB + "/" + "($All)?OpenView&gt;" +  AllView +  "&lt;/a&gt;&lt;/b&gt;&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp" +
+"&lt;b&gt;&lt;a href=/" + db + "/TeamOverview?OpenView&gt;"+ MissionView +"&lt;/a&gt;&lt;/b&gt;&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp" +
+"&lt;b&gt;&lt;a href=/" + db + "/ActiveDate?OpenView&gt;"+ ActiveView  +"&lt;/a&gt;&lt;/b&gt;&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp" +
+"&lt;b&gt;&lt;a href=\"javascript: onClick=history.back()\"&gt;" +  GoBack + "&lt;/a&gt;&lt;/b&gt;&amp;nbsp&amp;nbsp&amp;nbsp&amp;nbsp"</formula></code></field></sharedfield>
+

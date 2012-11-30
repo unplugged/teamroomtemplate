@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE agent SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<agent name='(EditInterestProfile)' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' publicaccess='false'
+ designerversion='6' language='en' comment='Used in Leader/Facilitator Options hotspot'>
+<noteinfo noteid='296' unid='DEAA94CB912B4DA78525667D0049864E' sequence='12'>
+<created><datetime dst='true'>19980912T092305,10-04</datetime></created>
+<modified><datetime>20121129T094703,96+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103847,26-04</datetime></revised>
+<lastaccessed><datetime>20121129T094703,96+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094703,96+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<designchange><datetime dst='true'>20090617T103847,09-04</datetime></designchange>
+<trigger type='agentlist'/>
+<documentset type='runonce'/><code event='options'><lotusscript>Option Public
+Use "DiscussionRoutines"
+Option Declare
+
+</lotusscript></code><code event='initialize'><lotusscript>Sub Initialize
+	Dim session As New notessession	
+	Dim uiwork As New notesuiworkspace
+	Dim uidoc As notesuidocument
+	Dim DbProfile As NotesDocument
+	Dim authorView As notesview
+	Dim authorDoc As notesdocument
+	Dim dbpath As String
+	Dim key As Variant
+	Dim getunid As Variant
+	
+	Set db = session.currentdatabase
+	Set DbProfile = db.GetProfileDocument( "TempVars")
+	key = dbProfile.ProfileKey
+	dbpath = getdbpath
+	
+	Set authorView = db.getview("LookupInterestProfiles")
+	Call authorView.refresh
+	Set authorDoc = authorView.getdocumentbykey(key(0)) 
+	
+	If authorDoc Is Nothing  Then
+		Set uidoc=uiwork.ComposeDocument(, , "Interest Profile") 
+	Elseif Not authorDoc Is Nothing Then
+		Set uidoc=uiwork.EditDocument(True,authorDoc, False)
+	End If
+	
+	dbProfile.ProfileKey =  ""
+	
+End Sub</lotusscript></code>
+<rundata processeddocs='0' exitcode='0'>
+<agentmodified><datetime dst='true'>20011016T111423,50-04</datetime></agentmodified></rundata></agent>
+

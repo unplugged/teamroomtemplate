@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE sharedcolumn SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<sharedcolumn name='UnpCategories' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='8.5.3'>
+<noteinfo noteid='12de' unid='0ABCEF01BC2D9EBD80257AC50037C9DC' sequence='5'>
+<created><datetime>20121129T100921,56+00</datetime></created>
+<modified><datetime>20121130T083922,97+00</datetime></modified>
+<revised><datetime>20121130T083922,96+00</datetime></revised>
+<lastaccessed><datetime>20121130T083922,97+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T100921,60+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<column hidedetailrows='false' itemname='$1' width='34.3750' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><font
+ size='9pt'/><columnheader title='Categories'><font size='9pt'/></columnheader><code
+ event='value'><formula>months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : "Oct" : "Nov" : "Dec";
+"Created: " + (@Text(@Day(@Created)) + " " + @Subset(@Subset(months; @Month(@Created)); -1) + " " + @Text(@Year(@Created))) + @If(Categories != ""; " in: " + @Implode(Categories; ", "); "")</formula></code></column>
+<item name='$SourceSeqTime'><datetime dst='true'>20120416T120657,48+01</datetime></item>
+<item name='$SourceSequence'><text>00000001</text></item>
+<item name='$SourceURL'><textlist><text>Notes:///802579E2002F769F//B82279484E82F7A0802579E2003D0FD3</text><text
+>Notes:///802579E2002F769F:802579E2002F769F:99F1C0D6//5E6</text></textlist></item>
+<item name='$ClassName'><text>View</text></item>
+<item name='$SourceDbPath'><text>CN=Dev852/O=IdeaJam!!unplugged\Teamroom.nsf</text></item>
+<item name='$CacheDocVersion'><number>1</number></item></sharedcolumn>
+

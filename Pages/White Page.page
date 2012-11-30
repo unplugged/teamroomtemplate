@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE page SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<page name='White Page' alias='White Page' xmlns='http://www.lotus.com/dxl'
+ version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' publicaccess='false'
+ designerversion='6' language='en' noinitialfocus='true' nofocusonf6='true'>
+<noteinfo noteid='3fa' unid='D584B4C536379B5C052569AB00416812' sequence='9'>
+<created><datetime>20001204T065424,82-05</datetime></created>
+<modified><datetime>20121129T094705,70+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103849,88-04</datetime></revised>
+<lastaccessed><datetime>20121129T094705,70+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094705,70+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<body><richtext>
+<pardef id='1'/>
+<par def='1'/></richtext></body>
+<item name='$$ScriptName' summary='false' sign='true'><text>Untitled</text></item></page>
+

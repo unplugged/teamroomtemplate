@@ -1,0 +1,9 @@
+.xspTextComputedField{
+	white-space: normal !important;
+}
+
+@media screen and (min-width: 1001px) {
+	.pullleft {
+		margin-left: -40% !important;
+	}
+}

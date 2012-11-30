@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<view name='(LookupInterestProfiles)' alias='LookupInterestProfiles' xmlns='http://www.lotus.com/dxl'
+ version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='false'
+ publicaccess='false' designerversion='6' language='en' unreadmarks='standard'
+ onopengoto='lastopened' onrefresh='displayindicator' headers='beveled' opencollapsed='false'
+ showresponsehierarchy='false' showmargin='true' shrinkrows='true' extendlastcolumn='false'
+ showhierarchies='false' unreadcolor='maroon' rowlinecount='2' headerlinecount='1'
+ rowspacing='1' bgcolor='white' altrowcolor='#efefef' totalscolor='blue' headerbgcolor='white'
+ boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
+ allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
+ uniquekeys='false'>
+<noteinfo noteid='2fe' unid='9D4C10A4277F90788525667D00498EB7' sequence='12'>
+<created><datetime dst='true'>19980912T092326,63-04</datetime></created>
+<modified><datetime>20121129T094704,44+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103848,68-04</datetime></revised>
+<lastaccessed><datetime>20121129T094704,44+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094704,44+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
+ event='selection'><formula>SELECT form = "Interest Profile"</formula></code>
+<actionbar borderstyle='none' bordercolor='black'>
+<actionbuttonstyle bgcolor='silver'/>
+<action title='Categori_ze' showinbar='false' systemcommand='categorize'/>
+<action title='_Edit Document' showinbar='false' systemcommand='edit'/>
+<action title='Send Docu_ment' showinmenu='false' showinbar='false' systemcommand='send'/>
+<action title='_Forward' showinbar='false' systemcommand='forward'/>
+<action title='Forward as Bookmark' showinbar='false'><code event='click'><formula
+>@Command([Compose]; @MailDbName; "Bookmark")</formula></code></action>
+<action title='_Move to Folder...' showinbar='false' systemcommand='movetofolder'/>
+<action title='_Remove from Folder...' showinbar='false' systemcommand='removefromfolder'/></actionbar>
+<column sort='ascending' hidedetailrows='false' itemname='$49' width='22'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><font size='9pt' color='white'/><columnheader><font size='9pt'/></columnheader><code
+ event='value'><formula>REM {For web lookups, we must replace the forward slash in hierarchical names with a non-reserved character};
+AbbrName := @Name([Abbreviate]; FullPersonName);
+rplSLName := @ReplaceSubstring(Abbrname; "/"; "__");
+rplspName := @ReplaceSubstring(rplSLName;" ";"_");
+rplspName</formula></code></column>
+<column hidedetailrows='false' itemname='$32' width='27.2500' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><font
+ size='9pt' color='white'/><columnheader><font size='9pt'/></columnheader><code
+ event='value'><formula>@Text(@DocumentUniqueID)</formula></code></column></view>
+

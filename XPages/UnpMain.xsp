@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xp:this.resources>
+		<xp:script src="/unpAccordionLarge.js" clientSide="true"></xp:script>
+		<xp:styleSheet href="/custom.css"></xp:styleSheet>
+		<xp:styleSheet href="/unplugged.css"></xp:styleSheet>
+	</xp:this.resources>
+	<xc:unpHeader search="database" viewsButton="true"
+		title="Teamroom" searchPage="UnpSearch.xsp">
+	</xc:unpHeader>
+	<xc:unpViewsList>
+		<xc:this.menuItem>
+			<xc:menuItem label="By Date" page="/UnpDate.xsp"
+				ajaxtargetid="content" ajaxloadid="contentwrapper">
+			</xc:menuItem>
+			<xc:menuItem label="By Type" page="/UnpType.xsp"
+				ajaxtargetid="content" ajaxloadid="contentwrapper">
+			</xc:menuItem>
+			<xc:menuItem label="By Category"
+				page="/UnpCategory.xsp" ajaxtargetid="content"
+				ajaxloadid="contentwrapper">
+			</xc:menuItem>
+			<xc:menuItem label="By Due Date" page="/UnpDueDate.xsp"
+				ajaxtargetid="content" ajaxloadid="contentwrapper">
+			</xc:menuItem>
+			<xc:menuItem label="By Reviewer" page="/UnpReviewer.xsp"
+				ajaxtargetid="content" ajaxloadid="contentwrapper">
+			</xc:menuItem>
+			<xc:menuItem label="My Documents" page="/UnpMyDocuments.xsp"
+				ajaxtargetid="content" ajaxloadid="contentwrapper">
+			</xc:menuItem>
+			<xc:menuItem label="Teamroom Details" ajaxtargetid="content"
+				ajaxloadid="contentwrapper">
+				<xc:this.page><![CDATA[#{javascript:var missionView:NotesView = database.getView("MissionLookup");
+var missionDoc:NotesDocument = missionView.getDocumentByKey("Mission")
+var unid = "";
+try{
+	unid = missionDoc.getUniversalID();
+}catch(e){
+}
+return "/UnpDetails.xsp?action=openDocument&documentId=" + unid}]]></xc:this.page>
+			</xc:menuItem>
+		</xc:this.menuItem>
+	</xc:unpViewsList>
+	<div id="content">
+		<xc:unpScrollableArea>
+			<xp:this.facets>
+				<xc:unpFlatView insetData="true" detailColumn="Categories"
+					summaryColumn="Topic" title="By Date"
+					viewName="(UnpDocumentsByDate)" xpageDoc="Document.xsp"
+					xp:key="facet_1" numberofrows="20" refreshmethod="pull">
+				</xc:unpFlatView>
+			</xp:this.facets>
+		</xc:unpScrollableArea>
+	</div>
+	<xc:unpFooter newDocTarget="DocumentEdit.xsp"></xc:unpFooter>
+</xp:view>

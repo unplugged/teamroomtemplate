@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><imageresource alias="TRMainDocHeader.gif" comment="Used in main doc form" imagename="TRmaindocheader.gif" language="en" maintenanceversion="3.0" name="TRMainDocHeader.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="3b6" sequence="14" unid="AF6C973EC0B3A16A852566DC003F2BAF">
+<created><datetime>19981216T062959,51-05</datetime></created>
+<modified><datetime>20121129T094705,36+00</datetime></modified>
+<revised><datetime dst="true">20090617T103848,62-04</datetime></revised>
+<lastaccessed><datetime>20121129T094705,36+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094705,36+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+
+<item name="$MimeType" sign="true"><text>image/gif</text></item>
+<item name="$FileModDT" sign="true"><datetime>20001211T100436,00-05</datetime></item></imageresource>

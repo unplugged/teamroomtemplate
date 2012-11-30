@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE agent SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<agent name='AutoFileAgent' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' publicaccess='false'
+ designerversion='7' language='en' comment='Enable/Disable this agent through the TeamRoom Setup'
+ activatable='false' enabled='false'>
+<noteinfo noteid='1fa' unid='5A54D59F014E11258525658A00722082' sequence='123'>
+<created><datetime>19980112T154634,26-05</datetime></created>
+<modified><datetime>20121129T094703,56+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103847,96-04</datetime></revised>
+<lastaccessed><datetime>20121129T094703,56+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094703,56+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<designchange><datetime dst='true'>20090617T103847,31-04</datetime></designchange>
+<trigger type='scheduled'>
+<schedule type='daily' runlocation='any'>
+<starttime><datetime>T010000,00</datetime></starttime></schedule></trigger>
+<documentset type='all'/><code event='action'>
+<simpleaction action='runformula'><formula>REM {This agent files those documents whose filed-by-date is equal or older than today};
+REM {variables to translate};
+Filedtxt := "This document was filed on: ";
+REM {End variables to translate};
+
+REM {Check to see if Open documents can be filed};
+view := "MissionLookup";
+Key := "Mission";
+FileOpenDocs := @DbLookup("" : "NoCache"; ""; View; Key; "FileOpenDocs");
+
+FilingDate := FileByDate;
+CanBeFiled := @If(FileOpenDocs = "1"; "y"; Current_Status = "1"; "y"; "n");
+SELECT !@IsAvailable(DateFiled) &amp; filingdate != "" &amp; CanBeFiled = "y" &amp; @Date(@Today) &gt;= @Date(FilingDate) &amp; form = "MainTopic";
+REM {Don't file this if there's a due date and the status is still open};
+@If(DueDate != "" &amp; Current_Status = "0" &amp; FileOpenDocs = "0"; @Return(""); "");
+FIELD Status := "0";
+FIELD DateFiled := @Now;
+date := DateFiled;
+FIELD ViewDateFiled := @If(date = ""; ""; Date);</formula></simpleaction></code>
+<rundata processeddocs='0' exitcode='0'>
+<agentmodified><datetime dst='true'>20040518T081903,30-04</datetime></agentmodified></rundata></agent>
+

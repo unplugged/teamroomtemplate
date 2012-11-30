@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xc:unpScrollableArea>
+		<xp:this.facets>
+			<xc:unpFormEditor showbuttons="true" closexpagename="UnpMain.xsp"
+				viewxpagename="Response.xsp" formname="Response" title="Response"
+				xp:key="facet_1">
+				<xp:this.facets>
+					<xp:panel xp:key="facet_1">
+						<xp:label value="Topic" id="subjectlabel" for="subject"></xp:label>
+						<xp:inputText id="subject" value="#{document1.Subject}"
+							styleClass="required">
+						</xp:inputText>
+						<xp:label value="Body" id="bodylabel" for="body">
+						</xp:label>
+						<xp:inputTextarea id="body" styleClass="richtextfield"
+							value="#{document1.Body}">
+						</xp:inputTextarea>
+						<xp:inputText id="from"
+							value="#{document1.From}" style="display: none;"
+							defaultValue="#{javascript:@UserName()}">
+						</xp:inputText>
+						<xp:inputText id="altfrom"
+							value="#{document1.AltFrom}" style="display: none;"
+							defaultValue="#{javascript:@UserName()}">
+						</xp:inputText>
+					</xp:panel>
+				</xp:this.facets>
+			</xc:unpFormEditor>
+		</xp:this.facets>
+	</xc:unpScrollableArea>
+
+</xp:view>

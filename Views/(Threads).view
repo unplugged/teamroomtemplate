@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<view name='(Threads)' xmlns='http://www.lotus.com/dxl' version='8.5' maintenanceversion='3.0'
+ replicaid='80257AC50035BEE2' showinmenu='false' publicaccess='false' designerversion='6'
+ language='en' unreadmarks='standard' onopengoto='lastopened' onrefresh='displayindicator'
+ headers='beveled' opencollapsed='false' showresponsehierarchy='false' showmargin='true'
+ shrinkrows='true' extendlastcolumn='false' showhierarchies='false' unreadcolor='red'
+ rowlinecount='2' headerlinecount='1' rowspacing='1' bgcolor='white' altrowcolor='#ffffc2'
+ totalscolor='blue' headerbgcolor='white' boldunreadrows='false' evaluateactions='false'
+ allownewdocuments='false' allowcustomizations='true' hidemarginborder='false'
+ marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
+<noteinfo noteid='32a' unid='FFF05DD13D1CAED38525648E005195EF' sequence='15'>
+<created><datetime dst='true'>19970505T105107,99-04</datetime></created>
+<modified><datetime>20121129T094704,66+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103848,92-04</datetime></revised>
+<lastaccessed><datetime>20121129T094704,66+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094704,66+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
+ event='selection'><formula>SELECT @All</formula></code>
+<actionbar borderstyle='none' bordercolor='black'>
+<actionbuttonstyle bgcolor='silver'/>
+<action title='Categori_ze' showinmenu='false' showinbar='false' systemcommand='categorize'/>
+<action title='_Edit Document' showinbar='false' systemcommand='edit'/>
+<action title='Send Docu_ment' showinmenu='false' showinbar='false' systemcommand='send'/>
+<action title='_Forward' showinbar='false' systemcommand='forward'/>
+<action title='_Move to Folder...' showinbar='false' systemcommand='movetofolder'/>
+<action title='_Remove from Folder...' showinbar='false' systemcommand='removefromfolder'/></actionbar>
+<column sort='ascending' hidedetailrows='false' itemname='$155' width='23.7500'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><font size='9pt'/><columnheader title='ID'><font size='9pt'/></columnheader><code
+ event='value'><formula>@Text(MainID)</formula></code></column>
+<column hidedetailrows='false' itemname='$157' width='63' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><font
+ size='9pt'/><columnheader><font size='9pt'/></columnheader><code event='value'><formula
+> threadindent + "[&lt;a href=\"" + @Text(@DocumentUniqueID) + "?OpenDocument\"&gt;] " +  Subject +" ("+@Name([Abbreviate];from)+") "+ "[&lt;/a&gt; &lt;!--" + @Text(@DocumentUniqueID)+ "--&gt;]"</formula></code></column>
+<column sort='ascending' hidedetailrows='false' itemname='ThreadSort' width='32.7500'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><font size='9pt'/><columnheader><font size='9pt'/></columnheader></column></view>
+

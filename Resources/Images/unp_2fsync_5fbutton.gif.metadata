@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?><imageresource designerversion="8.5.3" imagename="sync_button.gif" maintenanceversion="3.0" name="unp/sync_button.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1262" sequence="1" unid="29E781844BEF4A2380257AC500373FAF">
+<created><datetime>20121129T100327,83+00</datetime></created>
+<modified><datetime>20121129T100331,10+00</datetime></modified>
+<revised><datetime>20121129T100331,09+00</datetime></revised>
+<lastaccessed><datetime>20121129T100331,10+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T100331,10+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name="$FileModDT" sign="true"><datetime dst="true">20121006T125525,00-04</datetime></item>
+</imageresource>

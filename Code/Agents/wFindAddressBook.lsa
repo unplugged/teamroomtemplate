@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE agent SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<agent name='(wFindAddressBook)' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' runaswebuser='true'
+ publicaccess='true' designerversion='6' language='en'>
+<noteinfo noteid='41e' unid='7D0440F22031076B85256A8C0044CC4E' sequence='9'>
+<created><datetime dst='true'>20010717T083127,50-04</datetime></created>
+<modified><datetime>20121129T094705,86+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103850,04-04</datetime></revised>
+<lastaccessed><datetime>20121129T094705,86+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094705,86+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<designchange><datetime dst='true'>20090617T103848,78-04</datetime></designchange>
+<trigger type='agentlist'/>
+<documentset type='runonce'/><code event='options'><lotusscript>Option Public
+Use "AddrBook"
+
+
+</lotusscript></code><code event='initialize'><lotusscript>Sub Initialize
+	Call FindAddressBook
+End Sub</lotusscript></code>
+<rundata processeddocs='0' exitcode='0'>
+<agentmodified><datetime dst='true'>20011016T111255,94-04</datetime></agentmodified></rundata></agent>
+

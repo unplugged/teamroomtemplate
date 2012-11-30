@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+	<xc:unpScrollableArea>
+		<xp:this.facets>
+			<xc:unpFormViewer showbuttons="true" closexpagename="UnpMain.xsp"
+				editxpagename="DocumentEdit.xsp" formname="MainTopic" title="Document"
+				xp:key="facet_1" newresponsexpagename="ResponseEdit.xsp">
+				<xp:this.facets>
+					<xp:panel xp:key="facet_1">
+						<xp:label value="Topic" id="subjectlabel" for="subject">
+						</xp:label>
+						<xp:text id="subject" value="#{document1.Subject}"></xp:text>
+						<xp:label value="Document Type" id="doctypelabel" for="doctype">
+						</xp:label>
+						<xp:text id="doctype" value="#{document1.DocType}"></xp:text>
+						<xp:div>
+							<xp:this.rendered><![CDATA[#{javascript:document1.getItemValueString("DocType") == "Action Item"}]]></xp:this.rendered>
+							<xp:label value="Priority" id="aiprioritylabel" for="aipriority">
+							</xp:label>
+							<xp:text id="aipriority" value="#{document1.AIPriority}"></xp:text>
+						</xp:div>
+						<xp:label value="Categories" id="categorieslabel" for="categories">
+						</xp:label>
+						<xp:text id="categories" value="#{document1.Categories}">
+						</xp:text>
+						<xp:label value="Associated Subteam(s)" id="subteaminterestlabel"
+							for="subteaminterest">
+						</xp:label>
+						<xp:text id="subteaminterest" value="#{document1.SubTeamInterest}">
+						</xp:text>
+						<xp:div>
+							<xp:this.rendered><![CDATA[#{javascript:document1.getItemValueString("DocType") != "Meeting"}]]></xp:this.rendered>
+							<xp:label id="duedatelabel" for="duedate">
+								<xp:this.value><![CDATA[#{javascript:if (document1.getItemValueString("DocType") == "Action Item"){
+	return "Due Date";
+}else{
+	return "Review By Date";
+}}]]></xp:this.value>
+							</xp:label>
+							<xp:text id="duedate" value="#{document1.DueDate}">
+							</xp:text>
+						</xp:div>
+						<xp:div>
+							<xp:this.rendered><![CDATA[#{javascript:document1.getItemValueString("DocType") == "Meeting"}]]></xp:this.rendered>
+							<xp:label for="mtgdate" value="Date">
+							</xp:label>
+							<xp:text id="mtgdate" value="#{document1.MtgDate}">
+							</xp:text>
+							<xp:label for="mtgtime" value="Time"></xp:label>
+							<xp:text id="mtgtime" value="#{document1.MtgTime}">
+							</xp:text>
+							<xp:label for="duration" value="Duration (mins)"></xp:label>
+							<xp:text id="duration" value="#{document1.Duration}">
+								<xp:this.converter>
+									<xp:convertNumber type="number" integerOnly="true">
+									</xp:convertNumber>
+								</xp:this.converter>
+							</xp:text>
+							<xp:label for="mtglocation" value="Location"></xp:label>
+							<xp:text id="mtglocation" value="#{document1.MtgLocation}">
+							</xp:text>
+						</xp:div>
+						<xp:label for="PriNameSelection" value="Names"></xp:label>
+						<xp:text id="PriNameSelection" value="#{document1.PriNameSelection}">
+						</xp:text>
+						<xp:label for="SubTeam1" value="Teams"></xp:label>
+						<xp:text id="SubTeam1" value="#{document1.SubTeam1}">
+						</xp:text>
+						<xp:label value="Body" id="bodylabel" for="body">
+						</xp:label>
+						<xp:text id="body" value="#{document1.Body}" escape="false">
+						</xp:text>
+						<xp:div styleClass="pullleft">
+							 <xc:unpFlatView insetData="false" numberofrows="999"
+                                refreshmethod="none"
+                                categoryfilter="#{javascript:document1.getDocument().getUniversalID()}"
+                                detailColumn="Author" summaryColumn="Topic" title="Responses"
+                                viewName="(UnpDocumentsResponses)" xpageDoc="Response.xsp">
+                            </xc:unpFlatView>
+						</xp:div>
+					</xp:panel>
+				</xp:this.facets>
+			</xc:unpFormViewer>
+		</xp:this.facets>
+	</xc:unpScrollableArea>
+</xp:view>

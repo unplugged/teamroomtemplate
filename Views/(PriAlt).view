@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<view name='(PriAlt)' alias='PriAlt' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='true' publicaccess='false'
+ designerversion='6' language='en' unreadmarks='none' onopengoto='lastopened'
+ onrefresh='displayindicator' headers='beveled' opencollapsed='false' showresponsehierarchy='true'
+ showmargin='true' shrinkrows='false' extendlastcolumn='true' showhierarchies='false'
+ unreadcolor='black' rowlinecount='1' headerlinecount='1' rowspacing='1' bgcolor='white'
+ totalscolor='blue' headerbgcolor='white' boldunreadrows='false' evaluateactions='false'
+ allownewdocuments='false' allowcustomizations='true' hidemarginborder='false'
+ marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
+<noteinfo noteid='42e' unid='6B0DE4E5DC85E90485256ACD005B6C61' sequence='7'>
+<created><datetime dst='true'>20010920T123835,21-04</datetime></created>
+<modified><datetime>20121129T094705,94+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103850,16-04</datetime></revised>
+<lastaccessed><datetime>20121129T105656,97+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094705,94+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
+ event='selection'><formula>SELECT (form = "ParticipantProfile" | form = "Participant Profile") &amp; status = "1"</formula></code>
+<actionbar bordercolor='black'>
+<actionbuttonstyle bgcolor='silver'/>
+<action title='Categori_ze' showinmenu='false' showinbar='false' systemcommand='categorize'/>
+<action title='_Edit Document' showinbar='false' systemcommand='edit'/>
+<action title='Send Docu_ment' showinbar='false' systemcommand='send'/>
+<action title='_Forward' showinbar='false' systemcommand='forward'/>
+<action title='_Move To Folder...' showinbar='false' systemcommand='movetofolder'/>
+<action title='_Remove From Folder' showinbar='false' systemcommand='removefromfolder'/></actionbar>
+<column sort='ascending' hidedetailrows='false' itemname='$3' width='39.3750'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><font size='9pt'/><columnheader title='Pri/Alt'><font
+ size='9pt'/></columnheader><code event='value'><formula>altName := @If(getAlternateName = ""; @Name([Abbreviate]; Who); @Name([Abbreviate]; getAlternateName));
+
+altName + "|" + @Name([Abbreviate]; Who)</formula></code></column>
+<column hidedetailrows='false' itemname='$4' width='35.6250' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><font
+ size='9pt'/><columnheader title='DocUNID'><font size='9pt'/></columnheader><code
+ event='value'><formula>@Text(@DocumentUniqueID)</formula></code></column>
+<column sort='ascending' hidedetailrows='false' itemname='$5' width='39.3750'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><font size='9pt'/><columnheader title='Alt/Pri'><font
+ size='9pt'/></columnheader><code event='value'><formula>altName := @If(getAlternateName = ""; @Name([Abbreviate]; Who); @Name([Abbreviate]; getAlternateName));
+
+@Name([Abbreviate]; Who) + "|" + altName</formula></code></column></view>
+

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="filter" maintenanceversion="3.0" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="406" sequence="19" unid="B327F5E89203C5E085256A530053963F">
+<created><datetime dst="true">20010521T111259,51-04</datetime></created>
+<modified><datetime>20121129T094705,76+00</datetime></modified>
+<revised><datetime dst="true">20090617T103849,94-04</datetime></revised>
+<lastaccessed><datetime>20121129T094705,76+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094705,76+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<item name="$LANGUAGE" sign="true"><text>en</text></item>
+<item name="$TITLE" sign="true"><text>WebDateValidation</text></item>
+<item name="$Flags"><text>h534Q</text></item>
+<item name="$PublicAccess" sign="true"><text>1</text></item>
+</note>

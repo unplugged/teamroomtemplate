@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE agent SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<agent name='My Newsletter Profile' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' publicaccess='false'
+ designerversion='7' language='en'>
+<noteinfo noteid='472' unid='6686E7591778B34585256E9100480F51' sequence='6'>
+<created><datetime dst='true'>20040511T090705,13-04</datetime></created>
+<modified><datetime>20121129T094706,18+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103850,20-04</datetime></revised>
+<lastaccessed><datetime>20121129T094706,18+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094706,18+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<designchange><datetime dst='true'>20090617T103848,82-04</datetime></designchange>
+<trigger type='actionsmenu'/>
+<documentset type='runonce'/><code event='action'>
+<simpleaction action='runformula'><formula>abrName := @Name([Abbreviate]; @UserName);
+abrNameReplSpace := @ReplaceSubstring(abrName; " "; "_");
+UName := @ReplaceSubstring(abrNameReplSpace; "/"; "__");
+@SetProfileField("TempVars"; "ProfileKey"; UName);
+@Command([ToolsRunMacro]; "(EditInterestProfile)");SELECT
+ @All</formula></simpleaction></code>
+<rundata processeddocs='0' exitcode='0'>
+<agentmodified><datetime dst='true'>20040511T090635,81-04</datetime></agentmodified>
+<agentrun><datetime dst='true'>20040511T090644,46-04</datetime></agentrun>
+<runlog>Started running agent 'My Newsletter Profile' on 05/11/2004 09:06:44 AM
+1 document(s) were modified by formula
+Done running agent 'My Newsletter Profile' on 05/11/2004 09:06:44 AM
+</runlog></rundata></agent>
+

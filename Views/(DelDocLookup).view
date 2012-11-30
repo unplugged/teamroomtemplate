@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<view name='(DelDocLookup)' alias='DelDocLookup' xmlns='http://www.lotus.com/dxl'
+ version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='false'
+ publicaccess='false' designerversion='6' language='en' unreadmarks='none'
+ onopengoto='lastopened' onrefresh='displayindicator' headers='beveled' opencollapsed='false'
+ showresponsehierarchy='true' showmargin='true' shrinkrows='false' extendlastcolumn='false'
+ showhierarchies='false' unreadcolor='black' rowlinecount='1' headerlinecount='1'
+ rowspacing='1' bgcolor='white' totalscolor='gray' headerbgcolor='white' boldunreadrows='false'
+ evaluateactions='false' allownewdocuments='false' allowcustomizations='true'
+ hidemarginborder='false' marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
+<noteinfo noteid='2e2' unid='694CD821860770638525664C00455CE8' sequence='10'>
+<created><datetime dst='true'>19980725T083737,68-04</datetime></created>
+<modified><datetime>20121129T094704,30+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103848,52-04</datetime></revised>
+<lastaccessed><datetime>20121129T094704,30+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094704,30+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
+ event='selection'><formula>SELECT form = "ParticipantProfile" | form = "Subteam" | form = "Event"</formula></code>
+<column sort='ascending' hidedetailrows='false' itemname='$0' width='15.2500'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><columnheader title='item'><font size='9pt'/></columnheader><code
+ event='value'><formula>Ev := EventSummary + " (" + @Text(EventDate) + ")";
+@If(form = "ParticipantProfile"; @Name([Abbreviate]; Who); form = "Subteam"; @Name([Abbreviate] ; STName); Ev)</formula></code></column></view>
+

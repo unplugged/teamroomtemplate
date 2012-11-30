@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE sharedfield SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<sharedfield name='DefaultDocType4' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
+ language='en'>
+<noteinfo noteid='122' unid='230AC730A340CE86852565D1004B7D06' sequence='8'>
+<created><datetime>19980324T084432,06-05</datetime></created>
+<modified><datetime>20121129T094702,86+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103847,08-04</datetime></revised>
+<lastaccessed><datetime>20121129T094702,86+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094702,86+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><field
+ type='text' kind='computedwhencomposed' name='DefaultDocType4'><code event='defaultvalue'><formula
+>REM {Value should be translated};
+"Reference"</formula></code></field></sharedfield>
+

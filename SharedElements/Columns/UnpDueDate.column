@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE sharedcolumn SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<sharedcolumn name='UnpDueDate' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='8.5.3'>
+<noteinfo noteid='12ea' unid='2E8AEED8440FC8EB80257AC50037C9DF' sequence='4'>
+<created><datetime>20121129T100921,59+00</datetime></created>
+<modified><datetime>20121130T084000,96+00</datetime></modified>
+<revised><datetime>20121130T084000,95+00</datetime></revised>
+<lastaccessed><datetime>20121130T084000,96+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T100921,66+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<column sort='ascending' hidedetailrows='false' itemname='$0' width='10' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><font
+ size='9pt'/><columnheader title='DueDate'><font size='9pt'/></columnheader><code
+ event='value'><formula>date:=@If(MtgDate != ""; mtgDate; DueDate = ""; ""; @Date(DueDate));
+@If(@IsError(date); @Created; date);
+months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : "Oct" : "Nov" : "Dec";
+@If(@Text(date)=""; ""; "Due: " + @Text(@Day(date)) + " " + @Subset(@Subset(months; @Month(@Created)); -1) + " " + @Text(@Year(date)))  + @If(Categories != ""; " in: " + @Implode(Categories; ", "); "")</formula></code></column></sharedcolumn>
+

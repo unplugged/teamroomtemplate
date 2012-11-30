@@ -1,0 +1,209 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE agent SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<agent name='SendReminder' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' runaswebuser='true'
+ publicaccess='false' designerversion='6' language='en' comment='Enable/Disable this agent through the TeamRoom Setup'
+ activatable='false' enabled='false'>
+<noteinfo noteid='1ce' unid='477CA2A0A4792F528525664A004E94A3' sequence='54'>
+<created><datetime dst='true'>19980723T101818,59-04</datetime></created>
+<modified><datetime>20121129T094703,46+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103847,86-04</datetime></revised>
+<lastaccessed><datetime>20121129T094703,46+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094703,46+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<designchange><datetime dst='true'>20090617T103847,28-04</datetime></designchange>
+<trigger type='scheduled'>
+<schedule type='daily' runlocation='any'>
+<starttime><datetime>T010000,00</datetime></starttime></schedule></trigger>
+<documentset type='all'/><code event='options'><lotusscript>Option Public
+Option Declare
+Use "DiscussionRoutines"
+Use "wStringResource"
+
+</lotusscript></code><code event='declarations'><lotusscript>'SendReminder: 
+
+'SendReminder: 
+
+
+Dim Doc As NotesDocument
+Dim RevNotDone As Variant
+Dim People As Variant
+
+
+
+
+
+
+
+
+</lotusscript></code><code event='initialize'><lotusscript>Sub Initialize
+	Dim s As New NotesSession
+	Dim view As NotesView
+	Dim DueDate As Variant
+	Dim nowDate As Variant
+	Dim x As Variant    
+	Dim Item As NotesItem
+	
+	InstantiateObjects
+	
+	Dim count As Integer
+	count = 0
+	
+	Set View=Db.GetView("ActiveDueDate")
+	Set Doc= View.GetFirstDocument
+	nowDate = Evaluate("@today")
+	
+	While Not(Doc Is Nothing)
+		DueDate = doc.getitemvalue("DueDate")
+		RevNotDone = doc.getitemvalue("ReviewedByNotDone")
+		People = doc.getitemvalue("People")
+		
+		If DueDate(0) = "" Or People(0) = "" Then 
+			Goto GetNext
+		Elseif DueDate(0) &gt; nowDate(0) Then
+			Goto GetNext
+		Else
+			count = count + 1
+			Call sendTheReminder
+		End If
+		
+GetNext:
+		Set Doc=View.GetNextdocument(Doc)
+		
+	Wend
+	
+	Call ReminderDoneMsg
+	
+	
+	
+End Sub
+</lotusscript></code><code event='sendTheReminder'><lotusscript>Sub sendTheReminder
+	Dim mailnote As notesdocument
+	Dim DDrtitem As notesrichtextitem
+	Dim RVrtitem As notesrichtextitem
+	Dim reminderSendTo As Variant
+	Dim docSubject As Variant
+	Dim docTRName As Variant
+	Dim peopleView As notesview 
+	Dim partdoc As notesdocument
+	Dim partAddress As Variant
+	Dim WebAddress As Variant
+	Dim getWebAddress As String
+	
+	Set mailnote = New NotesDocument(db)
+	
+	getWebAddress = getURL
+	
+	mailnote.Subject = "TeamRoom item is overdue."
+	docSubject = doc.getitemvalue("Subject")
+	docTRName = doc.getitemvalue("TeamRoomName")
+	
+	dbpath = getdbpath
+	Dim wMail As String
+	
+	If getWebAddress = "" Then
+		wMail = getString(58)
+	Else
+		wMail = "  http://" + getWebAddress +"/"+ dbpath+"/$All/"+ doc.universalid
+	End If	
+	
+	
+'if RevNotDone is blank, then it's an Action Item, and we use the People field instead
+	If RevNotDone(0) = "" Then
+		Forall x In people
+	'get address 
+			Set peopleView = db.getview("PeopleLookup")
+			Set partdoc = peopleview.getdocumentbykey(x)
+			
+			If partdoc Is Nothing Then
+				Goto ignoreMissingTeamMember
+			End If
+			
+			partAddress = partdoc.getitemvalue("email")		
+			If partAddress(0) &lt;&gt; "" Then
+				x = partAddress(0)
+			End If
+			
+			Set DDrtitem = New NotesRichTextItem(mailnote, "Body")
+			mailnote.SendTo = x
+			Call DDrtitem.AppendDocLink(doc, "")
+			Call DDrtitem.AddTab(1)
+			Call DDrtitem.AppendText(wMail)
+			Call DDrtitem.AddNewline(2)
+			Call DDrtitem.AppendText(getString(5))              'body of message
+			Call DDrtitem.AddNewline(2)
+			Call DDrtitem.AppendText(getString(54) + DocTRName(0) )   'teamroom name
+			Call DDrtitem.AddNewline(2)
+			Call DDrtitem.AppendText(getString(57) + DocSubject(0))      'subject
+			mailNote.Form = "Memo"
+			On Error Resume Next
+			Call mailNote.Send (False)
+ignoreMissingTeamMember:
+		End Forall
+	Else 
+		Forall x In RevNotDone
+			Set peopleView = db.getview("PeopleLookup")
+			Set partdoc = peopleview.getdocumentbykey(x)
+			If partdoc Is Nothing Then
+				Goto ignoreMissingTeamMember2
+			End If	
+			
+			partAddress = partdoc.getitemvalue("email")
+			
+			If partAddress(0) &lt;&gt; "" Then
+				x = partAddress(0)
+			End If
+			
+			Set DDrtitem = New NotesRichTextItem(mailnote, "Body")
+			mailnote.SendTo = x
+			Call DDrtitem.AppendDocLink(doc, "")
+			Call DDrtitem.AddTab(1)
+			Call DDrtitem.AppendText(wMail)
+			Call DDrtitem.AddNewline(2)
+			Call DDrtitem.AppendText(getString(5))              'body of message
+			Call DDrtitem.AddNewline(2)
+			Call DDrtitem.AppendText(getString(54) + DocTRName(0))   'teamroom name
+			Call DDrtitem.AddNewline(2)
+			Call DDrtitem.AppendText(getString(57) + DocSubject(0))      'subject
+			Call DDrtitem.AddNewline(2)
+			On Error Resume Next
+			Call mailNote.Send (False)	
+			
+ignoreMissingTeamMember2:
+		End Forall
+	End If
+	
+End Sub
+</lotusscript></code><code event='ReminderDoneMsg'><lotusscript>Sub ReminderDoneMsg
+	Dim clientType As Variant
+	Dim dbProfile As notesdocument
+	Dim dbpath As Variant
+	Dim AllView As String
+	Dim MissionView As String
+	Dim ActiveView As String
+	
+	Set dbprofile = db.getprofiledocument("TempVars")
+	clientType = dbProfile.ClientType
+	If clientType(0) = "" Then
+		Exit Sub
+	End If
+	
+	dbpath = getdbpath
+	
+	AllView =   "&lt;hr&gt;&lt;font size=2&gt;&lt;a href=/" + dbpath + "/($All)?OpenView&gt;"+ getString(50) +"&lt;/a&gt;&amp;nbsp&amp;nbsp&amp;nbsp"
+	MissionView = "&lt;a href=/" + dbpath + "/TeamOverview?OpenView&gt;"+GetString(51)+"&lt;/a&gt;&amp;nbsp&amp;nbsp&amp;nbsp"
+	ActiveView = "&lt;a href=/" + dbpath + "/ActiveDate?OpenView&gt;"+GetString(52)+"&lt;/a&gt;&lt;hr&gt;"
+	
+	If clientType(0) = "Notes" Then
+		Messagebox getString(53), 64, getString(48)
+	Elseif clientType(0) = "Web" Then
+		Print "&lt;b&gt;&lt;font size=4&gt;" + getString(53) + "&lt;/b&gt;"  +  AllView + MissionView + ActiveView
+	End If
+	
+	dbprofile.ClientType = ""
+	Call dbprofile.save(False,False,True)
+End Sub</lotusscript></code>
+<rundata processeddocs='0' exitcode='0'>
+<agentmodified><datetime dst='true'>20020906T104457,74-04</datetime></agentmodified></rundata></agent>
+

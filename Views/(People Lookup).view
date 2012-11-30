@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<view name='(People Lookup)' alias='PeopleLookup' xmlns='http://www.lotus.com/dxl'
+ version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='true'
+ publicaccess='false' designerversion='6' language='en' unreadmarks='none'
+ onopengoto='lastopened' onrefresh='displayindicator' headers='beveled' opencollapsed='false'
+ showresponsehierarchy='true' showmargin='true' shrinkrows='false' extendlastcolumn='true'
+ showhierarchies='false' unreadcolor='black' rowlinecount='1' headerlinecount='1'
+ rowspacing='1' bgcolor='white' totalscolor='blue' headerbgcolor='white' boldunreadrows='false'
+ evaluateactions='false' allownewdocuments='false' allowcustomizations='true'
+ hidemarginborder='false' marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
+<noteinfo noteid='2d6' unid='4031AEFB8A14015285256583004C3EAD' sequence='25'>
+<created><datetime>19980105T085247,81-05</datetime></created>
+<modified><datetime>20121129T094704,24+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103848,46-04</datetime></revised>
+<lastaccessed><datetime>20121129T105657,00+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094704,24+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
+ event='selection'><formula>SELECT (form = "ParticipantProfile" | form = "Participant Profile") &amp; status = "1"</formula></code>
+<actionbar bordercolor='black'>
+<actionbuttonstyle bgcolor='silver'/>
+<action title='Categori_ze' showinmenu='false' showinbar='false' systemcommand='categorize'/>
+<action title='_Edit Document' showinbar='false' systemcommand='edit'/>
+<action title='Send Docu_ment' showinbar='false' systemcommand='send'/>
+<action title='_Forward' showinbar='false' systemcommand='forward'/>
+<action title='_Move To Folder...' showinbar='false' systemcommand='movetofolder'/>
+<action title='_Remove From Folder' showinbar='false' systemcommand='removefromfolder'/></actionbar>
+<column sort='ascending' hidedetailrows='false' itemname='$3' width='14.8750'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><font size='9pt'/><columnheader title='FullName'><font
+ size='9pt'/></columnheader><code event='value'><formula>@Name([Abbreviate]; Who)</formula></code></column>
+<column hidedetailrows='false' itemname='Email' width='22' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><font
+ size='9pt'/><columnheader title='Email Address'><font size='9pt'/></columnheader></column>
+<column hidedetailrows='false' itemname='$5' width='16' resizable='true' separatemultiplevalues='false'
+ sortnoaccent='false' sortnocase='true' showaslinks='false'><font size='9pt'/><columnheader
+ title='AlternateName'><font size='9pt'/></columnheader><code event='value'><formula
+>@If(getAlternateName = ""; @Name([Abbreviate]; Who); @Name([Abbreviate]; getAlternateName))</formula></code></column>
+<column hidedetailrows='false' itemname='getLanguage' width='10' resizable='true'
+ separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><font
+ size='9pt'/><columnheader title='AltLang'><font size='9pt'/></columnheader></column>
+<column hidedetailrows='false' itemname='$4' width='10' resizable='true' separatemultiplevalues='false'
+ sortnoaccent='false' sortnocase='true' showaslinks='false'><font size='9pt'/><columnheader
+ title='DocUNID'><font size='9pt'/></columnheader><code event='value'><formula
+>@Text(@DocumentUniqueID)</formula></code></column></view>
+

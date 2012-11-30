@@ -1,0 +1,109 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE agent SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<agent name='Add Topic To Newsletter Profile' xmlns='http://www.lotus.com/dxl'
+ version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3'
+ publicaccess='false' designerversion='6' language='en'>
+<noteinfo noteid='1be' unid='4343E80188C369EE852561E7006707F8' sequence='70'>
+<created><datetime dst='true'>19950626T144522,48-04</datetime></created>
+<modified><datetime>20121129T094703,42+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103847,82-04</datetime></revised>
+<lastaccessed><datetime>20121129T094703,42+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094703,42+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<designchange><datetime dst='true'>20090617T103847,26-04</datetime></designchange>
+<trigger type='actionsmenu'/>
+<documentset type='selected'/><code event='options'><lotusscript>Option Public
+Use "wStringResource"
+
+</lotusscript></code><code event='declarations'><lotusscript>Dim w As NotesUIWorkspace
+Dim s As NotesSession 
+Dim db As NotesDatabase
+Dim view As NotesView
+Dim note As NotesDocument
+Dim profile As NotesDocument
+Dim collection As NotesDocumentCollection
+Dim item As NotesItem
+Dim Position As Integer
+
+</lotusscript></code><code event='initialize'><lotusscript>Sub Initialize
+	
+	Set s = New NotesSession
+	Set db = s.CurrentDatabase
+	Set collection = db.UnprocessedDocuments
+	If collection.Count &gt; 1 Then
+		Messagebox getString(18), 64, getString(19)
+		Exit Sub
+	Elseif collection.Count &lt; 1 Then
+		Messagebox getString(49), 64
+		Exit Sub
+	End If
+	Set note = collection.GetFirstDocument
+	
+	If  note.form(0) = "Interest Profile" Then
+		Messagebox getString(20), 64
+		Exit Sub
+	End If
+	
+'Get the subject field and remove any commas (Notes thinks they are multivalue separaters)
+	Subject = note.Subject
+	ThreadSubject = Subject(0)    
+	Do    
+		Position = Instr(1, ThreadSubject, ",")
+		If Position &gt; 0 Then Mid(ThreadSubject, Position, 1) = "."
+	Loop Until Position = 0    
+	
+	ThreadId = note.ThreadId
+	
+	If ThreadId(0) = "" Then
+		Messagebox getString(6), 0 + 64, getString(23)
+		Exit Sub
+	End If
+	
+	Set view = db.GetView("($Profiles)")
+	Call view.Refresh
+	
+	key = "Interest Profile" &amp; s.CommonUserName
+	Set profile = view.GetDocumentByKey(key,False)
+	If profile Is Nothing Then
+		Set profile = New NotesDocument(db)
+		profile.Form = "Interest Profile"
+		Set item = New NotesItem(profile, "PersonName", s.CommonUserName, AUTHORS)
+		profile.Subject = "Interest Profile for " &amp; s.CommonUserName
+		profile.FullPersonName = Evaluate("@username")
+		profile.ProtectFromArchive = 1
+		profile.ProfileThreads = ThreadId(0)
+		If ThreadSubject = "" Then
+			profile.profilethreadsubjects = GetString(25)+Cstr(threadid(0))
+		Else
+			profile.ProfileThreadSubjects = ThreadSubject
+		End If
+		ReaderNames = Evaluate("(@UserName : ""LocalDomainServers"")")
+		Set item = New NotesItem(profile, "Readers", ReaderNames, READERS)
+		item.IsSummary = True
+	Else
+		Set item = profile.GetFirstItem("ProfileThreads")
+		If item.Contains(ThreadId(0)) Then
+			Messagebox getString(7), 64, getString(19)
+			Exit Sub
+		Else
+			item.AppendToTextList(ThreadId(0))
+			Set item = profile.GetFirstItem("ProfileThreadSubjects")
+			If ThreadSubject = "" Then
+				item.AppendToTextList(GetString(25)+Cstr(threadid(0)))
+			Elseif profile.ProfileThreadSubjects(0) = "" Then
+				Call profile.replaceitemvalue("ProfileThreadSubjects", Subject)
+			Else
+				item.AppendToTextList(ThreadSubject) 
+			End If
+		End If
+	End If
+	
+	profile.Save True, True
+	
+	Messagebox getString(8), 0 + 64, getString(19)
+	
+End Sub</lotusscript></code>
+<rundata processeddocs='0' exitcode='0'>
+<agentmodified><datetime dst='true'>20011016T111452,78-04</datetime></agentmodified></rundata></agent>
+

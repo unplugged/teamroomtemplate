@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
+
+	<xc:unpScrollableArea>
+		<xp:this.facets>
+			<xc:unpSearchResults insetData="true" xp:key="facet_1"
+				detailColumn="Categories" summaryColumn="Topic" viewName="(UnpDocumentsSearch)"
+				xpageDoc="Document.xsp">
+				<xc:this.title><![CDATA[#{javascript:"Search results for \"" + context.getUrlParameter("query") + "\""}]]></xc:this.title>
+				<xc:this.viewsearch><![CDATA[#{javascript:context.getUrlParameter("query")}]]></xc:this.viewsearch>
+			</xc:unpSearchResults>
+		</xp:this.facets>
+
+	</xc:unpScrollableArea>
+</xp:view>

@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE sharedfield SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<sharedfield name='AltNameDisplay' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
+ language='en'>
+<noteinfo noteid='426' unid='185109314E49466285256AB60064EA3B' sequence='5'>
+<created><datetime dst='true'>20010828T142215,63-04</datetime></created>
+<modified><datetime>20121129T094705,90+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103850,08-04</datetime></revised>
+<lastaccessed><datetime>20121129T094705,90+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094705,90+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><field
+ type='text' kind='computedfordisplay' name='AltNameDisplay'><code event='defaultvalue'><formula
+>REM {"1" means alternate names can be displayed};
+
+fNamePref := @LocationGetInfo([NamePreference]);
+@If(fNamePref != "1"; @Return("0"); @True);
+
+lUserLang := @LanguagePreference([AlternateName]);
+lAllLang := @Trim(@Unique(@DbColumn("" : "nocache"; ""; "PeopleLookup"; 4)));
+@If(@IsMember(lAllLang; lUserLang); "1"; "0")</formula></code></field>
+<item name='$HTMLCode' sign='true'>
+<rawitemdata type='1'>
+</rawitemdata></item></sharedfield>
+

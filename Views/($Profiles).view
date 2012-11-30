@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<view name='($Profiles)' alias='($Profiles)' xmlns='http://www.lotus.com/dxl'
+ version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='false'
+ publicaccess='false' designerversion='6' language='en' unreadmarks='standard'
+ onopengoto='lastopened' onrefresh='displayindicator' headers='beveled' opencollapsed='false'
+ showresponsehierarchy='false' showmargin='true' shrinkrows='false' extendlastcolumn='false'
+ showhierarchies='false' unreadcolor='maroon' rowlinecount='1' headerlinecount='1'
+ rowspacing='1' bgcolor='white' altrowcolor='#efefef' totalscolor='blue' headerbgcolor='white'
+ boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
+ allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
+ uniquekeys='false' indexrefresh='automatic' initialbuildrestricted='false'
+ noemptycategories='false'>
+<noteinfo noteid='2e6' unid='69705E197802B432852566430044D122' sequence='10'>
+<created><datetime dst='true'>19980716T083139,86-04</datetime></created>
+<modified><datetime>20121129T094704,32+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103848,54-04</datetime></revised>
+<lastaccessed><datetime>20121129T094704,32+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094704,32+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
+ event='selection'><formula>SELECT @Contains(Form; "Profile") | form = "MapCategories"</formula></code>
+<actionbar bordercolor='black'>
+<actionbuttonstyle bgcolor='silver'/>
+<action title='_Forward' icon='7' showinmenu='false' showinbar='false' hide='previewedit'
+ systemcommand='forward'/>
+<action title='Categori_ze' showinmenu='false' showinbar='false' hide='previewedit'
+ systemcommand='categorize'/>
+<action title='Edit Message' showinmenu='false' showinbar='false' hide='previewedit'
+ systemcommand='edit'/>
+<action title='Send' showinmenu='false' showinbar='false' hide='previewedit'
+ systemcommand='send'/>
+<action title='_Move to Folder...' showinmenu='false' showinbar='false' systemcommand='movetofolder'/>
+<action title='_Remove from Folder...' showinmenu='false' showinbar='false'
+ systemcommand='removefromfolder'/></actionbar>
+<column sort='ascending' hidedetailrows='false' itemname='$70' width='30'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><font size='9pt' color='gray'/><columnheader title='Type'><font
+ size='9pt'/></columnheader><datetimeformat legacy='true' show='date' date='yearmonthday'
+ time='hourminutesecond' zone='never'/><code event='value'><formula>Form + PersonName</formula></code></column>
+<column sort='ascending' hidedetailrows='false' itemname='PersonName' width='20'
+ resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
+ showaslinks='false'><font size='9pt' color='navy'/><columnheader title='Person Name'><font
+ size='9pt'/></columnheader></column></view>
+

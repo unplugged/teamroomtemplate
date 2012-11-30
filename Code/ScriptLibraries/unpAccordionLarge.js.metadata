@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="filter" maintenanceversion="3.0" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="1276" sequence="1" unid="48B2E1ED3069B79880257AC5003747BB">
+<created><datetime>20121129T100348,43+00</datetime></created>
+<modified><datetime>20121129T100348,48+00</datetime></modified>
+<revised><datetime>20121129T100348,47+00</datetime></revised>
+<lastaccessed><datetime>20121129T100348,48+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T100348,48+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name="$TITLE" sign="true"><text>unpAccordionLarge.js</text></item>
+<item name="$Flags"><text>h534Q</text></item>
+<item name="$PublicAccess" sign="true"><text>1</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+</note>

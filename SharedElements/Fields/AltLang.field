@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE sharedfield SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<sharedfield name='AltLang' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
+ language='en'>
+<noteinfo noteid='14e' unid='B652F5C1F51CB58A85256842004BC469' sequence='7'>
+<created><datetime>19991209T084734,81-05</datetime></created>
+<modified><datetime>20121129T094703,08+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103847,48-04</datetime></revised>
+<lastaccessed><datetime>20121129T094703,08+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094703,08+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><field
+ type='text' kind='computedwhencomposed' name='AltLang'><code event='defaultvalue'><formula
+>ver := @TextToNumber(@Version);
+@If(ver &lt; 148; @Return(""); @UserNameLanguage(1))</formula></code></field></sharedfield>
+

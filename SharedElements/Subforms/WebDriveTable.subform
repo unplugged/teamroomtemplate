@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE subform SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
+<subform name='WebDriveTable' xmlns='http://www.lotus.com/dxl' version='8.5'
+ maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
+ language='en'>
+<noteinfo noteid='342' unid='1EFDFF4BC6160B25852566B00053B658' sequence='11'>
+<created><datetime>19981102T101421,68-05</datetime></created>
+<modified><datetime>20121129T094704,78+00</datetime></modified>
+<revised><datetime dst='true'>20090617T103849,02-04</datetime></revised>
+<lastaccessed><datetime>20121129T094704,78+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094704,78+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<body><richtext>
+<pardef id='1' hide='notes web'/>
+<par def='1'><run><font size='9pt' color='gray'/>This is for web use only.  In the Notes client, this field </run><run
+><font size='9pt' style='italic' color='gray'/>cannot</run><run><font size='9pt'
+ color='gray'/> be present on the form containing the field-driven table.  On the web, it </run><run
+><font size='9pt' style='italic' color='gray'/>must</run><run><font size='9pt'
+ color='gray'/> be present.</run></par>
+<pardef id='2' hide='read edit copy preview previewedit' tabs='L3in'/>
+<par def='2'><run><font size='9pt' color='gray'/></run><run><font size='9pt'
+ color='gray'/><field type='text' kind='editable' name='$MissionPage'><code
+ event='inputtranslation'><formula>@If(@IsDocBeingSaved; "Mission"; $MissionPage)</formula></code></field></run><run
+><font size='9pt' color='gray'/>	field driven table name</run></par></richtext></body>
+<item name='$$ScriptName' summary='false' sign='true'><text>WebDriveTable</text></item></subform>
+

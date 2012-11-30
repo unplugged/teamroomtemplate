@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom">
+	<div id="content">
+		<xc:unpScrollableArea>
+			<xp:this.facets>
+				<xc:unpFlatView insetData="true" detailColumn="DueDate"
+					summaryColumn="Topic" title="My Documents"
+					viewName="(UnpDocumentsByCreator)" xpageDoc="Document.xsp"
+					xp:key="facet_1" numberofrows="20" refreshmethod="pull"
+					categoryfilter="#{javascript:@UserName()}">
+				</xc:unpFlatView>
+			</xp:this.facets>
+		</xc:unpScrollableArea>
+	</div>
+</xp:view>

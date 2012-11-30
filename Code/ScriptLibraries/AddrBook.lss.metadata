@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><note class="filter" maintenanceversion="3.0" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="422" sequence="6" unid="F674840E758F086885256A8C004796ED">
+<created><datetime dst="true">20010717T090156,93-04</datetime></created>
+<modified><datetime>20121129T094705,88+00</datetime></modified>
+<revised><datetime dst="true">20090617T103850,06-04</datetime></revised>
+<lastaccessed><datetime>20121129T094705,88+00</datetime></lastaccessed>
+<addedtofile><datetime>20121129T094705,88+00</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<item name="$TITLE" sign="true"><text>AddrBook</text></item>
+<item name="$Flags"><text>s34Q</text></item>
+<item name="$PublicAccess" sign="true"><text>1</text></item>
+
+
+<item name="$LANGUAGE" sign="true"><text>en</text></item></note>
