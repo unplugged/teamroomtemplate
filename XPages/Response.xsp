@@ -8,7 +8,7 @@
 				<xp:this.facets>
 					<xp:panel xp:key="facet_1">
 						<ul class="buttons">
-							<xp:text tagName="li" styleClass="cancelButton" value="Parent...">
+							<xp:text tagName="li" styleClass="cancelButton" value="Parent..." style="width: auto">
 								<xp:this.attrs>
 									<xp:attr name="onclick">
 										<xp:this.value><![CDATA[#{javascript:"openDocument('Document.xsp?action=openDocument&documentId=" + document1.getDocument().getParentDocumentUNID() + "', 'content')"}]]></xp:this.value>

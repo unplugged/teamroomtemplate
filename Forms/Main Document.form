@@ -2,16 +2,16 @@
 <!DOCTYPE form SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
 <form name='Main Document' alias='Main Topic|Document|MainTopic' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' htmlallfields='true'
- publicaccess='false' designerversion='8.5' language='en' default='true'>
-<noteinfo noteid='336' unid='13EF366E45864EA08525663B0063C466' sequence='743'>
+ publicaccess='false' designerversion='8.5.3' language='en' default='true'>
+<noteinfo noteid='336' unid='13EF366E45864EA08525663B0063C466' sequence='744'>
 <created><datetime dst='true'>19980708T140943,42-04</datetime></created>
-<modified><datetime>20121129T094704,72+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,98-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,72+00</datetime></lastaccessed>
+<modified><datetime>20121130T155000,89+00</datetime></modified>
+<revised><datetime>20121130T155000,88+00</datetime></revised>
+<lastaccessed><datetime>20121130T155000,89+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,72+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <revisions><datetime dst='true'>20080414T085705,38-04</datetime></revisions>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <globals><code event='options'><lotusscript>Option Public
 Use "DiscussionRoutines"
 
@@ -329,9 +329,10 @@ GetLevel &lt; 4 | mp != "1"</formula></code></action></sharedactionref>
 @ClientType != "Notes" &amp; !@IsAvailable(form)</formula></code></action></sharedactionref>
 <sharedactionref id='40'>
 <action title='Mark Private' hide='preview read previewedit'><code event='click'><formula
->FIELD readers:=@Trim(@Unique(From : @UserName));
-@PostedCommand([RefreshHideFormulas]);@Command([ViewRefreshFields])</formula></code><code
- event='hidewhen'><formula>@Elements(readers)&gt;0</formula></code></action></sharedactionref>
+>REM {begin DNT};
+FIELD readers:=@Trim(@Unique(From : @UserName)) : "LocalDomainServers";
+@PostedCommand([RefreshHideFormulas]);@Command([ViewRefreshFields]);
+REM {End DNT};</formula></code><code event='hidewhen'><formula>@Elements(readers)&gt;0</formula></code></action></sharedactionref>
 <sharedactionref id='41'>
 <action title='Mark Public' hide='preview read previewedit'><code event='click'><formula
 >FIELD readers:=@DeleteField;
@@ -505,8 +506,8 @@ CurrentView := @GetProfileField("tempvars"; "viewtitle");
 <pardef id='3' leftmargin='1in' hide='read edit copy preview previewedit'/>
 <par def='3'><run><font size='9pt' color='gray'/>Hidden Fields </run><run
 ><font color='gray'/>-----------------------------</run></par>
-<table widthtype='fitmargins' refwidth='9.5938in'><tablecolumn width='36.9792%'/><tablecolumn
- width='63.0208%'/>
+<table widthtype='fitmargins' refwidth='11.9583in'><tablecolumn width='36.9757%'/><tablecolumn
+ width='63.0243%'/>
 <tablerow>
 <tablecell>
 <pardef id='4' leftmargin='1%' rightmargin='100%' hide='read edit copy preview previewedit'
@@ -753,7 +754,7 @@ Yg4BAIQAAAAAAAAAAAA=
 <pardef id='13' align='none' leftmargin='1in' tabs='L3.9375in L5in'/>
 <par def='13'><run><font size='8pt' color='gray'/></run></par>
 <table widthtype='fitmargins' cellbordercolor='#78b4bc' htmlid='maintbl' rightmargin='98%'
- refwidth='9.3715in'><tablecolumn width='1.7500in'/><tablecolumn width='100%'/>
+ refwidth='11.6882in'><tablecolumn width='1.7500in'/><tablecolumn width='100%'/>
 <tablerow>
 <tablecell rowspan='3' borderwidth='2px 1px 2px 2px' bgcolor='#e1eff1' htmlid='mt1'>
 <cellbackground repeat='once'><imageref name='TRMainDocHeader.gif|TRMainDocHeader.gif'/></cellbackground>
@@ -890,7 +891,7 @@ Lookup = "Mission"</formula></code></pardef>
 <par def='34'><run><font size='9pt'/>Basics</run></par></tablecell></tablerow></table>
 <par def='31'><run html='true'><font size='9pt' name='user-interface'/>&lt;br&gt;</run></par>
 <par def='32'><run><font size='9pt'/></run></par>
-<table widthtype='fitmargins' htmlid='MainDocTbl' leftmargin='0.1000in' refwidth='7.5215in'><tablecolumn
+<table widthtype='fitmargins' htmlid='MainDocTbl' leftmargin='0.1000in' refwidth='9.8382in'><tablecolumn
  width='1.3125in' sizetofit='true'/><tablecolumn width='100%'/>
 <tablerow>
 <tablecell borderwidth='0px' htmlid='T1'>
@@ -1326,6 +1327,8 @@ CTZ := @If(@Version &lt; @Text(172); @Return("xx"); @GetCurrentTimeZone);
 
 tmpStartDateTime:=@TimeMerge(@Date(@Year(MtgDate); @Month(MtgDate); @Day(MtgDate));
 @Time(@Hour(MtgTime); @Minute(MtgTime); @Second(MtgTime)); StartTimeZone);
+tmpStartDateTime:=@If(@IsError(tmpStartDateTime); @TimeMerge(@Date(@Year(MtgDate); @Month(MtgDate); @Day(MtgDate));
+@Time(@TextToNumber(@Left(MtgTime; ":")); @TextToNumber(@Right(MtgTime; ":")); 0); StartTimeZone); tmpStartDateTime);
 @If(@LowerCase(DocType) != @LowerCase(DefaultDocType3); ""; tmpStartDateTime)</formula></code></field></run><compositedata
  type='98' prevtype='65418' nexttype='222' afterparcount='8' containertype='65418'
  aftercontainercount='1' afterbegincount='3'>
@@ -1787,13 +1790,17 @@ Yg4BAIQAAAAAAAAAAAA=
 <par def='117'><run><font size='9pt'/><sharedfieldref name='ViewList'/></run></par>
 <pardef id='118' hide='read edit copy preview previewedit'/>
 <par def='118'/>
-<table widthtype='fitmargins' refwidth='9.5938in'><tablecolumn width='36.9792%'/><tablecolumn
- width='63.0208%'/>
+<table widthtype='fitmargins' refwidth='11.9583in'><tablecolumn width='36.9826%'/><tablecolumn
+ width='63.0174%'/>
 <tablerow>
 <tablecell>
-<par def='8'><run><font size='9pt' color='gray'/>Needed for "Add to Calendar" action</run></par></tablecell>
+<pardef id='119' leftmargin='1%' hide='read edit copy preview previewedit'
+ keepwithnext='true' keeptogether='true'/>
+<par def='119'><run><font size='9pt' color='gray'/>Needed for "Add to Calendar" action</run></par></tablecell>
 <tablecell>
-<par def='9'><run><font size='9pt' color='gray'/></run><run><font size='9pt'
+<pardef id='120' leftmargin='1%' hide='read edit copy preview previewedit'
+ keepwithnext='true' keeptogether='true'/>
+<par def='120'><run><font size='9pt' color='gray'/></run><run><font size='9pt'
  color='gray'/><field type='datetime' kind='computed' name='StartDateTime'
  htmlid='StartDateTime'><datetimeformat show='datetime' date='yearmonthday'
  showtodaywhenappropriate='true' time='hourminutesecond' zone='never'/><code
@@ -1815,9 +1822,9 @@ LCMtg := @LowerCase(DefaultDocType3);
 ><font size='9pt' color='gray'/></run></par></tablecell></tablerow>
 <tablerow>
 <tablecell>
-<par def='8'><run><font size='9pt' color='gray'/>people who haven't completed their review (Disc. and Ref. doc types).  Used by the "Send Reminder" agent.</run></par></tablecell>
+<par def='119'><run><font size='9pt' color='gray'/>people who haven't completed their review (Disc. and Ref. doc types).  Used by the "Send Reminder" agent.</run></par></tablecell>
 <tablecell>
-<par def='9'><run><font size='9pt'/></run><run><font size='9pt' color='gray'/><field
+<par def='120'><run><font size='9pt'/></run><run><font size='9pt' color='gray'/><field
  type='text' allowmultivalues='true' kind='computed' name='ReviewedByNotDone'
  listinputseparators='comma semicolon' listdisplayseparator='semicolon' htmlid='ReviewedByNotDone'><code
  event='defaultvalue'><formula>REM {LCdef2 and LCdef3 are Action Item and Meeting doc types};
@@ -1835,9 +1842,9 @@ Yg4BAIQAAAAAAAAAAAA=
 </compositedata><run><font size='9pt' color='gray'/></run></par></tablecell></tablerow>
 <tablerow>
 <tablecell>
-<par def='8'><run><font size='9pt' color='gray'/>People (other than the Author) who can edit this document</run></par></tablecell>
+<par def='119'><run><font size='9pt' color='gray'/>People (other than the Author) who can edit this document</run></par></tablecell>
 <tablecell>
-<par def='9'><run><font size='9pt'/></run><run><font size='9pt' color='gray'/><field
+<par def='120'><run><font size='9pt'/></run><run><font size='9pt' color='gray'/><field
  type='authors' allowmultivalues='true' kind='computed' name='Editors' listinputseparators='comma'
  listdisplayseparator='comma' htmlid='Editors'><code event='defaultvalue'><formula
 >lcMtg := @LowerCase(DefaultDocType3);
@@ -1851,13 +1858,13 @@ Current_Status = "0"; @Name([Canonicalize]; ReviewedByNotDone); "")</formula></c
 ><font size='9pt' color='gray'/></run></par></tablecell></tablerow>
 <tablerow>
 <tablecell>
-<pardef id='119' leftmargin='0.0104in' hide='notes web' tabs='L1.5000in' keepwithnext='true'
+<pardef id='121' leftmargin='0.0104in' hide='notes web' tabs='L1.5000in' keepwithnext='true'
  keeptogether='true'/>
-<par def='119'><run><font color='gray'/></run></par></tablecell>
+<par def='121'><run><font color='gray'/></run></par></tablecell>
 <tablecell>
-<pardef id='120' leftmargin='0.0104in' hide='notes web mobile' tabs='L1.5000in'
+<pardef id='122' leftmargin='0.0104in' hide='notes web mobile' tabs='L1.5000in'
  keepwithnext='true' keeptogether='true'/>
-<par def='120'><run><font size='9pt' color='gray'/></run><run><font size='9pt'
+<par def='122'><run><font size='9pt' color='gray'/></run><run><font size='9pt'
  color='gray'/><field type='timezone' usenotesstyle='false' height='0.2250in'
  width='1in' multiline='true' borderstyle='single' kind='computed' name='LocalTimeZone'><code
  event='defaultvalue'><formula>REM {disable time zone calculations if pre-Notes 6 client};
@@ -1942,5 +1949,5 @@ AAAAAAAAAAA=
 <item name='$$XMB_3'><text>67843E4301C6054E658E2C2D65E5AC9D</text></item>
 <item name='$SubForm_RepIDs' sign='true'><text>0000000000000000</text></item>
 <item name='$$ScriptName' summary='false' sign='true'><text>MainTopic</text></item>
-<item name='Duration' summary='false' sign='true'><number>0</number></item></form>
+<item name='Duration' summary='false'><number>0</number></item></form>
 

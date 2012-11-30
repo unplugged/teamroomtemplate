@@ -49,9 +49,9 @@ return out;}]]></xp:this.value>
 								</xp:selectItem>
 							</xp:comboBox>
 						</xp:div>
-						<xp:label value="Categories" id="categorieslabel" for="categories">
+						<xp:label value="Categories" id="categorieslabel" for="multi__categories">
 						</xp:label>
-						<xp:listBox id="categories" multiple="true"
+						<xp:listBox id="multi__categories" multiple="true"
 							value="#{document1.Categories}">
 							<xp:selectItem itemLabel=" " itemValue=""></xp:selectItem>
 							<xp:selectItems>
@@ -61,9 +61,9 @@ return out;}]]></xp:this.value>
 							</xp:selectItems>
 						</xp:listBox>
 						<xp:label value="Associated Subteam(s)" id="subteaminterestlabel"
-							for="subteaminterest">
+							for="multi__subteaminterest">
 						</xp:label>
-						<xp:listBox id="subteaminterest" multiple="true"
+						<xp:listBox id="multi__subteaminterest" multiple="true"
 							value="#{document1.SubTeamInterest}">
 							<xp:selectItem itemLabel=" " itemValue=""></xp:selectItem>
 							<xp:selectItems>
@@ -129,7 +129,7 @@ return out;}]]></xp:this.value>
 							</xp:inputText>
 						</xp:div>
 						<xp:label for="PriNameSelection" value="Names"></xp:label>
-						<xp:listBox id="PriNameSelection" multiple="true"
+						<xp:listBox id="multi__PriNameSelection" multiple="true"
 							value="#{document1.PriNameSelection}">
 							<xp:selectItem itemLabel=" " itemValue=""></xp:selectItem>
 							<xp:selectItems>
@@ -137,7 +137,7 @@ return out;}]]></xp:this.value>
 							</xp:selectItems>
 						</xp:listBox>
 						<xp:label for="SubTeam1" value="Teams"></xp:label>
-						<xp:listBox id="SubTeam1" multiple="true"
+						<xp:listBox id="multi__SubTeam1" multiple="true"
 							value="#{document1.SubTeam1}">
 							<xp:selectItem itemLabel=" " itemValue=""></xp:selectItem>
 							<xp:selectItems>

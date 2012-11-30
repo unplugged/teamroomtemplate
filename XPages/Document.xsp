@@ -47,7 +47,11 @@
 							<xp:text id="mtgdate" value="#{document1.MtgDate}">
 							</xp:text>
 							<xp:label for="mtgtime" value="Time"></xp:label>
-							<xp:text id="mtgtime" value="#{document1.MtgTime}">
+							<xp:text id="mtgtime"
+								value="#{document1.MtgTime}">
+								<xp:this.converter>
+									<xp:convertDateTime type="time"></xp:convertDateTime>
+								</xp:this.converter>
 							</xp:text>
 							<xp:label for="duration" value="Duration (mins)"></xp:label>
 							<xp:text id="duration" value="#{document1.Duration}">
