@@ -1,0 +1,8 @@
+<?xml version='1.0' ?>
+<designselection xmlns="www.teamstudio.com/unplugged">
+	<select name="unp*" notetype="imageresource" />
+	<select name="(Unp*" notetype="view" />
+	<select name="MissionLookup" notetype="view" />
+	<select name="SubteamLookup" notetype="view" />
+	<select name="PeopleLookup" notetype="view" />
+</designselection>

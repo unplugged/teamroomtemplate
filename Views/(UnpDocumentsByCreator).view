@@ -11,14 +11,13 @@
  boldunreadrows='false' evaluateactions='true' allownewdocuments='false' allowcustomizations='true'
  hidemarginborder='false' marginwidth='0px 0px 1px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='4ca' unid='768673F2EC56CCDF80257AC50036EFAA' sequence='17'>
+<noteinfo noteid='4ca' unid='768673F2EC56CCDF80257AC50036EFAA' sequence='24'>
 <created><datetime>20121129T100002,98+00</datetime></created>
-<modified><datetime>20121130T084026,33+00</datetime></modified>
-<revised><datetime>20121130T084026,32+00</datetime></revised>
-<lastaccessed><datetime>20121130T084026,33+00</datetime></lastaccessed>
+<modified><datetime>20121203T085524,81+00</datetime></modified>
+<revised><datetime>20121203T085524,80+00</datetime></revised>
+<lastaccessed><datetime>20121203T085524,81+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T100003,03+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby><code event='selection'><formula
 >LCDocType := @LowerCase(doctype);
 LCDisc := @LowerCase(DefaultDocType1);
 LCRef := @LowerCase(DefaultDocType4);
@@ -37,7 +36,7 @@ SELECT (form = "MainTopic" &amp; Status != "0")&amp; reviewer!=""</formula></cod
  resizable='true' separatemultiplevalues='true' sortnoaccent='false' sortnocase='true'
  showaslinks='false' categorized='true'><columnheader title='Cat'><font size='9pt'
  style='bold'/></columnheader></column><sharedcolumnref name='UnpDate'>
-<column sort='descending' hidedetailrows='false' listseparator='comma' itemname='$150'
+<column sort='descending' hidedetailrows='false' listseparator='comma' itemname='$159'
  width='12.6250' resizable='true' separatemultiplevalues='false' sortnoaccent='true'
  sortnocase='true' showaslinks='false' twisties='true' formatdatatype='datetime'><font
  size='9pt'/><columnheader title='DateCreated'><font size='9pt' name='multilingual'/></columnheader><datetimeformat
@@ -49,7 +48,7 @@ SELECT (form = "MainTopic" &amp; Status != "0")&amp; reviewer!=""</formula></cod
  percent='false' bytes='false' decimalsym='.' thousandssep=',' currencysymtype='custom'
  currencysym='$' usecustomsym='false'/><code event='value'><formula>@If(@IsResponseDoc; ""; @Created)</formula></code></column></sharedcolumnref><sharedcolumnref
  name='UnpDueDate'>
-<column sort='ascending' hidedetailrows='false' itemname='$152' width='10'
+<column sort='ascending' hidedetailrows='false' itemname='$157' width='10'
  resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
  showaslinks='false'><font size='9pt'/><columnheader title='DueDate'><font
  size='9pt'/></columnheader><code event='value'><formula>date:=@If(MtgDate != ""; mtgDate; DueDate = ""; ""; @Date(DueDate));
@@ -62,7 +61,7 @@ months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : 
  showaslinks='false'><font size='9pt'/><columnheader title='Type'><font size='9pt'
  name='multilingual'/></columnheader></column></sharedcolumnref><sharedcolumnref
  name='UnpTopic'>
-<column sort='ascending' hidedetailrows='false' listseparator='comma' itemname='$151'
+<column sort='ascending' hidedetailrows='false' listseparator='comma' itemname='$156'
  width='17.3750' resizable='true' separatemultiplevalues='false' sortnoaccent='true'
  sortnocase='true' showaslinks='true'><font size='9pt' color='teal'/><columnheader
  title='Topic'><font size='9pt' name='multilingual'/></columnheader><code
@@ -71,13 +70,13 @@ ExpiredTxt := "EXPIRED: ";
 subj := @If(!@IsAvailable(subject) | subject = ""; "Untitled"; subject);
 @If(readers != ""; PrivateTxt; ExpireDate != ""; ExpiredTxt; "") + subj</formula></code></column></sharedcolumnref><sharedcolumnref
  name='UnpCategories'>
-<column hidedetailrows='false' itemname='$155' width='34.3750' resizable='true'
+<column hidedetailrows='false' itemname='$160' width='34.3750' resizable='true'
  separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><font
  size='9pt'/><columnheader title='Categories'><font size='9pt'/></columnheader><code
  event='value'><formula>months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : "Oct" : "Nov" : "Dec";
 "Created: " + (@Text(@Day(@Created)) + " " + @Subset(@Subset(months; @Month(@Created)); -1) + " " + @Text(@Year(@Created))) + @If(Categories != ""; " in: " + @Implode(Categories; ", "); "")</formula></code></column></sharedcolumnref><sharedcolumnref
  name='UnpAuthor'>
-<column sort='ascending' hidedetailrows='false' itemname='$149' width='18'
+<column sort='ascending' hidedetailrows='false' itemname='$161' width='18'
  resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
  showaslinks='false'><font size='9pt'/><columnheader title='Author'><font
  size='9pt' name='multilingual'/></columnheader><datetimeformat show='datetime'
@@ -89,7 +88,7 @@ subj := @If(!@IsAvailable(subject) | subject = ""; "Untitled"; subject);
  bytes='false' decimalsym='.' thousandssep=',' currencysymtype='custom' currencysym='$'
  usecustomsym='false'/><code event='value'><formula>@Name([Abbreviate]; From)</formula></code></column></sharedcolumnref><sharedcolumnref
  name='UnpDateCreated'>
-<column hidedetailrows='false' itemname='$154' width='10' resizable='true'
+<column hidedetailrows='false' itemname='$158' width='10' resizable='true'
  separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><columnheader
  title='DateCreatedDisp'><font size='9pt' style='bold'/></columnheader><code
  event='value'><formula>months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : "Oct" : "Nov" : "Dec";

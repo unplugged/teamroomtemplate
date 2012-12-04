@@ -11,14 +11,13 @@
  boldunreadrows='false' evaluateactions='true' allownewdocuments='false' allowcustomizations='true'
  hidemarginborder='false' marginwidth='0px 0px 1px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='4d2' unid='80AB37D562F1CCF880257AC50036EFAC' sequence='23'>
+<noteinfo noteid='4d2' unid='80AB37D562F1CCF880257AC50036EFAC' sequence='25'>
 <created><datetime>20121129T100003,00+00</datetime></created>
-<modified><datetime>20121130T084010,33+00</datetime></modified>
-<revised><datetime>20121130T084010,32+00</datetime></revised>
-<lastaccessed><datetime>20121130T084010,33+00</datetime></lastaccessed>
+<modified><datetime>20121203T085524,35+00</datetime></modified>
+<revised><datetime>20121203T085524,34+00</datetime></revised>
+<lastaccessed><datetime>20121203T085524,35+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T100003,07+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby><code event='selection'><formula
 >SELECT (form = "MainTopic" &amp; Status != "0") &amp; @Text(@If(MtgDate != ""; mtgDate; DueDate = ""; ""; @Date(DueDate))) != ""</formula></code><code
  event='helprequest'><formula>REM {DNT};
 @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></code>
@@ -31,7 +30,7 @@
  showaslinks='false'><columnheader title='Sorting'><font size='9pt' style='bold'/></columnheader><code
  event='value'><formula>x:=@If(MtgDate != ""; mtgDate; DueDate = ""; ""; @Date(DueDate));
 @If(@IsError(x); ""; x)</formula></code></column><sharedcolumnref name='UnpTopic'>
-<column sort='ascending' hidedetailrows='false' listseparator='comma' itemname='$151'
+<column sort='ascending' hidedetailrows='false' listseparator='comma' itemname='$158'
  width='17.3750' resizable='true' separatemultiplevalues='false' sortnoaccent='true'
  sortnocase='true' showaslinks='true'><font size='9pt' color='teal'/><columnheader
  title='Topic'><font size='9pt' name='multilingual'/></columnheader><code
@@ -40,7 +39,7 @@ ExpiredTxt := "EXPIRED: ";
 subj := @If(!@IsAvailable(subject) | subject = ""; "Untitled"; subject);
 @If(readers != ""; PrivateTxt; ExpireDate != ""; ExpiredTxt; "") + subj</formula></code></column></sharedcolumnref><sharedcolumnref
  name='UnpDueDate'>
-<column sort='ascending' hidedetailrows='false' itemname='$152' width='10'
+<column sort='ascending' hidedetailrows='false' itemname='$159' width='10'
  resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
  showaslinks='false'><font size='9pt'/><columnheader title='DueDate'><font
  size='9pt'/></columnheader><code event='value'><formula>date:=@If(MtgDate != ""; mtgDate; DueDate = ""; ""; @Date(DueDate));

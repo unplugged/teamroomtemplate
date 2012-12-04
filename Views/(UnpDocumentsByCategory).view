@@ -11,14 +11,13 @@
  boldunreadrows='false' evaluateactions='true' allownewdocuments='false' allowcustomizations='true'
  hidemarginborder='false' marginwidth='0px 0px 1px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='4c6' unid='82098AED76A5814280257AC50036EFA9' sequence='11'>
+<noteinfo noteid='4c6' unid='82098AED76A5814280257AC50036EFA9' sequence='13'>
 <created><datetime>20121129T100002,97+00</datetime></created>
-<modified><datetime>20121130T084010,27+00</datetime></modified>
-<revised><datetime>20121130T084010,26+00</datetime></revised>
-<lastaccessed><datetime>20121130T084010,27+00</datetime></lastaccessed>
+<modified><datetime>20121203T085524,64+00</datetime></modified>
+<revised><datetime>20121203T085524,63+00</datetime></revised>
+<lastaccessed><datetime>20121203T085524,64+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T100003,01+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby><code event='selection'><formula
 >SELECT (form = "MainTopic" &amp; Status != "0")</formula></code><code event='helprequest'><formula
 >REM {DNT};
 @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></code>
@@ -31,7 +30,7 @@
  showaslinks='false' categorized='true'><columnheader title='Cat'><font size='9pt'
  style='bold'/></columnheader><code event='value'><formula>x:=Categories;
 @If(x=""; "(Unknown)"; x)</formula></code></column><sharedcolumnref name='UnpTopic'>
-<column sort='ascending' hidedetailrows='false' listseparator='comma' itemname='$151'
+<column sort='ascending' hidedetailrows='false' listseparator='comma' itemname='$157'
  width='17.3750' resizable='true' separatemultiplevalues='false' sortnoaccent='true'
  sortnocase='true' showaslinks='true'><font size='9pt' color='teal'/><columnheader
  title='Topic'><font size='9pt' name='multilingual'/></columnheader><code
@@ -40,7 +39,7 @@ ExpiredTxt := "EXPIRED: ";
 subj := @If(!@IsAvailable(subject) | subject = ""; "Untitled"; subject);
 @If(readers != ""; PrivateTxt; ExpireDate != ""; ExpiredTxt; "") + subj</formula></code></column></sharedcolumnref><sharedcolumnref
  name='UnpCategories'>
-<column hidedetailrows='false' itemname='$156' width='34.3750' resizable='true'
+<column hidedetailrows='false' itemname='$158' width='34.3750' resizable='true'
  separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><font
  size='9pt'/><columnheader title='Categories'><font size='9pt'/></columnheader><code
  event='value'><formula>months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : "Oct" : "Nov" : "Dec";
