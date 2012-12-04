@@ -3,15 +3,16 @@
 <agent name='(chatWIthAll)' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='notes v3' publicaccess='false'
  designerversion='6.5' language='en'>
-<noteinfo noteid='46a' unid='BD022DFBB350442D85256DE20056B65B' sequence='6'>
+<noteinfo noteid='46a' unid='BD022DFBB350442D85256DE20056B65B' sequence='7'>
 <created><datetime>20031118T104707,79-05</datetime></created>
-<modified><datetime>20121129T094706,16+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103850,18-04</datetime></revised>
-<lastaccessed><datetime>20121129T094706,16+00</datetime></lastaccessed>
+<modified><datetime>20121204T161409,72+00</datetime></modified>
+<revised><datetime>20121204T161409,71+00</datetime></revised>
+<lastaccessed><datetime>20121204T161409,72+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094706,16+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
-<designchange><datetime dst='true'>20090617T103848,81-04</datetime></designchange>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<designchange><datetime>20121204T161409,02+00</datetime></designchange>
 <trigger type='agentlist'/>
 <documentset type='runonce'/><code event='action'>
 <simpleaction action='runformula'><formula>AllTxt  := "-- Chat with all --";

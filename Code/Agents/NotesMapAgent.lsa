@@ -3,15 +3,16 @@
 <agent name='(NotesMapAgent)' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' publicaccess='false'
  designerversion='6' language='en'>
-<noteinfo noteid='29e' unid='E438D4926017004F852566100040A42D' sequence='15'>
+<noteinfo noteid='29e' unid='E438D4926017004F852566100040A42D' sequence='16'>
 <created><datetime dst='true'>19980526T074603,33-04</datetime></created>
-<modified><datetime>20121129T094703,98+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,20-04</datetime></revised>
-<lastaccessed><datetime>20121129T094703,98+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,12+00</datetime></modified>
+<revised><datetime>20121204T161410,11+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,12+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094703,98+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
-<designchange><datetime dst='true'>20090617T103847,53-04</datetime></designchange>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<designchange><datetime>20121204T161409,12+00</datetime></designchange>
 <trigger type='agentlist'/>
 <documentset type='runonce'/><code event='options'><lotusscript>Option Public
 Use "wStringResource"

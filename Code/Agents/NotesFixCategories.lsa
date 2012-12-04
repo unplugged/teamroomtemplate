@@ -3,15 +3,16 @@
 <agent name='(NotesFixCategories)' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' publicaccess='false'
  designerversion='6' language='en' comment='This is run via the &apos;Map Categories&apos; button in the map cat. form'>
-<noteinfo noteid='27e' unid='DB3C885A72F7CD7985256610003AD45C' sequence='16'>
+<noteinfo noteid='27e' unid='DB3C885A72F7CD7985256610003AD45C' sequence='17'>
 <created><datetime dst='true'>19980526T064234,52-04</datetime></created>
-<modified><datetime>20121129T094703,90+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103847,20-04</datetime></revised>
-<lastaccessed><datetime>20121129T094703,90+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,10+00</datetime></modified>
+<revised><datetime>20121204T161410,09+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,10+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094703,90+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
-<designchange><datetime dst='true'>20090617T103847,07-04</datetime></designchange>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<designchange><datetime>20121204T161409,12+00</datetime></designchange>
 <trigger type='agentlist'/>
 <documentset type='runonce'/><code event='options'><lotusscript>Option Public
 Use "wStringResource"

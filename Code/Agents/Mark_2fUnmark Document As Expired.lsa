@@ -3,15 +3,16 @@
 <agent name='Mark/Unmark Document As Expired' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3'
  publicaccess='false' designerversion='6' language='en' comment='This is for a Notes user only.'>
-<noteinfo noteid='25e' unid='CDD44D1E4F2F89A6852566430044D921' sequence='24'>
+<noteinfo noteid='25e' unid='CDD44D1E4F2F89A6852566430044D921' sequence='25'>
 <created><datetime dst='true'>19980716T083200,33-04</datetime></created>
-<modified><datetime>20121129T094703,82+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103847,12-04</datetime></revised>
-<lastaccessed><datetime>20121129T094703,82+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,60+00</datetime></modified>
+<revised><datetime>20121204T161406,59+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,60+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094703,82+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
-<designchange><datetime dst='true'>20090617T103847,06-04</datetime></designchange>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<designchange><datetime>20121204T161407,95+00</datetime></designchange>
 <trigger type='actionsmenu'/>
 <documentset type='selected'/><code event='options'><lotusscript>Option Public
 Option Declare

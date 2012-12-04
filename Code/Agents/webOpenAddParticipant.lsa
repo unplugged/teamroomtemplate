@@ -3,15 +3,16 @@
 <agent name='(webOpenAddParticipant)' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' runaswebuser='true'
  publicaccess='false' designerversion='7' language='en'>
-<noteinfo noteid='266' unid='CE52592D36074EE9852568230047DBCE' sequence='12'>
+<noteinfo noteid='266' unid='CE52592D36074EE9852568230047DBCE' sequence='13'>
 <created><datetime>19991108T080453,26-05</datetime></created>
-<modified><datetime>20121129T094703,84+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103847,14-04</datetime></revised>
-<lastaccessed><datetime>20121129T094703,84+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,80+00</datetime></modified>
+<revised><datetime>20121204T161410,79+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,80+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094703,84+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
-<designchange><datetime dst='true'>20090617T103847,06-04</datetime></designchange>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<designchange><datetime>20121204T161409,31+00</datetime></designchange>
 <trigger type='agentlist'/>
 <documentset type='runonce'/><code event='options'><lotusscript>Option Public
 
