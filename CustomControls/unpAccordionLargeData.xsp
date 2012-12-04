@@ -4,7 +4,6 @@
 	applicationScope.put('PATH', facesContext.getExternalContext().getRequestContextPath());
 }
 }]]></xp:this.beforeRenderResponse>
-
 	<div>	
 		<ul id="summaryList">
 			<xp:repeat id="repeat2" rows="999"
