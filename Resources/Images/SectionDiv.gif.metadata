@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><imageresource alias="SectionDiv.gif" comment="used in TR setup form" imagename="TRSectionDiv.gif" language="en" maintenanceversion="3.0" name="SectionDiv.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="3aa" sequence="12" unid="9BAB916BBB6CF3E8852566DC003F8706">
+<?xml version="1.0" encoding="UTF-8"?><imageresource alias="SectionDiv.gif" comment="used in TR setup form" designerversion="8.5.3" imagename="TRSectionDiv.gif" language="en" maintenanceversion="3.0" name="SectionDiv.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="3aa" sequence="16" unid="9BAB916BBB6CF3E8852566DC003F8706">
 <created><datetime>19981216T063353,34-05</datetime></created>
-<modified><datetime>20121129T094705,30+00</datetime></modified>
-<revised><datetime dst="true">20090617T103849,52-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,30+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,10+00</datetime></modified>
+<revised><datetime>20121204T161407,09+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,10+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,30+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
-
-<item name="$MimeType" sign="true"><text>image/gif</text></item>
-<item name="$FileModDT" sign="true"><datetime>20001211T100232,00-05</datetime></item></imageresource>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name="$FileModDT" sign="true"><datetime>20001211T100232,00-05</datetime></item>
+</imageresource>

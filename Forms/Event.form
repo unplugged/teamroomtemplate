@@ -3,18 +3,19 @@
 <form name='Event' alias='Event' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' nocompose='true' htmlallfields='true'
  publicaccess='false' designerversion='8.5' language='en'>
-<noteinfo noteid='35a' unid='4A38C8787ADB79478525663C0052DA8C' sequence='142'>
+<noteinfo noteid='35a' unid='4A38C8787ADB79478525663C0052DA8C' sequence='143'>
 <created><datetime dst='true'>19980709T110459,00-04</datetime></created>
-<modified><datetime>20121129T094704,90+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,14-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,90+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,36+00</datetime></modified>
+<revised><datetime>20121204T161406,35+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,36+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,90+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
 <revisions><datetime dst='true'>20070328T120257,98-04</datetime></revisions>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='windowtitle'><formula>@If(@IsNewDoc; "New Event"; Subject)</formula></code><code
- event='webqueryopen'><formula>@Command([ToolsRunMacro]; "(WebOpenForm)")</formula></code><code
- event='helprequest'><formula>REM {DNT};
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='windowtitle'><formula
+>@If(@IsNewDoc; "New Event"; Subject)</formula></code><code event='webqueryopen'><formula
+>@Command([ToolsRunMacro]; "(WebOpenForm)")</formula></code><code event='helprequest'><formula
+>REM {DNT};
 @Command([OpenHelpDocument];[ClientHelp]; "(Help)"; "TeamRoomFEvent")</formula></code><code
  event='htmlhead'><formula>"&lt;script src='/" + @WebDbName + "/WebDateValidation?OpenJavaScriptLibrary'&gt;&lt;/script&gt;"</formula></code><code
  event='options'><lotusscript>Option Declare

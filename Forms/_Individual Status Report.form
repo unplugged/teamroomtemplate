@@ -3,15 +3,16 @@
 <form name='_Individual Status Report' alias='IndStat' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' publicaccess='false'
  designerversion='7' language='en'>
-<noteinfo noteid='33e' unid='1E9654B150876EE5852568B8005A57C0' sequence='55'>
+<noteinfo noteid='33e' unid='1E9654B150876EE5852568B8005A57C0' sequence='56'>
 <created><datetime dst='true'>20000405T122647,04-04</datetime></created>
-<modified><datetime>20121129T094704,76+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,00-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,76+00</datetime></lastaccessed>
+<modified><datetime>20121204T161433,34+00</datetime></modified>
+<revised><datetime>20121204T161433,33+00</datetime></revised>
+<lastaccessed><datetime>20121204T161433,34+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,76+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='windowtitle'><formula>NewTxt := "New Individual Status";
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='windowtitle'><formula
+>NewTxt := "New Individual Status";
 Txt := "Individual Status Report for: " + @Name([CN]; From);
 @If(@IsNewDoc; NewTxt; Txt)</formula></code><code event='helprequest'><formula
 >REM {DNT};

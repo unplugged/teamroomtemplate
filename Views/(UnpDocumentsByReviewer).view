@@ -11,13 +11,14 @@
  boldunreadrows='false' evaluateactions='true' allownewdocuments='false' allowcustomizations='true'
  hidemarginborder='false' marginwidth='0px 0px 1px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='4d6' unid='35DBB2F8BE8A6A5880257AC50036EFAD' sequence='16'>
+<noteinfo noteid='4d6' unid='35DBB2F8BE8A6A5880257AC50036EFAD' sequence='17'>
 <created><datetime>20121129T100003,01+00</datetime></created>
-<modified><datetime>20121203T085524,70+00</datetime></modified>
-<revised><datetime>20121203T085524,69+00</datetime></revised>
-<lastaccessed><datetime>20121203T085524,70+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,44+00</datetime></modified>
+<revised><datetime>20121204T161410,43+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,44+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T100003,09+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby><code event='selection'><formula
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
 >LCDocType := @LowerCase(doctype);
 LCDisc := @LowerCase(DefaultDocType1);
 LCRef := @LowerCase(DefaultDocType4);

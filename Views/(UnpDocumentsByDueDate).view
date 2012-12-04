@@ -11,13 +11,14 @@
  boldunreadrows='false' evaluateactions='true' allownewdocuments='false' allowcustomizations='true'
  hidemarginborder='false' marginwidth='0px 0px 1px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='4d2' unid='80AB37D562F1CCF880257AC50036EFAC' sequence='25'>
+<noteinfo noteid='4d2' unid='80AB37D562F1CCF880257AC50036EFAC' sequence='26'>
 <created><datetime>20121129T100003,00+00</datetime></created>
-<modified><datetime>20121203T085524,35+00</datetime></modified>
-<revised><datetime>20121203T085524,34+00</datetime></revised>
-<lastaccessed><datetime>20121203T085524,35+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,42+00</datetime></modified>
+<revised><datetime>20121204T161410,41+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,42+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T100003,07+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby><code event='selection'><formula
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
 >SELECT (form = "MainTopic" &amp; Status != "0") &amp; @Text(@If(MtgDate != ""; mtgDate; DueDate = ""; ""; @Date(DueDate))) != ""</formula></code><code
  event='helprequest'><formula>REM {DNT};
 @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></code>

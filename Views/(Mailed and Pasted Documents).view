@@ -10,16 +10,16 @@
  totalscolor='blue' headerbgcolor='#a8cfd4' boldunreadrows='false' evaluateactions='false'
  allownewdocuments='false' allowcustomizations='true' hidemarginborder='false'
  marginwidth='0px 0px 1px' marginbgcolor='white' uniquekeys='false' formatnoteid='9B03730C11B24C94852565E20060BED0'>
-<noteinfo noteid='44a' unid='B2EFABAAF156BCBD85256ADB003E50BA' sequence='35'>
+<noteinfo noteid='44a' unid='B2EFABAAF156BCBD85256ADB003E50BA' sequence='36'>
 <created><datetime dst='true'>20011004T072038,98-04</datetime></created>
-<modified><datetime>20121129T094706,04+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103850,36-04</datetime></revised>
-<lastaccessed><datetime>20121129T094706,04+00</datetime></lastaccessed>
+<modified><datetime>20121204T161409,94+00</datetime></modified>
+<revised><datetime>20121204T161409,93+00</datetime></revised>
+<lastaccessed><datetime>20121204T161409,94+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094706,04+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT MP = "1"</formula></code><code event='helprequest'><formula
->REM {DNT};
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT MP = "1"</formula></code><code event='helprequest'><formula>REM {DNT};
 @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></code>
 <actionbar useappletinbrowser='true' bgcolor='#78b4bc' bordercolor='white'>
 <actionbuttonstyle margintype='fixed' margin='6' bgcolor='#c4dee1' displayborder='notesstyle'

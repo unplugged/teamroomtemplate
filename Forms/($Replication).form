@@ -3,15 +3,16 @@
 <form name='($Replication)' alias='$Replication' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' nocompose='true'
  noquery='true' publicaccess='false' designerversion='8.5' language='en'>
-<noteinfo noteid='3f2' unid='D4B5D7992F18418B85256974005443AA' sequence='35'>
+<noteinfo noteid='3f2' unid='D4B5D7992F18418B85256974005443AA' sequence='36'>
 <created><datetime dst='true'>20001010T112023,46-04</datetime></created>
-<modified><datetime>20121129T094705,66+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,84-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,66+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,96+00</datetime></modified>
+<revised><datetime>20121204T161410,95+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,96+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,66+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
 <revisions><datetime dst='true'>20070328T120257,20-04</datetime></revisions>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <globals><code event='options'><lotusscript>Option Public
 Option Declare
 %INCLUDE "lsconst.lss"

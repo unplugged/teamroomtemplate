@@ -10,15 +10,16 @@
  headerbgcolor='white' boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
  allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='2da' unid='43F7E7122DC1D9A0852565830065B729' sequence='21'>
+<noteinfo noteid='2da' unid='43F7E7122DC1D9A0852565830065B729' sequence='22'>
 <created><datetime>19980105T133100,25-05</datetime></created>
-<modified><datetime>20121129T094704,26+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,48-04</datetime></revised>
-<lastaccessed><datetime>20121129T105656,91+00</datetime></lastaccessed>
+<modified><datetime>20121204T161409,86+00</datetime></modified>
+<revised><datetime>20121204T161409,85+00</datetime></revised>
+<lastaccessed><datetime>20121204T161409,86+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,26+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT form = "Event" &amp; Status = "1"</formula></code>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT form = "Event" &amp; Status = "1"</formula></code>
 <actionbar bordercolor='black'>
 <actionbuttonstyle bgcolor='silver'/>
 <action title='Categori_ze' showinmenu='false' showinbar='false' systemcommand='categorize'/>

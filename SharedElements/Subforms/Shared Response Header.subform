@@ -3,15 +3,16 @@
 <subform name='Shared Response Header' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
  language='en'>
-<noteinfo noteid='382' unid='76BAA6FAF219F105852563D20058F6C3' sequence='34'>
+<noteinfo noteid='382' unid='76BAA6FAF219F105852563D20058F6C3' sequence='35'>
 <created><datetime>19961029T111143,39-05</datetime></created>
-<modified><datetime>20121129T094705,10+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,32-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,10+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,16+00</datetime></modified>
+<revised><datetime>20121204T161407,15+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,16+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,10+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='querysave'><formula>@Command([RefreshHideFormulas]);1</formula></code>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='querysave'><formula
+>@Command([RefreshHideFormulas]);1</formula></code>
 <body><richtext>
 <pardef id='1' leftmargin='1in' hide='read edit copy preview previewedit'/>
 <par def='1'><run><font size='9pt' color='gray'/> Hidden Fields -----------------------------</run></par>

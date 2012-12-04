@@ -10,15 +10,16 @@
  totalscolor='blue' headerbgcolor='white' boldunreadrows='false' evaluateactions='false'
  allownewdocuments='false' allowcustomizations='true' hidemarginborder='false'
  marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
-<noteinfo noteid='2ea' unid='79DFEF4B5ADA119B85256691006237B8' sequence='10'>
+<noteinfo noteid='2ea' unid='79DFEF4B5ADA119B85256691006237B8' sequence='11'>
 <created><datetime dst='true'>19981002T135247,92-04</datetime></created>
-<modified><datetime>20121129T094704,34+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,56-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,34+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,20+00</datetime></modified>
+<revised><datetime>20121204T161410,19+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,20+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,34+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT form = "MainTopic"</formula></code>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT form = "MainTopic"</formula></code>
 <actionbar linestyle='triple' bgcolor='#d2b06a' bordercolor='black'>
 <actionbuttonstyle bgcolor='silver'/>
 <action title='Categori_ze' showinbar='false' hide='web' systemcommand='categorize'/>

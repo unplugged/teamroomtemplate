@@ -3,16 +3,17 @@
 <form name='(wUpdateACLDialog)' alias='wUpdateACLDialog' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' htmlallfields='true'
  publicaccess='false' designerversion='8' language='en'>
-<noteinfo noteid='3e2' unid='C650160F4A7ECBA0852569DF0058551A' sequence='23'>
+<noteinfo noteid='3e2' unid='C650160F4A7ECBA0852569DF0058551A' sequence='24'>
 <created><datetime>20010125T110449,54-05</datetime></created>
-<modified><datetime>20121129T094705,58+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,76-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,58+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,92+00</datetime></modified>
+<revised><datetime>20121204T161410,91+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,92+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,58+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='postopen'><formula>@SetProfileField("TempVars"; "notify"; "")</formula></code><code
- event='onLoad' for='web'><javascript>var Msgfield2 = document.forms[0].computeMsg.value
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='postopen'><formula
+>@SetProfileField("TempVars"; "notify"; "")</formula></code><code event='onLoad'
+ for='web'><javascript>var Msgfield2 = document.forms[0].computeMsg.value
 parentform = window.opener.document.forms[0]
 
 if (Msgfield2 != ''){

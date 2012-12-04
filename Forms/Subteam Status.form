@@ -3,15 +3,16 @@
 <form name='Subteam Status' alias='SubteamStatus' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' nocompose='true'
  publicaccess='false' designerversion='8' language='en'>
-<noteinfo noteid='3b2' unid='A8325542E348968D85256657006B8599' sequence='120'>
+<noteinfo noteid='3b2' unid='A8325542E348968D85256657006B8599' sequence='121'>
 <created><datetime dst='true'>19980805T153425,53-04</datetime></created>
-<modified><datetime>20121129T094705,34+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,22-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,34+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,24+00</datetime></modified>
+<revised><datetime>20121204T161407,23+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,24+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,34+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='windowtitle'><formula>NewTxt :="New Subteam Status";
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='windowtitle'><formula
+>NewTxt :="New Subteam Status";
 Txt := "Subteam Status for:  "  + Subteamname;
 @If(@IsNewDoc; NewTxt; Txt)</formula></code><code event='helprequest'><formula
 >REM {DNT};

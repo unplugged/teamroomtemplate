@@ -11,13 +11,14 @@
  boldunreadrows='false' evaluateactions='true' allownewdocuments='false' allowcustomizations='true'
  hidemarginborder='false' marginwidth='0px 0px 1px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='4ce' unid='4364C1EB5002B09C80257AC50036EFAB' sequence='20'>
+<noteinfo noteid='4ce' unid='4364C1EB5002B09C80257AC50036EFAB' sequence='21'>
 <created><datetime>20121129T100002,99+00</datetime></created>
-<modified><datetime>20121203T085524,68+00</datetime></modified>
-<revised><datetime>20121203T085524,67+00</datetime></revised>
-<lastaccessed><datetime>20121203T085524,68+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,40+00</datetime></modified>
+<revised><datetime>20121204T161410,39+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,40+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T100003,05+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby><code event='selection'><formula
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
 >SELECT (form = "MainTopic" &amp; Status != "0")</formula></code><code event='helprequest'><formula
 >REM {DNT};
 @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></code>

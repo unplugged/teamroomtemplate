@@ -3,14 +3,15 @@
 <sharedfield name='QUERY_STRING_DECODED' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
  language='en'>
-<noteinfo noteid='11e' unid='1CFF4A8F37E0FA8385256680003AAB73' sequence='8'>
+<noteinfo noteid='11e' unid='1CFF4A8F37E0FA8385256680003AAB73' sequence='9'>
 <created><datetime dst='true'>19980915T064049,79-04</datetime></created>
-<modified><datetime>20121129T094702,84+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103847,06-04</datetime></revised>
-<lastaccessed><datetime>20121129T094702,84+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,90+00</datetime></modified>
+<revised><datetime>20121204T161406,89+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,90+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094702,84+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><field
- type='text' kind='editable' name='QUERY_STRING_DECODED'><code event='inputtranslation'><formula
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><field type='text'
+ kind='editable' name='QUERY_STRING_DECODED'><code event='inputtranslation'><formula
 >""</formula></code></field></sharedfield>
 

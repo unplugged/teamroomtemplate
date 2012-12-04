@@ -3,14 +3,15 @@
 <form name='Team Announcement' alias='announcement' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' publicaccess='false'
  designerversion='6.5' language='en'>
-<noteinfo noteid='362' unid='4E14A6DEC04C66C80525682400418D8C' sequence='64'>
+<noteinfo noteid='362' unid='4E14A6DEC04C66C80525682400418D8C' sequence='65'>
 <created><datetime>19991109T065600,76-05</datetime></created>
-<modified><datetime>20121129T094704,94+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,18-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,94+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,26+00</datetime></modified>
+<revised><datetime>20121204T161407,25+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,26+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,94+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <actionbar useappletinbrowser='true' bgcolor='#78b4bc' bordercolor='black'><actionbarstyle
  height='4.7500ex'><font size='9pt' name='multilingual'/></actionbarstyle>
 <actionbuttonstyle margintype='fixed' margin='5' bgcolor='#c4dee1' displayborder='notesstyle'

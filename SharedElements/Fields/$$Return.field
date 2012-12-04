@@ -3,15 +3,16 @@
 <sharedfield name='$$Return' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
  language='en'>
-<noteinfo noteid='126' unid='27008218F2F1822485256643003C0DEF' sequence='27'>
+<noteinfo noteid='126' unid='27008218F2F1822485256643003C0DEF' sequence='28'>
 <created><datetime dst='true'>19980716T065557,27-04</datetime></created>
-<modified><datetime>20121129T094702,88+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103847,28-04</datetime></revised>
-<lastaccessed><datetime>20121129T094702,88+00</datetime></lastaccessed>
+<modified><datetime>20121204T161409,52+00</datetime></modified>
+<revised><datetime>20121204T161409,51+00</datetime></revised>
+<lastaccessed><datetime>20121204T161409,52+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094702,88+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><field
- type='text' kind='computedfordisplay' name='$$Return'><code event='defaultvalue'><formula
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><field type='text'
+ kind='computedfordisplay' name='$$Return'><code event='defaultvalue'><formula
 >REM {This $$Return field returns HTML as a result of the successful form submittal.};
 REM;
 REM {Variables to translate};

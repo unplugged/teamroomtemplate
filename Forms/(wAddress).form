@@ -4,17 +4,18 @@
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' noquery='true'
  htmlallfields='true' publicaccess='false' designerversion='8.5' language='en'
  bgcolor='#efefef'>
-<noteinfo noteid='456' unid='C9534B113997605585256B3D0065BFAC' sequence='31'>
+<noteinfo noteid='456' unid='C9534B113997605585256B3D0065BFAC' sequence='32'>
 <created><datetime>20020110T133122,04-05</datetime></created>
-<modified><datetime>20121129T094706,08+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103850,48-04</datetime></revised>
-<lastaccessed><datetime>20121129T094706,08+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,60+00</datetime></modified>
+<revised><datetime>20121204T161410,59+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,60+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094706,08+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
 <revisions><datetime dst='true'>20070328T120257,04-04</datetime><datetime
  dst='true'>20080418T122035,32-04</datetime><datetime dst='true'>20080418T122119,47-04</datetime><datetime
  dst='true'>20080418T122149,10-04</datetime><datetime dst='true'>20080418T122220,08-04</datetime></revisions>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <globals><code event='options'><lotusscript>Option Public
 Use "AddrBook"
 

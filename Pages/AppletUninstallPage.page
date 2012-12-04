@@ -3,14 +3,15 @@
 <page name='AppletUninstallPage' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' treatashtml='true'
  publicaccess='false' designerversion='6' language='en'>
-<noteinfo noteid='3c6' unid='BA837EF1601AEF0885256A0100641E5F' sequence='8'>
+<noteinfo noteid='3c6' unid='BA837EF1601AEF0885256A0100641E5F' sequence='9'>
 <created><datetime>20010228T131333,75-05</datetime></created>
-<modified><datetime>20121129T094705,44+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,62-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,44+00</datetime></lastaccessed>
+<modified><datetime>20121204T161405,84+00</datetime></modified>
+<revised><datetime>20121204T161405,83+00</datetime></revised>
+<lastaccessed><datetime>20121204T161405,84+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,44+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <body><richtext>
 <pardef id='1' leftmargin='1in' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
 <par def='1'><run html='true'>&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Uninstalling Domino Applets&lt;/TITLE&gt;</run></par>

@@ -11,15 +11,16 @@
  boldunreadrows='false' evaluateactions='true' allownewdocuments='false' allowcustomizations='true'
  hidemarginborder='false' marginwidth='0px 0px 1px' marginbgcolor='white'
  uniquekeys='false' formatnoteid='9B03730C11B24C94852565E20060BED0'>
-<noteinfo noteid='2ba' unid='17B022675B4E590C852569030040F249' sequence='48'>
+<noteinfo noteid='2ba' unid='17B022675B4E590C852569030040F249' sequence='49'>
 <created><datetime dst='true'>20000619T074923,29-04</datetime></created>
-<modified><datetime>20121129T094704,10+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,32-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,10+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,28+00</datetime></modified>
+<revised><datetime>20121204T161407,27+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,28+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,10+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>LCDocType := @LowerCase(DocType);
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>LCDocType := @LowerCase(DocType);
 SELECT (form = "MainTopic" &amp; Status != "0" &amp; LCDocType = @LowerCase(DefaultDocType2)) | @IsResponseDoc</formula></code><code
  event='helprequest'><formula>REM {DNT};
 @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></code>

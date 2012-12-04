@@ -4,15 +4,16 @@
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' htmlallfields='true'
  publicaccess='false' designerversion='7' language='en' type='responsetoresponse'
  inherit='true'>
-<noteinfo noteid='36e' unid='5BD04A732CF197198525663A003A3262' sequence='115'>
+<noteinfo noteid='36e' unid='5BD04A732CF197198525663A003A3262' sequence='116'>
 <created><datetime dst='true'>19980707T063539,86-04</datetime></created>
-<modified><datetime>20121129T094705,00+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,24-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,00+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,98+00</datetime></modified>
+<revised><datetime>20121204T161406,97+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,98+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,00+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='windowtitle'><formula>NewDocTitle := "New Response to \"" + Subject + "\"";
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='windowtitle'><formula
+>NewDocTitle := "New Response to \"" + Subject + "\"";
 StandardTitle := "Response to \"" + ImmediateParentSubject + "\"";
 @If(@IsNewDoc; NewDocTitle; StandardTitle)</formula></code><code event='helprequest'><formula
 >REM {DNT};

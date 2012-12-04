@@ -3,15 +3,16 @@
 <sharedfield name='deleteQueryString' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
  language='en'>
-<noteinfo noteid='166' unid='FE56FDE5D35F6E0285256680003AC212' sequence='8'>
+<noteinfo noteid='166' unid='FE56FDE5D35F6E0285256680003AC212' sequence='9'>
 <created><datetime dst='true'>19980915T064147,70-04</datetime></created>
-<modified><datetime>20121129T094703,20+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103847,60-04</datetime></revised>
-<lastaccessed><datetime>20121129T094703,20+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,20+00</datetime></modified>
+<revised><datetime>20121204T161406,19+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,20+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094703,20+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><field
- type='text' kind='editable' name='deleteQueryString'><code event='inputtranslation'><formula
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><field type='text'
+ kind='editable' name='deleteQueryString'><code event='inputtranslation'><formula
 >FIELD QUERY_STRING_DECODED := @Unavailable;
 ""</formula></code></field></sharedfield>
 

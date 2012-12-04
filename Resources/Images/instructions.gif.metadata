@@ -1,9 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><imageresource alias="instructions.gif" comment="action button" designerversion="6" language="en" maintenanceversion="3.0" name="instructions.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="37e" sequence="14" unid="6DF753F41C83C2D2852566BB003F21F8">
+<?xml version="1.0" encoding="UTF-8"?><imageresource alias="instructions.gif" comment="action button" designerversion="8.5.3" language="en" maintenanceversion="3.0" name="instructions.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="37e" sequence="18" unid="6DF753F41C83C2D2852566BB003F21F8">
 <created><datetime>19981113T062934,64-05</datetime></created>
-<modified><datetime>20121129T094705,08+00</datetime></modified>
-<revised><datetime dst="true">20090617T103850,14-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,08+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,56+00</datetime></modified>
+<revised><datetime>20121204T161406,55+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,56+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,08+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby></imageresource>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+</imageresource>

@@ -2,14 +2,15 @@
 <!DOCTYPE subform SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
 <subform name='WebFont' xmlns='http://www.lotus.com/dxl' version='8.5' maintenanceversion='3.0'
  replicaid='80257AC50035BEE2' designerversion='7' language='en'>
-<noteinfo noteid='412' unid='B1CD243F55B3A98385256A88004046CF' sequence='8'>
+<noteinfo noteid='412' unid='B1CD243F55B3A98385256A88004046CF' sequence='9'>
 <created><datetime dst='true'>20010713T074204,31-04</datetime></created>
-<modified><datetime>20121129T094705,82+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103850,00-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,82+00</datetime></lastaccessed>
+<modified><datetime>20121204T161409,38+00</datetime></modified>
+<revised><datetime>20121204T161409,37+00</datetime></revised>
+<lastaccessed><datetime>20121204T161409,38+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,82+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <body><richtext>
 <pardef id='1' align='none' leftmargin='1in' hide='notes' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
 <par def='1'><run html='true'><font size='8pt'/>&lt;HEAD&gt;<break/>&lt;STYLE TYPE="text/css"&gt;</run></par>

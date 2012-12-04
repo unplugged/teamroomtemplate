@@ -3,13 +3,14 @@
 <outline name='OtherVOutline' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3 v4strict'
  publicaccess='false' designerversion='6' language='en'>
-<noteinfo noteid='28e' unid='DE2F3B4FCA50A7B985256954004A5CD3' sequence='8'>
+<noteinfo noteid='28e' unid='DE2F3B4FCA50A7B985256954004A5CD3' sequence='9'>
 <created><datetime dst='true'>20000908T093214,27-04</datetime></created>
-<modified><datetime>20121129T094703,94+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103847,24-04</datetime></revised>
-<lastaccessed><datetime>20121129T094703,94+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,68+00</datetime></modified>
+<revised><datetime>20121204T161406,67+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,68+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094703,94+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
 <outlineentry label='Action Items by Priority' type='namedelementlink' hide='notes web'
  displayimage='false'><namedelementlink type='view' name='AIPriority'/></outlineentry>
 <outlineentry label='All Chronological' type='namedelementlink' hide='notes web'

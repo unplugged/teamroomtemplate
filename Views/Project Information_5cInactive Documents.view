@@ -11,15 +11,16 @@
  boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
  allowcustomizations='true' hidemarginborder='false' marginwidth='0px 0px 1px'
  marginbgcolor='white' uniquekeys='false' initialbuildrestricted='false' noemptycategories='true'>
-<noteinfo noteid='312' unid='E31B48BADBEFFAE78525658B004F7D13' sequence='112'>
+<noteinfo noteid='312' unid='E31B48BADBEFFAE78525658B004F7D13' sequence='113'>
 <created><datetime>19980113T092813,63-05</datetime></created>
-<modified><datetime>20121129T094704,54+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,78-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,54+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,78+00</datetime></modified>
+<revised><datetime>20121204T161406,77+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,78+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,54+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT (Status = "0" | FileThisStatusDoc = "1") &amp; form != "Interest Profile"  | @IsResponseDoc</formula></code><code
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT (Status = "0" | FileThisStatusDoc = "1") &amp; form != "Interest Profile"  | @IsResponseDoc</formula></code><code
  event='helprequest'><formula>REM {DNT};
 @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVFiled")</formula></code>
 <actionbar useappletinbrowser='true' bgcolor='#78b4bc' bordercolor='black'><actionbarstyle

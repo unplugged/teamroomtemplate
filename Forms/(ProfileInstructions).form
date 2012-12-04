@@ -3,15 +3,16 @@
 <form name='(ProfileInstructions)' alias='(ProfileInstructions)' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' nocompose='true'
  publicaccess='false' designerversion='8' language='en'>
-<noteinfo noteid='3e6' unid='CD82FF42E11B0DB28525663300519FB2' sequence='52'>
+<noteinfo noteid='3e6' unid='CD82FF42E11B0DB28525663300519FB2' sequence='53'>
 <created><datetime dst='true'>19980630T105132,98-04</datetime></created>
-<modified><datetime>20121129T094705,60+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,78-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,60+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,18+00</datetime></modified>
+<revised><datetime>20121204T161410,17+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,18+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,60+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='windowtitle'><formula>"Newsletter Profile Help"</formula></code>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='windowtitle'><formula
+>"Newsletter Profile Help"</formula></code>
 <body><richtext>
 <pardef id='1' align='none' leftmargin='1in' hide='notes' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
 <par def='1'/><subformref name='WebFont'/>

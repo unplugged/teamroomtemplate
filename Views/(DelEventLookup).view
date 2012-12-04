@@ -10,15 +10,16 @@
  boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
  allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='476' unid='EA6760E664BDABF4852571BD0040A993' sequence='6'>
+<noteinfo noteid='476' unid='EA6760E664BDABF4852571BD0040A993' sequence='7'>
 <created><datetime dst='true'>20060801T074617,15-04</datetime></created>
-<modified><datetime>20121129T094706,20+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103850,22-04</datetime></revised>
-<lastaccessed><datetime>20121129T094706,20+00</datetime></lastaccessed>
+<modified><datetime>20121204T161409,80+00</datetime></modified>
+<revised><datetime>20121204T161409,79+00</datetime></revised>
+<lastaccessed><datetime>20121204T161409,80+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094706,20+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT form = "Event" &amp; Status = "1"</formula></code>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT form = "Event" &amp; Status = "1"</formula></code>
 <column sort='ascending' hidedetailrows='false' itemname='$0' width='17.8750'
  resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
  showaslinks='false'><columnheader title='#'><font size='9pt' style='bold'/></columnheader><code

@@ -9,15 +9,16 @@
  totalscolor='blue' headerbgcolor='white' boldunreadrows='false' evaluateactions='false'
  allownewdocuments='false' allowcustomizations='true' hidemarginborder='false'
  marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
-<noteinfo noteid='32a' unid='FFF05DD13D1CAED38525648E005195EF' sequence='15'>
+<noteinfo noteid='32a' unid='FFF05DD13D1CAED38525648E005195EF' sequence='16'>
 <created><datetime dst='true'>19970505T105107,99-04</datetime></created>
-<modified><datetime>20121129T094704,66+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,92-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,66+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,32+00</datetime></modified>
+<revised><datetime>20121204T161410,31+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,32+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,66+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT @All</formula></code>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT @All</formula></code>
 <actionbar borderstyle='none' bordercolor='black'>
 <actionbuttonstyle bgcolor='silver'/>
 <action title='Categori_ze' showinmenu='false' showinbar='false' systemcommand='categorize'/>

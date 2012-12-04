@@ -3,16 +3,17 @@
 <form name='Team Status' alias='Status' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' nocompose='true' publicaccess='false'
  designerversion='8.5' language='en'>
-<noteinfo noteid='372' unid='62F5F108740B793485256657006B859A' sequence='88'>
+<noteinfo noteid='372' unid='62F5F108740B793485256657006B859A' sequence='89'>
 <created><datetime dst='true'>19980805T153425,54-04</datetime></created>
-<modified><datetime>20121129T094705,02+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,26-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,02+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,50+00</datetime></modified>
+<revised><datetime>20121204T161407,49+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,50+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,02+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
 <revisions><datetime dst='true'>20070328T120257,60-04</datetime></revisions>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='windowtitle'><formula>NewTxt := "New Team Status";
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='windowtitle'><formula
+>NewTxt := "New Team Status";
 Txt := "Team Status Report for: " + TeamRoomName;
 @If(@IsNewDoc; NewTxt; Txt)</formula></code><code event='helprequest'><formula
 >REM {DNT};

@@ -3,16 +3,16 @@
 <form name='(SubteamDetails)' alias='SubteamDetails' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' nocompose='true'
  noquery='true' publicaccess='false' designerversion='6' language='en' bgcolor='#efefef'>
-<noteinfo noteid='3a6' unid='9A45CD77B893624E85256820004A658A' sequence='42'>
+<noteinfo noteid='3a6' unid='9A45CD77B893624E85256820004A658A' sequence='43'>
 <created><datetime>19991105T083236,58-05</datetime></created>
-<modified><datetime>20121129T094705,28+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,50-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,28+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,26+00</datetime></modified>
+<revised><datetime>20121204T161410,25+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,26+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,28+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='windowtitle'><formula>"Subteam Details"</formula></code><code event='helprequest'><formula
-> @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomFMissionEdit")</formula></code>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='windowtitle'><formula
+>"Subteam Details"</formula></code><code event='helprequest'><formula> @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomFMissionEdit")</formula></code>
 <background allowoverride='false'/>
 <body><richtext>
 <pardef id='1' align='none' leftmargin='1in' hide='notes' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>

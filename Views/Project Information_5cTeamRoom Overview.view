@@ -11,15 +11,16 @@
  allownewdocuments='false' allowcustomizations='true' hidemarginborder='false'
  marginwidth='0px 0px 1px' marginbgcolor='white' uniquekeys='false' initialbuildrestricted='false'
  noemptycategories='true'>
-<noteinfo noteid='2ce' unid='368FF4DDD3428CFA8525658600455101' sequence='121'>
+<noteinfo noteid='2ce' unid='368FF4DDD3428CFA8525658600455101' sequence='122'>
 <created><datetime>19980108T073707,21-05</datetime></created>
-<modified><datetime>20121129T094704,20+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,42-04</datetime></revised>
-<lastaccessed><datetime>20121129T100051,40+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,86+00</datetime></modified>
+<revised><datetime>20121204T161406,85+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,86+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,20+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>Flist := "ParticipantProfile" : "Subteam" : "Event";
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>Flist := "ParticipantProfile" : "Subteam" : "Event";
 SELECT  form = "Mission" | (@IsMember(form; Flist) &amp; Status = "1")</formula></code><code
  event='helprequest'><formula>REM {DNT};
 @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVTeamOverview")</formula></code>

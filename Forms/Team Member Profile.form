@@ -4,15 +4,16 @@
  xmlns='http://www.lotus.com/dxl' version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2'
  nocompose='true' htmlallfields='true' publicaccess='false' designerversion='8'
  language='en'>
-<noteinfo noteid='3f6' unid='D517F936AD26EE9A8525663C0052DA8D' sequence='241'>
+<noteinfo noteid='3f6' unid='D517F936AD26EE9A8525663C0052DA8D' sequence='242'>
 <created><datetime dst='true'>19980709T110459,01-04</datetime></created>
-<modified><datetime>20121129T094705,68+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,86-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,68+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,48+00</datetime></modified>
+<revised><datetime>20121204T161407,47+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,48+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,68+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='windowtitle'><formula>REM {variables to translate};
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='windowtitle'><formula
+>REM {variables to translate};
 NewTxt := "New Team Member Profile";
 Txt := "Team Member Profile for: ";
 REM {END variables to translate};

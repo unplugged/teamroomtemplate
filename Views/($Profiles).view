@@ -11,15 +11,16 @@
  allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
  uniquekeys='false' indexrefresh='automatic' initialbuildrestricted='false'
  noemptycategories='false'>
-<noteinfo noteid='2e6' unid='69705E197802B432852566430044D122' sequence='10'>
+<noteinfo noteid='2e6' unid='69705E197802B432852566430044D122' sequence='11'>
 <created><datetime dst='true'>19980716T083139,86-04</datetime></created>
-<modified><datetime>20121129T094704,32+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,54-04</datetime></revised>
-<lastaccessed><datetime>20121203T130947,11+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,94+00</datetime></modified>
+<revised><datetime>20121204T161410,93+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,94+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,32+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT @Contains(Form; "Profile") | form = "MapCategories"</formula></code>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT @Contains(Form; "Profile") | form = "MapCategories"</formula></code>
 <actionbar bordercolor='black'>
 <actionbuttonstyle bgcolor='silver'/>
 <action title='_Forward' icon='7' showinmenu='false' showinbar='false' hide='previewedit'

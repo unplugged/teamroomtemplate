@@ -10,15 +10,16 @@
  boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
  allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='2fe' unid='9D4C10A4277F90788525667D00498EB7' sequence='12'>
+<noteinfo noteid='2fe' unid='9D4C10A4277F90788525667D00498EB7' sequence='13'>
 <created><datetime dst='true'>19980912T092326,63-04</datetime></created>
-<modified><datetime>20121129T094704,44+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,68-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,44+00</datetime></lastaccessed>
+<modified><datetime>20121204T161409,92+00</datetime></modified>
+<revised><datetime>20121204T161409,91+00</datetime></revised>
+<lastaccessed><datetime>20121204T161409,92+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,44+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT form = "Interest Profile"</formula></code>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT form = "Interest Profile"</formula></code>
 <actionbar borderstyle='none' bordercolor='black'>
 <actionbuttonstyle bgcolor='silver'/>
 <action title='Categori_ze' showinbar='false' systemcommand='categorize'/>

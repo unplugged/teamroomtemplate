@@ -11,15 +11,16 @@
  allownewdocuments='false' allowcustomizations='true' hidemarginborder='false'
  marginwidth='0px 0px 1px' marginbgcolor='white' uniquekeys='false' initialbuildrestricted='false'
  noemptycategories='true'>
-<noteinfo noteid='322' unid='F736C08E41E50DC185256657005BFB21' sequence='65'>
+<noteinfo noteid='322' unid='F736C08E41E50DC185256657005BFB21' sequence='66'>
 <created><datetime dst='true'>19980805T124440,65-04</datetime></created>
-<modified><datetime>20121129T094704,62+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,88-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,62+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,44+00</datetime></modified>
+<revised><datetime>20121204T161407,43+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,44+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,62+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>LCMtg := @LowerCase(defaultdoctype3);
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>LCMtg := @LowerCase(defaultdoctype3);
 LCDocType := @LowerCase(doctype);
 SELECT MtgDate &gt;= @Today | ((form = "MainTopic" &amp; Status != "0" &amp; LCMtg != LCDocType) &amp; People != "" &amp; Current_Status = "0") | @IsResponseDoc</formula></code><code
  event='helprequest'><formula>REM {DNT};

@@ -12,15 +12,16 @@
  allowcustomizations='true' hidemarginborder='false' marginwidth='0px 0px 1px'
  marginbgcolor='white' uniquekeys='false' noserverindex='true' initialbuildrestricted='false'
  noemptycategories='true'>
-<noteinfo noteid='326' unid='FFA64659853C6D618525663A0069B488' sequence='65'>
+<noteinfo noteid='326' unid='FFA64659853C6D618525663A0069B488' sequence='66'>
 <created><datetime dst='true'>19980707T151434,96-04</datetime></created>
-<modified><datetime>20121129T094704,64+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,90-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,64+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,28+00</datetime></modified>
+<revised><datetime>20121204T161406,27+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,28+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,64+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>LCName := @LowerCase(@Name([Abbreviate]; @UserName));
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>LCName := @LowerCase(@Name([Abbreviate]; @UserName));
 LCPeople := @LowerCase(People);
 SELECT form = "MainTopic" &amp; (@Contains(LCPeople; LCName)) | @IsResponseDoc</formula></code><code
  event='helprequest'><formula>REM {DNT};

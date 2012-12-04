@@ -3,19 +3,20 @@
 <form name='TeamRoom Setup' alias='Mission' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' nocompose='true'
  htmlallfields='true' publicaccess='false' designerversion='8.5' language='en'>
-<noteinfo noteid='34e' unid='35457CBCB06249F885256658004D5382' sequence='581'>
+<noteinfo noteid='34e' unid='35457CBCB06249F885256658004D5382' sequence='582'>
 <created><datetime dst='true'>19980806T100436,50-04</datetime></created>
-<modified><datetime>20121129T094704,84+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,08-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,84+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,54+00</datetime></modified>
+<revised><datetime>20121204T161407,53+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,54+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,84+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
 <revisions><datetime dst='true'>20070328T120257,93-04</datetime><datetime
  dst='true'>20080418T120110,04-04</datetime><datetime dst='true'>20080418T120248,71-04</datetime><datetime
  dst='true'>20080423T130429,48-04</datetime><datetime dst='true'>20080423T130754,17-04</datetime><datetime
  dst='true'>20080423T130912,49-04</datetime><datetime dst='true'>20080423T131013,67-04</datetime><datetime
  dst='true'>20080423T131116,21-04</datetime><datetime dst='true'>20080424T093648,51-04</datetime></revisions>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <globals><code event='options'><lotusscript>Option Public
 
 </lotusscript></code><code event='declarations'><lotusscript>Const SNtitle = "Server name"

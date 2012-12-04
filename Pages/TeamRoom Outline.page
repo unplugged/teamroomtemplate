@@ -3,15 +3,16 @@
 <page name='TeamRoom Outline' alias='TeamRoom Outline' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' publicaccess='false'
  designerversion='8' language='en' noinitialfocus='true'>
-<noteinfo noteid='3fe' unid='FBB2DCF12F3590EB85256954004A51E7' sequence='80'>
+<noteinfo noteid='3fe' unid='FBB2DCF12F3590EB85256954004A51E7' sequence='81'>
 <created><datetime dst='true'>20000908T093146,31-04</datetime></created>
-<modified><datetime>20121129T094705,72+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,90-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,72+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,52+00</datetime></modified>
+<revised><datetime>20121204T161407,51+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,52+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,72+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='jsheader' for='web'><javascript>function mapCat()
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='jsheader'
+ for='web'><javascript>function mapCat()
 {
 var pathname = window.location.pathname;
 filename = pathname.substring(0,(pathname.lastIndexOf("nsf")+4)) 

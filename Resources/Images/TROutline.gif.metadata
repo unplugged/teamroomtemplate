@@ -1,12 +1,11 @@
-<?xml version="1.0" encoding="UTF-8"?><imageresource designerversion="6" language="en" maintenanceversion="3.0" name="TROutline.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="3ba" sequence="6" unid="AFC5C99109C82A7F852569B20052EFEB">
+<?xml version="1.0" encoding="UTF-8"?><imageresource designerversion="8.5.3" language="en" maintenanceversion="3.0" name="TROutline.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
+<noteinfo noteid="3ba" sequence="10" unid="AFC5C99109C82A7F852569B20052EFEB">
 <created><datetime>20001211T100553,71-05</datetime></created>
-<modified><datetime>20121129T094705,38+00</datetime></modified>
-<revised><datetime dst="true">20090617T103849,56-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,38+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,72+00</datetime></modified>
+<revised><datetime>20121204T161407,71+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,72+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,38+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
-
-<item name="$MimeType" sign="true"><text>image/gif</text></item>
-<item name="$FileModDT" sign="true"><datetime>20001211T100548,00-05</datetime></item></imageresource>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name="$FileModDT" sign="true"><datetime>20001211T100548,00-05</datetime></item>
+</imageresource>

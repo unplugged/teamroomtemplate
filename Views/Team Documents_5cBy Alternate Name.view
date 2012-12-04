@@ -11,15 +11,16 @@
  boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
  allowcustomizations='true' hidemarginborder='false' marginwidth='0px 0px 1px'
  marginbgcolor='white' uniquekeys='false' initialbuildrestricted='false' noemptycategories='true'>
-<noteinfo noteid='2ee' unid='7DC7F7839942289D852568420054F258' sequence='34'>
+<noteinfo noteid='2ee' unid='7DC7F7839942289D852568420054F258' sequence='35'>
 <created><datetime>19991209T102750,64-05</datetime></created>
-<modified><datetime>20121129T094704,36+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,58-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,36+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,30+00</datetime></modified>
+<revised><datetime>20121204T161407,29+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,30+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,36+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT form != "Interest Profile" &amp; !@Contains(@LowerCase(form); "archive") &amp;
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT form != "Interest Profile" &amp; !@Contains(@LowerCase(form); "archive") &amp;
 (AltFrom != "" &amp; AltLang != "")</formula></code>
 <actionbar useappletinbrowser='true' bgcolor='#78b4bc' bordercolor='black'><actionbarstyle
  height='4.7500ex'><font size='9pt' name='multilingual'/></actionbarstyle>

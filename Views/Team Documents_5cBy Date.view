@@ -11,15 +11,16 @@
  boldunreadrows='false' evaluateactions='true' allownewdocuments='false' allowcustomizations='true'
  hidemarginborder='false' marginwidth='0px 0px 1px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='2fa' unid='9B03730C11B24C94852565E20060BED0' sequence='107'>
+<noteinfo noteid='2fa' unid='9B03730C11B24C94852565E20060BED0' sequence='108'>
 <created><datetime dst='true'>19980410T133643,04-04</datetime></created>
-<modified><datetime>20121129T094704,42+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,66-04</datetime></revised>
-<lastaccessed><datetime>20121129T100107,99+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,36+00</datetime></modified>
+<revised><datetime>20121204T161407,35+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,36+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,42+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT (form = "MainTopic" &amp; Status != "0") | @IsResponseDoc</formula></code><code
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT (form = "MainTopic" &amp; Status != "0") | @IsResponseDoc</formula></code><code
  event='helprequest'><formula>REM {DNT};
 @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></code>
 <actionbar useappletinbrowser='true' bgcolor='#78b4bc' bordercolor='black'><actionbarstyle

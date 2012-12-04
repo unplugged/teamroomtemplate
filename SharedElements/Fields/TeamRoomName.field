@@ -3,16 +3,17 @@
 <sharedfield name='TeamRoomName' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
  language='en'>
-<noteinfo noteid='146' unid='A28FE79A6FE6C3D98525663B00420C6A' sequence='10'>
+<noteinfo noteid='146' unid='A28FE79A6FE6C3D98525663B00420C6A' sequence='11'>
 <created><datetime dst='true'>19980708T080125,54-04</datetime></created>
-<modified><datetime>20121129T094703,04+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103847,44-04</datetime></revised>
-<lastaccessed><datetime>20121129T094703,04+00</datetime></lastaccessed>
+<modified><datetime>20121204T161407,58+00</datetime></modified>
+<revised><datetime>20121204T161407,57+00</datetime></revised>
+<lastaccessed><datetime>20121204T161407,58+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094703,04+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><field
- type='text' kind='computed' name='TeamRoomName' htmlid='TeamRoomName'><code
- event='defaultvalue'><formula>REM {Variable to translate};
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><field type='text'
+ kind='computed' name='TeamRoomName' htmlid='TeamRoomName'><code event='defaultvalue'><formula
+>REM {Variable to translate};
 Txt :="&lt;The TeamRoom Setup for this TeamRoom has not yet been completed.&gt;";
 NoTeamName := "--No team name specified in the TeamRoom Setup--";
 REM {End variable to translate};

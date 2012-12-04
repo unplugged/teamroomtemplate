@@ -8,16 +8,17 @@
  rowspacing='1.25' bgcolor='white' boldunreadrows='false' evaluateactions='true'
  allownewdocuments='false' allowcustomizations='true' hidemarginborder='false'
  marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
-<noteinfo noteid='2b6' unid='055DF64BE8ED5C48852565E2005C15EB' sequence='77'>
+<noteinfo noteid='2b6' unid='055DF64BE8ED5C48852565E2005C15EB' sequence='78'>
 <created><datetime dst='true'>19980410T124549,23-04</datetime></created>
-<modified><datetime>20121129T094704,08+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103848,30-04</datetime></revised>
-<lastaccessed><datetime>20121129T094704,08+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,76+00</datetime></modified>
+<revised><datetime>20121204T161406,75+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,76+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,08+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
 <revisions><datetime dst='true'>20070328T120258,39-04</datetime></revisions>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT Status != "0" &amp; (DueDate != "" | MtgDate != "" | form = "Event")</formula></code><code
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT Status != "0" &amp; (DueDate != "" | MtgDate != "" | form = "Event")</formula></code><code
  event='helprequest'><formula>REM {DNT};
 @Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVCalendar")</formula></code>
 <actionbar useappletinbrowser='true' bgcolor='#78b4bc' bordercolor='black'><actionbarstyle

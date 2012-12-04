@@ -3,17 +3,18 @@
 <sharedfield name='PriNameSelection' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='7'
  language='en'>
-<noteinfo noteid='43e' unid='F3DD29ACD0E841CE85256ACE0041F888' sequence='10'>
+<noteinfo noteid='43e' unid='F3DD29ACD0E841CE85256ACE0041F888' sequence='11'>
 <created><datetime dst='true'>20010921T080034,64-04</datetime></created>
-<modified><datetime>20121129T094706,00+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103850,42-04</datetime></revised>
-<lastaccessed><datetime>20121129T094706,00+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,74+00</datetime></modified>
+<revised><datetime>20121204T161406,73+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,74+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094706,00+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><field
- usenotesstyle='false' height='0.8000in' width='2in' multiline='true' borderstyle='single'
- lookupeachchar='false' lookupaddressonrefresh='false' type='keyword' allowmultivalues='true'
- kind='editable' name='PriNameSelection' description='Select the Team Members to whom you are directing this information.'
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><field usenotesstyle='false'
+ height='0.8000in' width='2in' multiline='true' borderstyle='single' lookupeachchar='false'
+ lookupaddressonrefresh='false' type='keyword' allowmultivalues='true' kind='editable'
+ name='PriNameSelection' description='Select the Team Members to whom you are directing this information.'
  listinputseparators='comma' listdisplayseparator='comma' htmlid='People1_2'><keywords
  recalconchange='true' columns='1' ui='listbox'><formula>PLookup :=  @DbColumn("" : "nocache"; ""; "PeopleLookup"; 1);
 isMac := @Contains(@LowerCase(@Platform);  "mac");

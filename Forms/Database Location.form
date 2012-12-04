@@ -4,15 +4,16 @@
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' nocompose='true'
  noquery='true' publicaccess='true' designerversion='8.5' language='en' bgcolor='#78b4bc'
  noinitialfocus='true' nofocusonf6='true'>
-<noteinfo noteid='40a' unid='0DF54AEA45AFD67585256A53005B42AE' sequence='10'>
+<noteinfo noteid='40a' unid='0DF54AEA45AFD67585256A53005B42AE' sequence='11'>
 <created><datetime dst='true'>20010521T123648,46-04</datetime></created>
-<modified><datetime>20121129T094705,78+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,96-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,78+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,06+00</datetime></modified>
+<revised><datetime>20121204T161406,05+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,06+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,78+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
 <revisions><datetime dst='true'>20070328T120257,29-04</datetime></revisions>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <body><richtext>
 <pardef id='1' align='none' leftmargin='1in' hide='notes web' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
 <par def='1'/>

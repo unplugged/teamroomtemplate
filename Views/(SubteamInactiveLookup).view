@@ -9,15 +9,16 @@
  rowspacing='1' bgcolor='white' totalscolor='blue' headerbgcolor='white' boldunreadrows='false'
  evaluateactions='false' allownewdocuments='false' allowcustomizations='false'
  hidemarginborder='false' marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
-<noteinfo noteid='40e' unid='85F451DDCAA4C6A885256A62005FBE66' sequence='7'>
+<noteinfo noteid='40e' unid='85F451DDCAA4C6A885256A62005FBE66' sequence='8'>
 <created><datetime dst='true'>20010605T132546,62-04</datetime></created>
-<modified><datetime>20121129T094705,80+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103849,98-04</datetime></revised>
-<lastaccessed><datetime>20121129T094705,80+00</datetime></lastaccessed>
+<modified><datetime>20121204T161410,28+00</datetime></modified>
+<revised><datetime>20121204T161410,27+00</datetime></revised>
+<lastaccessed><datetime>20121204T161410,28+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,80+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><code
- event='selection'><formula>SELECT (form = "DefSubTeam" | form = "Subteam") &amp; Status != "1"</formula></code>
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
+>SELECT (form = "DefSubTeam" | form = "Subteam") &amp; Status != "1"</formula></code>
 <actionbar bordercolor='black'>
 <actionbuttonstyle bgcolor='silver'/><border width='0px 0px 1px'/>
 <action title='Categori_ze' showinmenu='false' showinbar='false' systemcommand='categorize'/>

@@ -3,18 +3,19 @@
 <sharedfield name='FileThisStatusDoc' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
  language='en'>
-<noteinfo noteid='12e' unid='3B72E55339FBF60C85256686003BDBE8' sequence='8'>
+<noteinfo noteid='12e' unid='3B72E55339FBF60C85256686003BDBE8' sequence='9'>
 <created><datetime dst='true'>19980921T065349,20-04</datetime></created>
-<modified><datetime>20121129T094702,92+00</datetime></modified>
-<revised><datetime dst='true'>20090617T103847,32-04</datetime></revised>
-<lastaccessed><datetime>20121129T094702,92+00</datetime></lastaccessed>
+<modified><datetime>20121204T161406,38+00</datetime></modified>
+<revised><datetime>20121204T161406,37+00</datetime></revised>
+<lastaccessed><datetime>20121204T161406,38+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094702,92+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby><field
- borderstyle='none' lookupeachchar='false' lookupaddressonrefresh='false'
- type='keyword' kind='editable' name='FileThisStatusDoc' description='Active or inactive'
- htmlid='FileThisStatusDoc' htmltitle='Active or inactive'><keywords columns='2'
- ui='radiobutton'><textlist><text>Active | 0</text><text>Inactive | 1</text></textlist></keywords><code
+<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
+>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><field borderstyle='none'
+ lookupeachchar='false' lookupaddressonrefresh='false' type='keyword' kind='editable'
+ name='FileThisStatusDoc' description='Active or inactive' htmlid='FileThisStatusDoc'
+ htmltitle='Active or inactive'><keywords columns='2' ui='radiobutton'><textlist
+><text>Active | 0</text><text>Inactive | 1</text></textlist></keywords><code
  event='defaultvalue'><formula>"0"</formula></code></field>
 <item name='$HTMLCode' sign='true'>
 <rawitemdata type='1'>
