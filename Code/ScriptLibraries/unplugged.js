@@ -252,7 +252,7 @@ function initiscroll() {
 		delete scrollMenu;
 	}catch(e){
 	}
-	scrollMenu = new iScroll('menuPane');
+	scrollMenu = new iScroll('menu');
 	
 	$(".iscrollcontent")
 			.each(
