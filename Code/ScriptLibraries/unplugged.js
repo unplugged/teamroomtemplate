@@ -247,12 +247,15 @@ function initiscroll() {
 		delete scrollContent;
 	} catch (e) {
 	}
+	
 	try {
 		scrollMenu.destroy();
 		delete scrollMenu;
 	}catch(e){
 	}
-	scrollMenu = new iScroll('menu');
+	try{
+		scrollMenu = new iScroll('menu');
+	}catch(e){}
 	
 	$(".iscrollcontent")
 			.each(

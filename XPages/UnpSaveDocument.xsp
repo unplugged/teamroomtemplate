@@ -65,7 +65,7 @@ try{
 		unid = doc.getUniversalID();
 		resp = "OK";
 	}catch(e){
-		resp = resp + ": " + e;
+		resp = e;
 	}
 }catch(mainerror){
 	

@@ -18,6 +18,7 @@
 	&lt;div&gt;&#xd;
 		To use this custom control make sure you have set the Custom Properties.&#xd;
 	&lt;/div&gt;&#xd;
+	&lt;div&gt;&lt;strong&gt;Don't forget to add &lt;i&gt;unplugged.css&lt;/i&gt; as a resource to your XPage&lt;/strong&gt;&lt;/div&gt;&#xd;
 	&lt;div&gt;&#xd;
 		If you set the categoryFilter property then the view you are working with must be categorized.&#xd;
 	&lt;/div&gt;&#xd;
@@ -141,6 +142,18 @@ return xpageDoc.indexOf(".xsp") &gt;= 0;</validation-formula>
 button&#xd;
 none</editor-parameter>
           <default-value>pull</default-value>
+        </designer-extension>
+      </property-extension>
+    </property>
+    <property>
+      <property-name>position</property-name>
+      <property-class>string</property-class>
+      <property-extension>
+        <designer-extension>
+          <default-value>menu-aligned</default-value>
+          <editor>com.ibm.workplace.designer.property.editors.comboParameterEditor</editor>
+          <editor-parameter>left-aligned&#xd;
+menu-aligned</editor-parameter>
         </designer-extension>
       </property-extension>
     </property>
