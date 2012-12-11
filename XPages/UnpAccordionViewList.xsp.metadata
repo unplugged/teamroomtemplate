@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="3.0" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="590a" sequence="2" unid="17A5A86064F5149280257AD10034EDBC">
+<noteinfo noteid="590a" sequence="4" unid="17A5A86064F5149280257AD10034EDBC">
 <created><datetime>20121211T093807,32+00</datetime></created>
-<modified><datetime>20121211T093807,35+00</datetime></modified>
-<revised><datetime>20121211T093807,34+00</datetime></revised>
-<lastaccessed><datetime>20121211T093807,35+00</datetime></lastaccessed>
+<modified><datetime>20121211T093948,77+00</datetime></modified>
+<revised><datetime>20121211T093948,76+00</datetime></revised>
+<lastaccessed><datetime>20121211T093948,77+00</datetime></lastaccessed>
 <addedtofile><datetime>20121211T093807,33+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
@@ -11,4 +11,10 @@
 <item name="$Flags"><text>gC~4K</text></item>
 
 
-<item name="$FileNames" sign="true"><text>UnpAccordionViewList.xsp</text></item></note>
+<item name="$FileNames" sign="true"><text>UnpAccordionViewList.xsp</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+
+
+</note>
