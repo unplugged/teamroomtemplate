@@ -7,15 +7,21 @@
 				xp:key="facet_1">
 				<xp:this.facets>
 					<xp:panel xp:key="facet_1">
-						<xp:label value="Topic" id="subjectlabel" for="subject"></xp:label>
-						<xp:inputText id="subject" value="#{document1.Subject}"
-							styleClass="required">
-						</xp:inputText>
-						<xp:label value="Body" id="bodylabel" for="body">
-						</xp:label>
-						<xp:inputTextarea id="body" styleClass="richtextfield"
-							value="#{document1.Body}">
-						</xp:inputTextarea>
+						<ul class="fieldlist">
+							<li>
+								<xp:label value="Topic" id="subjectlabel" for="subject"></xp:label>
+								<xp:inputText id="subject" value="#{document1.Subject}"
+									styleClass="required xspInputFieldEditBox">
+								</xp:inputText>
+							</li>
+							<li>
+								<xp:label value="Body" id="bodylabel" for="body">
+								</xp:label>
+								<xp:inputTextarea id="body" styleClass="richtextfield"
+									value="#{document1.Body}">
+								</xp:inputTextarea>
+							</li>
+						</ul>
 						<xp:inputText id="from"
 							value="#{document1.From}" style="display: none;"
 							defaultValue="#{javascript:@UserName()}">

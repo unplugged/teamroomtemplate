@@ -3,45 +3,54 @@
 	<xc:unpScrollableArea>
 		<xp:this.facets>
 			<xc:unpFormViewer showbuttons="true" closexpagename="UnpMain.xsp"
-				editxpagename="ResponseToResponseEdit.xsp" formname="Response To Response" title="Response To Response"
-				xp:key="facet_1" newresponsexpagename="ResponseToResponseEdit.xsp">
+				editxpagename="ResponseToResponseEdit.xsp" formname="Response To Response"
+				title="Response To Response" xp:key="facet_1" newresponsexpagename="ResponseToResponseEdit.xsp">
 				<xp:this.facets>
 					<xp:panel xp:key="facet_1">
 						<ul class="buttons">
-							<xp:text tagName="li" styleClass="cancelButton" value="Parent..." style="width: auto">
+							<xp:panel tagName="li" styleClass="proceedButton">
 								<xp:this.attrs>
 									<xp:attr name="onclick">
 										<xp:this.value><![CDATA[#{javascript:var parentdoc:NotesDocument = database.getDocumentByUNID(document1.getDocument().getParentDocumentUNID());
 "openDocument('" + parentdoc.getItemValueString("Form") + ".xsp?action=openDocument&documentId=" + parentdoc.getUniversalID() + "', 'content')"}]]></xp:this.value>
 									</xp:attr>
 								</xp:this.attrs>
-							</xp:text>
+								<span>View Parent</span>
+							</xp:panel>
 						</ul>
-						<xp:label value="Topic" id="subjectlabel" for="subject">
-						</xp:label>
-						<xp:text id="subject" value="#{document1.Subject}"></xp:text>
-						<xp:label value="Created By" id="fromlabel" for="from">
-						</xp:label>
-						<xp:text id="from">
-							<xp:this.value><![CDATA[#{javascript:@Name("[CN]", document1.getItemValueString("From"))}]]></xp:this.value>
-						</xp:text>
-						<xp:label value="Created" id="createdlabel" for="created">
-						</xp:label>
-						<xp:text id="created"
-							value="#{javascript:document1.getDocument().getCreated()}">
-						</xp:text>
-						<xp:label value="Body" id="bodylabel" for="body">
-						</xp:label>
-						<xp:text id="body" value="#{document1.Body}" escape="false">
-						</xp:text>
-						<div class="pullleft">
-							<xc:unpFlatView insetData="false" numberofrows="999"
-								refreshmethod="none"
-								categoryfilter="#{javascript:document1.getDocument().getUniversalID()}"
-								detailColumn="Date" summaryColumn="Topic" title="Responses"
-								viewName="(UnpDocumentsResponses)" xpageDoc="ResponseToResponse.xsp">
-							</xc:unpFlatView>
-						</div>
+						<ul class="fieldlist">
+							<li>
+
+								<xp:label value="Topic" id="subjectlabel" for="subject">
+								</xp:label>
+								<xp:text id="subject" value="#{document1.Subject}"></xp:text>
+							</li>
+							<li>
+								<xp:label value="Created By" id="fromlabel" for="from">
+								</xp:label>
+								<xp:text id="from">
+									<xp:this.value><![CDATA[#{javascript:@Name("[CN]", document1.getItemValueString("From"))}]]></xp:this.value>
+								</xp:text>
+							</li>
+							<li>
+								<xp:label value="Created" id="createdlabel" for="created">
+								</xp:label>
+								<xp:text id="created"
+									value="#{javascript:document1.getDocument().getCreated()}">
+								</xp:text>
+							</li>
+							<li>
+								<xp:text id="body" value="#{document1.Body}" escape="false" styleClass="body_richtext">
+								</xp:text>
+							</li>
+						</ul>
+						<xc:unpFlatView insetData="false" numberofrows="999"
+							refreshmethod="none"
+							categoryfilter="#{javascript:document1.getDocument().getUniversalID()}"
+							detailColumn="Date" summaryColumn="Topic" title="Responses"
+							viewName="(UnpDocumentsResponses)" xpageDoc="ResponseToResponse.xsp">
+						</xc:unpFlatView>
+
 					</xp:panel>
 				</xp:this.facets>
 			</xc:unpFormViewer>

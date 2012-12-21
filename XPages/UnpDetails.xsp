@@ -20,33 +20,45 @@ return unid;}]]></xp:this.documentId>
 					<h2>
 						<span class="formtitle">Teamroom Details</span>
 					</h2>
-					<xp:label value="Team Name" id="teamnamelabel" for="teamname">
-					</xp:label>
-					<xp:text id="teamname" value="#{document1.TeamName}">
-					</xp:text>
-					<xp:label value="Mission" id="missionlabel" for="mission">
-					</xp:label>
-					<xp:text id="mission" escape="false">
-						<xp:this.value><![CDATA[#{javascript:@ReplaceSubstring(document1.getItemValueString("Mission"), "\n", "<br />")}]]></xp:this.value>
-					</xp:text>
-					<xp:label value="Created By" id="fromlabel" for="from">
-					</xp:label>
-					<xp:text id="from">
-						<xp:this.value><![CDATA[#{javascript:@Name("[CN]", document1.getItemValueString("From"))}]]></xp:this.value>
-					</xp:text>
-					<xp:label value="Team Leader" id="teamleaderlabel" for="teamleader">
-					</xp:label>
-					<xp:text id="teamleader" value="#{document1.TeamLeader}">
-					</xp:text>
-					<xp:label value="Team Facilitator" id="teamfacilitatorlabel"
-						for="teamfacilitator">
-					</xp:label>
-					<xp:text id="teamfacilitator" value="#{document1.teamfacilitator}">
-					</xp:text>
-					<xp:label for="TeamMembers" value="Team Members: ">
-					</xp:label>
-					<xp:text id="TeamMembers">
-						<xp:this.value><![CDATA[#{javascript:var NoParticipantMessage = "No team members have been specified for this TeamRoom.";
+					<ul class="fieldlist">
+						<li>
+							<xp:label value="Team Name" id="teamnamelabel" for="teamname">
+							</xp:label>
+							<xp:text id="teamname" value="#{document1.TeamName}">
+							</xp:text>
+						</li>
+						<li>
+							<xp:label value="Mission" id="missionlabel" for="mission">
+							</xp:label>
+							<xp:text id="mission" escape="false" styleClass="xspTextComputedField longtext">
+								<xp:this.value><![CDATA[#{javascript:@ReplaceSubstring(document1.getItemValueString("Mission"), "\n", "<br />")}]]></xp:this.value>
+							</xp:text>
+						</li>
+						<li>
+							<xp:label value="Created By" id="fromlabel" for="from">
+							</xp:label>
+							<xp:text id="from">
+								<xp:this.value><![CDATA[#{javascript:@Name("[CN]", document1.getItemValueString("From"))}]]></xp:this.value>
+							</xp:text>
+						</li>
+						<li>
+							<xp:label value="Team Leader" id="teamleaderlabel" for="teamleader">
+							</xp:label>
+							<xp:text id="teamleader" value="#{document1.TeamLeader}">
+							</xp:text>
+						</li>
+						<li>
+							<xp:label value="Team Facilitator" id="teamfacilitatorlabel"
+								for="teamfacilitator">
+							</xp:label>
+							<xp:text id="teamfacilitator" value="#{document1.teamfacilitator}">
+							</xp:text>
+						</li>
+						<li>
+							<xp:label for="TeamMembers" value="Team Members: ">
+							</xp:label>
+							<xp:text id="TeamMembers" styleClass="xspTextComputedField longtext">
+								<xp:this.value><![CDATA[#{javascript:var NoParticipantMessage = "No team members have been specified for this TeamRoom.";
 var ParticipantLookup = "";
 ParticipantLookup = @DbColumn(@DbName(), "PeopleLookup", 3);
 if(ParticipantLookup == null || ParticipantLookup == ""){
@@ -54,7 +66,9 @@ if(ParticipantLookup == null || ParticipantLookup == ""){
 }else{
 	return @Implode(ParticipantLookup, ", ");
 }}]]></xp:this.value>
-					</xp:text>
+							</xp:text>
+						</li>
+					</ul>
 				</div>
 
 			</xp:panel>

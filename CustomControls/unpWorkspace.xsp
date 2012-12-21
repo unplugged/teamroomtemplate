@@ -13,16 +13,11 @@
 		</xp:metaData>
 		<xp:styleSheet href="/unpreset.css"></xp:styleSheet>
 		<xp:styleSheet href="/unpworkspace.css"></xp:styleSheet>
-		<xp:script src="unp/iscroll.min.js" clientSide="true"></xp:script>
-		<xp:script src="unp/workspace.js" clientSide="true"></xp:script>
 		<xp:script src="unp/jquery-1.7.2.min.js" clientSide="true"></xp:script>
 		<xp:script src="unp/jquery.blockUI.min.js" clientSide="true"></xp:script>
+		<xp:script src="unp/iscroll.min.js" clientSide="true"></xp:script>
+		<xp:script src="unp/workspace.js" clientSide="true"></xp:script>
 	</xp:this.resources>
-
-	<xp:this.data>
-		<xp:dominoView var="dbs" viewName="Databases"></xp:dominoView>
-	</xp:this.data>
-
 	<header>
 		<h1>Unplugged</h1>
 	</header>
@@ -31,16 +26,20 @@
 		<div class="scroll">
 			<ul id="apps">
 				<xp:repeat id="chiclets" value="#{dbs}" var="db">
-					<li
-						onclick="window.location.href='#{javascript:db.getColumnValue('UnpUrl');}'">
-						<img class="icon" src="#{javascript:db.getColumnValue('ImgUrl');}" />
-						<xp:image url="unp/error.png"
-							rendered='#{javascript:"true".equals(db.getColumnValue("Flagged"));}'
-							styleClass="error" />
+					<xp:panel tagName="li">
+						<xp:this.attrs>
+							<xp:attr name="onclick">
+								<xp:this.value><![CDATA[#{javascript:"$.blockUI();window.location.href='" + db.getColumnValue(compositeData.linkurlcol) + "';"}]]></xp:this.value>
+							</xp:attr>
+						</xp:this.attrs>
+						<xp:image styleClass="icon"
+							url="#{javascript:db.getColumnValue(compositeData.imgurlcol)}">
+						</xp:image>
 						<h4>
-							<xp:text value="#{javascript:db.getColumnValue('Title');}" />
+							<xp:text
+								value="#{javascript:db.getColumnValue(compositeData.labelcol);}" />
 						</h4>
-					</li>
+					</xp:panel>
 				</xp:repeat>
 
 			</ul>
@@ -49,24 +48,34 @@
 
 	<footer></footer>
 
-	<a class="button green sync" id="unpSync">
+	<xp:panel tagName="a" styleClass="button green sync unpSync"
+		rendered="#{javascript:compositeData.syncbutton}">
 		<img src="unp/sync.png" />
 		Sync
-	</a>
-	<a class="button about" onclick="window.location.href='UnpAbout.xsp'">
+	</xp:panel>
+
+	<xp:panel tagName="a" styleClass="button about"
+		rendered="#{javascript:compositeData.aboutbutton}">
+		<xp:this.attrs>
+			<xp:attr name="onclick"
+				value="window.location.href='UnpAbout.xsp'">
+			</xp:attr>
+		</xp:this.attrs>
 		<img src="unp/about.png" />
 		About
-	</a>
+	</xp:panel>
 
 	<xp:scriptBlock>
 		<xp:this.value escape="false">
 			$(document).ready(function() {
-			$('#unpSync').click(function() {
+			$('.unpSync').click(function() {
 			$.blockUI({
 			centerY: 0,
-			css: { top: '10px', left: '10px', right: '' }
+			css: { top:
+			'10px', left: '10px', right: '' }
 			});
-			$.get("ajaxReplicate.xsp", function(data) {
+			$.get("ajaxReplicate.xsp",
+			function(data) {
 			$.unblockUI();
 			location.reload();
 			});
@@ -82,7 +91,8 @@
 			$('#unpSync').click();
 			}
 			}
-			if( "0" != "#{javascript:context.getUrlParameter("AutoLaunch")}") {
+			if( "0" !=
+			"#{javascript:context.getUrlParameter("AutoLaunch")}") {
 			if
 			("" !=
 			"#{javascript:session.getEnvironmentString("ws.autoLaunch.path",

@@ -11,11 +11,11 @@
  boldunreadrows='false' evaluateactions='true' allownewdocuments='false' allowcustomizations='true'
  hidemarginborder='false' marginwidth='0px 0px 1px' marginbgcolor='white'
  uniquekeys='false'>
-<noteinfo noteid='4e2' unid='B7E5AC5E8F1D85DC80257AC50036EFB0' sequence='26'>
+<noteinfo noteid='4e2' unid='B7E5AC5E8F1D85DC80257AC50036EFB0' sequence='27'>
 <created><datetime>20121129T100003,04+00</datetime></created>
-<modified><datetime>20121204T161410,50+00</datetime></modified>
-<revised><datetime>20121204T161410,49+00</datetime></revised>
-<lastaccessed><datetime>20121204T161410,50+00</datetime></lastaccessed>
+<modified><datetime>20121221T154650,66+00</datetime></modified>
+<revised><datetime>20121221T154650,65+00</datetime></revised>
+<lastaccessed><datetime>20121221T154650,66+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T100003,15+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
@@ -29,7 +29,7 @@
 <column sort='ascending' hidedetailrows='false' itemname='$164' width='10'
  resizable='true' separatemultiplevalues='true' sortnoaccent='false' sortnocase='true'
  showaslinks='false'><columnheader><font size='9pt' style='bold'/></columnheader><code
- event='value'><formula>Subject : Categories : @Name([CN]; From)</formula></code></column><sharedcolumnref
+ event='value'><formula>@LowerCase(Subject : Categories : @Name([CN]; From))</formula></code></column><sharedcolumnref
  name='UnpDate'>
 <column sort='descending' hidedetailrows='false' listseparator='comma' itemname='$170'
  width='12.6250' resizable='true' separatemultiplevalues='false' sortnoaccent='true'
