@@ -2,11 +2,11 @@
 <!DOCTYPE note SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
 <note default='true' class='icon' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2'>
-<noteinfo noteid='116' unid='85255A0A0010AC8E85254BD4001E8D43' sequence='20'>
+<noteinfo noteid='116' unid='85255A0A0010AC8E85254BD4001E8D43' sequence='21'>
 <created><datetime>19800105T003342,43-05</datetime></created>
-<modified><datetime>20121204T084846,73+00</datetime></modified>
-<revised><datetime>20121204T084846,72+00</datetime></revised>
-<lastaccessed><datetime>20121204T084846,73+00</datetime></lastaccessed>
+<modified><datetime>20121221T171842,17+00</datetime></modified>
+<revised><datetime>20121221T171842,16+00</datetime></revised>
+<lastaccessed><datetime>20121221T171842,17+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094702,80+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
@@ -37,6 +37,6 @@ AAAAAAAAAAAAAAAAAAAAAAAAAA==
 <item name='$Daos'><text>0</text></item>
 <item name='$Flags'><text>JFSR7</text></item>
 <item name='$FlagsNoRefresh'><text/></item>
-<item name='$TITLE'><text>Teamroom (200)
+<item name='$TITLE'><text>Teamroom
 TeamRoom</text></item></note>
 
