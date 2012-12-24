@@ -15,8 +15,6 @@
 								</xp:inputText>
 							</li>
 							<li>
-								<xp:label value="Body" id="bodylabel" for="body">
-								</xp:label>
 								<xp:inputTextarea id="body" styleClass="richtextfield"
 									value="#{document1.Body}">
 								</xp:inputTextarea>
