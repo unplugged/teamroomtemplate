@@ -32,7 +32,7 @@
 							</li>
 							<li>
 								<xp:label value="Associated Subteam(s)" id="subteaminterestlabel"
-									for="subteaminterest">
+									for="subteaminterest" styleClass="longlabel">
 								</xp:label>
 								<xp:text id="subteaminterest" value="#{document1.SubTeamInterest}">
 								</xp:text>

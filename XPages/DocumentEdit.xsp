@@ -70,7 +70,7 @@ return out;}]]></xp:this.value>
 							</li>
 							<li>
 								<xp:label value="Associated Subteam(s)" id="subteaminterestlabel"
-									for="multi__subteaminterest">
+									for="multi__subteaminterest" styleClass="longlabel">
 								</xp:label>
 								<xp:listBox id="multi__subteaminterest" multiple="true"
 									value="#{document1.SubTeamInterest}" styleClass="xspListBox">
@@ -180,6 +180,7 @@ return out;}]]></xp:this.value>
 								</xp:listBox>
 							</li>
 							<li>
+								<xp:label value="Details" id="detailslabel" for="description" styleClass="widelabel"></xp:label>
 								<xp:inputTextarea id="body" styleClass="richtextfield"
 									value="#{document1.Body}">
 								</xp:inputTextarea>

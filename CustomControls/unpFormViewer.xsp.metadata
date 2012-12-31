@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note class="form" maintenanceversion="3.0" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="6142" sequence="4" unid="13743D12F819D05D80257ADE002D9696">
-<created><datetime>20121224T081756,70+00</datetime></created>
-<modified><datetime>20121224T081757,00+00</datetime></modified>
-<revised><datetime>20121224T081756,99+00</datetime></revised>
-<lastaccessed><datetime>20121224T081757,00+00</datetime></lastaccessed>
-<addedtofile><datetime>20121224T081756,71+00</datetime></addedtofile></noteinfo>
+<noteinfo noteid="61ee" sequence="6" unid="E3F24E1AF5C06EA480257AE500302A23">
+<created><datetime>20121231T084605,15+00</datetime></created>
+<modified><datetime>20121231T084642,54+00</datetime></modified>
+<revised><datetime>20121231T084642,53+00</datetime></revised>
+<lastaccessed><datetime>20121231T084642,54+00</datetime></lastaccessed>
+<addedtofile><datetime>20121231T084605,15+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <item name="$TITLE"><text>unpFormViewer.xsp</text></item>
@@ -12,5 +12,11 @@
 
 
 <item name="$FileNames" sign="true"><text>unpFormViewer.xsp</text></item>
+
+
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+
 
 </note>
