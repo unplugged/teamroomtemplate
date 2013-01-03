@@ -15,7 +15,7 @@
 									value="#{document1.Subject}"></xp:inputText>
 							</li>
 							<li>
-								<xp:label value="Document Type" id="doctypelabel" for="doctype">
+								<xp:label value="Document Type" id="doctypelabel" for="doctype" styleClass="longlabel">
 								</xp:label>
 								<xp:comboBox id="doctype" value="#{document1.DocType}"
 									styleClass="doctype xspListBox">
@@ -86,7 +86,7 @@ return out;}]]></xp:this.value>
 }else{
 	return "display: none;";
 }}]]></xp:this.style>
-								<xp:label id="duedatelabel" for="duedate">
+								<xp:label id="duedatelabel" for="duedate" styleClass="longlabel">
 									<xp:this.value><![CDATA[#{javascript:if (document1.getItemValueString("DocType") == "Action Item"){
 	return "Due Date";
 }else{

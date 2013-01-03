@@ -14,7 +14,7 @@
 								<xp:text id="subject" value="#{document1.Subject}"></xp:text>
 							</li>
 							<li>
-								<xp:label value="Document Type" id="doctypelabel" for="doctype">
+								<xp:label value="Document Type" id="doctypelabel" for="doctype" styleClass="longlabel">
 								</xp:label>
 								<xp:text id="doctype" value="#{document1.DocType}"></xp:text>
 							</li>
@@ -40,7 +40,7 @@
 
 							<xp:panel tagName="li">
 								<xp:this.rendered><![CDATA[#{javascript:document1.getItemValueString("DocType") != "Meeting"}]]></xp:this.rendered>
-								<xp:label id="duedatelabel" for="duedate">
+								<xp:label id="duedatelabel" for="duedate" styleClass="longlabel">
 									<xp:this.value><![CDATA[#{javascript:if (document1.getItemValueString("DocType") == "Action Item"){
 	return "Due Date";
 }else{
@@ -67,7 +67,7 @@
 								</xp:text>
 							</xp:panel>
 							<xp:panel tagName="li">
-								<xp:label for="duration" value="Duration (mins)"></xp:label>
+								<xp:label for="duration" value="Duration (mins)" styleClass="longlabel"></xp:label>
 								<xp:text id="duration" value="#{document1.Duration}">
 									<xp:this.converter>
 										<xp:convertNumber type="number" integerOnly="true">
