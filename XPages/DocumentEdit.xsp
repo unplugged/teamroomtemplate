@@ -69,8 +69,8 @@ return out;}]]></xp:this.value>
 								</xp:listBox>
 							</li>
 							<li>
-								<xp:label value="Associated Subteam(s)" id="subteaminterestlabel"
-									for="multi__subteaminterest" styleClass="longlabel">
+								<xp:label value="Subteam(s)" id="subteaminterestlabel"
+									for="multi__subteaminterest">
 								</xp:label>
 								<xp:listBox id="multi__subteaminterest" multiple="true"
 									value="#{document1.SubTeamInterest}" styleClass="xspListBox">
