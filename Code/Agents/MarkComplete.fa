@@ -3,16 +3,16 @@
 <agent name='(MarkComplete)' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' publicaccess='false'
  designerversion='6' language='en'>
-<noteinfo noteid='28a' unid='DC83E35263405E238525658B006C7C9D' sequence='14'>
+<noteinfo noteid='28a' unid='DC83E35263405E238525658B006C7C9D' sequence='15'>
 <created><datetime>19980113T144457,89-05</datetime></created>
-<modified><datetime>20121204T161410,00+00</datetime></modified>
-<revised><datetime>20121204T161409,99+00</datetime></revised>
-<lastaccessed><datetime>20121204T161410,00+00</datetime></lastaccessed>
+<modified><datetime>20130115T081349,91+00</datetime></modified>
+<revised><datetime>20130115T081349,90+00</datetime></revised>
+<lastaccessed><datetime>20130115T081349,91+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094703,92+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
 >CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-<designchange><datetime>20121204T161409,09+00</datetime></designchange>
+<designchange><datetime>20130115T081346,96+00</datetime></designchange>
 <trigger type='agentlist'/>
 <documentset type='runonce'/><code event='action'>
 <simpleaction action='runformula'><formula>REM {Open is 0, Complete is 1};

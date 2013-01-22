@@ -3,16 +3,16 @@
 <agent name='(WebExpire)' xmlns='http://www.lotus.com/dxl' version='8.5' maintenanceversion='3.0'
  replicaid='80257AC50035BEE2' hide='v3' runaswebuser='true' publicaccess='false'
  designerversion='6' language='en' comment='This performs the expiring/unexpiring of document functions for the web user.'>
-<noteinfo noteid='1ee' unid='5A3D61C55ADFA92B8525663300672752' sequence='21'>
+<noteinfo noteid='1ee' unid='5A3D61C55ADFA92B8525663300672752' sequence='22'>
 <created><datetime dst='true'>19980630T144642,74-04</datetime></created>
-<modified><datetime>20121204T161410,68+00</datetime></modified>
-<revised><datetime>20121204T161410,67+00</datetime></revised>
-<lastaccessed><datetime>20121204T161410,68+00</datetime></lastaccessed>
+<modified><datetime>20130115T081350,59+00</datetime></modified>
+<revised><datetime>20130115T081350,58+00</datetime></revised>
+<lastaccessed><datetime>20130115T081350,59+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094703,54+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
 >CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-<designchange><datetime>20121204T161409,28+00</datetime></designchange>
+<designchange><datetime>20130115T081347,16+00</datetime></designchange>
 <trigger type='agentlist'/>
 <documentset type='runonce'/><code event='options'><lotusscript>Option Public
 Use "wStringResource"

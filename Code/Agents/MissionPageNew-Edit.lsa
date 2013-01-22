@@ -3,16 +3,16 @@
 <agent name='(MissionPageNew-Edit)' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' publicaccess='false'
  designerversion='6' language='en' comment='Used in Leader/Facilitator Options hotspot'>
-<noteinfo noteid='206' unid='855A76C733B212D885256673005449D9' sequence='16'>
+<noteinfo noteid='206' unid='855A76C733B212D885256673005449D9' sequence='17'>
 <created><datetime dst='true'>19980902T112039,29-04</datetime></created>
-<modified><datetime>20121204T161410,06+00</datetime></modified>
-<revised><datetime>20121204T161410,05+00</datetime></revised>
-<lastaccessed><datetime>20121204T161410,06+00</datetime></lastaccessed>
+<modified><datetime>20130115T081349,97+00</datetime></modified>
+<revised><datetime>20130115T081349,96+00</datetime></revised>
+<lastaccessed><datetime>20130115T081349,97+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094703,60+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
 >CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-<designchange><datetime>20121204T161409,11+00</datetime></designchange>
+<designchange><datetime>20130115T081346,98+00</datetime></designchange>
 <trigger type='agentlist'/>
 <documentset type='runonce'/><code event='options'><lotusscript>Option Public
 Use "DiscussionRoutines"

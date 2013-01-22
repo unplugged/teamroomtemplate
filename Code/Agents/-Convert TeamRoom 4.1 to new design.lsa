@@ -3,16 +3,16 @@
 <agent name='(-Convert TeamRoom 4.1 to new design)' xmlns='http://www.lotus.com/dxl'
  version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3'
  publicaccess='false' designerversion='6' language='en'>
-<noteinfo noteid='2ae' unid='FE253905807A4BC385256823004F8FA0' sequence='20'>
+<noteinfo noteid='2ae' unid='FE253905807A4BC385256823004F8FA0' sequence='21'>
 <created><datetime>19991108T092901,12-05</datetime></created>
-<modified><datetime>20121204T161409,62+00</datetime></modified>
-<revised><datetime>20121204T161409,61+00</datetime></revised>
-<lastaccessed><datetime>20121204T161409,62+00</datetime></lastaccessed>
+<modified><datetime>20130115T081349,53+00</datetime></modified>
+<revised><datetime>20130115T081349,52+00</datetime></revised>
+<lastaccessed><datetime>20130115T081349,53+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094704,04+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
 >CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-<designchange><datetime>20121204T161408,97+00</datetime></designchange>
+<designchange><datetime>20130115T081346,84+00</datetime></designchange>
 <trigger type='agentlist'/>
 <documentset type='runonce'/><code event='options'><lotusscript>Option Public 
 Option Declare

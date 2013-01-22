@@ -3,11 +3,11 @@
 <subform name='ArchiveReminder' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
  language='en'>
-<noteinfo noteid='42a' unid='942F66F6D3E31F7185256ACC00404725' sequence='13'>
+<noteinfo noteid='42a' unid='942F66F6D3E31F7185256ACC00404725' sequence='14'>
 <created><datetime dst='true'>20010919T074205,17-04</datetime></created>
-<modified><datetime>20121204T161405,88+00</datetime></modified>
-<revised><datetime>20121204T161405,87+00</datetime></revised>
-<lastaccessed><datetime>20121204T161405,88+00</datetime></lastaccessed>
+<modified><datetime>20130115T081345,47+00</datetime></modified>
+<revised><datetime>20130115T081345,46+00</datetime></revised>
+<lastaccessed><datetime>20130115T081345,47+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,92+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
 >CN=Matt White/O=Exhilarate</name></updatedby>
