@@ -12,7 +12,7 @@ the specific language governing permissions and limitations under the License
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom">
 	<xc:unpScrollableArea>
 		<xp:this.facets>
-			<xc:unpFormEditor showbuttons="true" closexpagename="UnpMain.xsp"
+			<xc:unpFormEditor showbuttons="yes" closexpagename="UnpMain.xsp"
 				viewxpagename="Response.xsp" formname="Response" title="Response"
 				xp:key="facet_1">
 				<xp:this.facets>

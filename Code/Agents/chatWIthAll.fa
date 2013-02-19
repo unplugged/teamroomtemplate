@@ -3,16 +3,16 @@
 <agent name='(chatWIthAll)' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='notes v3' publicaccess='false'
  designerversion='6.5' language='en'>
-<noteinfo noteid='46a' unid='BD022DFBB350442D85256DE20056B65B' sequence='8'>
+<noteinfo noteid='46a' unid='BD022DFBB350442D85256DE20056B65B' sequence='9'>
 <created><datetime>20031118T104707,79-05</datetime></created>
-<modified><datetime>20130115T081349,63+00</datetime></modified>
-<revised><datetime>20130115T081349,62+00</datetime></revised>
-<lastaccessed><datetime>20130115T081349,63+00</datetime></lastaccessed>
+<modified><datetime>20130219T091822,88+00</datetime></modified>
+<revised><datetime>20130219T091822,87+00</datetime></revised>
+<lastaccessed><datetime>20130219T091822,88+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094706,16+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
 >CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-<designchange><datetime>20130115T081346,88+00</datetime></designchange>
+<designchange><datetime>20130219T091819,51+00</datetime></designchange>
 <trigger type='agentlist'/>
 <documentset type='runonce'/><code event='action'>
 <simpleaction action='runformula'><formula>AllTxt  := "-- Chat with all --";

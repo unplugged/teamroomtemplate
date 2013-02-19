@@ -3,16 +3,16 @@
 <agent name='(wFindAddressBook)' xmlns='http://www.lotus.com/dxl' version='8.5'
  maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' runaswebuser='true'
  publicaccess='true' designerversion='6' language='en'>
-<noteinfo noteid='41e' unid='7D0440F22031076B85256A8C0044CC4E' sequence='11'>
+<noteinfo noteid='41e' unid='7D0440F22031076B85256A8C0044CC4E' sequence='12'>
 <created><datetime dst='true'>20010717T083127,50-04</datetime></created>
-<modified><datetime>20130115T081350,77+00</datetime></modified>
-<revised><datetime>20130115T081350,76+00</datetime></revised>
-<lastaccessed><datetime>20130115T081350,77+00</datetime></lastaccessed>
+<modified><datetime>20130219T091824,02+00</datetime></modified>
+<revised><datetime>20130219T091824,01+00</datetime></revised>
+<lastaccessed><datetime>20130219T091824,02+00</datetime></lastaccessed>
 <addedtofile><datetime>20121129T094705,86+00</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
 >CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-<designchange><datetime>20130115T081347,21+00</datetime></designchange>
+<designchange><datetime>20130219T091819,84+00</datetime></designchange>
 <trigger type='agentlist'/>
 <documentset type='runonce'/><code event='options'><lotusscript>Option Public
 Use "AddrBook"

@@ -20,7 +20,7 @@ the specific language governing permissions and limitations under the License
 	<xc:unpHeader search="database" viewsButton="true"
 		title="Teamroom" searchPage="UnpSearch.xsp">
 	</xc:unpHeader>
-	<xc:unpViewsList>
+	<xc:unpNavigator>
 		<xc:this.menuItem>
 			<xc:menuItem label="By Date" page="/UnpDate.xsp"
 				ajaxtargetid="content" ajaxloadid="contentwrapper">
@@ -45,7 +45,7 @@ the specific language governing permissions and limitations under the License
 				ajaxloadid="contentwrapper" page="/UnpDetails.xsp">
 			</xc:menuItem>
 		</xc:this.menuItem>
-	</xc:unpViewsList>
+	</xc:unpNavigator>
 	<div id="content">
 		<xc:unpScrollableArea>
 			<xp:this.facets>
@@ -57,5 +57,7 @@ the specific language governing permissions and limitations under the License
 			</xp:this.facets>
 		</xc:unpScrollableArea>
 	</div>
-	<xc:unpFooter newDocTarget="DocumentEdit.xsp"></xc:unpFooter>
+	<xc:unpFooter newDocTarget="DocumentEdit.xsp" newDocLoadType="ajax"
+		synctype="currentdb">
+	</xc:unpFooter>
 </xp:view>
