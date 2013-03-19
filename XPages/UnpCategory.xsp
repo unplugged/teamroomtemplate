@@ -10,13 +10,14 @@ the specific language governing permissions and limitations under the License
  -->
 
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core"
-	xmlns:xc="http://www.ibm.com/xsp/custom">
-	<xc:unpScrollableArea>
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:unp="http://unplugged.teamstudio.com">
+	<unp:unpScrollableArea>
 		<xp:this.facets>
-			<xc:unpAccordion xp:key="facet_1"
+			<unp:unpAccordion xp:key="facet_1"
 				viewName="(UnpDocumentsByCategory)" xpage="Document.xsp"
 				insetData="true" position="menu-aligned">
-			</xc:unpAccordion>
+			</unp:unpAccordion>
 		</xp:this.facets>
-	</xc:unpScrollableArea>
+	</unp:unpScrollableArea>
 </xp:view>
