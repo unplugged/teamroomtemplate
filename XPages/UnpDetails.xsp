@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--
-Copyright 2013 Teamstudio Inc 
-Licensed under the Apache License, Version 2.0 (the "License"); 
-you may not use this file except in compliance with the License. You may obtain a copy of the License at
-http://www.apache.org/licenses/LICENSE-2.0 
-Unless required by applicable law or agreed to in writing, software distributed under the License is distributed 
-on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
-the specific language governing permissions and limitations under the License
- -->
+	<!--
+		Copyright 2013 Teamstudio Inc Licensed under the Apache License,
+		Version 2.0 (the "License"); you may not use this file except in
+		compliance with the License. You may obtain a copy of the License at
+		http://www.apache.org/licenses/LICENSE-2.0 Unless required by
+		applicable law or agreed to in writing, software distributed under the
+		License is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR
+		CONDITIONS OF ANY KIND, either express or implied. See the License for
+		the specific language governing permissions and limitations under the
+		License
+	-->
 
-<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
-	xmlns:xc="http://www.ibm.com/xsp/custom"
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core" xmlns:xc="http://www.ibm.com/xsp/custom"
 	xmlns:unp="http://unplugged.teamstudio.com">
 	<xp:this.data>
 		<xp:dominoDocument var="document1" formName="Mission"
@@ -27,50 +28,50 @@ return unid;}]]></xp:this.documentId>
 	</xp:this.data>
 	<unp:unpScrollableArea>
 		<xp:this.facets>
-			<xp:panel xp:key="facet_1">
-				<div id="formholder">
-					<h2>
-						<span class="formtitle">Teamroom Details</span>
-					</h2>
-					<ul class="fieldlist">
-						<li>
-							<xp:label value="Team Name" id="teamnamelabel" for="teamname">
-							</xp:label>
-							<xp:text id="teamname" value="#{document1.TeamName}">
-							</xp:text>
-						</li>
-						<li>
-							<xp:label value="Mission" id="missionlabel" for="mission">
-							</xp:label>
-							<xp:text id="mission" escape="false" styleClass="xspTextComputedField longtext">
-								<xp:this.value><![CDATA[#{javascript:@ReplaceSubstring(document1.getItemValueString("Mission"), "\n", "<br />")}]]></xp:this.value>
-							</xp:text>
-						</li>
-						<li>
-							<xp:label value="Created By" id="fromlabel" for="from">
-							</xp:label>
-							<xp:text id="from">
-								<xp:this.value><![CDATA[#{javascript:@Name("[CN]", document1.getItemValueString("From"))}]]></xp:this.value>
-							</xp:text>
-						</li>
-						<li>
-							<xp:label value="Team Leader" id="teamleaderlabel" for="teamleader">
-							</xp:label>
-							<xp:text id="teamleader" value="#{document1.TeamLeader}">
-							</xp:text>
-						</li>
-						<li>
-							<xp:label value="Team Facilitator" id="teamfacilitatorlabel"
-								for="teamfacilitator">
-							</xp:label>
-							<xp:text id="teamfacilitator" value="#{document1.teamfacilitator}">
-							</xp:text>
-						</li>
-						<li>
-							<xp:label for="TeamMembers" value="Team Members: ">
-							</xp:label>
-							<xp:text id="TeamMembers" styleClass="xspTextComputedField longtext">
-								<xp:this.value><![CDATA[#{javascript:var NoParticipantMessage = "No team members have been specified for this TeamRoom.";
+			<unp:unpFormViewer showbuttons="false"
+				editxpagewithajax="yes" xp:key="facet_1" title="Teamroom Details">
+				<xp:this.facets>
+					<xp:panel xp:key="facet_1">
+						<ul class="fieldlist">
+							<li>
+								<xp:label value="Team Name" id="teamnamelabel" for="teamname">
+								</xp:label>
+								<xp:text id="teamname" value="#{document1.TeamName}">
+								</xp:text>
+							</li>
+							<li>
+								<xp:label value="Mission" id="missionlabel" for="mission">
+								</xp:label>
+								<xp:text id="mission" escape="false"
+									styleClass="xspTextComputedField longtext">
+									<xp:this.value><![CDATA[#{javascript:@ReplaceSubstring(document1.getItemValueString("Mission"), "\n", "<br />")}]]></xp:this.value>
+								</xp:text>
+							</li>
+							<li>
+								<xp:label value="Created By" id="fromlabel" for="from">
+								</xp:label>
+								<xp:text id="from">
+									<xp:this.value><![CDATA[#{javascript:@Name("[CN]", document1.getItemValueString("From"))}]]></xp:this.value>
+								</xp:text>
+							</li>
+							<li>
+								<xp:label value="Team Leader" id="teamleaderlabel" for="teamleader">
+								</xp:label>
+								<xp:text id="teamleader" value="#{document1.TeamLeader}">
+								</xp:text>
+							</li>
+							<li>
+								<xp:label value="Team Facilitator" id="teamfacilitatorlabel"
+									for="teamfacilitator">
+								</xp:label>
+								<xp:text id="teamfacilitator" value="#{document1.teamfacilitator}">
+								</xp:text>
+							</li>
+							<li>
+								<xp:label for="TeamMembers" value="Team Members: ">
+								</xp:label>
+								<xp:text id="TeamMembers" styleClass="xspTextComputedField longtext">
+									<xp:this.value><![CDATA[#{javascript:var NoParticipantMessage = "No team members have been specified for this TeamRoom.";
 var ParticipantLookup = "";
 ParticipantLookup = @DbColumn(@DbName(), "PeopleLookup", 3);
 if(ParticipantLookup == null || ParticipantLookup == ""){
@@ -78,12 +79,12 @@ if(ParticipantLookup == null || ParticipantLookup == ""){
 }else{
 	return @Implode(ParticipantLookup, ", ");
 }}]]></xp:this.value>
-							</xp:text>
-						</li>
-					</ul>
-				</div>
-
-			</xp:panel>
+								</xp:text>
+							</li>
+						</ul>
+					</xp:panel>
+				</xp:this.facets>
+			</unp:unpFormViewer>
 		</xp:this.facets>
 	</unp:unpScrollableArea>
 </xp:view>

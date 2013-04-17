@@ -15,10 +15,11 @@ the specific language governing permissions and limitations under the License
 	<xp:this.resources>
 		<xp:styleSheet href="/custom.css"></xp:styleSheet>
 		<xp:styleSheet href="/unplugged.css"></xp:styleSheet>
+		<xp:styleSheet href="/unpDialog.css"></xp:styleSheet>
 		<xp:script src="/document.js" clientSide="true"></xp:script>
 	</xp:this.resources>
-	<unp:unpHeader search="database" viewsButton="true"
-		title="Teamroom" searchPage="UnpSearch.xsp">
+	<unp:unpHeader search="database" viewsButton="true" title="Teamroom"
+		searchPage="UnpSearch.xsp" appVersion="v1.4.0 (April 2013)">
 	</unp:unpHeader>
 	<unp:unpNavigator>
 		<unp:this.menuItem>
