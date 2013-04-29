@@ -1,27 +1,35 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<view name='(DelEventLookup)' alias='DelEventLookup' xmlns='http://www.lotus.com/dxl'
- version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='false'
- publicaccess='false' designerversion='8' language='en' unreadmarks='none'
- onopengoto='lastopened' onrefresh='displayindicator' headers='beveled' opencollapsed='false'
- showresponsehierarchy='true' showmargin='true' shrinkrows='false' extendlastcolumn='false'
- showhierarchies='false' unreadcolor='black' rowlinecount='1' headerlinecount='1'
- rowspacing='1' bgcolor='white' totalscolor='black' headerbgcolor='white'
- boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
- allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
- uniquekeys='false'>
-<noteinfo noteid='476' unid='EA6760E664BDABF4852571BD0040A993' sequence='9'>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='4c6' unid='EA6760E664BDABF4852571BD0040A993' sequence='11'>
 <created><datetime dst='true'>20060801T074617,15-04</datetime></created>
-<modified><datetime>20130219T091822,96+00</datetime></modified>
-<revised><datetime>20130219T091822,95+00</datetime></revised>
-<lastaccessed><datetime>20130219T091822,96+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094706,20+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
->SELECT form = "Event" &amp; Status = "1"</formula></code>
-<column sort='ascending' hidedetailrows='false' itemname='$0' width='17.8750'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='false'><columnheader title='#'><font size='9pt' style='bold'/></columnheader><code
- event='value'><formula>EventSummary + " (" + @Text(EventDate) + ")"</formula></code></column></view>
+<modified><datetime dst='true'>20130408T135938,10+01</datetime></modified>
+<revised><datetime dst='true'>20130408T135938,09+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130408T135938,10+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135554,34+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name='$LANGUAGE' sign='true'><text>en</text></item>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>(DelEventLookup)|DelEventLookup</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+pAACADwAAgAkMAUADABFdmVudFN1bW1hcnkBAAIAICgiAgUACQBFdmVudERhdGUAVgEiAgEAAQAp
+ACICAwAFAB4AGQADAAIACQAEACQwJENvbmZsaWN0JFJFRgAEAAQAAAAuAAUABABmb3JtAQAFAEV2
+ZW50AAoCBQAGAFN0YXR1cwEAAQAxAAoCHAIDAAcAFgAQAAlMMVMyUzNTNFM1UzZTN1M=
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+DwABAABEAGYAAAACACQw
+</rawitemdata></item>
+<item name='$VIEWFORMAT' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQABAAAACAAAAFZDAQACAAEAUgAAAI8AAQAACgAAAAAAAAAAAAICAAAAJDAjUgACADwAAgAkMAUA
+DABFdmVudFN1bW1hcnkBAAIAICgiAgUACQBFdmVudERhdGUAVgEiAgEAAQApACICAwAHABQADQAJ
+MVMyUzNTNFM4UzlTACYAAQAAAAEBAAkBAAAKAQEACgAAAQCtKwEAAQABAAAAAAAAAAAAV0MBAQAJ
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAEIAAAAAAAEA////AAUA////
+AAEAAAAAAAAAAAAAAAAAAQD///8AAQD///8AAAABAAAAAAABAAAAAAABAAAAAAAAAAgAAAAAAAEA
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$Flags'><text>Y</text></item></note>
 

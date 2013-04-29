@@ -1,46 +1,63 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<view name='(PriAlt)' alias='PriAlt' xmlns='http://www.lotus.com/dxl' version='8.5'
- maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='true' publicaccess='false'
- designerversion='6' language='en' unreadmarks='none' onopengoto='lastopened'
- onrefresh='displayindicator' headers='beveled' opencollapsed='false' showresponsehierarchy='true'
- showmargin='true' shrinkrows='false' extendlastcolumn='true' showhierarchies='false'
- unreadcolor='black' rowlinecount='1' headerlinecount='1' rowspacing='1' bgcolor='white'
- totalscolor='blue' headerbgcolor='white' boldunreadrows='false' evaluateactions='false'
- allownewdocuments='false' allowcustomizations='true' hidemarginborder='false'
- marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
-<noteinfo noteid='42e' unid='6B0DE4E5DC85E90485256ACD005B6C61' sequence='10'>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='57e' unid='6B0DE4E5DC85E90485256ACD005B6C61' sequence='12'>
 <created><datetime dst='true'>20010920T123835,21-04</datetime></created>
-<modified><datetime>20130219T091823,32+00</datetime></modified>
-<revised><datetime>20130219T091823,31+00</datetime></revised>
-<lastaccessed><datetime>20130219T091823,32+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094705,94+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
->SELECT (form = "ParticipantProfile" | form = "Participant Profile") &amp; status = "1"</formula></code>
-<actionbar bordercolor='black'>
-<actionbuttonstyle bgcolor='silver'/>
-<action title='Categori_ze' showinmenu='false' showinbar='false' systemcommand='categorize'/>
-<action title='_Edit Document' showinbar='false' systemcommand='edit'/>
-<action title='Send Docu_ment' showinbar='false' systemcommand='send'/>
-<action title='_Forward' showinbar='false' systemcommand='forward'/>
-<action title='_Move To Folder...' showinbar='false' systemcommand='movetofolder'/>
-<action title='_Remove From Folder' showinbar='false' systemcommand='removefromfolder'/></actionbar>
-<column sort='ascending' hidedetailrows='false' itemname='$3' width='39.3750'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='false'><font size='9pt'/><columnheader title='Pri/Alt'><font
- size='9pt'/></columnheader><code event='value'><formula>altName := @If(getAlternateName = ""; @Name([Abbreviate]; Who); @Name([Abbreviate]; getAlternateName));
-
-altName + "|" + @Name([Abbreviate]; Who)</formula></code></column>
-<column hidedetailrows='false' itemname='$4' width='35.6250' resizable='true'
- separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><font
- size='9pt'/><columnheader title='DocUNID'><font size='9pt'/></columnheader><code
- event='value'><formula>@Text(@DocumentUniqueID)</formula></code></column>
-<column sort='ascending' hidedetailrows='false' itemname='$5' width='39.3750'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='false'><font size='9pt'/><columnheader title='Alt/Pri'><font
- size='9pt'/></columnheader><code event='value'><formula>altName := @If(getAlternateName = ""; @Name([Abbreviate]; Who); @Name([Abbreviate]; getAlternateName));
-
-@Name([Abbreviate]; Who) + "|" + altName</formula></code></column></view>
+<modified><datetime dst='true'>20130408T135937,87+01</datetime></modified>
+<revised><datetime dst='true'>20130408T135937,86+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130408T135937,87+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135555,91+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name='$LANGUAGE' sign='true'><text>en</text></item>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwAAAAAAQABAAAAAAAAAAAAAAABAAAJAAAAAHn/bAAJAAAAAAABAAAAAAABAAAAAAABAMDAwAAA
+AB8AAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAL7/JgAAAAUAAACcAQAACwAAAAAAAABDYXRlZ29yaV96ZQAB
+AE58vv8oAAAABQAAAJ0BAAAOAAAAAAAAAF9FZGl0IERvY3VtZW50AgACCr7/KAAAAAUAAACdAQAA
+DgAAAAAAAABTZW5kIERvY3VfbWVudAMAAwq+/yIAAAAFAAAAnQEAAAgAAAAAAAAAX0ZvcndhcmQE
+AAQKvv8sAAAABQAAAJ0BAAASAAAAAAAAAF9Nb3ZlIFRvIEZvbGRlci4uLgUAPXy+/y4AAAAFAAAA
+nQEAABMAAAAAAAAAX1JlbW92ZSBGcm9tIEZvbGRlcgAGAD58
+</rawitemdata></item>
+<item name='$TITLE' sign='true'><text>(PriAlt)|PriAlt</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+IAIBAHYAEABhbHROYW1lAFpgRwBHeyUABQAQAGdldEFsdGVybmF0ZU5hbWUBAAAACgKvAEIAGgAC
+AAUAAAAAAAAABQADAFdobwC0Aq4AKAACAAUAAAAAAAAABQAQAGdldEFsdGVybmF0ZU5hbWW0Aq4A
+BAC1AwMAAgA8AAIAJDMFABAAYWx0TmFtZQBaYEcAR3slAAEAAQB8ACICAgAFAAAAAAAAAAUAAwBX
+aG8AtAIiAgMAAgAOAAIAJDSQAFYBAwABAHYAEABhbHROYW1lAFpgRwBHeyUABQAQAGdldEFsdGVy
+bmF0ZU5hbWUBAAAACgKvAEIAGgACAAUAAAAAAAAABQADAFdobwC0Aq4AKAACAAUAAAAAAAAABQAQ
+AGdldEFsdGVybmF0ZU5hbWW0Aq4ABAC1AwMAAgA8AAIAJDUCAAUAAAAAAAAABQADAFdobwC0AgEA
+AQB8ACICBQAQAGFsdE5hbWUAWmBHAEd7JQAiAgMABQAmACEABQACAAIAAgAJAAQAJDMkNCQ1JENv
+bmZsaWN0JFJFRgAEAAQAAABgAAUABABmb3JtAQASAFBhcnRpY2lwYW50UHJvZmlsZQoCBQAEAGZv
+cm0BABMAUGFydGljaXBhbnQgUHJvZmlsZQAKAh0CBAAFAAYAc3RhdHVzAQABADEACgIcAgMABwAi
+ABwACUwxUzNTNFM1UzZTN1M4UzEwUzExUzEyUzEzUw==
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+GAACAABEAGYAAAACAABmAAIAAgAkMyQ1
+</rawitemdata></item>
+<item name='$VIEWFORMAT' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQADAAAACEAAAFZDAQACAAcA4gAAADsBAQAACQAAAAAAAAAAAAICAAAAVkMAAAIABwAcAAAAHQEB
+AAAJAAAAAAAAAAAAAgIAAABWQwEAAgAHAOIAAAA7AQEAAAkAAAAAAAAAAAACAgAAACQzUHJpL0Fs
+dOIAAQB2ABAAYWx0TmFtZQBaYEcAR3slAAUAEABnZXRBbHRlcm5hdGVOYW1lAQAAAAoCrwBCABoA
+AgAFAAAAAAAAAAUAAwBXaG8AtAKuACgAAgAFAAAAAAAAAAUAEABnZXRBbHRlcm5hdGVOYW1ltAKu
+AAQAtQMDAAcAGgAUAAkxUzJTNVM2UzhTMTJTMTVTMTlTAgA8AAIAJDMFABAAYWx0TmFtZQBaYEcA
+R3slAAEAAQB8ACICAgAFAAAAAAAAAAUAAwBXaG8AtAIiAgMABwAUAA4ACTBSUjFTMlMzUzRTOFMk
+NERvY1VOSUQcAAIADgACACQ0kABWAQMABwAMAAUACTBTMEUAJDVBbHQvUHJp4gABAHYAEABhbHRO
+YW1lAFpgRwBHeyUABQAQAGdldEFsdGVybmF0ZU5hbWUBAAAACgKvAEIAGgACAAUAAAAAAAAABQAD
+AFdobwC0Aq4AKAACAAUAAAAAAAAABQAQAGdldEFsdGVybmF0ZU5hbWW0Aq4ABAC1AwMABwAaABQA
+CTFTMlM1UzZTOFMxMlMxNVMxOVMCADwAAgAkNQIABQAAAAAAAAAFAAMAV2hvALQCAQABAHwAIgIF
+ABAAYWx0TmFtZQBaYEcAR3slACICAwAHABQADgAJMFJSNFM2UzdTOFM5UyYAAQAAAAEBAAkBAAAK
+AQEECgAAAQCtKwEAAQABAAAAAAAAAAAAV0MBAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8A
+AAAAAAAAAAAAAAAAAFdDAQAACQAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAA
+AABXQwEAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAQgAAAAAAAQD/
+//8ABQD///8AAQAAAAAAAAAAAAAAAAABAP///wABAP///wAAAAEAAAAAAAEAAAD/AAEAAAAAAAAA
+CAAAAAAAAQA=
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$Flags'><text/></item></note>
 

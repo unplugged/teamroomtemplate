@@ -1,8 +1,18 @@
-<?xml version="1.0" encoding="UTF-8"?><fileresource charset="UTF-8" designerversion="8.5.3" maintenanceversion="3.0" name="BBReplication.xml" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="251e" sequence="2" unid="1D8AEB20854D033280257AC9003A2237">
+<?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" replicaid="80257AC50035BEE2" version="9.0">
+<noteinfo noteid="1dfa" sequence="9" unid="1D8AEB20854D033280257AC9003A2237">
 <created><datetime>20121203T103458,47+00</datetime></created>
-<modified><datetime>20121203T103510,53+00</datetime></modified>
-<revised><datetime>20121203T103510,52+00</datetime></revised>
-<lastaccessed><datetime>20121203T103510,53+00</datetime></lastaccessed>
-<addedtofile><datetime>20121203T103458,49+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby></fileresource>
+<modified><datetime dst="true">20130417T112219,27+01</datetime></modified>
+<revised><datetime dst="true">20130417T112219,26+01</datetime></revised>
+<lastaccessed><datetime dst="true">20130417T112219,27+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130408T135631,19+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name="$TITLE" sign="true"><text>BBReplication.xml</text></item>
+<item name="$MimeCharSet"><text>UTF-8</text></item>
+<item name="$FileModDT" sign="true"><datetime dst="true">20130408T135942,22+01</datetime></item>
+<item name="$Flags"><text>g345QC</text></item>
+<item name="$FlagsExt" sign="true"><text>D</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+
+<item name="$FileNames" sign="true"><text>BBReplication.xml</text></item></note>

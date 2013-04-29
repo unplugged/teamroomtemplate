@@ -1,12 +1,12 @@
-<?xml version="1.0" encoding="UTF-8"?><note class="filter" maintenanceversion="3.0" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="182" sequence="46" unid="1FCAE4E38E5AE917852564D00067BA26">
+<?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="filter" replicaid="80257AC50035BEE2" version="9.0">
+<noteinfo noteid="5d2" sequence="58" unid="1FCAE4E38E5AE917852564D00067BA26">
 <created><datetime dst="true">19970710T145258,62-04</datetime></created>
-<modified><datetime>20121129T094703,28+00</datetime></modified>
-<revised><datetime dst="true">20090617T103847,68-04</datetime></revised>
-<lastaccessed><datetime>20121129T094703,28+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094703,28+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></updatedby>
-<wassignedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name></wassignedby>
+<modified><datetime dst="true">20130417T112219,57+01</datetime></modified>
+<revised><datetime dst="true">20130417T112219,56+01</datetime></revised>
+<lastaccessed><datetime dst="true">20130417T112219,57+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130408T135556,70+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <item name="$LANGUAGE" sign="true"><text>en</text></item>
 <item name="$TITLE" sign="true"><text>DiscussionRoutines</text></item>
 <item name="$Flags"><text>s34Q</text></item>

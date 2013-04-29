@@ -1,50 +1,56 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE form SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<form name='Database Location' alias='DatabaseLocation' xmlns='http://www.lotus.com/dxl'
- version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' nocompose='true'
- noquery='true' publicaccess='true' designerversion='8.5' language='en' bgcolor='#78b4bc'
- noinitialfocus='true' nofocusonf6='true'>
-<noteinfo noteid='40a' unid='0DF54AEA45AFD67585256A53005B42AE' sequence='13'>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='546' unid='0DF54AEA45AFD67585256A53005B42AE' sequence='16'>
 <created><datetime dst='true'>20010521T123648,46-04</datetime></created>
-<modified><datetime>20130219T091818,18+00</datetime></modified>
-<revised><datetime>20130219T091818,17+00</datetime></revised>
-<lastaccessed><datetime>20130219T091818,18+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094705,78+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
-<revisions><datetime dst='true'>20070328T120257,29-04</datetime></revisions>
+<modified><datetime dst='true'>20130417T112219,41+01</datetime></modified>
+<revised><datetime dst='true'>20130417T112219,40+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130417T112219,41+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135555,52+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-<body><richtext>
-<pardef id='1' align='none' leftmargin='1in' hide='notes web' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
-<par def='1'/>
-<pardef id='2' align='none' leftmargin='1in' hide='notes' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/><subformref
- name='WebFont'/>
-<par def='1'/>
-<table widthtype='fitwindow' leftmargin='0.7500in' refwidth='7.8958in'><tablecolumn
- width='100%'/>
-<tablerow>
-<tablecell borderwidth='0px'>
-<pardef id='4' leftmargin='0.1000in' hide='web' keepwithnext='true' keeptogether='true'/>
-<par def='4'><run><font size='9pt'/></run><run><font size='9pt'/><computedtext
-><code event='value'><formula>REM {Notes only};
-LocalTxt:="Local";
-onTxt := "on";
-server := @Subset(@DbName;1);
-serverString := onTxt + " " + @Name([Abbreviate]; Server);
-@If(server=""; LocalTxt; serverString)</formula></code></computedtext></run><run
-><font size='9pt'/></run></par>
-<pardef id='5' leftmargin='0.1000in' hide='notes' tabs='L3.1458in L3.6458in L4.1458in L4.6458in L5.1458in L5.6458in L6.1458in L6.6458in'
- keepwithnext='true' keeptogether='true'/>
-<par def='5'><run><font size='9pt' name='user-interface'/>  </run><run><font
- size='9pt' name='user-interface'/><field type='text' kind='computedfordisplay'
- name='SERVER_NAME'><code event='defaultvalue'><formula>REM {cgi variable for web};
-SERVER_NAME</formula></code></field></run><compositedata type='98' prevtype='65418'
- nexttype='222' afterparcount='7' containertype='65418' aftercontainercount='1'
- afterbegincount='3'>
-Yg4BAIQAAAAAAAAAAAA=
-</compositedata><run><font size='9pt'/></run></par></tablecell></tablerow></table>
-<pardef id='6' leftmargin='0.7500in' hide='notes'/>
-<par def='6'><run><font size='9pt'/></run></par></richtext></body>
+<item name='$TITLE' sign='true'><textlist><text>Database Location</text><text
+>DatabaseLocation</text></textlist></item>
+<item name='$PublicAccess'><text>1</text></item>
+<item name='$LANGUAGE'><text>en</text></item>
+<item name='$DesignerVersion'><text>8.5</text></item>
+<item name='$BODY' sign='true'>
+<rawitemdata type='1'>
+gQKC/1oAAQAEAAAAAAAAAKAFAACgBQgA0AKgBXAIQAsQDuAQsBOAFgAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAACBAAAAAJWEoAUMAKAFDAAAAAAAAQAAAAQAAACDBAEAhf8IAAEAAAqBAoL/WgACAAQA
+AAAAAAAAoAUAAKAFCADQAqAFcAhACxAO4BCwE4AWAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIEA
+AAAAlISgBQwAoAUMAAAAAAABAAAABAAAAIMEAgCF/wgAAQAACt0GAACt/3H/KQAAAAAAAwAYAAcA
+AAAAAAAAAAAAAAAAAAAAAAAAAABXZWJGb250P63/FAAOAAgAAAAIAFdlYkZvbnQArgLeBgAArgCF
+/wgAAQAACoECgwQBAIX/CAABAAAKgQKC/1IAAwAAAAAAAAAAADgEAAA4BAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAJQEOAQJADgECQAAAAAAgwQDAPv/LABB
+AAAAAQEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAow44BCgAPAAAAAAAAwCkEgAA
+OASiMIBwAAIAAAEBAACBAoL/WgAEAAAAAAAAAAAA1wSiMNcEAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAhgEAAAAAlYSQAAEAkAABAAAAAAABAAAABAAAAIMEBACF/wgA
+AQAACd0GAACt/6n/PgEBABgABAAyATIBBwAQAAoATm90ZXMgb25seQcACgADAAkxUwABABoACABM
+b2NhbFR4dAEABQBMb2NhbAADAAcACgADAAkwUgABABQABQBvblR4dAABAAIAb24DAAcADgAHAAkw
+UjFTMlMAAQAcAAYAc2VydmVyiwAAAAAAAAAAAPA/awIDAAcADgAHAAkwUjFTMlMAAQA+AAwAc2Vy
+dmVyU3RyaW5nBQAFAG9uVHh0AAEAAQAgACICAgAFAAAAAAAAAAUABgBTZXJ2ZXK0AiICAwAHABgA
+EgAJMFIxUzJTM1M0UzVTNlMxMFMAAEIABQAGAHNlcnZlcgEAAAAKAq8AKgASAAUACABMb2NhbFR4
+dK4AGAAFAAwAc2VydmVyU3RyaW5nrgAEALUDAwAHAA4ABwAJMFI2UzhTAIX/CAABAAAJqgLeBgAA
+rgCF/wgAAQAACYECgv9aAAUAAAAAAAAAAADXBKIw1wQIALIRghRSFyIa8hzCH5IiYiUAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAACGgQAAAACUhJAAAQCQAAEAAAAAAAEAAAAEAAAAgwQFAIX/CgADAAAJ
+///dBgAAiv/+/1AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIr/dQCAAQAFAAAAAAAAAAAAAAMAAAlGAAAA
+AAAAAAsAAAAAAEYABwAaABQAY2dpIHZhcmlhYmxlIGZvciB3ZWIHAAoAAwAJMVMAAAAWAAUACwBT
+RVJWRVJfTkFNRQADAAcACgADAAkwUgBTRVJWRVJfTkFNRQBiDgEAhAAAAAAAAAAAAN4GAACK/4X/
+CAABAAAJpQYAAAAAgQKC/1oABgAAAAAAAAAAADgEAAA4BAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAACBAAAAAJSEOAQJADgECQAAAAAAAQAAAAQAAACDBAYAhf8IAAEA
+AAk=
+</rawitemdata></item>
 <item name='$SubForm_RepIDs' sign='true'><text>0000000000000000</text></item>
-<item name='$$ScriptName' summary='false' sign='true'><text>DatabaseLocation</text></item></form>
+<item name='$$ScriptName' summary='false' sign='true'><text>DatabaseLocation</text></item>
+<item name='$HTMLCode' sign='true'>
+<rawitemdata type='1'>
+X/8QAAIADwAHAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$INFO' sign='true'>
+<rawitemdata type='1'>
+hhjWAIAAAAAAgAAA1gABAHi0vAAKAAAA
+</rawitemdata></item>
+<item name='$Flags'><text>CD</text></item>
+<item name='$Fields'><text>SERVER_NAME</text></item></note>
 

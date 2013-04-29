@@ -1,18 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE sharedfield SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<sharedfield name='AltLang' xmlns='http://www.lotus.com/dxl' version='8.5'
- maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
- language='en'>
-<noteinfo noteid='14e' unid='B652F5C1F51CB58A85256842004BC469' sequence='10'>
+<note class='sharedfield' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='49a' unid='B652F5C1F51CB58A85256842004BC469' sequence='13'>
 <created><datetime>19991209T084734,81-05</datetime></created>
-<modified><datetime>20130219T091817,88+00</datetime></modified>
-<revised><datetime>20130219T091817,87+00</datetime></revised>
-<lastaccessed><datetime>20130219T091817,88+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094703,08+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><field type='text'
- kind='computedwhencomposed' name='AltLang'><code event='defaultvalue'><formula
->ver := @TextToNumber(@Version);
-@If(ver &lt; 148; @Return(""); @UserNameLanguage(1))</formula></code></field></sharedfield>
+<modified><datetime dst='true'>20130417T112219,11+01</datetime></modified>
+<revised><datetime dst='true'>20130417T112219,10+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130417T112219,11+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135554,15+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name='$TITLE'><text>AltLang</text></item>
+<item name='$LANGUAGE'><text>en</text></item>
+<item name='$DesignerVersion'><text>6</text></item>
+<item name='$INFO' sign='true'>
+<rawitemdata type='1'>
+hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
+</rawitemdata></item>
+<item name='$BODY' summary='true' sign='true'>
+<rawitemdata type='1'>
+gQKC/1IAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAABAAAAAJQHAAAAAAAAAAAAAAAAgwQBAIX/CAABAAAK3QYAAIr//v9QAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAACK/50AgAAABQAAAAAAAAAAAAABAAAKcgAAAAAAAAAHAAAAAAByAAoABAABABAA
+AwB2ZXIAvwBYAQMABwAMAAUACTFTMlMAAAA+AAUAAwB2ZXIAAAAAAAAAAIBiQA4CrwAiAAwAAQAA
+AMIBrgAWAAAAAAAAAAAA8D/7AQ0BrgAEALUDAwAHABIADAAJMFIzUzRTNlMxMVNBbHRMYW5nAN4G
+AACK/w==
+</rawitemdata></item>
+<item name='$Flags'><text/></item>
+<item name='$Fields'><text>AltLang</text></item></note>
 

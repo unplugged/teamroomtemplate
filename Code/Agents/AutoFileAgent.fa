@@ -1,42 +1,70 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE agent SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<agent name='AutoFileAgent' xmlns='http://www.lotus.com/dxl' version='8.5'
- maintenanceversion='3.0' replicaid='80257AC50035BEE2' hide='v3' publicaccess='false'
- designerversion='7' language='en' comment='Enable/Disable this agent through the TeamRoom Setup'
- activatable='false' enabled='false'>
-<noteinfo noteid='1fa' unid='5A54D59F014E11258525658A00722082' sequence='126'>
+<note class='filter' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='556' unid='5A54D59F014E11258525658A00722082' sequence='129'>
 <created><datetime>19980112T154634,26-05</datetime></created>
-<modified><datetime>20130219T091818,02+00</datetime></modified>
-<revised><datetime>20130219T091818,01+00</datetime></revised>
-<lastaccessed><datetime>20130219T091818,02+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094703,56+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-<designchange><datetime>20130219T091817,82+00</datetime></designchange>
-<trigger type='scheduled'>
-<schedule type='daily' runlocation='any'>
-<starttime><datetime>T010000,00</datetime></starttime></schedule></trigger>
-<documentset type='all'/><code event='action'>
-<simpleaction action='runformula'><formula>REM {This agent files those documents whose filed-by-date is equal or older than today};
-REM {variables to translate};
-Filedtxt := "This document was filed on: ";
-REM {End variables to translate};
-
-REM {Check to see if Open documents can be filed};
-view := "MissionLookup";
-Key := "Mission";
-FileOpenDocs := @DbLookup("" : "NoCache"; ""; View; Key; "FileOpenDocs");
-
-FilingDate := FileByDate;
-CanBeFiled := @If(FileOpenDocs = "1"; "y"; Current_Status = "1"; "y"; "n");
-SELECT !@IsAvailable(DateFiled) &amp; filingdate != "" &amp; CanBeFiled = "y" &amp; @Date(@Today) &gt;= @Date(FilingDate) &amp; form = "MainTopic";
-REM {Don't file this if there's a due date and the status is still open};
-@If(DueDate != "" &amp; Current_Status = "0" &amp; FileOpenDocs = "0"; @Return(""); "");
-FIELD Status := "0";
-FIELD DateFiled := @Now;
-date := DateFiled;
-FIELD ViewDateFiled := @If(date = ""; ""; Date);</formula></simpleaction></code>
-<rundata processeddocs='0' exitcode='0'>
-<agentmodified><datetime dst='true'>20040518T081903,30-04</datetime></agentmodified></rundata></agent>
+<modified><datetime dst='true'>20130417T112219,25+01</datetime></modified>
+<revised><datetime dst='true'>20130417T112219,24+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130417T112219,25+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135555,65+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<item name='$TITLE' sign='true'><text>AutoFileAgent</text></item>
+<item name='$Comment'><text>Enable/Disable this agent through the TeamRoom Setup</text></item>
+<item name='$LANGUAGE'><text>en</text></item>
+<item name='$DesignerVersion'><text>7</text></item>
+<item name='$Restricted' sign='true'><number>1</number></item>
+<item name='$AssistTrigger'><text>1</text></item>
+<item name='$MachineName' sign='true'><text>*</text></item>
+<item name='$AssistAction' sign='true'>
+<rawitemdata type='10'>
+gQKE/xIFAAAAAAgFCAUHAFgAUQBUaGlzIGFnZW50IGZpbGVzIHRob3NlIGRvY3VtZW50cyB3aG9z
+ZSBmaWxlZC1ieS1kYXRlIGlzIGVxdWFsIG9yIG9sZGVyIHRoYW4gdG9kYXkABwAKAAMACTFTAAcA
+HAAWAHZhcmlhYmxlcyB0byB0cmFuc2xhdGUHAAwABQAJMFIxUwABADAACABGaWxlZHR4dAEAHABU
+aGlzIGRvY3VtZW50IHdhcyBmaWxlZCBvbjogAwAHAA4ABwAJMFIxUzJTAAcAIAAaAEVuZCB2YXJp
+YWJsZXMgdG8gdHJhbnNsYXRlBwAMAAUACTBSMVMABwAyACsAQ2hlY2sgdG8gc2VlIGlmIE9wZW4g
+ZG9jdW1lbnRzIGNhbiBiZSBmaWxlZAAHAAwABgAJMFJSMVMBAB4ABAB2aWV3AQANAE1pc3Npb25M
+b29rdXAAAwAHAA4ABwAJMFIxUzJTAAEAGAADAEtleQABAAcATWlzc2lvbgADAAcADgAHAAkwUjFT
+MlMAAQBMAAwARmlsZU9wZW5Eb2NzAQAAAAEABwBOb0NhY2hlAB8CAQAAAAUABABWaWV3BQADAEtl
+eQABAAwARmlsZU9wZW5Eb2NzgwUDAAcAHAAWAAkwUjFTMlM1UzZTOFMxMFMxMlMxNFMBACAACgBG
+aWxpbmdEYXRlBQAKAEZpbGVCeURhdGUDAAcADgAIAAkwUlIxUzJTAQBwAAoAQ2FuQmVGaWxlZAUA
+DABGaWxlT3BlbkRvY3MBAAEAMQAKAq8ARAAMAAEAAQB5AK4AOAAFAA4AQ3VycmVudF9TdGF0dXMB
+AAEAMQAKAq8AGgAMAAEAAQB5AK4ADgABAAEAbgCuAAQAtQUDAAcAIgAcAAkwUjFTMlM1UzZTOFMx
+MFMxMVMxMlMxNFMxNlMAAHgABQAJAERhdGVGaWxlZABoAR4BBQAKAGZpbGluZ2RhdGUBAAAACwIc
+AgUACgBDYW5CZUZpbGVkAQABAHkACgIcAi0ASwEFAAoARmlsaW5nRGF0ZUsBDQIcAgUABABmb3Jt
+AQAJAE1haW5Ub3BpYwAKAhwCAwAHADgAMgAJMFJMMVM2UzdTOFM5UzEwUzExUzEyUzEzUzE0UzE1
+UzE5UzIwUzI0UzI1UzI2UzI3UwcASABCAERvbid0IGZpbGUgdGhpcyBpZiB0aGVyZSdzIGEgZHVl
+IGRhdGUgYW5kIHRoZSBzdGF0dXMgaXMgc3RpbGwgb3BlbgcADAAFAAkwUjFTAAgAaAAFAAcARHVl
+RGF0ZQABAAAACwIFAA4AQ3VycmVudF9TdGF0dXMBAAEAMAAKAhwCBQAMAEZpbGVPcGVuRG9jcwEA
+AQAwAAoCHAKvABgADAABAAAAwgGuAAwAAQAAAK4ABAC1AwMABwAmACAACTBSM1M0UzVTNlM3UzhT
+OVMxMFMxMVMxMlMxNFMxOVMDABQABgBTdGF0dXMBAAEAMAADAAcAEAAJAAkwUjFTMlMzUwADABQA
+CQBEYXRlRmlsZWQALAADAAcAEAAJAAkwUjFTMlMzUwABABoABABkYXRlBQAJAERhdGVGaWxlZAAD
+AAcADgAHAAkwUjFTMlMAAwBAAA0AVmlld0RhdGVGaWxlZAAFAAQAZGF0ZQEAAAAKAq8AGgAKAAEA
+AACuABAABQAEAERhdGWuAAQAtQMDAAcAGAASAAkwUjFTMlMzUzZTN1M5UzExUw==
+</rawitemdata></item>
+<item name='$AssistAction_Ex' sign='true'>
+<rawitemdata type='14'>
+gQI=
+</rawitemdata></item>
+<item name='$AssistType' sign='true'><number>65412</number></item>
+<item name='$AssistFlags' sign='true'><text>s</text></item>
+<item name='$AssistInfo' sign='true'>
+<rawitemdata type='11'>
+AQABAAEAAgABAEB+BQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+</rawitemdata></item>
+<item name='$AssistQuery' sign='true'>
+<rawitemdata type='f'>
+gQYAAAAA
+</rawitemdata></item>
+<item name='$AssistLastRun' sign='true'>
+<rawitemdata type='400'>
+AAAAAAAAAAA=
+</rawitemdata></item>
+<item name='$AssistDocCount' sign='true'><number>0</number></item>
+<item name='$AssistRunInfo' summary='true'>
+<rawitemdata type='3'>
+BgABAAAACAAyOQAAAAAAAAEAAAAAAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$Flags'><text>3fS</text></item>
+<item name='$FlagsExt' sign='true'><text/></item>
+<item name='$AssistVersion'><datetime dst='true'>20130417T112219,07+01</datetime></item></note>
 

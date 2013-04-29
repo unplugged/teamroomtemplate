@@ -1,133 +1,164 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE page SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<page name='AppletInstallPage' xmlns='http://www.lotus.com/dxl' version='8.5'
- maintenanceversion='3.0' replicaid='80257AC50035BEE2' treatashtml='true'
- publicaccess='false' designerversion='6' language='en' comment='Install launches from here'
- activelinkcolor='white' visitedlinkcolor='white' unvisitedlinkcolor='white'>
-<noteinfo noteid='3ee' unid='D2869B1CFCB8DF05852569AC0061AF3E' sequence='13'>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='66a' unid='D2869B1CFCB8DF05852569AC0061AF3E' sequence='16'>
 <created><datetime>20001205T124658,54-05</datetime></created>
-<modified><datetime>20130219T091817,94+00</datetime></modified>
-<revised><datetime>20130219T091817,93+00</datetime></revised>
-<lastaccessed><datetime>20130219T091817,94+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094705,64+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
+<modified><datetime dst='true'>20130417T112219,17+01</datetime></modified>
+<revised><datetime dst='true'>20130417T112219,16+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130417T112219,17+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135558,33+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-<body><richtext>
-<pardef id='1' leftmargin='1in' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
-<par def='1'><run html='true'>&lt;HTML&gt;</run></par>
-<par def='1'><run html='true'>&lt;HEAD&gt;</run></par>
-<par def='1'><run html='true'>&lt;SCRIPT LANGUAGE= "Javascript"&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>//WINDOW DIALOG TEXT TO BE TRANSLATED</run></par>
-<par def='1'><run html='true'>var SUPPORT = "Installable applets is only supported for Internet Explorer 4.0 and Netscape 4.6 and greater.";</run></par>
-<par def='1'><run html='true'>var JAVASUPPORT = "You must have a Java enabled browser to install the Domino applets.  If your browser is Java enabled then you may have Java turned off.  Please turn Java on via the options menu and restart the browser.";</run></par>
-<par def='1'><run html='true'>var SMARTUPDATESUPPORT = "You must enable SmartUpdate to install the Domino applets.  Please enable SmartUpdate and try to install again.";</run></par>
-<par def='1'><run html='true'>var INSTALLCOMPLETE = "The Domino Applets have been installed successfully!";</run></par>
-<par def='1'><run html='true'>var ERROR_NOCOOKIE = "Your browser was not able to set the proper cookie information. Your browser may not be able to handle cookies or cookie functionality may be turned off.  Consult your browser's documentation on how to enable cookies.";</run></par>
-<par def='1'><run html='true'>//END TEXT TO BE TRANSLATED</run></par>
-<par def='1'/>
-<par def='1'/>
-<par def='1'><run html='true'>var locProtocol = window.location.protocol;</run></par>
-<par def='1'><run html='true'>var locHostname = window.location.host;</run></par>
-<par def='1'><run html='true'>var AppName ="install";</run></par>
-<par def='1'><run html='true'>var appletInstalled = false;</run></par>
-<par def='1'><run html='true'>var Version = new String(navigator.appVersion);</run></par>
-<par def='1'><run html='true'>var majorVersion = parseInt(Version);</run></par>
-<par def='1'><run html='true'>var minorVersion = parseInt(Version.substring(2,3)); </run></par>
-<par def='1'><run html='true'>var is_ie = (navigator.userAgent.indexOf("MSIE") != -1);</run></par>
-<par def='1'><run html='true'>var is_netscape = (navigator.appName.indexOf("Netscape")!=-1);</run></par>
-<par def='1'><run html='true'>var CookieLife = "CookieLife=expires=Fri, 31-Dec-10 00:00:01 GMT; expires=Fri, 31-Dec-10 00:00:01 GMT; path=/;";</run></par>
-<par def='1'>					    </par>
-<par def='1'/>
-<par def='1'><run html='true'>if(AppName != "")</run></par>
-<par def='1'><run html='true'>{</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>setCookieLife();</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>// Validate the Browser's capabilities</run></par>
-<par def='1'><run html='true'>        if (!navigator.javaEnabled()) {</run></par>
-<par def='1'><run html='true'>        	alert(JAVASUPPORT);</run></par>
-<par def='1'><run html='true'>        	window.close();</run></par>
-<par def='1'><run html='true'>        }</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>        // Launch the netscape trigger if it is Netscape4.5 or above</run></par>
-<par def='1'><run html='true'>        if (is_netscape &amp;&amp; (majorVersion&gt;=4 /*&amp;&amp; minorVersion&gt;=5*/)) {</run></par>
-<par def='1'><run html='true'>        	launchNetscape();</run></par>
-<par def='1'><run html='true'>        }</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>        // Handle all other cases</run></par>
-<par def='1'><run html='true'>        else if ((is_ie &amp;&amp; (majorVersion&lt;4)) || !is_ie) {</run></par>
-<par def='1'><run html='true'>        	alert(SUPPORT);</run></par>
-<par def='1'><run html='true'>        	window.close();</run></par>
-<par def='1'><run html='true'>        }</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>        //Set installed()  called from UtilApplet</run></par>
-<par def='1'><run html='true'>        function setInstalled() {</run></par>
-<par def='1'><run html='true'>	//check to see if cookie was set properly</run></par>
-<par def='1'><run html='true'>	var cookie = document.cookie;</run></par>
-<par def='1'><run html='true'>	if(cookie.indexOf("DominoApplets")!=-1 &amp;&amp; cookie.indexOf("true")!=-1)</run></par>
-<par def='1'><run html='true'>		window.alert(INSTALLCOMPLETE);</run></par>
-<par def='1'><run html='true'>	else</run></par>
-<par def='1'><run html='true'>		window.alert(ERROR_NOCOOKIE);</run></par>
-<par def='1'><run html='true'>	window.close();</run></par>
-<par def='1'><run html='true'>        }</run></par>
-<pardef id='2' leftmargin='1in' rightmargin='100%'/>
-<par def='2'><run html='true'><font name='Courier New' pitch='fixed' truetype='true'
- familyid='30'/></run></par>
-<par def='2'><run html='true'>         /* Trigger script for Netscape install */</run></par>
-<par def='2'><run html='true'>        function launchNetscape() {</run></par>
-<par def='2'><run html='true'>	vi = new netscape.softupdate.VersionInfo(6,0,0,0);</run></par>
-<par def='2'><run html='true'>	trigger = netscape.softupdate.Trigger;</run></par>
-<par def='2'><run html='true'>		if ( trigger.UpdateEnabled() )</run></par>
-<par def='2'><run html='true'>			trigger.ConditionalSoftwareUpdate(</run></par>
-<par def='2'><run html='true'>      			locProtocol+'//'+locHostname+'/domjava/dominoapplets.jar',</run></par>
-<par def='2'><run html='true'>  			"java/download/Lotus/Notes/DominoApplets", </run></par>
-<par def='2'><run html='true'>  			vi, </run></par>
-<par def='2'><run html='true'>  			trigger.DEFAULT_MODE);</run></par>
-<par def='2'><run html='true'>		else</run></par>
-<par def='2'><run html='true'>			window.alert(SMARTUPDATESUPPORT);</run></par>
-<par def='2'><run html='true'>        }</run></par>
-<par def='2'/>
-<par def='2'><run html='true'>        function setCookieLife() {</run></par>
-<par def='2'><run html='true'>               document.cookie=CookieLife;</run></par>
-<par def='2'><run html='true'>        }</run></par>
-<par def='2'/>
-<par def='2'><run html='true'>}</run></par>
-<par def='1'><run html='true'>&lt;/SCRIPT&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;/HEAD&gt;</run></par>
-<par def='1'><run html='true'>&lt;BODY link="#000000" vlink="#000000" alink="#000000" background="#ffffff"&gt;</run></par>
-<par def='1'><run html='true'>&lt;FONT face="Arial,Helvetcia,Verdana" color="#000000"&gt;</run></par>
-<par def='1'/>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;H3&gt;Installing the Domino Applets&lt;/H3&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;P&gt;</run></par>
-<par def='1'><run html='true'>This will install the Domino applets.  Please do not close this window until the installation process is complete.  It may take a few minutes to download the applets from the server and install them to your hard drive. If you close this window before then, the applets will not be installed.</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;SCRIPT Language="Javascript"&gt;</run></par>
-<par def='1'><run html='true'>if (is_netscape) {</run></par>
-<par def='1'><run html='true'>	document.writeln('&lt;P&gt;&lt;B&gt;&lt;FONT face="Arial,Helvetcia,Verdana" color="#FF0000"&gt;IMPORTANT!: You will need to  restart Netscape in order to complete the install.&lt;/FONT&gt;&lt;/B&gt;');</run></par>
-<par def='1'><run html='true'>}</run></par>
-<par def='1'><run html='true'>if (is_ie) {</run></par>
-<par def='1'><run html='true'>	document.writeln('You will be notified once the applets have been installed.');</run></par>
-<par def='1'><run html='true'>	document.writeln('&lt;APPLET code=lotus.notes.util.UtilApplet width=0 height=0 name=UtilApplet codebase=\"/domjava/\"width=0 MAYSCRIPT&gt;');</run></par>
-<par def='1'><run html='true'>	document.writeln('&lt;PARAM NAME=\"useslibrarycodebase\" VALUE=\"dominoapplets.cab\"&gt;');</run></par>
-<par def='1'><run html='true'>	document.writeln('&lt;PARAM NAME=\"useslibrary\" VALUE=\"DominoApplets\"&gt;');</run></par>
-<par def='1'><run html='true'>	document.writeln('&lt;PARAM NAME=\"useslibraryversion\" VALUE=\"6,0,0,0\"&gt;');</run></par>
-<par def='1'><run html='true'>	document.writeln('&lt;PARAM NAME=\"namespace\" VALUE=\"DominoApplets\"&gt;');</run></par>
-<par def='1'><run html='true'>	document.writeln('&lt;PARAM NAME=\"installcheck\" VALUE=\"true\"&gt;');</run></par>
-<par def='1'><run html='true'>	document.writeln('&lt;/APPLET&gt;');</run></par>
-<par def='1'><run html='true'>}</run></par>
-<par def='1'><run html='true'>&lt;/SCRIPT&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;/FONT&gt;</run></par>
-<par def='1'><run html='true'>&lt;/BODY&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;/HTML&gt;</run></par>
-<par def='1'/>
-<par def='1'/>
-<par def='1'><run html='true'><font size='16pt' style='extrude'/></run></par></richtext></body>
-<item name='$$ScriptName' summary='false' sign='true'><text>Untitled</text></item></page>
+<item name='$TITLE' sign='true'><text>AppletInstallPage</text></item>
+<item name='$Comment'><text>Install launches from here</text></item>
+<item name='$LANGUAGE'><text>en</text></item>
+<item name='$DesignerVersion'><text>6</text></item>
+<item name='$BODY' sign='true'>
+<rawitemdata type='1'>
+gQKC/1oAAQAAAAAAAAAAAKAFAACgBQgA0AKgBXAIQAsQDuAQsBOAFgAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAABAAAAAJSEoAUMAKAFDAAAAAAAAQAAAAQAAACDBAEAzP8IAAAAAACF/w4AAQAACjxI
+VE1MPs3/CAAAAAAAgQKDBAEAzP8IAAAAAACF/w4AAQAACjxIRUFEPs3/CAAAAAAAgQKDBAEAzP8I
+AAAAAACF/ycAAQAACjxTQ1JJUFQgTEFOR1VBR0U9ICJKYXZhc2NyaXB0Ij4Azf8IAAAAAACBAoME
+AQCF/wgAAQAACoECgwQBAMz/CAAAAAAAhf8tAAEAAAovL1dJTkRPVyBESUFMT0cgVEVYVCBUTyBC
+RSBUUkFOU0xBVEVEAM3/CAAAAAAAgQKDBAEAzP8IAAAAAACF/3YAAQAACnZhciBTVVBQT1JUID0g
+Ikluc3RhbGxhYmxlIGFwcGxldHMgaXMgb25seSBzdXBwb3J0ZWQgZm9yIEludGVybmV0IEV4cGxv
+cmVyIDQuMCBhbmQgTmV0c2NhcGUgNC42IGFuZCBncmVhdGVyLiI7zf8IAAAAAACBAoMEAQDM/wgA
+AAAAAIX/5wABAAAKdmFyIEpBVkFTVVBQT1JUID0gIllvdSBtdXN0IGhhdmUgYSBKYXZhIGVuYWJs
+ZWQgYnJvd3NlciB0byBpbnN0YWxsIHRoZSBEb21pbm8gYXBwbGV0cy4gIElmIHlvdXIgYnJvd3Nl
+ciBpcyBKYXZhIGVuYWJsZWQgdGhlbiB5b3UgbWF5IGhhdmUgSmF2YSB0dXJuZWQgb2ZmLiAgUGxl
+YXNlIHR1cm4gSmF2YSBvbiB2aWEgdGhlIG9wdGlvbnMgbWVudSBhbmQgcmVzdGFydCB0aGUgYnJv
+d3Nlci4iOwDN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf+TAAEAAAp2YXIgU01BUlRVUERBVEVTVVBQ
+T1JUID0gIllvdSBtdXN0IGVuYWJsZSBTbWFydFVwZGF0ZSB0byBpbnN0YWxsIHRoZSBEb21pbm8g
+YXBwbGV0cy4gIFBsZWFzZSBlbmFibGUgU21hcnRVcGRhdGUgYW5kIHRyeSB0byBpbnN0YWxsIGFn
+YWluLiI7AM3/CAAAAAAAgQKDBAEAzP8IAAAAAACF/1UAAQAACnZhciBJTlNUQUxMQ09NUExFVEUg
+PSAiVGhlIERvbWlubyBBcHBsZXRzIGhhdmUgYmVlbiBpbnN0YWxsZWQgc3VjY2Vzc2Z1bGx5ISI7
+AM3/CAAAAAAAgQKDBAEAzP8IAAAAAACF//kAAQAACnZhciBFUlJPUl9OT0NPT0tJRSA9ICJZb3Vy
+IGJyb3dzZXIgd2FzIG5vdCBhYmxlIHRvIHNldCB0aGUgcHJvcGVyIGNvb2tpZSBpbmZvcm1hdGlv
+bi4gWW91ciBicm93c2VyIG1heSBub3QgYmUgYWJsZSB0byBoYW5kbGUgY29va2llcyBvciBjb29r
+aWUgZnVuY3Rpb25hbGl0eSBtYXkgYmUgdHVybmVkIG9mZi4gIENvbnN1bHQgeW91ciBicm93c2Vy
+J3MgZG9jdW1lbnRhdGlvbiBvbiBob3cgdG8gZW5hYmxlIGNvb2tpZXMuIjsAzf8IAAAAAACBAoME
+AQDM/wgAAAAAAIX/IwABAAAKLy9FTkQgVEVYVCBUTyBCRSBUUkFOU0xBVEVEAM3/CAAAAAAAgQKD
+BAEAhf8IAAEAAAqBAoMEAQCF/wgAAQAACoECgwQBAMz/CAAAAAAAhf8zAAEAAAp2YXIgbG9jUHJv
+dG9jb2wgPSB3aW5kb3cubG9jYXRpb24ucHJvdG9jb2w7AM3/CAAAAAAAgQKDBAEAzP8IAAAAAACF
+/y8AAQAACnZhciBsb2NIb3N0bmFtZSA9IHdpbmRvdy5sb2NhdGlvbi5ob3N0OwDN/wgAAAAAAIEC
+gwQBAMz/CAAAAAAAhf8fAAEAAAp2YXIgQXBwTmFtZSA9Imluc3RhbGwiOwDN/wgAAAAAAIECgwQB
+AMz/CAAAAAAAhf8kAAEAAAp2YXIgYXBwbGV0SW5zdGFsbGVkID0gZmFsc2U7zf8IAAAAAACBAoME
+AQDM/wgAAAAAAIX/NwABAAAKdmFyIFZlcnNpb24gPSBuZXcgU3RyaW5nKG5hdmlnYXRvci5hcHBW
+ZXJzaW9uKTsAzf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/LQABAAAKdmFyIG1ham9yVmVyc2lvbiA9
+IHBhcnNlSW50KFZlcnNpb24pOwDN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf89AAEAAAp2YXIgbWlu
+b3JWZXJzaW9uID0gcGFyc2VJbnQoVmVyc2lvbi5zdWJzdHJpbmcoMiwzKSk7IADN/wgAAAAAAIEC
+gwQBAMz/CAAAAAAAhf9AAAEAAAp2YXIgaXNfaWUgPSAobmF2aWdhdG9yLnVzZXJBZ2VudC5pbmRl
+eE9mKCJNU0lFIikgIT0gLTEpO83/CAAAAAAAgQKDBAEAzP8IAAAAAACF/0YAAQAACnZhciBpc19u
+ZXRzY2FwZSA9IChuYXZpZ2F0b3IuYXBwTmFtZS5pbmRleE9mKCJOZXRzY2FwZSIpIT0tMSk7zf8I
+AAAAAACBAoMEAQDM/wgAAAAAAIX/eAABAAAKdmFyIENvb2tpZUxpZmUgPSAiQ29va2llTGlmZT1l
+eHBpcmVzPUZyaSwgMzEtRGVjLTEwIDAwOjAwOjAxIEdNVDsgZXhwaXJlcz1GcmksIDMxLURlYy0x
+MCAwMDowMDowMSBHTVQ7IHBhdGg9LzsiO83/CAAAAAAAgQKDBAEAhf8RAAEAAAoJCQkJCSAgICAA
+gQKDBAEAhf8IAAEAAAqBAoMEAQDM/wgAAAAAAIX/GQABAAAKaWYoQXBwTmFtZSAhPSAiIikAzf8I
+AAAAAACBAoMEAQDM/wgAAAAAAIX/CQABAAAKewDN/wgAAAAAAIECgwQBAIX/CAABAAAKgQKDBAEA
+zP8IAAAAAACF/xgAAQAACnNldENvb2tpZUxpZmUoKTvN/wgAAAAAAIECgwQBAIX/CAABAAAKgQKD
+BAEAzP8IAAAAAACF/y4AAQAACi8vIFZhbGlkYXRlIHRoZSBCcm93c2VyJ3MgY2FwYWJpbGl0aWVz
+zf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/LwABAAAKICAgICAgICBpZiAoIW5hdmlnYXRvci5qYXZh
+RW5hYmxlZCgpKSB7AM3/CAAAAAAAgQKDBAEAzP8IAAAAAACF/yQAAQAACiAgICAgICAgCWFsZXJ0
+KEpBVkFTVVBQT1JUKTvN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf8gAAEAAAogICAgICAgIAl3aW5k
+b3cuY2xvc2UoKTvN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf8RAAEAAAogICAgICAgIH0Azf8IAAAA
+AACBAoMEAQCF/wgAAQAACoECgwQBAMz/CAAAAAAAhf9MAAEAAAogICAgICAgIC8vIExhdW5jaCB0
+aGUgbmV0c2NhcGUgdHJpZ2dlciBpZiBpdCBpcyBOZXRzY2FwZTQuNSBvciBhYm92Zc3/CAAAAAAA
+gQKDBAEAzP8IAAAAAACF/04AAQAACiAgICAgICAgaWYgKGlzX25ldHNjYXBlICYmIChtYWpvclZl
+cnNpb24+PTQgLyomJiBtaW5vclZlcnNpb24+PTUqLykpIHvN/wgAAAAAAIECgwQBAMz/CAAAAAAA
+hf8iAAEAAAogICAgICAgIAlsYXVuY2hOZXRzY2FwZSgpO83/CAAAAAAAgQKDBAEAzP8IAAAAAACF
+/xEAAQAACiAgICAgICAgfQDN/wgAAAAAAIECgwQBAIX/CAABAAAKgQKDBAEAzP8IAAAAAACF/ykA
+AQAACiAgICAgICAgLy8gSGFuZGxlIGFsbCBvdGhlciBjYXNlcwDN/wgAAAAAAIECgwQBAMz/CAAA
+AAAAhf9BAAEAAAogICAgICAgIGVsc2UgaWYgKChpc19pZSAmJiAobWFqb3JWZXJzaW9uPDQpKSB8
+fCAhaXNfaWUpIHsAzf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/IAABAAAKICAgICAgICAJYWxlcnQo
+U1VQUE9SVCk7zf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/IAABAAAKICAgICAgICAJd2luZG93LmNs
+b3NlKCk7zf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/EQABAAAKICAgICAgICB9AM3/CAAAAAAAgQKD
+BAEAhf8IAAEAAAqBAoMEAQDM/wgAAAAAAIX/OQABAAAKICAgICAgICAvL1NldCBpbnN0YWxsZWQo
+KSAgY2FsbGVkIGZyb20gVXRpbEFwcGxldADN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf8pAAEAAAog
+ICAgICAgIGZ1bmN0aW9uIHNldEluc3RhbGxlZCgpIHsAzf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/
+MgABAAAKCS8vY2hlY2sgdG8gc2VlIGlmIGNvb2tpZSB3YXMgc2V0IHByb3Blcmx5zf8IAAAAAACB
+AoMEAQDM/wgAAAAAAIX/JgABAAAKCXZhciBjb29raWUgPSBkb2N1bWVudC5jb29raWU7zf8IAAAA
+AACBAoMEAQDM/wgAAAAAAIX/TgABAAAKCWlmKGNvb2tpZS5pbmRleE9mKCJEb21pbm9BcHBsZXRz
+IikhPS0xICYmIGNvb2tpZS5pbmRleE9mKCJ0cnVlIikhPS0xKc3/CAAAAAAAgQKDBAEAzP8IAAAA
+AACF/ygAAQAACgkJd2luZG93LmFsZXJ0KElOU1RBTExDT01QTEVURSk7zf8IAAAAAACBAoMEAQDM
+/wgAAAAAAIX/DQABAAAKCWVsc2UAzf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/JwABAAAKCQl3aW5k
+b3cuYWxlcnQoRVJST1JfTk9DT09LSUUpOwDN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf8YAAEAAAoJ
+d2luZG93LmNsb3NlKCk7zf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/EQABAAAKICAgICAgICB9AM3/
+CAAAAAAAgQKC/1oAAgAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAABAAAAAJSAoAUMAKAFDADQL2QAAQAAAAQAAACDBAIAzP8IAAAAAACF/wgA
+BQAACs3/CAAAAAAAgQKDBAIAzP8IAAAAAACF/zoAAQAACiAgICAgICAgIC8qIFRyaWdnZXIgc2Ny
+aXB0IGZvciBOZXRzY2FwZSBpbnN0YWxsICovzf8IAAAAAACBAoMEAgDM/wgAAAAAAIX/KwABAAAK
+ICAgICAgICBmdW5jdGlvbiBsYXVuY2hOZXRzY2FwZSgpIHsAzf8IAAAAAACBAoMEAgDM/wgAAAAA
+AIX/OwABAAAKCXZpID0gbmV3IG5ldHNjYXBlLnNvZnR1cGRhdGUuVmVyc2lvbkluZm8oNiwwLDAs
+MCk7AM3/CAAAAAAAgQKDBAIAzP8IAAAAAACF/y8AAQAACgl0cmlnZ2VyID0gbmV0c2NhcGUuc29m
+dHVwZGF0ZS5UcmlnZ2VyOwDN/wgAAAAAAIECgwQCAMz/CAAAAAAAhf8oAAEAAAoJCWlmICggdHJp
+Z2dlci5VcGRhdGVFbmFibGVkKCkgKc3/CAAAAAAAgQKDBAIAzP8IAAAAAACF/y0AAQAACgkJCXRy
+aWdnZXIuQ29uZGl0aW9uYWxTb2Z0d2FyZVVwZGF0ZSgAzf8IAAAAAACBAoMEAgDM/wgAAAAAAIX/
+SwABAAAKICAgICAgCQkJbG9jUHJvdG9jb2wrJy8vJytsb2NIb3N0bmFtZSsnL2RvbWphdmEvZG9t
+aW5vYXBwbGV0cy5qYXInLADN/wgAAAAAAIECgwQCAMz/CAAAAAAAhf84AAEAAAogIAkJCSJqYXZh
+L2Rvd25sb2FkL0xvdHVzL05vdGVzL0RvbWlub0FwcGxldHMiLCDN/wgAAAAAAIECgwQCAMz/CAAA
+AAAAhf8RAAEAAAogIAkJCXZpLCAAzf8IAAAAAACBAoMEAgDM/wgAAAAAAIX/IwABAAAKICAJCQl0
+cmlnZ2VyLkRFRkFVTFRfTU9ERSk7AM3/CAAAAAAAgQKDBAIAzP8IAAAAAACF/w4AAQAACgkJZWxz
+Zc3/CAAAAAAAgQKDBAIAzP8IAAAAAACF/ywAAQAACgkJCXdpbmRvdy5hbGVydChTTUFSVFVQREFU
+RVNVUFBPUlQpO83/CAAAAAAAgQKDBAIAzP8IAAAAAACF/xEAAQAACiAgICAgICAgfQDN/wgAAAAA
+AIECgwQCAIX/CAABAAAKgQKDBAIAzP8IAAAAAACF/yoAAQAACiAgICAgICAgZnVuY3Rpb24gc2V0
+Q29va2llTGlmZSgpIHvN/wgAAAAAAIECgwQCAMz/CAAAAAAAhf8yAAEAAAogICAgICAgICAgICAg
+ICBkb2N1bWVudC5jb29raWU9Q29va2llTGlmZTvN/wgAAAAAAIECgwQCAMz/CAAAAAAAhf8RAAEA
+AAogICAgICAgIH0Azf8IAAAAAACBAoMEAgCF/wgAAQAACoECgwQCAMz/CAAAAAAAhf8JAAEAAAp9
+AM3/CAAAAAAAgQKDBAEAzP8IAAAAAACF/xEAAQAACjwvU0NSSVBUPgDN/wgAAAAAAIECgwQBAIX/
+CAABAAAKgQKDBAEAzP8IAAAAAACF/w8AAQAACjwvSEVBRD4Azf8IAAAAAACBAoMEAQDM/wgAAAAA
+AIX/UgABAAAKPEJPRFkgbGluaz0iIzAwMDAwMCIgdmxpbms9IiMwMDAwMDAiIGFsaW5rPSIjMDAw
+MDAwIiBiYWNrZ3JvdW5kPSIjZmZmZmZmIj7N/wgAAAAAAIECgwQBAMz/CAAAAAAAhf89AAEAAAo8
+Rk9OVCBmYWNlPSJBcmlhbCxIZWx2ZXRjaWEsVmVyZGFuYSIgY29sb3I9IiMwMDAwMDAiPgDN/wgA
+AAAAAIECgwQBAIX/CAABAAAKgQKDBAEAhf8IAAEAAAqBAoMEAQDM/wgAAAAAAIX/LgABAAAKPEgz
+Pkluc3RhbGxpbmcgdGhlIERvbWlubyBBcHBsZXRzPC9IMz7N/wgAAAAAAIECgwQBAIX/CAABAAAK
+gQKDBAEAzP8IAAAAAACF/wsAAQAACjxQPgDN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf8rAQEAAApU
+aGlzIHdpbGwgaW5zdGFsbCB0aGUgRG9taW5vIGFwcGxldHMuICBQbGVhc2UgZG8gbm90IGNsb3Nl
+IHRoaXMgd2luZG93IHVudGlsIHRoZSBpbnN0YWxsYXRpb24gcHJvY2VzcyBpcyBjb21wbGV0ZS4g
+IEl0IG1heSB0YWtlIGEgZmV3IG1pbnV0ZXMgdG8gZG93bmxvYWQgdGhlIGFwcGxldHMgZnJvbSB0
+aGUgc2VydmVyIGFuZCBpbnN0YWxsIHRoZW0gdG8geW91ciBoYXJkIGRyaXZlLiBJZiB5b3UgY2xv
+c2UgdGhpcyB3aW5kb3cgYmVmb3JlIHRoZW4sIHRoZSBhcHBsZXRzIHdpbGwgbm90IGJlIGluc3Rh
+bGxlZC4Azf8IAAAAAACBAoMEAQCF/wgAAQAACoECgwQBAMz/CAAAAAAAhf8mAAEAAAo8U0NSSVBU
+IExhbmd1YWdlPSJKYXZhc2NyaXB0Ij7N/wgAAAAAAIECgwQBAMz/CAAAAAAAhf8aAAEAAAppZiAo
+aXNfbmV0c2NhcGUpIHvN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf+0AAEAAAoJZG9jdW1lbnQud3Jp
+dGVsbignPFA+PEI+PEZPTlQgZmFjZT0iQXJpYWwsSGVsdmV0Y2lhLFZlcmRhbmEiIGNvbG9yPSIj
+RkYwMDAwIj5JTVBPUlRBTlQhOiBZb3Ugd2lsbCBuZWVkIHRvICByZXN0YXJ0IE5ldHNjYXBlIGlu
+IG9yZGVyIHRvIGNvbXBsZXRlIHRoZSBpbnN0YWxsLjwvRk9OVD48L0I+Jyk7zf8IAAAAAACBAoME
+AQDM/wgAAAAAAIX/CQABAAAKfQDN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf8UAAEAAAppZiAoaXNf
+aWUpIHvN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf9YAAEAAAoJZG9jdW1lbnQud3JpdGVsbignWW91
+IHdpbGwgYmUgbm90aWZpZWQgb25jZSB0aGUgYXBwbGV0cyBoYXZlIGJlZW4gaW5zdGFsbGVkLicp
+O83/CAAAAAAAgQKDBAEAzP8IAAAAAACF/5AAAQAACglkb2N1bWVudC53cml0ZWxuKCc8QVBQTEVU
+IGNvZGU9bG90dXMubm90ZXMudXRpbC5VdGlsQXBwbGV0IHdpZHRoPTAgaGVpZ2h0PTAgbmFtZT1V
+dGlsQXBwbGV0IGNvZGViYXNlPVwiL2RvbWphdmEvXCJ3aWR0aD0wIE1BWVNDUklQVD4nKTvN/wgA
+AAAAAIECgwQBAMz/CAAAAAAAhf9eAAEAAAoJZG9jdW1lbnQud3JpdGVsbignPFBBUkFNIE5BTUU9
+XCJ1c2VzbGlicmFyeWNvZGViYXNlXCIgVkFMVUU9XCJkb21pbm9hcHBsZXRzLmNhYlwiPicpO83/
+CAAAAAAAgQKDBAEAzP8IAAAAAACF/1IAAQAACglkb2N1bWVudC53cml0ZWxuKCc8UEFSQU0gTkFN
+RT1cInVzZXNsaWJyYXJ5XCIgVkFMVUU9XCJEb21pbm9BcHBsZXRzXCI+Jyk7zf8IAAAAAACBAoME
+AQDM/wgAAAAAAIX/UwABAAAKCWRvY3VtZW50LndyaXRlbG4oJzxQQVJBTSBOQU1FPVwidXNlc2xp
+YnJhcnl2ZXJzaW9uXCIgVkFMVUU9XCI2LDAsMCwwXCI+Jyk7AM3/CAAAAAAAgQKDBAEAzP8IAAAA
+AACF/1AAAQAACglkb2N1bWVudC53cml0ZWxuKCc8UEFSQU0gTkFNRT1cIm5hbWVzcGFjZVwiIFZB
+TFVFPVwiRG9taW5vQXBwbGV0c1wiPicpO83/CAAAAAAAgQKDBAEAzP8IAAAAAACF/0oAAQAACglk
+b2N1bWVudC53cml0ZWxuKCc8UEFSQU0gTkFNRT1cImluc3RhbGxjaGVja1wiIFZBTFVFPVwidHJ1
+ZVwiPicpO83/CAAAAAAAgQKDBAEAzP8IAAAAAACF/ycAAQAACglkb2N1bWVudC53cml0ZWxuKCc8
+L0FQUExFVD4nKTsAzf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/CQABAAAKfQDN/wgAAAAAAIECgwQB
+AMz/CAAAAAAAhf8RAAEAAAo8L1NDUklQVD4Azf8IAAAAAACBAoMEAQCF/wgAAQAACoECgwQBAMz/
+CAAAAAAAhf8PAAEAAAo8L0ZPTlQ+AM3/CAAAAAAAgQKDBAEAzP8IAAAAAACF/w8AAQAACjwvQk9E
+WT4Azf8IAAAAAACBAoMEAQCF/wgAAQAACoECgwQBAMz/CAAAAAAAhf8PAAEAAAo8L0hUTUw+AM3/
+CAAAAAAAgQKDBAEAhf8IAAEAAAqBAoMEAQCF/wgAAQAACoECgwQBAMz/CAAAAAAAw/8IAAGgABCF
+/wgAAQAAEM3/CAAAAAAA
+</rawitemdata></item>
+<item name='$$ScriptName' summary='false' sign='true'><text>Untitled</text></item>
+<item name='$HTMLCode' sign='true'>
+<rawitemdata type='1'>
+X/8QAAIADwAHAAAAAAAAAHf/KgAAAAAAAQD///8AAQD///8AAQD///8AAAAAAAAAAAAAAAAAAAAA
+AA==
+</rawitemdata></item>
+<item name='$INFO' sign='true'>
+<rawitemdata type='1'>
+hhgBAIAAAAAAgAAAAQABAP///wAAAAAA
+</rawitemdata></item>
+<item name='$Flags'><text>C34WQ</text></item>
+<item name='$WebFlags'><text>H</text></item>
+<item name='$Fonts'>
+<rawitemdata type='1'>
+i/8oAAEABTVDb3VyaWVyIE5ldwAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
+</rawitemdata></item></note>
 

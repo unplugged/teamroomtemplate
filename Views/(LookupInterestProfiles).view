@@ -1,45 +1,58 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<view name='(LookupInterestProfiles)' alias='LookupInterestProfiles' xmlns='http://www.lotus.com/dxl'
- version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='false'
- publicaccess='false' designerversion='6' language='en' unreadmarks='standard'
- onopengoto='lastopened' onrefresh='displayindicator' headers='beveled' opencollapsed='false'
- showresponsehierarchy='false' showmargin='true' shrinkrows='true' extendlastcolumn='false'
- showhierarchies='false' unreadcolor='maroon' rowlinecount='2' headerlinecount='1'
- rowspacing='1' bgcolor='white' altrowcolor='#efefef' totalscolor='blue' headerbgcolor='white'
- boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
- allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
- uniquekeys='false'>
-<noteinfo noteid='2fe' unid='9D4C10A4277F90788525667D00498EB7' sequence='15'>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='58a' unid='9D4C10A4277F90788525667D00498EB7' sequence='17'>
 <created><datetime dst='true'>19980912T092326,63-04</datetime></created>
-<modified><datetime>20130219T091823,08+00</datetime></modified>
-<revised><datetime>20130219T091823,07+00</datetime></revised>
-<lastaccessed><datetime>20130219T091823,08+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094704,44+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
->SELECT form = "Interest Profile"</formula></code>
-<actionbar borderstyle='none' bordercolor='black'>
-<actionbuttonstyle bgcolor='silver'/>
-<action title='Categori_ze' showinbar='false' systemcommand='categorize'/>
-<action title='_Edit Document' showinbar='false' systemcommand='edit'/>
-<action title='Send Docu_ment' showinmenu='false' showinbar='false' systemcommand='send'/>
-<action title='_Forward' showinbar='false' systemcommand='forward'/>
-<action title='Forward as Bookmark' showinbar='false'><code event='click'><formula
->@Command([Compose]; @MailDbName; "Bookmark")</formula></code></action>
-<action title='_Move to Folder...' showinbar='false' systemcommand='movetofolder'/>
-<action title='_Remove from Folder...' showinbar='false' systemcommand='removefromfolder'/></actionbar>
-<column sort='ascending' hidedetailrows='false' itemname='$49' width='22'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='false'><font size='9pt' color='white'/><columnheader><font size='9pt'/></columnheader><code
- event='value'><formula>REM {For web lookups, we must replace the forward slash in hierarchical names with a non-reserved character};
-AbbrName := @Name([Abbreviate]; FullPersonName);
-rplSLName := @ReplaceSubstring(Abbrname; "/"; "__");
-rplspName := @ReplaceSubstring(rplSLName;" ";"_");
-rplspName</formula></code></column>
-<column hidedetailrows='false' itemname='$32' width='27.2500' resizable='true'
- separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><font
- size='9pt' color='white'/><columnheader><font size='9pt'/></columnheader><code
- event='value'><formula>@Text(@DocumentUniqueID)</formula></code></column></view>
+<modified><datetime dst='true'>20130408T135938,02+01</datetime></modified>
+<revised><datetime dst='true'>20130408T135938,01+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130408T135938,02+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135555,98+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name='$LANGUAGE' sign='true'><text>en</text></item>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwAAAAAAQAAAAAAAAAAAAAAAAABAAAJAAAAAHn/bAAJAAAAAAABAAAAAAABAAAAAAABAMDAwAAA
+AB8AAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAL7/JgAAAAUAAACdAQAACwAAAAAAAABDYXRlZ29yaV96ZQAB
+AE58vv8oAAAABQAAAJ0BAAAOAAAAAAAAAF9FZGl0IERvY3VtZW50AgACCr7/KAAAAAUAAACcAQAA
+DgAAAAAAAABTZW5kIERvY3VfbWVudAMAAwq+/yIAAAAFAAAAnQEAAAgAAAAAAAAAX0ZvcndhcmQE
+AAQKvv9YAAAAAQAAAJ0BAAATAAAAAAAAAEZvcndhcmQgYXMgQm9va21hcmsALgAAACAAAgDoAwAA
+AAAAAKwAAQAIAEJvb2ttYXJr7QMDAAcADAAFAAk0UzZTAL7/LAAAAAUAAACdAQAAEgAAAAAAAABf
+TW92ZSB0byBGb2xkZXIuLi4GAD18vv8wAAAABQAAAJ0BAAAWAAAAAAAAAF9SZW1vdmUgZnJvbSBG
+b2xkZXIuLi4HAD58
+</rawitemdata></item>
+<item name='$TITLE' sign='true'><text>(LookupInterestProfiles)|LookupInterestProfiles</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+PAEBADgAEQBBYmJyTmFtZQBpYEcAR3slAAACAAUAAAAAAAAABQAOAEZ1bGxQZXJzb25OYW1ltAID
+AAEAPgASAHJwbFNMTmFtZQBqYEcAR3slAAUAEQBBYmJybmFtZQBpYEcAR3slAAABAAEALwABAAIA
+X1+EAwMAAQA+ABIAcnBsc3BOYW1lAGtgRwBHeyUABQASAHJwbFNMTmFtZQBqYEcAR3slAAEAAQAg
+AAEAAQBfAIQDAwACACIAAwAkNDkABQASAHJwbHNwTmFtZQBrYEcAR3slAAMAAgAQAAMAJDMyAJAA
+VgEDAAUAHgAZAAMAAwADAAkAJDQ5JDMyJENvbmZsaWN0AAQABAAAACQABQAEAGZvcm0BABAASW50
+ZXJlc3QgUHJvZmlsZQoCAwAHAA4ACAAJTDFTMlMzUw==
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+EAABAABEAGYAAAADACQ0OQ==
+</rawitemdata></item>
+<item name='$VIEWFORMAT' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQACAAAAjggAAFZDAQADAAAAiAEAALAAAQABCQAAAAAAAAAAAAICAAAAVkMAAAMAAAAeAAAA2gAB
+AAEJAAAAAAAAAAAAAgIAAAAkNDmIAQcAbABmAEZvciB3ZWIgbG9va3Vwcywgd2UgbXVzdCByZXBs
+YWNlIHRoZSBmb3J3YXJkIHNsYXNoIGluIGhpZXJhcmNoaWNhbCBuYW1lcyB3aXRoIGEgbm9uLXJl
+c2VydmVkIGNoYXJhY3RlcgcACgADAAkxUwABADgAEQBBYmJyTmFtZQBpYEcAR3slAAACAAUAAAAA
+AAAABQAOAEZ1bGxQZXJzb25OYW1ltAIDAAcAEAAJAAkwUjFTMlM2UwABAD4AEgBycGxTTE5hbWUA
+amBHAEd7JQAFABEAQWJicm5hbWUAaWBHAEd7JQAAAQABAC8AAQACAF9fhAMDAAcAEgALAAkwUjFT
+MlM2UzhTAAEAPgASAHJwbHNwTmFtZQBrYEcAR3slAAUAEgBycGxTTE5hbWUAamBHAEd7JQABAAEA
+IAABAAEAXwCEAwMABwAOAAcACTBSMVMyUwACACIAAwAkNDkABQASAHJwbHNwTmFtZQBrYEcAR3sl
+AAMABwAKAAMACTBSACQzMh4AAgAQAAMAJDMyAJAAVgEDAAcADAAFAAkwUzBFACYAAQAAAAEBAAkB
+AAgKAQEECgAAPwCtKwIAAQABAAAAAAAAAAAAV0MBAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+//8AAAAAAAAAAAAAAAAAAFdDAQAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAA
+AAAAAABCAAAAAAABAP///wABAO/v7wABAAAAAAAAAAAAAAAAAAEA////AAEA////AAAAAQCAAAAA
+AQAAAP8AAQAAAAAAAAAIAAAAAAABAA==
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$Flags'><text>Y</text></item></note>
 

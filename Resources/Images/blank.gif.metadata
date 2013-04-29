@@ -1,10 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?><imageresource alias="blank.gif" comment="used in the outline elements when no graphic is desired" designerversion="8.5.3" language="en" maintenanceversion="3.0" name="blank.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="392" sequence="14" unid="88C0532CDE689D9A8525667F005BA432">
+<?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" replicaid="80257AC50035BEE2" version="9.0">
+<noteinfo noteid="502" sequence="20" unid="88C0532CDE689D9A8525667F005BA432">
 <created><datetime dst="true">19980914T124058,10-04</datetime></created>
-<modified><datetime>20121204T161405,96+00</datetime></modified>
-<revised><datetime>20121204T161405,95+00</datetime></revised>
-<lastaccessed><datetime>20121204T161405,96+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094705,18+00</datetime></addedtofile></noteinfo>
+<modified><datetime dst="true">20130417T112219,31+01</datetime></modified>
+<revised><datetime dst="true">20130417T112219,30+01</datetime></revised>
+<lastaccessed><datetime dst="true">20130417T112219,31+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130408T135555,14+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-</imageresource>
+<item name="$TITLE" sign="true"><textlist><text>blank.gif</text><text>blank.gif</text></textlist></item>
+<item name="$Comment"><text>used in the outline elements when no graphic is desired</text></item>
+<item name="$LANGUAGE"><text>en</text></item>
+<item name="$ImagesWide" sign="true"><number>1</number></item>
+<item name="$ImagesHigh" sign="true"><number>1</number></item>
+<item name="$ImagesColorize" sign="true"><number>0</number></item>
+<item name="$ImageNames" sign="true"><text>blank.gif</text></item>
+<item name="$Flags"><text>34CiQ</text></item>
+<item name="$FlagsExt" sign="true"><text>D</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+</note>

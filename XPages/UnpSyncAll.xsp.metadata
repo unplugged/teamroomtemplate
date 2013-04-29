@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" replicaid="80257AC50035BEE2" version="9.0">
-<noteinfo noteid="3bc6" sequence="2" unid="854A52D7FEDC3F3780257B50002EC214">
+<noteinfo noteid="3bc6" sequence="6" unid="854A52D7FEDC3F3780257B50002EC214">
 <created><datetime dst="true">20130417T093043,40+01</datetime></created>
-<modified><datetime dst="true">20130417T093043,44+01</datetime></modified>
-<revised><datetime dst="true">20130417T093043,43+01</datetime></revised>
-<lastaccessed><datetime dst="true">20130417T093043,44+01</datetime></lastaccessed>
+<modified><datetime dst="true">20130417T093426,81+01</datetime></modified>
+<revised><datetime dst="true">20130417T093426,80+01</datetime></revised>
+<lastaccessed><datetime dst="true">20130417T093426,81+01</datetime></lastaccessed>
 <addedtofile><datetime dst="true">20130417T093043,42+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
@@ -11,4 +11,10 @@
 <item name="$Flags"><text>gC~4K</text></item>
 
 
-<item name="$FileNames" sign="true"><text>UnpSyncAll.xsp</text></item></note>
+<item name="$FileNames" sign="true"><text>UnpSyncAll.xsp</text></item>
+<item name="$DesignerVersion"><text>8.5</text></item>
+
+
+
+
+</note>

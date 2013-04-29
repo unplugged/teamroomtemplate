@@ -1,77 +1,93 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE page SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<page name='AppletUninstallPage' xmlns='http://www.lotus.com/dxl' version='8.5'
- maintenanceversion='3.0' replicaid='80257AC50035BEE2' treatashtml='true'
- publicaccess='false' designerversion='6' language='en'>
-<noteinfo noteid='3c6' unid='BA837EF1601AEF0885256A0100641E5F' sequence='11'>
+<note class='form' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='62a' unid='BA837EF1601AEF0885256A0100641E5F' sequence='14'>
 <created><datetime>20010228T131333,75-05</datetime></created>
-<modified><datetime>20130219T091817,96+00</datetime></modified>
-<revised><datetime>20130219T091817,95+00</datetime></revised>
-<lastaccessed><datetime>20130219T091817,96+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094705,44+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
+<modified><datetime dst='true'>20130417T112219,19+01</datetime></modified>
+<revised><datetime dst='true'>20130417T112219,18+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130417T112219,19+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135557,48+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-<body><richtext>
-<pardef id='1' leftmargin='1in' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
-<par def='1'><run html='true'>&lt;HTML&gt;&lt;HEAD&gt;&lt;TITLE&gt;Uninstalling Domino Applets&lt;/TITLE&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;SCRIPT language="Javascript"&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>//WINDOW DIALOG TEXT TO BE TRANSLATED</run></par>
-<par def='1'><run html='true'>var UNINSTALLCOMPLETE = "The Domino Applets have been uninstalled!";</run></par>
-<par def='1'><run html='true'>var is_netscape = (navigator.appName.indexOf("Netscape")!=-1);</run></par>
-<par def='1'><run html='true'>//END TEXT TO BE TRANSLATED</run></par>
-<par def='1'/>
-<pardef id='2' leftmargin='1in' rightmargin='100%'/>
-<par def='2'><run html='true'>var locProtocol = window.location.protocol;</run></par>
-<par def='1'><run html='true'>var locHostname = window.location.host;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>function setUninstalled() {</run></par>
-<par def='1'><run html='true'>	if (!is_netscape)</run></par>
-<par def='1'><run html='true'>		window.alert(UNINSTALLCOMPLETE);</run></par>
-<par def='1'><run html='true'>}</run></par>
-<par def='1'/>
-<par def='2'><run html='true'> /* Trigger script for Netscape uninstall */</run></par>
-<par def='2'><run html='true'>        </run><run html='true'>function launchNetscape() {</run></par>
-<par def='2'><run html='true'>	if (is_netscape) {</run></par>
-<par def='2'><run html='true'>	</run><run html='true'>trigger = netscape.softupdate.Trigger;</run></par>
-<par def='2'><run html='true'>		if ( trigger.UpdateEnabled() )</run></par>
-<par def='2'><run html='true'>			trigger.StartSoftwareUpdate(</run></par>
-<par def='2'><run html='true'>      			locProtocol+'//'+locHostname+'/domjava/uninstall.jar',</run></par>
-<par def='2'><run html='true'>  			trigger.DEFAULT_MODE);</run></par>
-<par def='2'><run html='true'>		else</run></par>
-<par def='2'><run html='true'>			window.alert(SMARTUPDATESUPPORT);</run></par>
-<par def='2'><run html='true'>	}</run></par>
-<par def='2'><run html='true'>}</run></par>
-<par def='2'/>
-<par def='1'><run html='true'>&lt;/SCRIPT&gt;&lt;/HEAD&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;BODY link="#000000" vlink="#000000" alink="#000000" background="#ffffff" onLoad="launchNetscape();"&gt;</run></par>
-<par def='1'><run html='true'>&lt;FONT face="Arial,Helvetcia,Verdana" color="#000000"&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;H3&gt;Uninstalling the Domino Applets&lt;/H3&gt;</run></par>
-<par def='1'><run html='true'>&lt;P&gt;This will uninstall the Domino applets. It may take a few seconds to uninstall the applets from your hard drive. If 		you close this window before then the applets will not be uninstalled.  Once the applets are uninstalled you will be 		notified.</run></par>
-<par def='1'/>
-<par def='1'><run html='true'><font size='9pt'/>&lt;SCRIPT Language="Javascript"&gt;</run></par>
-<par def='1'><run html='true'>if (is_netscape) {</run></par>
-<pardef id='3' leftmargin='1.2500in' tabs='L0.5000in L1in L1.5000in L2in L2.5000in L3in L3.5000in L4in'/>
-<par def='3'><run html='true'>document.writeln('&lt;P&gt;&lt;B&gt;&lt;FONT face="Arial,Helvetcia,Verdana" color="#FF0000"&gt;IMPORTANT!: You will need to  restart Netscape in order to complete the uninstall.&lt;/FONT&gt;&lt;/B&gt;');</run></par>
-<par def='1'><run html='true'>}</run></par>
-<par def='1'><run html='true'><font size='9pt'/>&lt;/SCRIPT&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;APPLET code=lotus.notes.util.UtilApplet width=0 height=0 name=UtilApplet codebase="/domjava/"width=0 MAYSCRIPT&gt;</run></par>
-<par def='1'><run html='true'>&lt;PARAM NAME="useslibrarycodebase" VALUE="dominoapplets.cab"&gt;</run></par>
-<par def='1'><run html='true'>&lt;PARAM NAME="useslibrary" VALUE="DominoApplets"&gt;</run></par>
-<par def='1'><run html='true'>&lt;PARAM NAME="useslibraryversion" VALUE="6,0,0,0"&gt;</run></par>
-<par def='1'><run html='true'>&lt;PARAM NAME="namespace" VALUE="DominoApplets"&gt;</run></par>
-<par def='1'><run html='true'>&lt;PARAM NAME="uninstall" VALUE="true"&gt;</run></par>
-<par def='1'><run html='true'>&lt;/APPLET&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;/FONT&gt;</run></par>
-<par def='1'><run html='true'>&lt;/BODY&gt;</run></par>
-<par def='1'/>
-<par def='1'><run html='true'>&lt;/HTML&gt;</run></par>
-<par def='1'/></richtext></body>
-<item name='$$ScriptName' summary='false' sign='true'><text>Untitled</text></item></page>
+<item name='$TITLE' sign='true'><text>AppletUninstallPage</text></item>
+<item name='$LANGUAGE'><text>en</text></item>
+<item name='$DesignerVersion'><text>6</text></item>
+<item name='$BODY' sign='true'>
+<rawitemdata type='1'>
+gQKC/1oAAQAAAAAAAAAAAKAFAACgBQgA0AKgBXAIQAsQDuAQsBOAFgAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAABAAAAAJSEoAUMAKAFDAAAAAAAAQAAAAQAAACDBAEAzP8IAAAAAACF/z4AAQAACjxI
+VE1MPjxIRUFEPjxUSVRMRT5Vbmluc3RhbGxpbmcgRG9taW5vIEFwcGxldHM8L1RJVExFPs3/CAAA
+AAAAgQKDBAEAhf8IAAEAAAqBAoMEAQDM/wgAAAAAAIX/JgABAAAKPFNDUklQVCBsYW5ndWFnZT0i
+SmF2YXNjcmlwdCI+zf8IAAAAAACBAoMEAQCF/wgAAQAACoECgwQBAMz/CAAAAAAAhf8tAAEAAAov
+L1dJTkRPVyBESUFMT0cgVEVYVCBUTyBCRSBUUkFOU0xBVEVEAM3/CAAAAAAAgQKDBAEAzP8IAAAA
+AACF/0wAAQAACnZhciBVTklOU1RBTExDT01QTEVURSA9ICJUaGUgRG9taW5vIEFwcGxldHMgaGF2
+ZSBiZWVuIHVuaW5zdGFsbGVkISI7zf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/RgABAAAKdmFyIGlz
+X25ldHNjYXBlID0gKG5hdmlnYXRvci5hcHBOYW1lLmluZGV4T2YoIk5ldHNjYXBlIikhPS0xKTvN
+/wgAAAAAAIECgwQBAMz/CAAAAAAAhf8jAAEAAAovL0VORCBURVhUIFRPIEJFIFRSQU5TTEFURUQA
+zf8IAAAAAACBAoMEAQCF/wgAAQAACoECgv9aAAIAAAAAAAAAAACgBQAAoAUAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAACUgKAFDACgBQwA0C9kAAEAAAAEAAAA
+gwQCAMz/CAAAAAAAhf8zAAEAAAp2YXIgbG9jUHJvdG9jb2wgPSB3aW5kb3cubG9jYXRpb24ucHJv
+dG9jb2w7AM3/CAAAAAAAgQKDBAEAzP8IAAAAAACF/y8AAQAACnZhciBsb2NIb3N0bmFtZSA9IHdp
+bmRvdy5sb2NhdGlvbi5ob3N0OwDN/wgAAAAAAIECgwQBAIX/CAABAAAKgQKDBAEAzP8IAAAAAACF
+/yMAAQAACmZ1bmN0aW9uIHNldFVuaW5zdGFsbGVkKCkgewDN/wgAAAAAAIECgwQBAMz/CAAAAAAA
+hf8aAAEAAAoJaWYgKCFpc19uZXRzY2FwZSnN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf8qAAEAAAoJ
+CXdpbmRvdy5hbGVydChVTklOU1RBTExDT01QTEVURSk7zf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/
+CQABAAAKfQDN/wgAAAAAAIECgwQBAIX/CAABAAAKgQKDBAIAzP8IAAAAAACF/zQAAQAACiAvKiBU
+cmlnZ2VyIHNjcmlwdCBmb3IgTmV0c2NhcGUgdW5pbnN0YWxsICovzf8IAAAAAACBAoMEAgDM/wgA
+AAAAAIX/EAABAAAKICAgICAgICDN/wgAAAAAAMz/CAAAAAAAhf8jAAEAAApmdW5jdGlvbiBsYXVu
+Y2hOZXRzY2FwZSgpIHsAzf8IAAAAAACBAoMEAgDM/wgAAAAAAIX/GwABAAAKCWlmIChpc19uZXRz
+Y2FwZSkgewDN/wgAAAAAAIECgwQCAMz/CAAAAAAAhf8JAAEAAAoJAM3/CAAAAAAAzP8IAAAAAACF
+/y4AAQAACnRyaWdnZXIgPSBuZXRzY2FwZS5zb2Z0dXBkYXRlLlRyaWdnZXI7zf8IAAAAAACBAoME
+AgDM/wgAAAAAAIX/KAABAAAKCQlpZiAoIHRyaWdnZXIuVXBkYXRlRW5hYmxlZCgpICnN/wgAAAAA
+AIECgwQCAMz/CAAAAAAAhf8nAAEAAAoJCQl0cmlnZ2VyLlN0YXJ0U29mdHdhcmVVcGRhdGUoAM3/
+CAAAAAAAgQKDBAIAzP8IAAAAAACF/0cAAQAACiAgICAgIAkJCWxvY1Byb3RvY29sKycvLycrbG9j
+SG9zdG5hbWUrJy9kb21qYXZhL3VuaW5zdGFsbC5qYXInLADN/wgAAAAAAIECgwQCAMz/CAAAAAAA
+hf8jAAEAAAogIAkJCXRyaWdnZXIuREVGQVVMVF9NT0RFKTsAzf8IAAAAAACBAoMEAgDM/wgAAAAA
+AIX/DgABAAAKCQllbHNlzf8IAAAAAACBAoMEAgDM/wgAAAAAAIX/LAABAAAKCQkJd2luZG93LmFs
+ZXJ0KFNNQVJUVVBEQVRFU1VQUE9SVCk7zf8IAAAAAACBAoMEAgDM/wgAAAAAAIX/CgABAAAKCX3N
+/wgAAAAAAIECgwQCAMz/CAAAAAAAhf8JAAEAAAp9AM3/CAAAAAAAgQKDBAIAhf8IAAEAAAqBAoME
+AQDM/wgAAAAAAIX/GAABAAAKPC9TQ1JJUFQ+PC9IRUFEPs3/CAAAAAAAgQKDBAEAhf8IAAEAAAqB
+AoMEAQDM/wgAAAAAAIX/bQABAAAKPEJPRFkgbGluaz0iIzAwMDAwMCIgdmxpbms9IiMwMDAwMDAi
+IGFsaW5rPSIjMDAwMDAwIiBiYWNrZ3JvdW5kPSIjZmZmZmZmIiBvbkxvYWQ9ImxhdW5jaE5ldHNj
+YXBlKCk7Ij4Azf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/PQABAAAKPEZPTlQgZmFjZT0iQXJpYWws
+SGVsdmV0Y2lhLFZlcmRhbmEiIGNvbG9yPSIjMDAwMDAwIj4Azf8IAAAAAACBAoMEAQCF/wgAAQAA
+CoECgwQBAMz/CAAAAAAAhf8wAAEAAAo8SDM+VW5pbnN0YWxsaW5nIHRoZSBEb21pbm8gQXBwbGV0
+czwvSDM+zf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/AQEBAAAKPFA+VGhpcyB3aWxsIHVuaW5zdGFs
+bCB0aGUgRG9taW5vIGFwcGxldHMuIEl0IG1heSB0YWtlIGEgZmV3IHNlY29uZHMgdG8gdW5pbnN0
+YWxsIHRoZSBhcHBsZXRzIGZyb20geW91ciBoYXJkIGRyaXZlLiBJZiAJCXlvdSBjbG9zZSB0aGlz
+IHdpbmRvdyBiZWZvcmUgdGhlbiB0aGUgYXBwbGV0cyB3aWxsIG5vdCBiZSB1bmluc3RhbGxlZC4g
+IE9uY2UgdGhlIGFwcGxldHMgYXJlIHVuaW5zdGFsbGVkIHlvdSB3aWxsIGJlIAkJbm90aWZpZWQu
+AM3/CAAAAAAAgQKDBAEAhf8IAAEAAAqBAoMEAQDM/wgAAAAAAIX/JgABAAAJPFNDUklQVCBMYW5n
+dWFnZT0iSmF2YXNjcmlwdCI+zf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/GgABAAAKaWYgKGlzX25l
+dHNjYXBlKSB7zf8IAAAAAACBAoL/WgADAAAAAAAAAAAACAcAAAgHCADQAqAFcAhACxAO4BCwE4AW
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAlIQIBw8ACAcPAAAAAAABAAAABAAAAIMEAwDM
+/wgAAAAAAIX/tQABAAAKZG9jdW1lbnQud3JpdGVsbignPFA+PEI+PEZPTlQgZmFjZT0iQXJpYWws
+SGVsdmV0Y2lhLFZlcmRhbmEiIGNvbG9yPSIjRkYwMDAwIj5JTVBPUlRBTlQhOiBZb3Ugd2lsbCBu
+ZWVkIHRvICByZXN0YXJ0IE5ldHNjYXBlIGluIG9yZGVyIHRvIGNvbXBsZXRlIHRoZSB1bmluc3Rh
+bGwuPC9GT05UPjwvQj4nKTsAzf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/CQABAAAKfQDN/wgAAAAA
+AIECgwQBAMz/CAAAAAAAhf8RAAEAAAk8L1NDUklQVD4Azf8IAAAAAACBAoMEAQCF/wgAAQAACoEC
+gwQBAMz/CAAAAAAAhf94AAEAAAo8QVBQTEVUIGNvZGU9bG90dXMubm90ZXMudXRpbC5VdGlsQXBw
+bGV0IHdpZHRoPTAgaGVpZ2h0PTAgbmFtZT1VdGlsQXBwbGV0IGNvZGViYXNlPSIvZG9tamF2YS8i
+d2lkdGg9MCBNQVlTQ1JJUFQ+zf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/RAABAAAKPFBBUkFNIE5B
+TUU9InVzZXNsaWJyYXJ5Y29kZWJhc2UiIFZBTFVFPSJkb21pbm9hcHBsZXRzLmNhYiI+zf8IAAAA
+AACBAoMEAQDM/wgAAAAAAIX/OAABAAAKPFBBUkFNIE5BTUU9InVzZXNsaWJyYXJ5IiBWQUxVRT0i
+RG9taW5vQXBwbGV0cyI+zf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/OQABAAAKPFBBUkFNIE5BTUU9
+InVzZXNsaWJyYXJ5dmVyc2lvbiIgVkFMVUU9IjYsMCwwLDAiPgDN/wgAAAAAAIECgwQBAMz/CAAA
+AAAAhf82AAEAAAo8UEFSQU0gTkFNRT0ibmFtZXNwYWNlIiBWQUxVRT0iRG9taW5vQXBwbGV0cyI+
+zf8IAAAAAACBAoMEAQDM/wgAAAAAAIX/LQABAAAKPFBBUkFNIE5BTUU9InVuaW5zdGFsbCIgVkFM
+VUU9InRydWUiPgDN/wgAAAAAAIECgwQBAMz/CAAAAAAAhf8RAAEAAAo8L0FQUExFVD4Azf8IAAAA
+AACBAoMEAQCF/wgAAQAACoECgwQBAMz/CAAAAAAAhf8PAAEAAAo8L0ZPTlQ+AM3/CAAAAAAAgQKD
+BAEAzP8IAAAAAACF/w8AAQAACjwvQk9EWT4Azf8IAAAAAACBAoMEAQCF/wgAAQAACoECgwQBAMz/
+CAAAAAAAhf8PAAEAAAo8L0hUTUw+AM3/CAAAAAAAgQKDBAEAhf8IAAEAAAo=
+</rawitemdata></item>
+<item name='$$ScriptName' summary='false' sign='true'><text>Untitled</text></item>
+<item name='$HTMLCode' sign='true'>
+<rawitemdata type='1'>
+X/8QAAIADwAHAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$INFO' sign='true'>
+<rawitemdata type='1'>
+hhgBAIAAAAAAgAAAAQABAP///wAAAAAA
+</rawitemdata></item>
+<item name='$Flags'><text>C34WQ</text></item>
+<item name='$WebFlags'><text>H</text></item></note>
 

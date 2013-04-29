@@ -1,27 +1,43 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<view name='(DelDocLookup)' alias='DelDocLookup' xmlns='http://www.lotus.com/dxl'
- version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='false'
- publicaccess='false' designerversion='6' language='en' unreadmarks='none'
- onopengoto='lastopened' onrefresh='displayindicator' headers='beveled' opencollapsed='false'
- showresponsehierarchy='true' showmargin='true' shrinkrows='false' extendlastcolumn='false'
- showhierarchies='false' unreadcolor='black' rowlinecount='1' headerlinecount='1'
- rowspacing='1' bgcolor='white' totalscolor='gray' headerbgcolor='white' boldunreadrows='false'
- evaluateactions='false' allownewdocuments='false' allowcustomizations='true'
- hidemarginborder='false' marginwidth='0px' marginbgcolor='white' uniquekeys='false'>
-<noteinfo noteid='2e2' unid='694CD821860770638525664C00455CE8' sequence='13'>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='51e' unid='694CD821860770638525664C00455CE8' sequence='15'>
 <created><datetime dst='true'>19980725T083737,68-04</datetime></created>
-<modified><datetime>20130219T091822,90+00</datetime></modified>
-<revised><datetime>20130219T091822,89+00</datetime></revised>
-<lastaccessed><datetime>20130219T091822,90+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094704,30+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
->SELECT form = "ParticipantProfile" | form = "Subteam" | form = "Event"</formula></code>
-<column sort='ascending' hidedetailrows='false' itemname='$0' width='15.2500'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='false'><columnheader title='item'><font size='9pt'/></columnheader><code
- event='value'><formula>Ev := EventSummary + " (" + @Text(EventDate) + ")";
-@If(form = "ParticipantProfile"; @Name([Abbreviate]; Who); form = "Subteam"; @Name([Abbreviate] ; STName); Ev)</formula></code></column></view>
+<modified><datetime dst='true'>20130408T135938,14+01</datetime></modified>
+<revised><datetime dst='true'>20130408T135938,13+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130408T135938,14+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135555,30+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name='$LANGUAGE' sign='true'><text>en</text></item>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$TITLE' sign='true'><text>(DelDocLookup)|DelDocLookup</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+cgEBAEYACwBFdgBzYEcAR3slAAAFAAwARXZlbnRTdW1tYXJ5AQACACAoIgIFAAkARXZlbnREYXRl
+AFYBIgIBAAEAKQAiAgMAAgCUAAIAJDAFAAQAZm9ybQEAEgBQYXJ0aWNpcGFudFByb2ZpbGUKAq8A
+aAAaAAIABQAAAAAAAAAFAAMAV2hvALQCrgBOAAUABABmb3JtAQAHAFN1YnRlYW0ACgKvADQAHAAC
+AAUAAAAAAAAABQAGAFNUTmFtZbQCrgAYAAUACwBFdgBzYEcAR3slAACuAAQAtQUDAAUAHgAZAAMA
+AgAJAAQAJDAkQ29uZmxpY3QkUkVGAAQABAAAAFQABQAEAGZvcm0BABIAUGFydGljaXBhbnRQcm9m
+aWxlCgIFAAQAZm9ybQEABwBTdWJ0ZWFtAAoCHQIFAAQAZm9ybQEABQBFdmVudAAKAh0CAwAHACAA
+GgAJTDFTMlMzUzRTNVM2UzdTOFM5UzEwUzExUw==
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+DwABAABEAGYAAAACACQw
+</rawitemdata></item>
+<item name='$VIEWFORMAT' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQABAAAACAAAAFZDAQACAAQAHgEAAHoAAQAACgAAAAAAAAAAAAICAAAAJDBpdGVtHgEBAEYACwBF
+dgBzYEcAR3slAAAFAAwARXZlbnRTdW1tYXJ5AQACACAoIgIFAAkARXZlbnREYXRlAFYBIgIBAAEA
+KQAiAgMABwAaABMACTFTMlMzUzRTNVM2UzEwUzExUwACAJQAAgAkMAUABABmb3JtAQASAFBhcnRp
+Y2lwYW50UHJvZmlsZQoCrwBoABoAAgAFAAAAAAAAAAUAAwBXaG8AtAKuAE4ABQAEAGZvcm0BAAcA
+U3VidGVhbQAKAq8ANAAcAAIABQAAAAAAAAAFAAYAU1ROYW1ltAKuABgABQALAEV2AHNgRwBHeyUA
+AK4ABAC1BQMABwAoACEACTBSM1M0UzZTMTBTMTNTMTRTMTVTMTdTMjBTMjFTMjRTACYAAQAAAAEB
+AAkBAAAKAQEOCgAAAQCtKwEAAQABAAAAAAAAAAAAV0MBAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAA//8AAAAAAAAAAAAAAAAAAEIAAAAAAAEA////AAUA////AAEAAAAAAAAAAAAAAAAAAQD///8A
+AQD///8AAAABAAAAAAABAICAgAABAAAAAAAAAAgAAAAAAAEA
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$Flags'><text>Y</text></item></note>
 

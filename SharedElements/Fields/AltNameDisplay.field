@@ -1,27 +1,38 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE sharedfield SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<sharedfield name='AltNameDisplay' xmlns='http://www.lotus.com/dxl' version='8.5'
- maintenanceversion='3.0' replicaid='80257AC50035BEE2' designerversion='6'
- language='en'>
-<noteinfo noteid='426' unid='185109314E49466285256AB60064EA3B' sequence='8'>
+<note class='sharedfield' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='4ee' unid='185109314E49466285256AB60064EA3B' sequence='11'>
 <created><datetime dst='true'>20010828T142215,63-04</datetime></created>
-<modified><datetime>20130219T091817,90+00</datetime></modified>
-<revised><datetime>20130219T091817,89+00</datetime></revised>
-<lastaccessed><datetime>20130219T091817,90+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094705,90+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><field type='text'
- kind='computedfordisplay' name='AltNameDisplay'><code event='defaultvalue'><formula
->REM {"1" means alternate names can be displayed};
-
-fNamePref := @LocationGetInfo([NamePreference]);
-@If(fNamePref != "1"; @Return("0"); @True);
-
-lUserLang := @LanguagePreference([AlternateName]);
-lAllLang := @Trim(@Unique(@DbColumn("" : "nocache"; ""; "PeopleLookup"; 4)));
-@If(@IsMember(lAllLang; lUserLang); "1"; "0")</formula></code></field>
+<modified><datetime dst='true'>20130417T112219,13+01</datetime></modified>
+<revised><datetime dst='true'>20130417T112219,12+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130417T112219,13+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135554,90+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name='$TITLE'><text>AltNameDisplay</text></item>
+<item name='$LANGUAGE'><text>en</text></item>
+<item name='$DesignerVersion'><text>6</text></item>
 <item name='$HTMLCode' sign='true'>
 <rawitemdata type='1'>
-</rawitemdata></item></sharedfield>
+</rawitemdata></item>
+<item name='$INFO' sign='true'>
+<rawitemdata type='1'>
+hhgBAIAAAAAAgAAAAQABAP///wAQAAAA
+</rawitemdata></item>
+<item name='$BODY' summary='true' sign='true'>
+<rawitemdata type='1'>
+gQKC/1IAAQAAAAAAAAAAAKAFAACgBQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAABAAAAAJQHAAAAAAAAAAAAAAAAgwQBAIX/CAABAAAK3QYAAIr//v9QAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAACK/8YBgAEABQAAAAAAAAAAAAABAAAKlAEAAAAAAAAOAAAAAACUAQoABAAHADAA
+KgAiMSIgbWVhbnMgYWx0ZXJuYXRlIG5hbWVzIGNhbiBiZSBkaXNwbGF5ZWQHAAoAAwAJMVMAAQAg
+AAkAZk5hbWVQcmVmAAIAqAAAAAAAAAD7AQQBAwAHAA4ACAAJMFJSMVMyUwgANgAFAAkAZk5hbWVQ
+cmVmAAEAAQAxAAsCrwAYAA4AAQABADAAwgGuAAoAKwCuAAQAtQMDAAcAEgAMAAkwUjNTNFM2UzEx
+UwEAIAAJAGxVc2VyTGFuZwACAOgAAAAAAAAA+wEaAQMABwAOAAgACTBSUjFTMlMBAEYACABsQWxs
+TGFuZwEAAAABAAcAbm9jYWNoZQAfAgEAAAABAAwAUGVvcGxlTG9va3VwAAAAAAAAAAAQQKoEqwFe
+AQMABwAcABUACTBSMVMyUzlTMTBTMTJTMTRTMTZTAAAAPgAFAAgAbEFsbExhbmcFAAkAbFVzZXJM
+YW5nAHQCrwAaAAwAAQABADEArgAOAAEAAQAwAK4ABAC1AwMABwAQAAoACTBSNlM5UzExU0FsdE5h
+bWVEaXNwbGF53gYAAIr/
+</rawitemdata></item>
+<item name='$Flags'><text/></item>
+<item name='$Fields'><text>AltNameDisplay</text></item></note>
 

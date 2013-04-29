@@ -1,48 +1,55 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<view name='(Event Lookup)' alias='EventLookup' xmlns='http://www.lotus.com/dxl'
- version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='true'
- publicaccess='false' designerversion='6' language='en' unreadmarks='none'
- onopengoto='lastopened' onrefresh='displayindicator' headers='beveled' opencollapsed='false'
- showresponsehierarchy='true' showmargin='true' shrinkrows='true' extendlastcolumn='true'
- showhierarchies='false' unreadcolor='teal' rowlinecount='4' headerlinecount='1'
- rowspacing='1.25' bgcolor='white' altrowcolor='#efefef' totalscolor='blue'
- headerbgcolor='white' boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
- allowcustomizations='true' hidemarginborder='false' marginwidth='0px' marginbgcolor='white'
- uniquekeys='false'>
-<noteinfo noteid='2da' unid='43F7E7122DC1D9A0852565830065B729' sequence='24'>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='566' unid='43F7E7122DC1D9A0852565830065B729' sequence='26'>
 <created><datetime>19980105T133100,25-05</datetime></created>
-<modified><datetime>20130219T091823,02+00</datetime></modified>
-<revised><datetime>20130219T091823,01+00</datetime></revised>
-<lastaccessed><datetime>20130219T091823,02+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094704,26+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
->SELECT form = "Event" &amp; Status = "1"</formula></code>
-<actionbar bordercolor='black'>
-<actionbuttonstyle bgcolor='silver'/>
-<action title='Categori_ze' showinmenu='false' showinbar='false' systemcommand='categorize'/>
-<action title='_Edit Document' showinbar='false' systemcommand='edit'/>
-<action title='Send Docu_ment' showinbar='false' systemcommand='send'/>
-<action title='_Forward' showinbar='false' systemcommand='forward'/>
-<action title='_Move To Folder...' showinbar='false' systemcommand='movetofolder'/>
-<action title='_Remove From Folder' showinbar='false' systemcommand='removefromfolder'/>
-<action title='Exit View' icon='112' showinmenu='false'><code event='click'><formula
->@Command([FileCloseWindow])</formula></code></action></actionbar>
-<column hidedetailrows='false' itemname='EventSummary' width='20' resizable='true'
- separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><font
- size='9pt' style='bold'/><columnheader title='Event Title'><font size='9pt'/></columnheader></column>
-<column sort='ascending' hidedetailrows='false' itemname='EventDate' width='9.1250'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='false'><font size='9pt'/><columnheader title='Date'><font size='9pt'/></columnheader></column>
-<column hidedetailrows='false' itemname='EventDetail' width='35.7500' resizable='true'
- separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><font
- size='9pt'/><columnheader title='Event Summary'><font size='9pt'/></columnheader></column>
+<modified><datetime dst='true'>20130408T135938,06+01</datetime></modified>
+<revised><datetime dst='true'>20130408T135938,05+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130408T135938,06+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135555,74+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name='$LANGUAGE' sign='true'><text>en</text></item>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRwAAAAAAQABAAAAAAAAAAAAAAABAAAJAAAAAHn/bAAJAAAAAAABAAAAAAABAAAAAAABAMDAwAAA
+AB8AAAAAAAAAAAADAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAL7/JgAAAAUAAACcAQAACwAAAAAAAABDYXRlZ29yaV96ZQAB
+AE58vv8oAAAABQAAAJ0BAAAOAAAAAAAAAF9FZGl0IERvY3VtZW50AgACCr7/KAAAAAUAAACdAQAA
+DgAAAAAAAABTZW5kIERvY3VfbWVudAMAAwq+/yIAAAAFAAAAnQEAAAgAAAAAAAAAX0ZvcndhcmQE
+AAQKvv8sAAAABQAAAJ0BAAASAAAAAAAAAF9Nb3ZlIFRvIEZvbGRlci4uLgUAPXy+/y4AAAAFAAAA
+nQEAABMAAAAAAAAAX1JlbW92ZSBGcm9tIEZvbGRlcgAGAD58vv9AAAAAAQBwAJ4BAAAJAAAAAAAA
+AEV4aXQgVmlldwAgAAAAEgACAPwRAAAAAAAA7QEDAAcADAAFAAkwUzBFAA==
+</rawitemdata></item>
+<item name='$TITLE' sign='true'><text>(Event Lookup)|EventLookup</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' summary='true' sign='true'><formula compiled='true'>
+igAFAEAAOwAFAAwACQALAAkABABFdmVudFN1bW1hcnlFdmVudERhdGVFdmVudERldGFpbCRDb25m
+bGljdCRSRUYABAAEAAAALgAFAAQAZm9ybQEABQBFdmVudAAKAgUABgBTdGF0dXMBAAEAMQAKAhwC
+AwAHABYAEAAJTDFTMlMzUzRTNVM2UzdT
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+FgABAABEAGYAAAAJAEV2ZW50RGF0ZQ==
+</rawitemdata></item>
+<item name='$VIEWFORMAT' summary='true' sign='true'>
+<rawitemdata type='5'>
+AQADAAAAiEgAAFZDAAAMAAsAAAAAAKAAAQEACQAAAAAAAAAAAAICAAAAVkMBAAkABAAAAAAASQAB
+AAAJAAAAAAAAAAAAAgIAAABWQwAACwANAAAAAAAeAQEAAAkAAAAAAAAAAAACAgAAAEV2ZW50U3Vt
+bWFyeUV2ZW50IFRpdGxlRXZlbnREYXRlRGF0ZUV2ZW50RGV0YWlsRXZlbnQgU3VtbWFyeSYAAQAA
+AAEBAAkBAA0KAQEECgAAPwCtKwQBAQABAAAAAAAAAAAAV0MBAAAJAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDAQAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAA
+AAAAAAAAAAAAAABXQwEAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAA
+QgAAAAAAAQD///8AAQDv7+8AAQAAAAAAAAAAAAAAAAABAP///wABAP///wAAAAEAAICAAAEAAAD/
+AAEAAAAAAAAACAAAAAAAAQA=
+</rawitemdata></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
 <item name='$CIAOOwner' sign='true'><text>CN=Mike Johnston/O=Jacobson</text></item>
 <item name='$CIAOTime' sign='true'><datetime>19970123T161751,84-05</datetime></item>
 <item name='$HTMLDocumentStyles' summary='true' sign='true'>
 <rawitemdata type='1'>
 0ggBAAAA/wDSCAEA/wAAANIIAQCAAIAA
-</rawitemdata></item></view>
+</rawitemdata></item>
+<item name='$Flags'><text/></item></note>
 

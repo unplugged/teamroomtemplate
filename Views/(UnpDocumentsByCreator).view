@@ -1,97 +1,129 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<view name='(UnpDocumentsByCreator)' xmlns='http://www.lotus.com/dxl' version='8.5'
- maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='true' defaultdesign='true'
- allowdocselection='true' publicaccess='false' designerversion='8.5.3' language='en'
- unreadmarks='standard' onopengoto='lastopened' onrefresh='displayindicator'
- headers='simple' opencollapsed='false' showresponsehierarchy='false' showmargin='true'
- shrinkrows='true' extendlastcolumn='true' showhierarchies='false' unreadcolor='maroon'
- rowlinecount='4' headerlinecount='1' rowspacing='1.25' haslinkcolumn='true'
- bgcolor='white' altrowcolor='#efefef' totalscolor='blue' headerbgcolor='#a8cfd4'
- boldunreadrows='false' evaluateactions='true' allownewdocuments='false' allowcustomizations='true'
- hidemarginborder='false' marginwidth='0px 0px 1px' marginbgcolor='white'
- uniquekeys='false'>
-<noteinfo noteid='4ca' unid='768673F2EC56CCDF80257AC50036EFAA' sequence='27'>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='68a' unid='768673F2EC56CCDF80257AC50036EFAA' sequence='36'>
 <created><datetime>20121129T100002,98+00</datetime></created>
-<modified><datetime>20130219T091823,54+00</datetime></modified>
-<revised><datetime>20130219T091823,53+00</datetime></revised>
-<lastaccessed><datetime>20130219T091823,54+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T100003,03+00</datetime></addedtofile></noteinfo>
+<modified><datetime dst='true'>20130408T135940,34+01</datetime></modified>
+<revised><datetime dst='true'>20130408T135940,33+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130417T094719,55+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135558,76+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
->LCDocType := @LowerCase(doctype);
-LCDisc := @LowerCase(DefaultDocType1);
-LCRef := @LowerCase(DefaultDocType4);
-
-NotDone := ReviewedByNotDone;
-
-reviewer:=@If(LCDocType = LCDisc | LCDocType = LCRef; ReviewedByNotDone ; People);
-SELECT (form = "MainTopic" &amp; Status != "0")&amp; reviewer!=""</formula></code><code
- event='helprequest'><formula>REM {DNT};
-@Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></code>
-<actionbar useappletinbrowser='true' bgcolor='#78b4bc' bordercolor='black'><actionbarstyle
- height='4.7500ex'><font size='9pt' name='multilingual'/></actionbarstyle>
-<actionbuttonstyle margintype='fixed' margin='5' bgcolor='#c4dee1' displayborder='notesstyle'
- widthtype='background'/><font size='9pt' name='multilingual'/><border width='0px 0px 1px'/></actionbar>
-<column sort='ascending' hidedetailrows='false' itemname='From' width='10'
- resizable='true' separatemultiplevalues='true' sortnoaccent='false' sortnocase='true'
- showaslinks='false' categorized='true'><columnheader title='Cat'><font size='9pt'
- style='bold'/></columnheader></column><sharedcolumnref name='UnpDate'>
-<column sort='descending' hidedetailrows='false' listseparator='comma' itemname='$159'
- width='12.6250' resizable='true' separatemultiplevalues='false' sortnoaccent='true'
- sortnocase='true' showaslinks='false' twisties='true' formatdatatype='datetime'><font
- size='9pt'/><columnheader title='DateCreated'><font size='9pt' name='multilingual'/></columnheader><datetimeformat
- show='datetime' date='yearmonthday' fourdigityearfor21stcentury='true' time='hourminutesecond'
- zone='never' dateformat='weekdaydaymonthyear' dayformat='twodigitday' monthformat='twodigitmonth'
- yearformat='fourdigityear' weekdayformat='shortname' dateseparator1=' ' dateseparator2='/'
- dateseparator3='/' timeseparator=':' timeformat24='true' preference='usersetting'/><numberformat
- format='general' varying='true' digits='1' punctuated='false' parens='false'
- percent='false' bytes='false' decimalsym='.' thousandssep=',' currencysymtype='custom'
- currencysym='$' usecustomsym='false'/><code event='value'><formula>@If(@IsResponseDoc; ""; @Created)</formula></code></column></sharedcolumnref><sharedcolumnref
- name='UnpDueDate'>
-<column sort='ascending' hidedetailrows='false' itemname='$157' width='10'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='false'><font size='9pt'/><columnheader title='DueDate'><font
- size='9pt'/></columnheader><code event='value'><formula>date:=@If(MtgDate != ""; mtgDate; DueDate = ""; ""; @Date(DueDate));
-@If(@IsError(date); @Created; date);
-months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : "Oct" : "Nov" : "Dec";
-@If(@Text(date)=""; ""; "Due: " + @Text(@Day(date)) + " " + @Subset(@Subset(months; @Month(@Created)); -1) + " " + @Text(@Year(date)))  + @If(Categories != ""; " in: " + @Implode(Categories; ", "); "")</formula></code></column></sharedcolumnref><sharedcolumnref
- name='UnpType'>
-<column sort='ascending' hidedetailrows='false' itemname='DocType' width='10'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='false'><font size='9pt'/><columnheader title='Type'><font size='9pt'
- name='multilingual'/></columnheader></column></sharedcolumnref><sharedcolumnref
- name='UnpTopic'>
-<column sort='ascending' hidedetailrows='false' listseparator='comma' itemname='$156'
- width='17.3750' resizable='true' separatemultiplevalues='false' sortnoaccent='true'
- sortnocase='true' showaslinks='true'><font size='9pt' color='teal'/><columnheader
- title='Topic'><font size='9pt' name='multilingual'/></columnheader><code
- event='value'><formula>PrivateTxt := "PRIVATE: ";
-ExpiredTxt := "EXPIRED: ";
-subj := @If(!@IsAvailable(subject) | subject = ""; "Untitled"; subject);
-@If(readers != ""; PrivateTxt; ExpireDate != ""; ExpiredTxt; "") + subj</formula></code></column></sharedcolumnref><sharedcolumnref
- name='UnpCategories'>
-<column hidedetailrows='false' itemname='$160' width='34.3750' resizable='true'
- separatemultiplevalues='false' sortnoaccent='false' sortnocase='true' showaslinks='false'><font
- size='9pt'/><columnheader title='Categories'><font size='9pt'/></columnheader><code
- event='value'><formula>months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : "Oct" : "Nov" : "Dec";
-"Created: " + (@Text(@Day(@Created)) + " " + @Subset(@Subset(months; @Month(@Created)); -1) + " " + @Text(@Year(@Created))) + @If(Categories != ""; " in: " + @Implode(Categories; ", "); "")</formula></code></column></sharedcolumnref><sharedcolumnref
- name='UnpAuthor'>
-<column sort='ascending' hidedetailrows='false' itemname='$161' width='18'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='false'><font size='9pt'/><columnheader title='Author'><font
- size='9pt' name='multilingual'/></columnheader><datetimeformat show='datetime'
- date='yearmonthday' fourdigityearfor21stcentury='true' time='hourminutesecond'
- zone='never' dateformat='weekdaymonthdayyear' dayformat='twodigitday' monthformat='twodigitmonth'
- yearformat='fourdigityear' weekdayformat='shortname' dateseparator1=' ' dateseparator2='/'
- dateseparator3='/' timeseparator=':' preference='usersetting'/><numberformat
- format='general' varying='true' punctuated='false' parens='false' percent='false'
- bytes='false' decimalsym='.' thousandssep=',' currencysymtype='custom' currencysym='$'
- usecustomsym='false'/><code event='value'><formula>@Name([Abbreviate]; From)</formula></code></column></sharedcolumnref><sharedcolumnref
- name='UnpDateCreated'>
-<column hidedetailrows='false' itemname='$158' width='10' resizable='true'
- separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><columnheader
- title='DateCreatedDisp'><font size='9pt' style='bold'/></columnheader><code
- event='value'><formula>months:="Jan" : "Feb" : "Mar" : "Apr" : "May" : "Jun" : "Jul" : "Aug" : "Sep" : "Oct" : "Nov" : "Dec";
-@Text(@Day(@Created)) + " " + @Subset(@Subset(months; @Month(@Created)); -1) + " " + @Text(@Year(@Created))</formula></code></column></sharedcolumnref></view>
+<item name='$LANGUAGE' sign='true'><text>en</text></item>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRzWAAAAAQABAAAAwRgAAAAAAAACAAAJAAAFAHn/bAABAHi0vAABAAAAAAABAAAAAAABAMTe4QAD
+AB8AAAABAAAAAAADAAAAAgAACQAAAAAAAAAAE0AFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz/OgAAAAAAAAAAAAAAAQAAAAAAAAAAAAwAAAAAAAAAAAAA
+AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=
+</rawitemdata></item>
+<item name='$TITLE' sign='true'><text>(UnpDocumentsByCreator)</text></item>
+<item name='$Index' sign='true'><text/></item>
+<item name='$Formula' sign='true'><formula compiled='true'>
+2gcCACIAAgAkNWwArwAUAAoAAQAAAK4ACgBpAK4ABAC1AwMAAQByAA0AZGF0ZQABYUcAR3slAAAF
+AAcATXRnRGF0ZQABAAAACwKvAEgAEgAFAAcAbXRnRGF0ZQCuADYABQAHAER1ZURhdGUAAQAAAAoC
+rwAgAAoAAQAAAK4AFgAFAAcARHVlRGF0ZQBLAa4ABAC1BQMACAA+AAUADQBkYXRlAAFhRwBHeyUA
+AFoBrwAiAAgAaQCuABoABQANAGRhdGUAAWFHAEd7JQAArgAEALUDAwABAI4ADwBtb250aHMAAmFH
+AEd7JQAAAQADAEphbgABAAMARmViAB8CAQADAE1hcgAfAgEAAwBBcHIAHwIBAAMATWF5AB8CAQAD
+AEp1bgAfAgEAAwBKdWwAHwIBAAMAQXVnAB8CAQADAFNlcAAfAgEAAwBPY3QAHwIBAAMATm92AB8C
+AQADAERlYwAfAgMAAgD4AAIAJDMFAA0AZGF0ZQABYUcAR3slAABWAQEAAAAKAq8AhgAKAAEAAACu
+AHwAAQAFAER1ZTogAAUADQBkYXRlAAFhRwBHeyUAAFABVgEiAgEAAQAgACICBQAPAG1vbnRocwAC
+YUcAR3slAABpAE8BawIAAAAAAAAAAPA/EAFrAiICAQABACAAIgIFAA0AZGF0ZQABYUcAR3slAABO
+AVYBIgKuAAQAtQMFAAoAQ2F0ZWdvcmllcwEAAAALAq8ANAAoAAEABQAgaW46IAAFAAoAQ2F0ZWdv
+cmllcwEAAgAsIIUCIgKuAAwAAQAAAK4ABAC1AyICAwABACoAEwBQcml2YXRlVHh0APZgRwBHeyUA
+AAEACQBQUklWQVRFOiAAAwABACoAEwBFeHBpcmVkVHh0APdgRwBHeyUAAAEACQBFWFBJUkVEOiAA
+AwABAGIADQBzdWJqAPhgRwBHeyUAAAUABwBzdWJqZWN0AGgBHgEFAAcAc3ViamVjdAABAAAACgId
+Aq8AJgASAAEACABVbnRpdGxlZK4AFAAFAAcAc3ViamVjdACuAAQAtQMDAAIAkgACACQyBQAHAHJl
+YWRlcnMAAQAAAAsCrwBgAB4ABQATAFByaXZhdGVUeHQA9mBHAEd7JQAArgBCAAUACgBFeHBpcmVE
+YXRlAQAAAAsCrwAqAB4ABQATAEV4cGlyZWRUeHQA92BHAEd7JQAArgAMAAEAAACuAAQAtQUFAA0A
+c3ViagD4YEcAR3slAAAiAgMAAQCOAA8AbW9udGhzAB9hRwBHeyUAAAEAAwBKYW4AAQADAEZlYgAf
+AgEAAwBNYXIAHwIBAAMAQXByAB8CAQADAE1heQAfAgEAAwBKdW4AHwIBAAMASnVsAB8CAQADAEF1
+ZwAfAgEAAwBTZXAAHwIBAAMAT2N0AB8CAQADAE5vdgAfAgEAAwBEZWMAHwIDAAIAsAACACQ2AQAJ
+AENyZWF0ZWQ6IABpAFABVgEBAAEAIAAiAgUADwBtb250aHMAH2FHAEd7JQAAaQBPAWsCAAAAAAAA
+AADwPxABawIiAgEAAQAgACICaQBOAVYBIgIEACICBQAKAENhdGVnb3JpZXMBAAAACwKvADQAKAAB
+AAUAIGluOiAABQAKAENhdGVnb3JpZXMBAAIALCCFAiICrgAMAAEAAACuAAQAtQMiAgMAAgAeAAIA
+JDcCAAUAAAAAAAAABQAEAEZyb220AgMAAQCOAA8AbW9udGhzAAphRwBHeyUAAAEAAwBKYW4AAQAD
+AEZlYgAfAgEAAwBNYXIAHwIBAAMAQXByAB8CAQADAE1heQAfAgEAAwBKdW4AHwIBAAMASnVsAB8C
+AQADAEF1ZwAfAgEAAwBTZXAAHwIBAAMAT2N0AB8CAQADAE5vdgAfAgEAAwBEZWMAHwIDAAIAUgAC
+ACQ0aQBQAVYBAQABACAAIgIFAA8AbW9udGhzAAphRwBHeyUAAGkATwFrAgAAAAAAAAAA8D8QAWsC
+IgIBAAEAIAAiAmkATgFWASICAwAFADoANgAJAAQAAgACAAcAAgACAAIAAgAJAEZyb20kNSQzRG9j
+VHlwZSQyJDYkNyQ0JENvbmZsaWN0BAAEAAEAIAAJAExDRG9jVHlwZQAFAAcAZG9jdHlwZQBhAQMA
+BwAMAAUACTFTMlMAAQAkAAYATENEaXNjBQAPAERlZmF1bHREb2NUeXBlMQBhAQMABwAOAAcACTBS
+MVMyUwABACQABQBMQ1JlZgAFAA8ARGVmYXVsdERvY1R5cGU0AGEBAwAHAA4ABwAJMFIxUzJTAAEA
+JgAHAE5vdERvbmUABQARAFJldmlld2VkQnlOb3REb25lAAMABwAOAAgACTBSUjFTMlMBAHYACABy
+ZXZpZXdlcgUACQBMQ0RvY1R5cGUABQAGAExDRGlzYwoCBQAJAExDRG9jVHlwZQAFAAUATENSZWYA
+CgIdAq8ALgAcAAUAEQBSZXZpZXdlZEJ5Tm90RG9uZQCuABIABQAGAFBlb3BsZa4ABAC1AwMABwAg
+ABoACTBSUjVTNlM3UzhTOVMxMFMxMlMxM1MxNFMAAEgABQAEAGZvcm0BAAkATWFpblRvcGljAAoC
+BQAGAFN0YXR1cwEAAQAwAAsCHAIEAAUACAByZXZpZXdlcgEAAAALAhwCAwAHABwAFQAJMFJMMVMz
+UzRTNVM2UzdTOFMxMVMA
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+QwAGAABEiGYHAAAEAAFmAAQAAgAAZgAGAAIAAGYACAAHAABmAA8AAgAAZgARAAIARnJvbSQ1JDNE
+b2NUeXBlJDIkNw==
+</rawitemdata></item>
+<item name='$VIEWFORMAT' sign='true'>
+<rawitemdata type='5'>
+AQAIAAgAjkwAAFZDAwAEAAMAAAAAAFAAAQAACgABAAAAAAAAAAICAAAAVkMFBAIACwAwAAAAZQAB
+AAAJAAABAAgAAAAAAgEAACBWQwEAAgAHAPYCAABQAAEAAAkAAAAAAAAAAAACAgAAAFZDAQAHAAQA
+AAAAAFAAAQAACQAAAAAAAAAAAAICAAAAVkMBAAIABQCkAQAAiwABAA0JACAAAAAAAAAAAgIAACBW
+QwAAAgAKAMgBAAATAQEAAAkAAAAAAAAAAAACAgAAAFZDAQACAAYAKgAAAJAAAQAACQAAAAAIAAAA
+AAICAAAAVkMAAAIADwBIAQAAUAABAAAKAAAAAAAAAAAAAgIAAABGcm9tQ2F0JDVEYXRlQ3JlYXRl
+ZDAAAgAiAAIAJDVsAK8AFAAKAAEAAACuAAoAaQCuAAQAtQMDAAcADAAFAAk0UzZTACQzRHVlRGF0
+ZfYCAQByAA0AZGF0ZQABYUcAR3slAAAFAAcATXRnRGF0ZQABAAAACwKvAEgAEgAFAAcAbXRnRGF0
+ZQCuADYABQAHAER1ZURhdGUAAQAAAAoCrwAgAAoAAQAAAK4AFgAFAAcARHVlRGF0ZQBLAa4ABAC1
+BQMABwAcABYACTVTNlM4UzEwUzExUzEyUzE0UzE2UwgAPgAFAA0AZGF0ZQABYUcAR3slAABaAa8A
+IgAIAGkArgAaAAUADQBkYXRlAAFhRwBHeyUAAK4ABAC1AwMABwAOAAcACTBSN1M5UwABAI4ADwBt
+b250aHMAAmFHAEd7JQAAAQADAEphbgABAAMARmViAB8CAQADAE1hcgAfAgEAAwBBcHIAHwIBAAMA
+TWF5AB8CAQADAEp1bgAfAgEAAwBKdWwAHwIBAAMAQXVnAB8CAQADAFNlcAAfAgEAAwBPY3QAHwIB
+AAMATm92AB8CAQADAERlYwAfAgMABwBEAD4ACTBSM1M0UzVTNlM3UzhTOVMxMFMxMVMxMlMxM1Mx
+NFMxNVMxNlMxN1MxOFMxOVMyMFMyMVMyMlMyM1MyNFMCAPgAAgAkMwUADQBkYXRlAAFhRwBHeyUA
+AFYBAQAAAAoCrwCGAAoAAQAAAK4AfAABAAUARHVlOiAABQANAGRhdGUAAWFHAEd7JQAAUAFWASIC
+AQABACAAIgIFAA8AbW9udGhzAAJhRwBHeyUAAGkATwFrAgAAAAAAAAAA8D8QAWsCIgIBAAEAIAAi
+AgUADQBkYXRlAAFhRwBHeyUAAE4BVgEiAq4ABAC1AwUACgBDYXRlZ29yaWVzAQAAAAsCrwA0ACgA
+AQAFACBpbjogAAUACgBDYXRlZ29yaWVzAQACACwghQIiAq4ADAABAAAArgAEALUDIgIDAAcAUABJ
+AAkwUjlTMTFTMTJTMTNTMjBTMjFTMjJTMjNTMjlTMzVTMzhTMzlTNDBTNDFTNDlTMkU1MFM1M1M1
+NFM1NlM1N1M1OFM2MlM2NVMARG9jVHlwZVR5cGUkMlRvcGljpAEBACoAEwBQcml2YXRlVHh0APZg
+RwBHeyUAAAEACQBQUklWQVRFOiAAAwAHAAwABQAJMVMyUwABACoAEwBFeHBpcmVkVHh0APdgRwBH
+eyUAAAEACQBFWFBJUkVEOiAAAwAHAA4ABwAJMFIxUzJTAAEAYgANAHN1YmoA+GBHAEd7JQAABQAH
+AHN1YmplY3QAaAEeAQUABwBzdWJqZWN0AAEAAAAKAh0CrwAmABIAAQAIAFVudGl0bGVkrgAUAAUA
+BwBzdWJqZWN0AK4ABAC1AwMABwAeABgACTBSMVMyUzlTMTBTMTFTMTJTMTRTMTZTAgCSAAIAJDIF
+AAcAcmVhZGVycwABAAAACwKvAGAAHgAFABMAUHJpdmF0ZVR4dAD2YEcAR3slAACuAEIABQAKAEV4
+cGlyZURhdGUBAAAACwKvACoAHgAFABMARXhwaXJlZFR4dAD3YEcAR3slAACuAAwAAQAAAK4ABAC1
+BQUADQBzdWJqAPhgRwBHeyUAACICAwAHACIAHAAJMFIzUzRTNlM4UzlTMTBTMTJTMTRTMTZTMTdT
+JDZDYXRlZ29yaWVzyAEBAI4ADwBtb250aHMAH2FHAEd7JQAAAQADAEphbgABAAMARmViAB8CAQAD
+AE1hcgAfAgEAAwBBcHIAHwIBAAMATWF5AB8CAQADAEp1bgAfAgEAAwBKdWwAHwIBAAMAQXVnAB8C
+AQADAFNlcAAfAgEAAwBPY3QAHwIBAAMATm92AB8CAQADAERlYwAfAgMABwBCADwACTNTNFM1UzZT
+N1M4UzlTMTBTMTFTMTJTMTNTMTRTMTVTMTZTMTdTMThTMTlTMjBTMjFTMjJTMjNTMjRTAgCwAAIA
+JDYBAAkAQ3JlYXRlZDogAGkAUAFWAQEAAQAgACICBQAPAG1vbnRocwAfYUcAR3slAABpAE8BawIA
+AAAAAAAAAPA/EAFrAiICAQABACAAIgJpAE4BVgEiAgQAIgIFAAoAQ2F0ZWdvcmllcwEAAAALAq8A
+NAAoAAEABQAgaW46IAAFAAoAQ2F0ZWdvcmllcwEAAgAsIIUCIgKuAAwAAQAAAK4ABAC1AyICAwAH
+AEYAQAAJMFIxUzJTMTBTMTFTMTJTMTNTMTlTMjVTMjhTMjlTMzBTMzFTMzlTNDBTNDNTNDRTNDZT
+NDdTNDhTNTJTNTVTJDdBdXRob3IqAAIAHgACACQ3AgAFAAAAAAAAAAUABABGcm9ttAIDAAcACgAD
+AAk0UwAkNERhdGVDcmVhdGVkRGlzcEgBAQCOAA8AbW9udGhzAAphRwBHeyUAAAEAAwBKYW4AAQAD
+AEZlYgAfAgEAAwBNYXIAHwIBAAMAQXByAB8CAQADAE1heQAfAgEAAwBKdW4AHwIBAAMASnVsAB8C
+AQADAEF1ZwAfAgEAAwBTZXAAHwIBAAMAT2N0AB8CAQADAE5vdgAfAgEAAwBEZWMAHwIDAAcAQgA8
+AAkzUzRTNVM2UzdTOFM5UzEwUzExUzEyUzEzUzE0UzE1UzE2UzE3UzE4UzE5UzIwUzIxUzIyUzIz
+UzI0UwIAUgACACQ0aQBQAVYBAQABACAAIgIFAA8AbW9udGhzAAphRwBHeyUAAGkATwFrAgAAAAAA
+AAAA8D8QAWsCIgIBAAEAIAAiAmkATgFWASICAwAHACQAHgAJMFI3UzhTOVMxMFMxNlMyMlMyNVMy
+NlMyN1MyOFMmAAEAAAABAQAJAQAICgEBBAoAAD8ArSsEAQEAAQEAAAAAAAAAAFdDAQEACQAAAAAA
+AAAAAAAAAAAAAAAAAAQAAAAAAP//AAAAAAAAAAAAAAAAAABXQwIAAAkAAAAAAAAAAAAAAAAAAAAA
+AADAIAAAAAD//wAAAAAAAAAAAAAAAAAAV0MBAAAJAAAAAAAAAAAAAAAAAAAAAAAAACAAAAAA//8A
+AAAAAAAAAAAAAAAAAFdDAgAACQAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAP//AAAAAAAAAAAAAAAA
+AABXQwIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAD//wAAAAAAAAAAAAAAAAAAV0MBAAAJAAAA
+AAAAAAAAAAAAAAAAAAAABCAAAAAA//8AAAAAAAAAAAAAAAAAAFdDAgAACQAAAAAAAAAAAAAAAAAA
+AAAAAMAgAAAAAP//AAAAAAAAAAAAAAAAAABXQwEBAAkAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAD/
+/wAAAAAAAAAAAAAAAAAAQgAgAAAAAQD///8AAQDv7+8AAQAAAAAAAAAAAAAAAQABAP///wABAKjP
+1AAAAAEAgAAAAAEAAAD/AAEAAAAAAAAACAAAAAAAAQBYQwBMgAMAAAAAAAECAgIBAQEBBwQDAAAA
+AAAAAAAgLy86WEMADIACAAAAAAABAgICAQEBAQcEAwAAAAAAAAAAIC8vOllDAQAIAAAAAQAAAAEA
+AAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAuLCRZQwAACAAAAAEAAAABAAAA
+AAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAALiwkBwBVbnBEYXRlCgBVbnBEdWVE
+YXRlBwBVbnBUeXBlCABVbnBUb3BpYw0AVW5wQ2F0ZWdvcmllcwkAVW5wQXV0aG9yDgBVbnBEYXRl
+Q3JlYXRlZAAA
+</rawitemdata></item>
+<item name='$AppHelpFormula' summary='true' sign='true'><formula>REM {DNT};
+@Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$Flags'><text>dT</text></item>
+<item name='$WebFlags'><text>S</text></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item></note>
 

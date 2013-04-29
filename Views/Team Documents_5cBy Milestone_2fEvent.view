@@ -1,108 +1,150 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<view name='Team Documents\By Milestone/Event' alias='ActiveEvent' xmlns='http://www.lotus.com/dxl'
- version='8.5' maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='true'
- allowdocselection='true' publicaccess='false' designerversion='7' language='en'
- unreadmarks='standard' onopengoto='lastopened' onrefresh='displayindicator'
- headers='simple' opencollapsed='false' showresponsehierarchy='true' showmargin='true'
- shrinkrows='true' extendlastcolumn='false' showhierarchies='false' unreadcolor='maroon'
- rowlinecount='4' headerlinecount='1' rowspacing='1.25' haslinkcolumn='true'
- bgcolor='white' altrowcolor='#efefef' totalscolor='blue' headerbgcolor='#a8cfd4'
- boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
- allowcustomizations='true' hidemarginborder='false' marginwidth='0px 0px 1px'
- marginbgcolor='white' uniquekeys='false' initialbuildrestricted='false' noemptycategories='true'>
-<noteinfo noteid='30a' unid='CAD3172C4177C84A8525658B00647287' sequence='100'>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='696' unid='CAD3172C4177C84A8525658B00647287' sequence='103'>
 <created><datetime>19980113T131709,19-05</datetime></created>
-<modified><datetime>20130219T091819,74+00</datetime></modified>
-<revised><datetime>20130219T091819,73+00</datetime></revised>
-<lastaccessed><datetime>20130219T091819,74+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T094704,50+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Lotus Notes Template Development/O=Lotus Notes</name><name
->CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
->SELECT (form = "MainTopic" &amp; Status != "0") &amp; Milestones != "" | @IsResponseDoc</formula></code><code
- event='helprequest'><formula>REM {DNT};
-@Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></code>
-<actionbar useappletinbrowser='true' bgcolor='#78b4bc' bordercolor='black'><actionbarstyle
- height='4.7500ex'><font size='9pt' name='multilingual'/></actionbarstyle>
-<actionbuttonstyle margintype='fixed' margin='5' bgcolor='#c4dee1' displayborder='notesstyle'
- widthtype='background'/><font size='9pt' name='multilingual'/><border width='0px 0px 1px'/>
-<action title='_Forward' showinbar='false' hide='web' systemcommand='forward'/>
-<action title='_Edit Document' showinbar='false' hide='web' systemcommand='edit'/>
-<sharedactionref id='35'>
-<action title='New Document' hide='preview previewedit'><code event='click'><formula
->@PostedCommand([Compose];"MainTopic")</formula></code></action></sharedactionref>
-<sharedactionref id='36'>
-<action title='New Response' hide='preview edit previewedit'><code event='click'><formula
->@SetProfileField("TempVars"; "viewtitle"; @Subset(@ViewTitle; -1));
-@PostedCommand([Compose];"Response")</formula></code><code event='hidewhen'><formula
->REM {hide from web if it's in a view};
-@ClientType != "Notes" &amp; !@IsAvailable(form)</formula></code></action></sharedactionref>
-<sharedactionref id='37'>
-<action title='New Response to Response' hide='preview edit previewedit web'><code
- event='click'><formula>REM {notes only};
-@PostedCommand([Compose];"ResponseToResponse")</formula></code></action></sharedactionref>
-<sharedactionref id='55'>
-<action title='Delete\Move to Trash' showinmenu='false' hide='notes'><code
- event='click'><formula>@Command([MoveToTrash])</formula></code></action></sharedactionref>
-<sharedactionref id='56'>
-<action title='Delete\Empty Trash' showinmenu='false' hide='notes'><code event='click'><formula
->@Command([EmptyTrash])</formula></code></action></sharedactionref>
-<sharedactionref id='44'>
-<action title='Search' showinmenu='false' hide='notes'><code event='click'><formula
->REM {Web only - used in Views};
-@Command([ViewShowSearchBar])</formula></code></action></sharedactionref>
-<sharedactionref id='60'>
-<action title='Database Help'><code event='click'><formula>@Command([HelpUsingDatabase])</formula></code></action></sharedactionref></actionbar>
-<column sort='ascending' hidedetailrows='false' itemname='$125' width='3.6250'
- resizable='true' separatemultiplevalues='true' sortnoaccent='true' sortnocase='true'
- showaslinks='false' categorized='true' twisties='true'><font size='9pt' color='teal'
- style='bold'/><columnheader><font size='9pt' name='multilingual'/></columnheader><code
- event='value'><formula>OldTitle := EventTitle + " (" + @Text(getDate) + ")";
-@If(@IsAvailable(EventTitle) &amp; getDate != ""; OldTitle; Milestones)</formula></code></column>
-<column sort='descending' resort='ascending' hidedetailrows='false' listseparator='comma'
- itemname='$106' width='9' resizable='true' separatemultiplevalues='false'
- sortnoaccent='true' sortnocase='true' showaslinks='false' twisties='true'
- formatdatatype='datetime'><font size='9pt'/><columnheader title='Date'><font
- size='9pt' name='multilingual'/></columnheader><datetimeformat legacy='true'
- show='date' date='yearmonthday' time='hourminutesecond' zone='never'/><numberformat
- legacy='true' format='general' varying='true' digits='1' punctuated='false'
- parens='false' percent='false' bytes='false'/><code event='value'><formula
->@If(@IsResponseDoc; ""; @Created)</formula></code></column>
-<column hidedetailrows='false' itemname='$116' width='2' resizable='false'
- separatemultiplevalues='false' sortnoaccent='true' sortnocase='true' showaslinks='false'><font
- size='9pt'/><columnheader><font size='9pt' name='multilingual'/></columnheader><code
- event='value'><formula>@If(@IsResponseDoc; ""; @DocDescendants(""; "%"; "%"))</formula></code></column>
-<column sort='ascending' hidedetailrows='false' itemname='$121' width='1'
- resizable='false' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='false' hidden='true'><font size='9pt'/><columnheader><font size='9pt'
- name='multilingual'/></columnheader><code event='value'><formula>@Created</formula></code></column>
-<column hidedetailrows='false' listseparator='comma' itemname='$122' width='1.6250'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='true' responsesonly='true' twisties='true'><font size='9pt'/><columnheader
-><font size='9pt' name='multilingual'/></columnheader><datetimeformat legacy='true'
- show='date' date='yearmonthday' time='hourminutesecond' zone='never'/><numberformat
- legacy='true' format='general' digits='2' punctuated='false' parens='false'
- percent='false' bytes='false'/><code event='value'><formula>PrivateTxt := "PRIVATE: ";
-ExpiredTxt := "EXPIRED: ";
-AuthorName := @If(!@IsAvailable(From); "Anonymous"; @Name([Abbreviate]; From));
-@If(readers != ""; PrivateTxt;ExpireDate != ""; ExpiredTxt; "") + @If(Subject != ""; Subject + "  "; "") + "(" + AuthorName + " " + @Text(@Created; "D2S0") + ")"</formula></code></column>
-<column hidedetailrows='false' listseparator='comma' itemname='$123' width='26.1250'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='true'><font size='9pt' color='teal'/><columnheader title='Topic'><font
- size='9pt' name='multilingual'/></columnheader><code event='value'><formula
->PrivateTxt := "PRIVATE: ";
-ExpiredTxt := "EXPIRED: ";
-Author := @If(form = "Interest Profile"; ""; " (" + @Name([Abbreviate]; From) + ")");
-@If(readers != ""; PrivateTxt; ExpireDate != ""; ExpiredTxt; "") + Subject + Author</formula></code></column>
-<column resort='toview' resorttoview='F175815128CD57B68525663A006952CB' hidedetailrows='false'
- itemname='$124' width='9.3750' resizable='true' separatemultiplevalues='false'
- sortnoaccent='true' sortnocase='true' showaslinks='false'><font size='9pt'/><columnheader
- title='Due'><font size='9pt' name='multilingual'/></columnheader><datetimeformat
- legacy='true' show='date' date='yearmonthday' time='hourminutesecond' zone='never'/><code
- event='value'><formula>@If(MtgDate != ""; mtgDate; DueDate = ""; ""; @Date(DueDate))</formula></code></column>
-<column resort='ascending' resort2='ascending' resort2column='6' hidedetailrows='false'
- itemname='DocType' width='10' resizable='true' separatemultiplevalues='false'
- sortnoaccent='true' sortnocase='true' showaslinks='false'><font size='9pt'/><columnheader
- title='Type'><font size='9pt' name='multilingual'/></columnheader></column></view>
+<modified><datetime dst='true'>20130408T135936,78+01</datetime></modified>
+<revised><datetime dst='true'>20130408T135936,77+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130408T135936,78+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135558,96+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name='$LANGUAGE' sign='true'><text>en</text></item>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRzWAAAAAQABAAAAwRgAAAAAAAACAAAJAAAFAHn/bAABAHi0vAABAAAAAAABAAAAAAABAMTe4QAD
+AB8AAAABAAAAAAADAAAAAgAACQAAAAAAAAAAE0AFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz/OgAAAAAAAAAAAAAAAQAAAAAAAAAAAAwAAAAAAAAAAAAA
+AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAC+/yIAAAAFAAAAnUEAAAgAAAAAAAAAX0ZvcndhcmQBAAQK
+vv8oAAAABQAAAJ1BAAAOAAAAAAAAAF9FZGl0IERvY3VtZW50AgACCr7/UAAAAAEAAACbAAEADAAA
+ACMAAABOZXcgRG9jdW1lbnQuAAAAIAACAOgDAAAAAAAAAQAJAE1haW5Ub3BpYwCxAgMABwAMAAUA
+CTBTMEUAX/8QAAIADAAHAAAAAAAAAF//EAACAAEABwAAAAAAAABf/xAAAgACAAcAAAAAAAAAX/8Q
+AAIACwAHAAAAAAAAAF//EAACABQABwAAAAAAAABf/xAAAgAJAAcAAAAAAAAAX/8QAAIACAAHAAAA
+AAAAAF//EAACAAoABwAAAAAAAABf/xAAAgADAAcAAAAAAAAAX/8QAAIABgAHAAAAAAAAAF//EAAC
+AAcABwAAAAAAAABf/xAAAgAFAAcAAAAAAAAAX/8QAAIABAAHAAAAAAAAAL7/+AAAAAEAAAALAAEA
+DABsACQAAABOZXcgUmVzcG9uc2VqAAgAMgABAAgAVGVtcFZhcnMBAAkAdmlld3RpdGxlAJ0AAAAA
+AAAAAADwPxABawL4AwMABwAOAAgACTRTNlMxMFMAAB4AAgDoAwAAAAAAAAEACABSZXNwb25zZbEC
+AwAHAAoAAwAJMFIAbAAKAAQABwAmAB8AaGlkZSBmcm9tIHdlYiBpZiBpdCdzIGluIGEgdmlldwAH
+AAoAAwAJMVMAAAAkAPsABQEBAAUATm90ZXMACwIFAAQAZm9ybWgBHgEcAgMABwASAAsACTBSMVMy
+UzNTNFMAX/8QAAIADAAHAAAAAAAAAF//EAACAAEABwAAAAAAAABf/xAAAgACAAcAAAAAAAAAX/8Q
+AAIACwAHAAAAAAAAAF//EAACABQABwAAAAAAAABf/xAAAgAJAAcAAAAAAAAAX/8QAAIACAAHAAAA
+AAAAAF//EAACAAoABwAAAAAAAABf/xAAAgADAAcAAAAAAAAAX/8QAAIABgAHAAAAAAAAAF//EAAC
+AAcABwAAAAAAAABf/xAAAgAFAAcAAAAAAAAAX/8QAAIABAAHAAAAAAAAAL7/fAAAAAEAAACLQAEA
+GAAAACUAAABOZXcgUmVzcG9uc2UgdG8gUmVzcG9uc2VOAAcAEAAKAG5vdGVzIG9ubHkHAAoAAwAJ
+MVMAAAAoAAIA6AMAAAAAAAABABIAUmVzcG9uc2VUb1Jlc3BvbnNlsQIDAAcACgADAAkwUgBf/xAA
+AgAMAAcAAAAAAAAAX/8QAAIAAQAHAAAAAAAAAF//EAACAAIABwAAAAAAAABf/xAAAgALAAcAAAAA
+AAAAX/8QAAIAFAAHAAAAAAAAAF//EAACAAkABwAAAAAAAABf/xAAAgAIAAcAAAAAAAAAX/8QAAIA
+CgAHAAAAAAAAAF//EAACAAMABwAAAAAAAABf/xAAAgAGAAcAAAAAAAAAX/8QAAIABwAHAAAAAAAA
+AF//EAACAAUABwAAAAAAAABf/xAAAgAEAAcAAAAAAAAAvv9KAAAAAQAAAJ4hAQAUAAAANwAAAERl
+bGV0ZVxNb3ZlIHRvIFRyYXNoIAAAABIAAgBMHQAAAAAAAO0BAwAHAAwABQAJMFMwRQBf/xAAAgAM
+AAcAAAAAAAAAX/8QAAIAAQAHAAAAAAAAAF//EAACAAIABwAAAAAAAABf/xAAAgALAAcAAAAAAAAA
+X/8QAAIAFAAHAAAAAAAAAF//EAACAAkABwAAAAAAAABf/xAAAgAIAAcAAAAAAAAAX/8QAAIACgAH
+AAAAAAAAAF//EAACAAMABwAAAAAAAABf/xAAAgAGAAcAAAAAAAAAX/8QAAIABwAHAAAAAAAAAF//
+EAACAAUABwAAAAAAAABf/xAAAgAEAAcAAAAAAAAAvv9IAAAAAQAAAJ4hAQASAAAAOAAAAERlbGV0
+ZVxFbXB0eSBUcmFzaCAAAAASAAIA/QcAAAAAAADtAQMABwAMAAUACTBTMEUAX/8QAAIADAAHAAAA
+AAAAAF//EAACAAEABwAAAAAAAABf/xAAAgACAAcAAAAAAAAAX/8QAAIACwAHAAAAAAAAAF//EAAC
+ABQABwAAAAAAAABf/xAAAgAJAAcAAAAAAAAAX/8QAAIACAAHAAAAAAAAAF//EAACAAoABwAAAAAA
+AABf/xAAAgADAAcAAAAAAAAAX/8QAAIABgAHAAAAAAAAAF//EAACAAcABwAAAAAAAABf/xAAAgAF
+AAcAAAAAAAAAX/8QAAIABAAHAAAAAAAAAL7/YgAAAAEAAACeIQEABgAAACwAAABTZWFyY2hGAAcA
+HgAYAFdlYiBvbmx5IC0gdXNlZCBpbiBWaWV3cwcACgADAAkxUwAAABIAAgCQFwAAAAAAAO0BAwAH
+AAoAAwAJMFIAX/8QAAIADAAHAAAAAAAAAF//EAACAAEABwAAAAAAAABf/xAAAgACAAcAAAAAAAAA
+X/8QAAIACwAHAAAAAAAAAF//EAACABQABwAAAAAAAABf/xAAAgAJAAcAAAAAAAAAX/8QAAIACAAH
+AAAAAAAAAF//EAACAAoABwAAAAAAAABf/xAAAgADAAcAAAAAAAAAX/8QAAIABgAHAAAAAAAAAF//
+EAACAAcABwAAAAAAAABf/xAAAgAFAAcAAAAAAAAAX/8QAAIABAAHAAAAAAAAAL7/RAAAAAEAAACf
+AQEADQAAADwAAABEYXRhYmFzZSBIZWxwACAAAAASAAIApBcAAAAAAADtAQMABwAMAAUACTBTMEUA
+X/8QAAIADAAHAAAAAAAAAF//EAACAAEABwAAAAAAAABf/xAAAgACAAcAAAAAAAAAX/8QAAIACwAH
+AAAAAAAAAF//EAACABQABwAAAAAAAABf/xAAAgAJAAcAAAAAAAAAX/8QAAIACAAHAAAAAAAAAF//
+EAACAAoABwAAAAAAAABf/xAAAgADAAcAAAAAAAAAX/8QAAIABgAHAAAAAAAAAF//EAACAAcABwAA
+AAAAAABf/xAAAgAFAAcAAAAAAAAAX/8QAAIABAAHAAAAAAAAAA==
+</rawitemdata></item>
+<item name='$TITLE' sign='true'><text>Team Documents\By Milestone/Event|ActiveEvent</text></item>
+<item name='$Index' sign='true'><text>/C</text></item>
+<item name='$Formula' sign='true'><formula compiled='true'>
+UgUBAEgAEQBPbGRUaXRsZQDvX0cAR3slAAAFAAoARXZlbnRUaXRsZQEAAgAgKCICBQAHAGdldERh
+dGUAVgEiAgEAAQApACICAwACAGQABAAkMTI1BQAKAEV2ZW50VGl0bGVoAQUABwBnZXREYXRlAAEA
+AAALAhwCrwAyABwABQARAE9sZFRpdGxlAO9fRwBHeyUAAK4AFgAFAAoATWlsZXN0b25lc64ABAC1
+AwMAAgAkAAQAJDEwNmwArwAUAAoAAQAAAK4ACgBpAK4ABAC1AwMAAgA0AAQAJDExNmwArwAkAAoA
+AQAAAK4AGgABAAAAAQABACUAAQABACUAlQOuAAQAtQMDAAIADgAEACQxMjFpAAMAAQAqABMAUHJp
+dmF0ZVR4dADvX0cAR3slAAABAAkAUFJJVkFURTogAAMAAQAqABMARXhwaXJlZFR4dADwX0cAR3sl
+AAABAAkARVhQSVJFRDogAAMAAQBaABMAQXV0aG9yTmFtZQDxX0cAR3slAAAFAAQARnJvbWgBHgGv
+ADAAFAABAAkAQW5vbnltb3VzAK4AHAACAAUAAAAAAAAABQAEAEZyb220Aq4ABAC1AwMAAgD8AAQA
+JDEyMgUABwByZWFkZXJzAAEAAAALAq8AYAAeAAUAEwBQcml2YXRlVHh0AO9fRwBHeyUAAK4AQgAF
+AAoARXhwaXJlRGF0ZQEAAAALAq8AKgAeAAUAEwBFeHBpcmVkVHh0APBfRwBHeyUAAK4ADAABAAAA
+rgAEALUFBQAHAFN1YmplY3QAAQAAAAsCrwAmABoABQAHAFN1YmplY3QAAQACACAgIgKuAAwAAQAA
+AK4ABAC1AyICAQABACgAIgIFABMAQXV0aG9yTmFtZQDxX0cAR3slAAAiAgEAAQAgACICaQABAAQA
+RDJTMFYCIgIBAAEAKQAiAgMAAQAqABMAUHJpdmF0ZVR4dADvX0cAR3slAAABAAkAUFJJVkFURTog
+AAMAAQAqABMARXhwaXJlZFR4dADwX0cAR3slAAABAAkARVhQSVJFRDogAAMAAQBuAA8AQXV0aG9y
+APFfRwBHeyUAAAUABABmb3JtAQAQAEludGVyZXN0IFByb2ZpbGUKAq8ANgAKAAEAAACuACwAAQAC
+ACAoAgAFAAAAAAAAAAUABABGcm9ttAIiAgEAAQApACICrgAEALUDAwACAKQABAAkMTIzBQAHAHJl
+YWRlcnMAAQAAAAsCrwBgAB4ABQATAFByaXZhdGVUeHQA719HAEd7JQAArgBCAAUACgBFeHBpcmVE
+YXRlAQAAAAsCrwAqAB4ABQATAEV4cGlyZWRUeHQA8F9HAEd7JQAArgAMAAEAAACuAAQAtQUFAAcA
+U3ViamVjdAAiAgUADwBBdXRob3IA8V9HAEd7JQAAIgIDAAIAaAAEACQxMjQFAAcATXRnRGF0ZQAB
+AAAACwKvAEgAEgAFAAcAbXRnRGF0ZQCuADYABQAHAER1ZURhdGUAAQAAAAoCrwAgAAoAAQAAAK4A
+FgAFAAcARHVlRGF0ZQBLAa4ABAC1BQMABQBMAEgACgAEAAQABAAEAAQABAAEAAcACQAEACQxMjUk
+MTA2JDExNiQxMjEkMTIyJDEyMyQxMjREb2NUeXBlJENvbmZsaWN0JFJFRgQABAAAAE4ABQAEAGZv
+cm0BAAkATWFpblRvcGljAAoCBQAGAFN0YXR1cwEAAQAwAAsCHAIEAAUACgBNaWxlc3RvbmVzAQAA
+AAsCHAJsAB0CAwAHACgAIgAJTDFTM1M0UzVTNlM3UzhTMTBTMTFTMTJTMTNTMTRTMTVT
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+JwADAABECGYHAAAEAAFmAAQABAAAZgAIAAQAJDEyNSQxMDYkMTIx
+</rawitemdata></item>
+<item name='$Collation1' summary='true'>
+<rawitemdata type='2'>
+EQABAABEAGYAAAAEACQxMDY=
+</rawitemdata></item>
+<item name='$Collation2' summary='true'>
+<rawitemdata type='2'>
+HwACAABEAGYAAAAHAABmAAcABABEb2NUeXBlJDEyNA==
+</rawitemdata></item>
+<item name='$VIEWFORMAT' sign='true'>
+<rawitemdata type='5'>
+AQAIAAAAjAwAAFZDAwQEAAAA4AAAAB0AAQENCQABAAAAAAAAAAICAAAAVkMFBQQABAAyAAAASAAB
+AAAJAAABAAgAAAAAAAEAACBWQ4AABAAAAEgAAAAQAAEAAAkAAAAAAAAAAAACAgAAAFZDiQAEAAAA
+EAAAAAgAAQAACQAAAAAAAAAAAAICAAAAVkMQBAQAAAAwAgAADQABAAAJACACAAAAAAAAAAIAACBW
+QwAABAAFANABAADRAAEADQkAIAAAAAAAAAACAgAAIFZDAAgEAAMAhAAAAEsAAQAACQAAAAAAAAAA
+AAACAAAAVkMAEQcABAAAAAAAUAABAAAJAAAAAAAAAAAAAgIAAAAkMTI14AABAEgAEQBPbGRUaXRs
+ZQDvX0cAR3slAAAFAAoARXZlbnRUaXRsZQEAAgAgKCICBQAHAGdldERhdGUAVgEiAgEAAQApACIC
+AwAHABoAEwAJMVMyUzNTNFM1UzZTMTBTMTFTAAIAZAAEACQxMjUFAAoARXZlbnRUaXRsZWgBBQAH
+AGdldERhdGUAAQAAAAsCHAKvADIAHAAFABEAT2xkVGl0bGUA719HAEd7JQAArgAWAAUACgBNaWxl
+c3RvbmVzrgAEALUDAwAHABgAEQAJMFI2UzdTOFM5UzExUzEzUwAkMTA2RGF0ZTIAAgAkAAQAJDEw
+NmwArwAUAAoAAQAAAK4ACgBpAK4ABAC1AwMABwAMAAUACTRTNlMAJDExNkgAAgA0AAQAJDExNmwA
+rwAkAAoAAQAAAK4AGgABAAAAAQABACUAAQABACUAlQOuAAQAtQMDAAcAEgALAAk0UzZTMTBTMTJT
+ACQxMjEQAAIADgAEACQxMjFpAAMAJDEyMjACAQAqABMAUHJpdmF0ZVR4dADvX0cAR3slAAABAAkA
+UFJJVkFURTogAAMABwAMAAUACTFTMlMAAQAqABMARXhwaXJlZFR4dADwX0cAR3slAAABAAkARVhQ
+SVJFRDogAAMABwAOAAcACTBSMVMyUwABAFoAEwBBdXRob3JOYW1lAPFfRwBHeyUAAAUABABGcm9t
+aAEeAa8AMAAUAAEACQBBbm9ueW1vdXMArgAcAAIABQAAAAAAAAAFAAQARnJvbbQCrgAEALUDAwAH
+ABYAEAAJMFIxUzJTMTBTMTJTMTZTAgD8AAQAJDEyMgUABwByZWFkZXJzAAEAAAALAq8AYAAeAAUA
+EwBQcml2YXRlVHh0AO9fRwBHeyUAAK4AQgAFAAoARXhwaXJlRGF0ZQEAAAALAq8AKgAeAAUAEwBF
+eHBpcmVkVHh0APBfRwBHeyUAAK4ADAABAAAArgAEALUFBQAHAFN1YmplY3QAAQAAAAsCrwAmABoA
+BQAHAFN1YmplY3QAAQACACAgIgKuAAwAAQAAAK4ABAC1AyICAQABACgAIgIFABMAQXV0aG9yTmFt
+ZQDxX0cAR3slAAAiAgEAAQAgACICaQABAAQARDJTMFYCIgIBAAEAKQAiAgMABwBUAE0ACTBSM1M0
+UzZTOVMxMFMxMlMxNFMxNlMxN1MyMFMyMVMyM1MyNFMyNVMyN1MyOVMzMFMzMVMzMlMzM1MzNFMz
+NVMzNlM0MFM0MlM0M1MAJDEyM1RvcGlj0AEBACoAEwBQcml2YXRlVHh0AO9fRwBHeyUAAAEACQBQ
+UklWQVRFOiAAAwAHAAwABQAJMVMyUwABACoAEwBFeHBpcmVkVHh0APBfRwBHeyUAAAEACQBFWFBJ
+UkVEOiAAAwAHAA4ABwAJMFIxUzJTAAEAbgAPAEF1dGhvcgDxX0cAR3slAAAFAAQAZm9ybQEAEABJ
+bnRlcmVzdCBQcm9maWxlCgKvADYACgABAAAArgAsAAEAAgAgKAIABQAAAAAAAAAFAAQARnJvbbQC
+IgIBAAEAKQAiAq4ABAC1AwMABwAmAB8ACTBSMVMyUzVTNlM4UzEwUzExUzEyUzE2UzE4UzE5UwAC
+AKQABAAkMTIzBQAHAHJlYWRlcnMAAQAAAAsCrwBgAB4ABQATAFByaXZhdGVUeHQA719HAEd7JQAA
+rgBCAAUACgBFeHBpcmVEYXRlAQAAAAsCrwAqAB4ABQATAEV4cGlyZWRUeHQA8F9HAEd7JQAArgAM
+AAEAAACuAAQAtQUFAAcAU3ViamVjdAAiAgUADwBBdXRob3IA8V9HAEd7JQAAIgIDAAcAKAAiAAkw
+UjNTNFM2UzhTOVMxMFMxMlMxNFMxNlMxN1MxOFMxOVMkMTI0RHVlhAACAGgABAAkMTI0BQAHAE10
+Z0RhdGUAAQAAAAsCrwBIABIABQAHAG10Z0RhdGUArgA2AAUABwBEdWVEYXRlAAEAAAAKAq8AIAAK
+AAEAAACuABYABQAHAER1ZURhdGUASwGuAAQAtQUDAAcAGgAUAAkzUzRTNlM4UzlTMTBTMTJTMTRT
+RG9jVHlwZVR5cGUmAAEAAAABAQAJAQAICgEBBAoAAD8ArSsEAQEAAQEAAAAAAAAAAFdDAgAACQAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAAAAAAAABXQwIAAAkAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAV0MCAAAJAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+//8AAAAAAAAAAAAAAAAAAFdDAgAACQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAP//AAAAAAAAAAAA
+AAAAAABXQwIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAD//wAAAAAAAAAAAAAAAAAAV0MCAAAJ
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA//8AAAAAAAAAAAAAAAAAAFdDAgAACbZXzShRgXXxy1Jp
+ADpmJYUAAAAAAAAAAP//AAAAAAAAAAAAAAAAAABXQwIAAAkAAAAAAAAAAAAAAAAAAAAABgAAAAAA
+AAD//wAAAAAAAAAAAAAAAAAAQgAAAAAAAQD///8AAQDv7+8AAQAAAAAAAAAAAAAAAQABAP///wAB
+AKjP1AAAAAEAgAAAAAEAAAD/AAEAAAAAAAAACAAAAAAAAQA=
+</rawitemdata></item>
+<item name='$AppHelpFormula' summary='true' sign='true'><formula>REM {DNT};
+@Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVActiveDocs")</formula></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
+<item name='$Flags'><text/></item>
+<item name='$WebFlags'><text>S</text></item></note>
 

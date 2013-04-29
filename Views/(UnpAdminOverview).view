@@ -1,67 +1,108 @@
 <?xml version='1.0' encoding='utf-8'?>
-<!DOCTYPE view SYSTEM 'xmlschemas/domino_8_5_3.dtd'>
-<view name='(UnpAdminOverview)' xmlns='http://www.lotus.com/dxl' version='8.5'
- maintenanceversion='3.0' replicaid='80257AC50035BEE2' showinmenu='true' allowdocselection='true'
- publicaccess='false' designerversion='8.5.3' language='en' unreadmarks='none'
- onopengoto='lastopened' onrefresh='displayindicator' headers='simple' opencollapsed='false'
- showresponsehierarchy='true' showmargin='true' shrinkrows='true' extendlastcolumn='true'
- showhierarchies='false' unreadcolor='purple' rowlinecount='2' headerlinecount='1'
- rowspacing='1.25' bgcolor='white' altrowcolor='#efefef' totalscolor='blue'
- headerbgcolor='#a8cfd4' boldunreadrows='false' evaluateactions='false' allownewdocuments='false'
- allowcustomizations='true' hidemarginborder='false' marginwidth='0px 0px 1px'
- marginbgcolor='white' uniquekeys='false' initialbuildrestricted='false' noemptycategories='true'>
-<noteinfo noteid='4c2' unid='F8DAD4104FA375AE80257AC50036EFA8' sequence='7'>
+<note class='view' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<noteinfo noteid='5f2' unid='F8DAD4104FA375AE80257AC50036EFA8' sequence='9'>
 <created><datetime>20121129T100002,96+00</datetime></created>
-<modified><datetime>20130219T091823,50+00</datetime></modified>
-<revised><datetime>20130219T091823,49+00</datetime></revised>
-<lastaccessed><datetime>20130219T091823,50+00</datetime></lastaccessed>
-<addedtofile><datetime>20121129T100002,99+00</datetime></addedtofile></noteinfo>
+<modified><datetime dst='true'>20130408T135937,68+01</datetime></modified>
+<revised><datetime dst='true'>20130408T135937,67+01</datetime></revised>
+<lastaccessed><datetime dst='true'>20130408T135937,68+01</datetime></lastaccessed>
+<addedtofile><datetime dst='true'>20130408T135557,10+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><code event='selection'><formula
->Flist := "ParticipantProfile" : "Subteam";
-SELECT  (@IsMember(form; Flist) &amp; Status = "1")</formula></code><code
- event='helprequest'><formula>REM {DNT};
-@Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVTeamOverview")</formula></code>
-<actionbar useappletinbrowser='true' bgcolor='#78b4bc' bordercolor='black'><actionbarstyle
- height='4.7500ex'><font size='9pt' name='multilingual'/></actionbarstyle>
-<actionbuttonstyle margintype='fixed' margin='5' bgcolor='#c4dee1' displayborder='notesstyle'
- widthtype='background'/><font size='9pt' name='multilingual'/><border width='0px 0px 1px'/></actionbar>
-<column sort='ascending' hidedetailrows='false' listseparator='comma' itemname='$35'
- width='1.7500' resizable='false' separatemultiplevalues='true' sortnoaccent='true'
- sortnocase='true' showaslinks='false' categorized='true' twisties='true'><font
- size='9pt' color='teal' style='bold'/><columnheader><font size='9pt' name='multilingual'/></columnheader><numberformat
- legacy='true' format='fixed' digits='1' punctuated='false' parens='false'
- percent='false' bytes='false'/><code event='value'><formula>REM {Variables to translate};
-MissionTxt := "- TeamRoom Setup";
-ProfileTxt := "Team Member Profiles";
-SubteamTxt := "Subteams";
-EventTxt := "Milestones/Events";
-REM {End variables to translate};
-@If(form = "Mission"; MissionTxt;
-form = "Event"; EventTxt; form = "ParticipantProfile"; ProfileTxt; form = "Subteam"; SubteamTxt;  form)</formula></code></column>
-<column sort='ascending' hidedetailrows='false' listseparator='comma' itemname='$40'
- width='32.7500' resizable='true' separatemultiplevalues='false' sortnoaccent='true'
- sortnocase='true' showaslinks='false'><font size='9pt'/><columnheader title='TeamMember'><font
- size='9pt' name='multilingual'/></columnheader><code event='value'><formula
->REM {Variables to translate};
-BlankTNText := "TEAMROOM SETUP for a New Team";
-TNText := "TEAMROOM SETUP for:  " + Teamname;
-ExpiredTxt := "EXPIRED: ";
-REM {end variables to translate};
-
-Exp := @If(ExpireDate != ""; ExpiredTxt; "");
-MissionText := @If(TeamName = ""; BlankTNText; TNText);
-EvTxt := EventSummary + " (" + @Text(EventDate) + ")";
-
-Exp + @If(form = "Mission"; MissionText; form = "Participant Profile" | form = "ParticipantProfile"; @Name([Abbreviate]; Who);   form = "Subteam"; STName; form = "Event"; EvTxt; Subject)</formula></code></column>
-<column hidedetailrows='false' listseparator='comma' itemname='$33' width='30'
- resizable='true' separatemultiplevalues='false' sortnoaccent='true' sortnocase='true'
- showaslinks='false'><font size='9pt'/><columnheader title='Members'><font
- size='9pt' name='multilingual'/></columnheader><code event='value'><formula
->@If(form = "Participant Profile" | form = "ParticipantProfile"; Phone; form = "Subteam"; STMembers; "")</formula></code></column>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name='$LANGUAGE' sign='true'><text>en</text></item>
+<item name='$FormulaClass' sign='true'><text>1</text></item>
+<item name='$V5ACTIONS' sign='true'>
+<rawitemdata type='1'>
+vRzWAAAAAQABAAAAwRgAAAAAAAACAAAJAAAFAHn/bAABAHi0vAABAAAAAAABAAAAAAABAMTe4QAD
+AB8AAAABAAAAAAADAAAAAgAACQAAAAAAAAAAE0AFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAPz/OgAAAAAAAAAAAAAAAQAAAAAAAAAAAAwAAAAAAAAAAAAA
+AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAA=
+</rawitemdata></item>
+<item name='$TITLE' sign='true'><text>(UnpAdminOverview)</text></item>
+<item name='$Index' sign='true'><text>/C</text></item>
+<item name='$Formula' sign='true'><formula compiled='true'>
+5AUBADAAEwBNaXNzaW9uVHh0AEdgRwBHeyUAAAEAEAAtIFRlYW1Sb29tIFNldHVwAwABADQAEwBQ
+cm9maWxlVHh0AEhgRwBHeyUAAAEAFABUZWFtIE1lbWJlciBQcm9maWxlcwMAAQAoABMAU3VidGVh
+bVR4dABJYEcAR3slAAABAAgAU3VidGVhbXMDAAEAMAARAEV2ZW50VHh0AEpgRwBHeyUAAAEAEQBN
+aWxlc3RvbmVzL0V2ZW50cwADAAIAAAEDACQzNQAFAAQAZm9ybQEABwBNaXNzaW9uAAoCrwDcAB4A
+BQATAE1pc3Npb25UeHQAR2BHAEd7JQAArgC+AAUABABmb3JtAQAFAEV2ZW50AAoCrwCmABwABQAR
+AEV2ZW50VHh0AEpgRwBHeyUAAK4AigAFAAQAZm9ybQEAEgBQYXJ0aWNpcGFudFByb2ZpbGUKAq8A
+ZgAeAAUAEwBQcm9maWxlVHh0AEhgRwBHeyUAAK4ASAAFAAQAZm9ybQEABwBTdWJ0ZWFtAAoCrwAu
+AB4ABQATAFN1YnRlYW1UeHQASWBHAEd7JQAArgAQAAUABABmb3JtrgAEALUJAwABAD4AFABCbGFu
+a1ROVGV4dABHYEcAR3slAAEAHQBURUFNUk9PTSBTRVRVUCBmb3IgYSBOZXcgVGVhbQADAAEAQAAP
+AFROVGV4dABIYEcAR3slAAABABUAVEVBTVJPT00gU0VUVVAgZm9yOiAgAAUACABUZWFtbmFtZSIC
+AwABACoAEwBFeHBpcmVkVHh0AElgRwBHeyUAAAEACQBFWFBJUkVEOiAAAwABAFQADABFeHAASmBH
+AEd7JQAFAAoARXhwaXJlRGF0ZQEAAAALAq8AKgAeAAUAEwBFeHBpcmVkVHh0AElgRwBHeyUAAK4A
+DAABAAAArgAEALUDAwABAGoAFABNaXNzaW9uVGV4dABLYEcAR3slAAUACABUZWFtTmFtZQEAAAAK
+Aq8AOgAeAAUAFABCbGFua1ROVGV4dABHYEcAR3slAK4AHAAFAA8AVE5UZXh0AEhgRwBHeyUAAK4A
+BAC1AwMAAQBIAA4ARXZUeHQATGBHAEd7JQAFAAwARXZlbnRTdW1tYXJ5AQACACAoIgIFAAkARXZl
+bnREYXRlAFYBIgIBAAEAKQAiAgMAAgAkAQMAJDQwAAUADABFeHAASmBHAEd7JQAFAAQAZm9ybQEA
+BwBNaXNzaW9uAAoCrwDuAB4ABQAUAE1pc3Npb25UZXh0AEtgRwBHeyUArgDQAAUABABmb3JtAQAT
+AFBhcnRpY2lwYW50IFByb2ZpbGUACgIFAAQAZm9ybQEAEgBQYXJ0aWNpcGFudFByb2ZpbGUKAh0C
+rwCIABoAAgAFAAAAAAAAAAUAAwBXaG8AtAKuAG4ABQAEAGZvcm0BAAcAU3VidGVhbQAKAq8AVAAQ
+AAUABgBTVE5hbWWuAEQABQAEAGZvcm0BAAUARXZlbnQACgKvACwAGAAFAA4ARXZUeHQATGBHAEd7
+JQCuABQABQAHAFN1YmplY3QArgAEALUJIgIDAAIAnAADACQzMwAFAAQAZm9ybQEAEwBQYXJ0aWNp
+cGFudCBQcm9maWxlAAoCBQAEAGZvcm0BABIAUGFydGljaXBhbnRQcm9maWxlCgIdAq8ASgAQAAUA
+BQBQaG9uZQCuADoABQAEAGZvcm0BAAcAU3VidGVhbQAKAq8AIAAUAAUACQBTVE1lbWJlcnMArgAM
+AAEAAACuAAQAtQUDAAUAKAAkAAUAAwADAAMACQAEACQzNSQ0MCQzMyRDb25mbGljdCRSRUYEAAQA
+AQAyAAUARmxpc3QAAQASAFBhcnRpY2lwYW50UHJvZmlsZQEABwBTdWJ0ZWFtAB8CAwAHABAACQAJ
+MVMyUzNTNFMAAAAwAAUABABmb3JtBQAFAEZsaXN0AHQCBQAGAFN0YXR1cwEAAQAxAAoCHAIEAAMA
+BwAaABQACTBSTDFTMkU2UzhTOVMxMFMxMVM=
+</formula></item>
+<item name='$Collation' summary='true'>
+<rawitemdata type='2'>
+GgACAABECGYHAAADAABmAAMAAwAkMzUkNDA=
+</rawitemdata></item>
+<item name='$VIEWFORMAT' sign='true'>
+<rawitemdata type='5'>
+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
+</rawitemdata></item>
+<item name='$AppHelpFormula' summary='true' sign='true'><formula>REM {DNT};
+@Command([OpenHelpDocument]; [ClientHelp]; "(Help)"; "TeamRoomVTeamOverview")</formula></item>
+<item name='$Comment' sign='true'><text/></item>
+<item name='$DesignerVersion'><text>8.5.3</text></item>
 <item name='$CIAOTime' sign='true'><datetime>19970214T111652,95-05</datetime></item>
 <item name='$HTMLDocumentStyles' summary='true' sign='true'>
 <rawitemdata type='1'>
 0ggBAAAA/wDSCAEA/wAAANIIAQCAAIAA
-</rawitemdata></item></view>
+</rawitemdata></item>
+<item name='$Flags'><text/></item>
+<item name='$WebFlags'><text>S</text></item></note>
 
