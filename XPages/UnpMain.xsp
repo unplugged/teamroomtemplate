@@ -19,7 +19,7 @@ the specific language governing permissions and limitations under the License
 		<xp:script src="/document.js" clientSide="true"></xp:script>
 	</xp:this.resources>
 	<unp:unpHeader search="database" viewsButton="true" title="Teamroom"
-		searchPage="UnpSearch.xsp" appVersion="v1.4.0 (April 2013)">
+		searchPage="UnpSearch.xsp" appVersion="v1.4.1 (May 2013)">
 	</unp:unpHeader>
 	<unp:unpNavigator>
 		<unp:this.menuItem>
