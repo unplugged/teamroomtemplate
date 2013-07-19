@@ -1,11 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><imageresource designerversion="8.5.3" imagename="homeIcon.gif" maintenanceversion="3.0" name="unp/homeIcon.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="65d2" sequence="1" unid="F5B97E0E16715E7D80257AFB002B8DED">
-<created><datetime>20130122T075543,81+00</datetime></created>
-<modified><datetime>20130122T075544,62+00</datetime></modified>
-<revised><datetime>20130122T075544,61+00</datetime></revised>
-<lastaccessed><datetime>20130122T075544,62+00</datetime></lastaccessed>
-<addedtofile><datetime>20130122T075544,62+00</datetime></addedtofile></noteinfo>
+<?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" replicaid="80257AC50035BEE2" version="9.0">
+<noteinfo noteid="4366" sequence="1" unid="CA182C9DC16A08E280257BAC00534264">
+<created><datetime dst="true">20130718T160924,84+01</datetime></created>
+<modified><datetime dst="true">20130718T160926,61+01</datetime></modified>
+<revised><datetime dst="true">20130718T160926,60+01</datetime></revised>
+<lastaccessed><datetime dst="true">20130718T160926,61+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130718T160926,61+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name="$TITLE" sign="true"><text>unp/homeIcon.gif</text></item>
+<item name="$ImagesWide" sign="true"><number>1</number></item>
+<item name="$ImagesHigh" sign="true"><number>1</number></item>
+<item name="$ImagesColorize" sign="true"><number>0</number></item>
+<item name="$ImageNames" sign="true"><text>homeIcon.gif</text></item>
 <item name="$FileModDT" sign="true"><datetime dst="true">20121006T153344,00-04</datetime></item>
-</imageresource>
+<item name="$Flags"><text>34CiQ</text></item>
+<item name="$FlagsExt" sign="true"><text>D</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+</note>

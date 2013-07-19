@@ -1,18 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><imageresource designerversion="8.5.3" imagename="blackBackButton.png" maintenanceversion="3.0" name="unp/blackBackButton.png" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="65ba" sequence="1" unid="D00F19C7A287F60680257AFB002B8DE7">
-<created><datetime>20130122T075543,75+00</datetime></created>
-<modified><datetime>20130122T075544,34+00</datetime></modified>
-<revised><datetime>20130122T075544,33+00</datetime></revised>
-<lastaccessed><datetime>20130122T075544,34+00</datetime></lastaccessed>
-<addedtofile><datetime>20130122T075544,34+00</datetime></addedtofile></noteinfo>
+<?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" replicaid="80257AC50035BEE2" version="9.0">
+<noteinfo noteid="4332" sequence="1" unid="3D2751EE4815344480257BAC00534257">
+<created><datetime dst="true">20130718T160924,71+01</datetime></created>
+<modified><datetime dst="true">20130718T160925,74+01</datetime></modified>
+<revised><datetime dst="true">20130718T160925,73+01</datetime></revised>
+<lastaccessed><datetime dst="true">20130718T160925,74+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130718T160925,74+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby><jpeg>
-iVBORw0KGgoAAAANSUhEUgAAACsAAAAeCAIAAAA6iHCJAAAAB3RJTUUH3AkMFiMinYxCegAAAAlw
-SFlzAABOIAAATiABFn2Z3gAAAARnQU1BAACxjwv8YQUAAADZSURBVHjaxdRNCsIwEAXgpHWVCwh2
-JSi5gDcQ9PK5gYIrBS+QTRZ1bErTljT+kMx7qy5K3tdJGXk8nUUyz8fdWiuyRim13jT+eZV+9Xa9
-qC55Bf7k7W5PD9XH+uzdwxjo/JSgaP0YERcw1A+JCDjrRfo/wAiYBzAX8NdPBLR5mLvnAlp8/AMI
-Asj8gwA1/yBAzd+nlm0LrHfOoar7aK2rQxcwhIJC0AzAiPctQD59MfxjmNwCBBERMCPiAk7EooAN
-kRIwIL5ahuUQP+ziEohxvUQhjDHZz/wzL4P8RzLrJb/0AAAAAElFTkSuQmCC
-</jpeg>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name="$TITLE" sign="true"><text>unp/blackBackButton.png</text></item>
+<item name="$ImagesWide" sign="true"><number>1</number></item>
+<item name="$ImagesHigh" sign="true"><number>1</number></item>
+<item name="$ImagesColorize" sign="true"><number>0</number></item>
+<item name="$ImageNames" sign="true"><text>blackBackButton.png</text></item>
 <item name="$FileModDT" sign="true"><datetime dst="true">20120912T183816,00-04</datetime></item>
-</imageresource>
+<item name="$Flags"><text>34CiQ</text></item>
+<item name="$FlagsExt" sign="true"><text>D</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+</note>

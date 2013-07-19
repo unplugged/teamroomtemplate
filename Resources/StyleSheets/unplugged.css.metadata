@@ -1,18 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" replicaid="80257AC50035BEE2" version="9.0">
-<noteinfo noteid="4156" sequence="1" unid="0FD09C95E4F77F6980257B8000252910">
-<created><datetime dst="true">20130604T074553,44+01</datetime></created>
-<modified><datetime dst="true">20130604T074553,47+01</datetime></modified>
-<revised><datetime dst="true">20130604T074553,46+01</datetime></revised>
-<lastaccessed><datetime dst="true">20130604T074553,47+01</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20130604T074553,47+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="44ea" sequence="1" unid="B43928703A265DCA80257BAD0037EEFE">
+<created><datetime dst="true">20130719T111056,62+01</datetime></created>
+<modified><datetime dst="true">20130719T111056,76+01</datetime></modified>
+<revised><datetime dst="true">20130719T111056,75+01</datetime></revised>
+<lastaccessed><datetime dst="true">20130719T111056,76+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130719T111056,76+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
-<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <item name="$TITLE" sign="true"><text>unplugged.css</text></item>
-<item name="$FileModDT" sign="true"><datetime dst="true">20130408T111101,30+01</datetime></item>
+<item name="$DesignerVersion"><text>8</text></item>
+<item name="$FileModDT" sign="true"><datetime dst="true">20130719T063912,42+01</datetime></item>
+<item name="$FileNames" sign="true"><text>unplugged.css</text></item>
+
+
+<item name="$FileModDT" sign="true"><datetimelist><datetime>20130719T063912,00+00</datetime></datetimelist></item>
+
+
 <item name="$Flags"><text>=34QC</text></item>
-<item name="$FlagsExt" sign="true"><text>D</text></item>
-<item name="$DesignerVersion"><text>8.5.3</text></item>
-
-
-
-<item name="$FileNames" sign="true"><text>unplugged.css</text></item></note>
+<item name="$FlagsExt" sign="true"><text>D</text></item></note>

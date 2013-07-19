@@ -1,11 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?><imageresource designerversion="8.5.3" imagename="sync_button.gif" maintenanceversion="3.0" name="unp/sync_button.gif" publicaccess="false" replicaid="80257AC50035BEE2" version="8.5" xmlns="http://www.lotus.com/dxl">
-<noteinfo noteid="6632" sequence="1" unid="8E101AA965CA5FA480257AFB002B8E05">
-<created><datetime>20130122T075544,05+00</datetime></created>
-<modified><datetime>20130122T075545,79+00</datetime></modified>
-<revised><datetime>20130122T075545,78+00</datetime></revised>
-<lastaccessed><datetime>20130122T075545,79+00</datetime></lastaccessed>
-<addedtofile><datetime>20130122T075545,79+00</datetime></addedtofile></noteinfo>
+<?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" replicaid="80257AC50035BEE2" version="9.0">
+<noteinfo noteid="4422" sequence="1" unid="8700F4FFC84A14D680257BAC00534293">
+<created><datetime dst="true">20130718T160925,31+01</datetime></created>
+<modified><datetime dst="true">20130718T160929,82+01</datetime></modified>
+<revised><datetime dst="true">20130718T160929,81+01</datetime></revised>
+<lastaccessed><datetime dst="true">20130718T160929,82+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130718T160929,82+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
+<item name="$TITLE" sign="true"><text>unp/sync_button.gif</text></item>
+<item name="$ImagesWide" sign="true"><number>1</number></item>
+<item name="$ImagesHigh" sign="true"><number>1</number></item>
+<item name="$ImagesColorize" sign="true"><number>0</number></item>
+<item name="$ImageNames" sign="true"><text>sync_button.gif</text></item>
 <item name="$FileModDT" sign="true"><datetime dst="true">20121006T125525,00-04</datetime></item>
-</imageresource>
+<item name="$Flags"><text>34CiQ</text></item>
+<item name="$FlagsExt" sign="true"><text>D</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+</note>

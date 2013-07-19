@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" replicaid="80257AC50035BEE2" version="9.0">
-<noteinfo noteid="415a" sequence="1" unid="BCCF7B03236B511E80257B8000254A34">
-<created><datetime dst="true">20130604T074718,28+01</datetime></created>
-<modified><datetime dst="true">20130604T074718,29+01</datetime></modified>
-<revised><datetime dst="true">20130604T074718,28+01</datetime></revised>
-<lastaccessed><datetime dst="true">20130604T074718,29+01</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20130604T074718,29+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="443a" sequence="1" unid="C564FCAE0CBC2A8680257BAC00534299">
+<created><datetime dst="true">20130718T160925,37+01</datetime></created>
+<modified><datetime dst="true">20130718T160930,24+01</datetime></modified>
+<revised><datetime dst="true">20130718T160930,23+01</datetime></revised>
+<lastaccessed><datetime dst="true">20130718T160930,24+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20130718T160930,24+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <item name="$TITLE" sign="true"><text>unp/unplugged_logo.png</text></item>
@@ -12,10 +12,9 @@
 <item name="$ImagesHigh" sign="true"><number>1</number></item>
 <item name="$ImagesColorize" sign="true"><number>0</number></item>
 <item name="$FlagsExt" sign="true"><text>D</text></item>
-<item name="$DesignerVersion"><text>8.5.3</text></item>
-
-
-<item name="$MimeType" sign="true"><text>image/png</text></item>
 <item name="$FileModDT" sign="true"><datetime dst="true">20130523T101902,00+01</datetime></item>
 <item name="$Flags"><text>34CiQ</text></item>
-<item name="$ImageNames" sign="true"><text>unplugged_logo_transparent.png</text></item></note>
+<item name="$ImageNames" sign="true"><text>unplugged_logo_transparent.png</text></item>
+<item name="$DesignerVersion"><text>8.5.3</text></item>
+
+</note>
