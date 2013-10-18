@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+Copyright 2013 Teamstudio Inc 
+Licensed under the Apache License, Version 2.0 (the "License"); 
+you may not use this file except in compliance with the License. You may obtain a copy of the License at
+http://www.apache.org/licenses/LICENSE-2.0 
+Unless required by applicable law or agreed to in writing, software distributed under the License is distributed 
+on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for 
+the specific language governing permissions and limitations under the License
+ -->
+
+<xp:view xmlns:xp="http://www.ibm.com/xsp/core"
+	xmlns:xc="http://www.ibm.com/xsp/custom"
+	xmlns:unp="http://unplugged.teamstudio.com">
+	<xp:this.resources>
+		<xp:styleSheet href="/custom.css"></xp:styleSheet>
+		<xp:styleSheet href="/unplugged.css"></xp:styleSheet>
+		<xp:styleSheet href="/unpDialog.css"></xp:styleSheet>
+		<xp:script src="/document.js" clientSide="true"></xp:script>
+	</xp:this.resources>
+	<unp:unpHeader search="database" viewsButton="true" title="Teamroom"
+		searchPage="UnpSearch.xsp">
+	</unp:unpHeader>
+	<unp:unpNavigator>
+		<unp:this.menuItem>
+			<unp:menuItem label="By Date" page="/UnpDate.xsp"
+				ajaxtargetid="content" ajaxloadid="contentwrapper">
+			</unp:menuItem>
+			<unp:menuItem label="By Type" page="/UnpType.xsp"
+				ajaxtargetid="content" ajaxloadid="contentwrapper">
+			</unp:menuItem>
+			<unp:menuItem label="By Category"
+				page="/UnpCategory.xsp" ajaxtargetid="content"
+				ajaxloadid="contentwrapper">
+			</unp:menuItem>
+			<unp:menuItem label="By Due Date" page="/UnpDueDate.xsp"
+				ajaxtargetid="content" ajaxloadid="contentwrapper">
+			</unp:menuItem>
+			<unp:menuItem label="By Reviewer" page="/UnpReviewer.xsp"
+				ajaxtargetid="content" ajaxloadid="contentwrapper">
+			</unp:menuItem>
+			<unp:menuItem label="My Documents" page="/UnpMyDocuments.xsp"
+				ajaxtargetid="content" ajaxloadid="contentwrapper">
+			</unp:menuItem>
+			<unp:menuItem label="Teamroom Details" ajaxtargetid="content"
+				ajaxloadid="contentwrapper" page="/UnpDetails.xsp">
+			</unp:menuItem>
+			<unp:menuItem ajaxloadid="contentwrapper"
+				ajaxtargetid="content" submenu="no" disabled="no" label="About"
+				page="/UnpAbout.xsp">
+			</unp:menuItem>
+		</unp:this.menuItem>
+	</unp:unpNavigator>
+	<div id="content">
+	<xp:callback facetName="facet_1" id="callback1"></xp:callback>
+	</div>
+	<unp:unpFooter newDocTarget="DocumentEdit.xsp" newDocLoadType="ajax"
+		synctype="currentdb">
+	</unp:unpFooter>
+
+</xp:view>
