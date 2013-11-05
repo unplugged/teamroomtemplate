@@ -1,5 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
-<note class='filter' xmlns='http://www.lotus.com/dxl' version='9.0' replicaid='80257AC50035BEE2'>
+<note class='filter' xmlns='http://www.lotus.com/dxl' version='9.0' maintenanceversion='1.0'
+ replicaid='80257AC50035BEE2'>
 <noteinfo noteid='6d6' unid='280FE73D62B5263D85256203005CDE72' sequence='28'>
 <created><datetime dst='true'>19950724T125422,58-04</datetime></created>
 <modified><datetime dst='true'>20130408T140048,90+01</datetime></modified>
