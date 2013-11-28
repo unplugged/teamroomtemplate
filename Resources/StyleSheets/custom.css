@@ -24,3 +24,12 @@
 .longtext {
 	height: auto !important;
 }
+
+.bottombuttons {
+	border-radius: 10px;
+}
+
+#results {
+	margin-bottom: 10px;
+	border-radius: 10px;
+}

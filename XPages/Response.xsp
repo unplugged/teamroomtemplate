@@ -12,15 +12,19 @@ the specific language governing permissions and limitations under the License
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom"
 	xmlns:unp="http://unplugged.teamstudio.com">
+	<xc:layout>
+		<xp:this.facets>
+			<xp:panel xp:key="facet_1">
 	<unp:unpScrollableArea>
 		<xp:this.facets>
-			<unp:unpFormViewer showbuttons="true" closexpagename="UnpMain.xsp" position="menu-aligned"
+			<unp:unpFormViewer showbuttons="true" position="menu-aligned"
 				editxpagename="ResponseEdit.xsp" formname="Response" title="Response"
 				xp:key="facet_1" newresponsexpagename="ResponseToResponseEdit.xsp">
 				<xp:this.facets>
 					<xp:panel xp:key="facet_1">
 						<ul class="buttons">
-							<xp:panel tagName="li" styleClass="proceedButton">
+							<li>
+							<xp:panel tagName="a" styleClass="button">
 								<xp:this.attrs>
 									<xp:attr name="onclick">
 										<xp:this.value><![CDATA[#{javascript:"openDocument('Document.xsp?action=openDocument&documentId=" + document1.getDocument().getParentDocumentUNID() + "', 'content')"}]]></xp:this.value>
@@ -28,6 +32,7 @@ the specific language governing permissions and limitations under the License
 								</xp:this.attrs>
 								<span>View Parent</span>
 							</xp:panel>
+							</li>
 						</ul>
 						<ul class="fieldlist">
 							<li>
@@ -54,7 +59,7 @@ the specific language governing permissions and limitations under the License
 								</xp:text>
 							</li>
 						</ul>
-						<unp:unpFlatView insetData="false" numberofrows="999"
+						<unp:unpFlatView insetData="true" numberofrows="999"
 							refreshmethod="none"
 							categoryfilter="#{javascript:document1.getDocument().getUniversalID()}"
 							detailColumn="Date" summaryColumn="Topic" title="Responses"
@@ -66,4 +71,7 @@ the specific language governing permissions and limitations under the License
 			</unp:unpFormViewer>
 		</xp:this.facets>
 	</unp:unpScrollableArea>
+	</xp:panel>
+	</xp:this.facets>
+	</xc:layout>
 </xp:view>

@@ -20,7 +20,7 @@
 				<unp:unpScrollableArea>
 					<xp:this.facets>
 						<unp:unpFormViewer showbuttons="true"
-							closexpagename="UnpMain.xsp" editxpagename="DocumentEdit.xsp"
+							editxpagename="DocumentEdit.xsp"
 							formname="MainTopic" title="Document" xp:key="facet_1"
 							newresponsexpagename="ResponseEdit.xsp" position="menu-aligned">
 							<xp:this.facets>
@@ -128,7 +128,7 @@
 										</li>
 									</ul>
 
-									<unp:unpFlatView insetData="false"
+									<unp:unpFlatView insetData="true"
 										numberofrows="999" refreshmethod="none"
 										categoryfilter="#{javascript:document1.getDocument().getUniversalID()}"
 										detailColumn="Date" summaryColumn="Topic" title="Responses"

@@ -12,6 +12,9 @@ the specific language governing permissions and limitations under the License
 <xp:view xmlns:xp="http://www.ibm.com/xsp/core"
 	xmlns:xc="http://www.ibm.com/xsp/custom"
 	xmlns:unp="http://unplugged.teamstudio.com">
+	<xc:layout>
+		<xp:this.facets>
+			<xp:panel xp:key="facet_1">
 	<unp:unpScrollableArea>
 		<xp:this.facets>
 			<unp:unpAccordion xp:key="facet_1" insetData="true" position="menu-aligned"
@@ -19,4 +22,7 @@ the specific language governing permissions and limitations under the License
 			</unp:unpAccordion>
 		</xp:this.facets>
 	</unp:unpScrollableArea>
+	</xp:panel>
+	</xp:this.facets>
+	</xc:layout>
 </xp:view>

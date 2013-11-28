@@ -52,7 +52,9 @@ the specific language governing permissions and limitations under the License
 		</unp:this.menuItem>
 	</unp:unpNavigator>
 	<div id="content">
-	<xp:callback facetName="facet_1" id="callback1"></xp:callback>
+		<div id="contentwrapper">
+			<xp:callback facetName="facet_1" id="callback1"></xp:callback>
+		</div>
 	</div>
 	<unp:unpFooter newDocTarget="DocumentEdit.xsp" newDocLoadType="ajax"
 		synctype="currentdb">

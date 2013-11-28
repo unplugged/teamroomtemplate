@@ -26,6 +26,9 @@ try{
 return unid;}]]></xp:this.documentId>
 		</xp:dominoDocument>
 	</xp:this.data>
+	<xc:layout>
+		<xp:this.facets>
+			<xp:panel xp:key="facet_1">
 	<unp:unpScrollableArea>
 		<xp:this.facets>
 			<unp:unpFormViewer showbuttons="false"
@@ -87,4 +90,7 @@ if(ParticipantLookup == null || ParticipantLookup == ""){
 			</unp:unpFormViewer>
 		</xp:this.facets>
 	</unp:unpScrollableArea>
+	</xp:panel>
+	</xp:this.facets>
+	</xc:layout>
 </xp:view>
