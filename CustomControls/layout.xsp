@@ -15,7 +15,6 @@ the specific language governing permissions and limitations under the License
 	<xp:this.resources>
 		<xp:styleSheet href="/custom.css"></xp:styleSheet>
 		<xp:styleSheet href="/unplugged.css"></xp:styleSheet>
-		<xp:styleSheet href="/unpDialog.css"></xp:styleSheet>
 		<xp:script src="/document.js" clientSide="true"></xp:script>
 	</xp:this.resources>
 	<unp:unpHeader search="database" viewsButton="true" title="Teamroom"
