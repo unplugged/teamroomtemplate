@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="filter" maintenanceversion="1.0" replicaid="80257AC50035BEE2" version="9.0">
-<noteinfo noteid="537a" sequence="1" unid="9B4BC7FC83C03F2180257C31003D5CD4">
-<created><datetime>20131128T111014,60+00</datetime></created>
-<modified><datetime>20131128T111014,66+00</datetime></modified>
-<revised><datetime>20131128T111014,65+00</datetime></revised>
-<lastaccessed><datetime>20131128T111014,66+00</datetime></lastaccessed>
-<addedtofile><datetime>20131128T111014,66+00</datetime></addedtofile></noteinfo>
+<noteinfo noteid="5dd6" sequence="1" unid="CD88483F2C5D7F5080257CB300442AF2">
+<created><datetime dst="true">20140407T132434,42+01</datetime></created>
+<modified><datetime dst="true">20140407T132434,46+01</datetime></modified>
+<revised><datetime dst="true">20140407T132434,45+01</datetime></revised>
+<lastaccessed><datetime dst="true">20140407T132434,46+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20140407T132434,46+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <item name="$TITLE" sign="true"><text>OpenLogFunctions</text></item>

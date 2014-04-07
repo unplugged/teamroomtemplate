@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" maintenanceversion="1.0" replicaid="80257AC50035BEE2" version="9.0">
-<noteinfo noteid="5c4a" sequence="1" unid="89E3558ECD0FC73980257C7E005545E2">
-<created><datetime>20140213T153124,50+00</datetime></created>
-<modified><datetime>20140213T153127,65+00</datetime></modified>
-<revised><datetime>20140213T153127,64+00</datetime></revised>
-<lastaccessed><datetime>20140213T153127,65+00</datetime></lastaccessed>
-<addedtofile><datetime>20140213T153127,65+00</datetime></addedtofile></noteinfo>
-<updatedby><name>CN=Matt White/O=Exhilarate</name><name>Anonymous</name><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<noteinfo noteid="5efa" sequence="1" unid="53BD3890668975A280257CB300445C81">
+<created><datetime dst="true">20140407T132641,29+01</datetime></created>
+<modified><datetime dst="true">20140407T132644,21+01</datetime></modified>
+<revised><datetime dst="true">20140407T132644,20+01</datetime></revised>
+<lastaccessed><datetime dst="true">20140407T132644,21+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20140407T132644,21+01</datetime></addedtofile></noteinfo>
+<updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
+<wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <item name="$TITLE"><text>unplugged-buttons.less</text></item>
 <item name="$Flags"><text>345CgQ</text></item>
 <item name="$FlagsExt"><text>D</text></item>
+<item name="$FileModDT"><datetime>20140220T150315,08+00</datetime></item>
 <item name="$DesignerVersion"><text>8.5.3</text></item>
-<item name="$FileNames"><textlist><text>unplugged-buttons.less</text></textlist></item>
 
 
-<item name="$FileModDT"><datetime>20140205T145124,45+00</datetime></item></note>
+<item name="$FileNames" sign="true"><text>unplugged-buttons.less</text></item></note>

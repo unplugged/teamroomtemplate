@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" maintenanceversion="1.0" replicaid="80257AC50035BEE2" version="9.0">
-<noteinfo noteid="533a" sequence="1" unid="371E6D132CC79FD680257C31003D4C38">
-<created><datetime>20131128T110932,08+00</datetime></created>
-<modified><datetime>20131128T110940,51+00</datetime></modified>
-<revised><datetime>20131128T110940,50+00</datetime></revised>
-<lastaccessed><datetime>20131128T110940,51+00</datetime></lastaccessed>
-<addedtofile><datetime>20131128T110940,51+00</datetime></addedtofile></noteinfo>
+<noteinfo noteid="5e42" sequence="1" unid="A39B3AA9E919C24080257CB3004441CB">
+<created><datetime dst="true">20140407T132532,91+01</datetime></created>
+<modified><datetime dst="true">20140407T132535,07+01</datetime></modified>
+<revised><datetime dst="true">20140407T132535,06+01</datetime></revised>
+<lastaccessed><datetime dst="true">20140407T132535,07+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20140407T132535,07+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <item name="$TITLE" sign="true"><text>workspace/activate.png</text></item>

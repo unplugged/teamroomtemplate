@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" maintenanceversion="1.0" replicaid="80257AC50035BEE2" version="9.0">
-<noteinfo noteid="530e" sequence="1" unid="A0A697085077329480257C31003D4C2D">
-<created><datetime>20131128T110931,97+00</datetime></created>
-<modified><datetime>20131128T110939,42+00</datetime></modified>
-<revised><datetime>20131128T110939,41+00</datetime></revised>
-<lastaccessed><datetime>20131128T110939,42+00</datetime></lastaccessed>
-<addedtofile><datetime>20131128T110939,42+00</datetime></addedtofile></noteinfo>
+<noteinfo noteid="5e3a" sequence="1" unid="76455570DBC9934880257CB3004441C9">
+<created><datetime dst="true">20140407T132532,89+01</datetime></created>
+<modified><datetime dst="true">20140407T132534,85+01</datetime></modified>
+<revised><datetime dst="true">20140407T132534,84+01</datetime></revised>
+<lastaccessed><datetime dst="true">20140407T132534,85+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20140407T132534,85+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <item name="$TITLE" sign="true"><text>unp/spinner_squares_circle.gif</text></item>

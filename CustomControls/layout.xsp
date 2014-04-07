@@ -20,36 +20,18 @@ the specific language governing permissions and limitations under the License
 	<unp:unpHeader search="database" viewsButton="true" title="Teamroom"
 		searchPage="UnpSearch.xsp">
 	</unp:unpHeader>
-	<unp:unpNavigator>
-		<unp:this.menuItem>
-			<unp:menuItem label="By Date" page="/UnpDate.xsp"
-				ajaxtargetid="content" ajaxloadid="contentwrapper">
-			</unp:menuItem>
-			<unp:menuItem label="By Type" page="/UnpType.xsp"
-				ajaxtargetid="content" ajaxloadid="contentwrapper">
-			</unp:menuItem>
-			<unp:menuItem label="By Category"
-				page="/UnpCategory.xsp" ajaxtargetid="content"
-				ajaxloadid="contentwrapper">
-			</unp:menuItem>
-			<unp:menuItem label="By Due Date" page="/UnpDueDate.xsp"
-				ajaxtargetid="content" ajaxloadid="contentwrapper">
-			</unp:menuItem>
-			<unp:menuItem label="By Reviewer" page="/UnpReviewer.xsp"
-				ajaxtargetid="content" ajaxloadid="contentwrapper">
-			</unp:menuItem>
-			<unp:menuItem label="My Documents" page="/UnpMyDocuments.xsp"
-				ajaxtargetid="content" ajaxloadid="contentwrapper">
-			</unp:menuItem>
-			<unp:menuItem label="Teamroom Details" ajaxtargetid="content"
-				ajaxloadid="contentwrapper" page="/UnpDetails.xsp">
-			</unp:menuItem>
-			<unp:menuItem ajaxloadid="contentwrapper"
-				ajaxtargetid="content" submenu="no" disabled="no" label="About"
-				page="/UnpAbout.xsp">
-			</unp:menuItem>
-		</unp:this.menuItem>
-	</unp:unpNavigator>
+	<unp:unpNavigatorComputed>
+		<unp:this.computedmenuitems><![CDATA[#{javascript:[
+        {label: "By Date", hasSubMenu: false, page: "/UnpDate.xsp", ajaxloadid: "contentwrapper", ajaxtargetid: "content"},
+        {label: "By Type", hasSubMenu: false, page: "/UnpType.xsp", ajaxloadid: "contentwrapper", ajaxtargetid: "content"},
+        {label: "By Category", hasSubMenu: false, page: "/UnpCategory.xsp", ajaxloadid: "contentwrapper", ajaxtargetid: "content"},
+        {label: "By Due Date", hasSubMenu: false, page: "/UnpDueDate.xsp", ajaxloadid: "contentwrapper", ajaxtargetid: "content"},
+        {label: "By Reviewer", hasSubMenu: false, page: "/UnpReviewer.xsp", ajaxloadid: "contentwrapper", ajaxtargetid: "content"},
+        {label: "My Documents", hasSubMenu: false, page: "/UnpMyDocuments.xsp", ajaxloadid: "contentwrapper", ajaxtargetid: "content"},
+        {label: "Teamroom Details", hasSubMenu: false, page: "/UnpDetails.xsp", ajaxloadid: "contentwrapper", ajaxtargetid: "content"},
+        {label: "About", hasSubMenu: false, page: "/UnpAbout.xsp", ajaxloadid: "contentwrapper", ajaxtargetid: "content"}
+]}]]></unp:this.computedmenuitems>
+	</unp:unpNavigatorComputed>
 	<div id="content">
 		<div id="contentwrapper">
 			<xp:callback facetName="facet_1" id="callback1"></xp:callback>

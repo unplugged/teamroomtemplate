@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" maintenanceversion="1.0" replicaid="80257AC50035BEE2" version="9.0">
-<noteinfo noteid="5e06" sequence="1" unid="2FA5F861C58D152B80257CB3004441BC">
-<created><datetime dst="true">20140407T132532,76+01</datetime></created>
-<modified><datetime dst="true">20140407T132533,34+01</datetime></modified>
-<revised><datetime dst="true">20140407T132533,33+01</datetime></revised>
-<lastaccessed><datetime dst="true">20140407T132533,34+01</datetime></lastaccessed>
-<addedtofile><datetime dst="true">20140407T132533,34+01</datetime></addedtofile></noteinfo>
+<noteinfo noteid="5e32" sequence="1" unid="1DC4F8BEA62E93C180257CB3004441C7">
+<created><datetime dst="true">20140407T132532,87+01</datetime></created>
+<modified><datetime dst="true">20140407T132534,63+01</datetime></modified>
+<revised><datetime dst="true">20140407T132534,62+01</datetime></revised>
+<lastaccessed><datetime dst="true">20140407T132534,63+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20140407T132534,63+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
-<item name="$Flags"><text>34CiQ</text></item>
+<item name="$Flags"><text>D34CiQ</text></item>
 <item name="$FlagsExt" sign="true"><text>D</text></item>
 <item name="$ImagesWide" sign="true"><number>1</number></item>
 <item name="$ImagesHigh" sign="true"><number>1</number></item>
 <item name="$ImagesColorize" sign="true"><number>0</number></item>
 <item name="$FileModDT" sign="true"><datetime>20131208T041246,00+00</datetime></item>
-<item name="$ImageNames" sign="true"><text>unp_2ficon-button-download.png</text></item>
-<item name="$TITLE" sign="true"><text>unp/icon-button-download.png</text></item>
+<item name="$ImageNames" sign="true"><text>unp_2ficons_5fhidpi.png</text></item>
+<item name="$TITLE" sign="true"><text>unp/icons-hidpi.png</text></item>
 <item name="$DesignerVersion"><text>8.5.3</text></item>
 
 </note>

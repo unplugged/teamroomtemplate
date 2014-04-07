@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><note xmlns="http://www.lotus.com/dxl" class="form" maintenanceversion="1.0" replicaid="80257AC50035BEE2" version="9.0">
-<noteinfo noteid="536e" sequence="1" unid="F27026BFEB50DD5780257C31003D4C45">
-<created><datetime>20131128T110932,21+00</datetime></created>
-<modified><datetime>20131128T110941,82+00</datetime></modified>
-<revised><datetime>20131128T110941,81+00</datetime></revised>
-<lastaccessed><datetime>20131128T110941,82+00</datetime></lastaccessed>
-<addedtofile><datetime>20131128T110941,82+00</datetime></addedtofile></noteinfo>
+<noteinfo noteid="5e76" sequence="1" unid="72523C788F60841880257CB3004441D8">
+<created><datetime dst="true">20140407T132533,04+01</datetime></created>
+<modified><datetime dst="true">20140407T132536,56+01</datetime></modified>
+<revised><datetime dst="true">20140407T132536,55+01</datetime></revised>
+<lastaccessed><datetime dst="true">20140407T132536,56+01</datetime></lastaccessed>
+<addedtofile><datetime dst="true">20140407T132536,56+01</datetime></addedtofile></noteinfo>
 <updatedby><name>CN=Matt White/O=Exhilarate</name></updatedby>
 <wassignedby><name>CN=Matt White/O=Exhilarate</name></wassignedby>
 <item name="$TITLE" sign="true"><text>workspace/role@2x.png</text></item>
